@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "ms-azuretools.vscode-docker",
+        "cweijan.vscode-redis-client",
+        "svelte.svelte-vscode"
+    ]
+}

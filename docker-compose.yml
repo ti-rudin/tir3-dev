@@ -1,0 +1,70 @@
+version: "3.7"
+
+services:
+  node-red:
+    container_name: node-red
+    build:
+      context: .
+      dockerfile: ./nodered2.Dockerfile
+    env_file: .env
+    ports:
+      - "1880:1880"
+    networks:
+      - tibotnet
+    depends_on:
+      - redis
+    volumes:
+      - ./node-red-data2:/data 
+    restart: always
+
+  redis:
+    image: "redis:alpine"
+    container_name: redis
+    command: redis-server --requirepass YzRAdGgkFg
+    ports:
+     - "6379:6379"
+    environment:
+         - REDIS_REPLICATION_MODE=master
+    volumes:
+      - ./redis-data:/data
+    restart: always
+    networks:
+      - tibotnet
+
+  priceserver:
+    container_name: priceserver
+    build:
+      context: ./priceserver
+      dockerfile: ./Dockerfile.dev
+    env_file: .env
+    volumes:
+      - './priceserver/:/usr/src/app'
+    restart: always
+    depends_on:
+      - redis
+    networks:
+      - tibotnet
+  
+  front:
+    container_name: front
+    build:
+      context: ./front
+      dockerfile: ./Dockerfile.dev
+    env_file: .env
+    ports:
+     - "3000:3000"
+    volumes:
+      - './front/:/usr/src/app'
+    restart: always
+    depends_on:
+      - redis
+      - node-red
+    networks:
+      - tibotnet
+
+volumes:
+  redis-data:
+  node-red-data2:
+
+networks:
+  tibotnet:

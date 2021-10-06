@@ -1,0 +1,17 @@
+{
+  "name": "priceserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "priceserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node priceserver.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-binance-api": "^0.11.11",
+    "node-fetch": "^2.6.0",
+    "redis": "^3.1.2"
+  }
+}

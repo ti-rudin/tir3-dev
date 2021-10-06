@@ -1,0 +1,23 @@
+#FROM node:14
+FROM node:alpine
+
+
+
+COPY . /usr/src/app/
+
+#RUN npm install -g node-binance-api
+#RUN yarn install --silent 
+#RUN npm audit fix
+#COPY ../.env ./
+#RUN npm install -g npm@7.0.13 
+#RUN npm install --silent
+
+#COPY . .
+
+WORKDIR /usr/src/app
+ENV HOST 0.0.0.0
+
+#CMD [ "/bin/sh"]
+EXPOSE 3000
+CMD ["node", "__sapper__/build"]
+
