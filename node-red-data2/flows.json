@@ -142,7 +142,9 @@
             "9a835f6c.6a1ab"
         ],
         "x": 1694,
-        "y": 419
+        "y": 419,
+        "w": 632,
+        "h": 162
     },
     {
         "id": "3684cd36.8432c2",
@@ -261,7 +263,9 @@
             "527f5893eeafc366"
         ],
         "x": 2554,
-        "y": 39
+        "y": 39,
+        "w": 1052,
+        "h": 502
     },
     {
         "id": "f8a5c66461864831",
@@ -307,7 +311,9 @@
             "c4cf96930d013efb"
         ],
         "x": 1614,
-        "y": 1739
+        "y": 1739,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "586e39dc007e0cae",
@@ -367,7 +373,9 @@
             "e5b3f65c64087091"
         ],
         "x": 2554,
-        "y": 579
+        "y": 579,
+        "w": 1052,
+        "h": 502
     },
     {
         "id": "b1c9866420e73130",
@@ -405,7 +413,9 @@
             "9f0a5643b5b416e8"
         ],
         "x": 2554,
-        "y": 1599
+        "y": 1599,
+        "w": 692,
+        "h": 562
     },
     {
         "id": "5bb9e782aa7a8a39",
@@ -432,7 +442,9 @@
             "142a08cea70917c4"
         ],
         "x": 314,
-        "y": 479
+        "y": 479,
+        "w": 1382,
+        "h": 162
     },
     {
         "id": "7a59f38fd450bc7d",
@@ -654,7 +666,9 @@
             "d3749cac89a0e2c9"
         ],
         "x": 2554,
-        "y": 1119
+        "y": 1119,
+        "w": 1352,
+        "h": 82
     },
     {
         "id": "7f9b2dd857a6dfb2",
@@ -677,7 +691,9 @@
             "792187aede59b6ac"
         ],
         "x": 2554,
-        "y": 1239
+        "y": 1239,
+        "w": 912,
+        "h": 82
     },
     {
         "id": "9364657534c1325f",
@@ -698,7 +714,9 @@
             "62dad41be283ec5d"
         ],
         "x": 2554,
-        "y": 1359
+        "y": 1359,
+        "w": 572,
+        "h": 82
     },
     {
         "id": "a2350d1c1b2611d2",
@@ -719,7 +737,9 @@
             "f2b2077b7903a0bf"
         ],
         "x": 2554,
-        "y": 1479
+        "y": 1479,
+        "w": 632,
+        "h": 82
     },
     {
         "id": "5cf80cfa258dfe5b",
@@ -995,7 +1015,9 @@
             "2b18414b4a3f8aaa"
         ],
         "x": 34,
-        "y": 39
+        "y": 39,
+        "w": 1552,
+        "h": 502
     },
     {
         "id": "0a3bcf6fb5324ab9",
@@ -1019,7 +1041,9 @@
             "4f62e77d1b8d08bd"
         ],
         "x": 134,
-        "y": 1379
+        "y": 1379,
+        "w": 592,
+        "h": 122
     },
     {
         "id": "4a4c7049730cefda",
@@ -1081,7 +1105,9 @@
             "bf190e9d.225ad"
         ],
         "x": 34,
-        "y": 1659
+        "y": 1659,
+        "w": 1322,
+        "h": 402
     },
     {
         "id": "014ce62956a26f95",
@@ -1152,8 +1178,10 @@
             "0ba1f4d05ad6d76a",
             "6250c3310b6d177b"
         ],
-        "x": 44,
-        "y": 779
+        "x": 34,
+        "y": 779,
+        "w": 2092,
+        "h": 822
     },
     {
         "id": "d508da9d29e25c1b",
@@ -1180,7 +1208,9 @@
             "04c874ce359ca023"
         ],
         "x": 34,
-        "y": 599
+        "y": 599,
+        "w": 1612,
+        "h": 122
     },
     {
         "id": "f448f88c7c88caba",
@@ -1207,8 +1237,6 @@
             "f87e06e98b0d7917",
             "6f4a714290c3b59b",
             "1f12c2a908816a59",
-            "cc8156f9e3f2e4ef",
-            "d93ae22cd1d45e58",
             "09ccb3a61ebb95eb",
             "d81b89b8431c5219",
             "286f7ee0bb73b702",
@@ -8833,11 +8861,12 @@
         "z": "5f98db3a.7ab21c",
         "g": "8a452b1de9e087aa",
         "name": "prepare data for create bot",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":data\";\nlet botdata = {\"finance\":msg.payload.finance,\"floors\":msg.payload.floors,\"sales\":msg.payload.sales};\nmsg.payload = botdata;\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;\n\n",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":data\";\nlet botdata = {\"finance\":msg.payload.finance,\"floors\":msg.payload.floors,\"sales\":msg.payload.sales};\nmsg.payload = botdata;\nglobal.set(msg.payload.botname+\"-data\", botdata);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
+        "libs": [],
         "x": 2920,
         "y": 620,
         "wires": [
@@ -8876,6 +8905,7 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
+        "libs": [],
         "x": 3100,
         "y": 680,
         "wires": [
@@ -8890,11 +8920,12 @@
         "z": "5f98db3a.7ab21c",
         "g": "8a452b1de9e087aa",
         "name": "prepare for add botlist",
-        "func": "msg.topic = msg.botlistname;\n\nlet newbotlist = [];\nif (msg.payload == null) {\n    newbotlist = [msg.botname];\n} else {\n    let oldbotlist = msg.payload;\n    newbotlist = [...oldbotlist,msg.botname];\n    }\n\nmsg.payload = JSON.stringify(newbotlist);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
+        "func": "msg.topic = msg.botlistname;\n\nlet newbotlist = [];\nif (msg.payload == null) {\n    newbotlist = [msg.botname];\n} else {\n    let oldbotlist = msg.payload;\n    newbotlist = [...oldbotlist,msg.botname];\n    }\nglobal.set('botlist', newbotlist);\nmsg.payload = JSON.stringify(newbotlist);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
+        "libs": [],
         "x": 3300,
         "y": 680,
         "wires": [
@@ -8940,11 +8971,12 @@
         "z": "5f98db3a.7ab21c",
         "g": "8a452b1de9e087aa",
         "name": "prepare for add bot status",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":status\";\nmsg.payload.status.updated = new Date().getTime();\nmsg.payload = msg.payload.status;\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":status\";\nmsg.payload.status.updated = new Date().getTime();\nmsg.payload = msg.payload.status;\nglobal.set(msg.payload.botname + \"-status\", msg.payload);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
+        "libs": [],
         "x": 2910,
         "y": 740,
         "wires": [
@@ -8978,11 +9010,12 @@
         "z": "5f98db3a.7ab21c",
         "g": "8a452b1de9e087aa",
         "name": "prepare for add bot settings",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":settings\";\n\nmsg.payload = msg.payload.settings;\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":settings\";\n\nmsg.payload = msg.payload.settings;\nglobal.set(msg.payload.botname + \"-settings\", msg.payload);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
+        "libs": [],
         "x": 2920,
         "y": 800,
         "wires": [
@@ -9016,7 +9049,7 @@
         "z": "5f98db3a.7ab21c",
         "g": "8a452b1de9e087aa",
         "name": "prepare for add bot ttp",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":ttp\";\n\nmsg.payload = msg.payload.ttp;\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":ttp\";\n\nmsg.payload = msg.payload.ttp;\nglobal.set(msg.payload.botname + \"-ttp\", msg.payload);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9055,11 +9088,12 @@
         "z": "5f98db3a.7ab21c",
         "g": "8a452b1de9e087aa",
         "name": "prepare for add bot onoff",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":onoff\";\n\nmsg.payload = JSON.stringify(msg.payload.onoff);\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":onoff\";\n\nmsg.payload = JSON.stringify(msg.payload.onoff);\nglobal.set(msg.payload.botname + \"-onoff\", msg.payload);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
+        "libs": [],
         "x": 2910,
         "y": 920,
         "wires": [
@@ -9093,7 +9127,7 @@
         "z": "5f98db3a.7ab21c",
         "g": "8a452b1de9e087aa",
         "name": "prepare for add bot busy",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":busy\";\n\nmsg.payload = JSON.stringify(msg.payload.busy);\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":busy\";\n\nmsg.payload = JSON.stringify(msg.payload.busy);\nglobal.set(msg.payload.botname + \"-busy\", msg.payload);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9137,6 +9171,7 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
+        "libs": [],
         "x": 2900,
         "y": 1040,
         "wires": [
@@ -9222,7 +9257,7 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": true,
+        "once": false,
         "onceDelay": "9",
         "topic": "",
         "payloadType": "date",
@@ -17066,8 +17101,7 @@
         "y": 300,
         "wires": [
             [
-                "683b485facec8d47",
-                "cc8156f9e3f2e4ef"
+                "683b485facec8d47"
             ]
         ]
     },
@@ -17077,7 +17111,7 @@
         "z": "5df15275.2888ec",
         "g": "f448f88c7c88caba",
         "name": "getbot_settings",
-        "func": "msg.botname = msg.payload;\nlet bot = {};\nmsg.bot = bot;\nconst gb = global.get('getbot_settings')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.settings = JSON.parse(gb);\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.done();\n    node.send(msg);\n\n}).catch(error => {\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
+        "func": "msg.botname = msg.payload;\nlet bot = {};\nmsg.bot = bot;\nconst gb = global.get('getbot_settings')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.settings = JSON.parse(gb);\n\n    global.set(msg.botname + \"-settings\", msg.bot.settings);\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.done();\n    node.send(msg);\n\n}).catch(error => {\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17097,7 +17131,7 @@
         "z": "5df15275.2888ec",
         "g": "f448f88c7c88caba",
         "name": "getbot_status",
-        "func": "\nconst gb = global.get('getbot_status')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.status = JSON.parse(gb);\n\n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});\n\n",
+        "func": "\nconst gb = global.get('getbot_status')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.status = JSON.parse(gb);\n    global.set(msg.botname + \"-status\", msg.bot.status);\n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17118,7 +17152,7 @@
         "z": "5df15275.2888ec",
         "g": "f448f88c7c88caba",
         "name": "getbot_data",
-        "func": "\n\nlet botname = msg.botname;\n\nconst gb = global.get('getbot_data')(botname);\n\ngb.then(gb => {\n    //node.warn(gb);\n    let bot = {\n        ...msg.bot,\n        \"floors\": JSON.parse(gb.floors),\n        \"finance\": JSON.parse(gb.finance),\n        \"sales\": JSON.parse(gb.sales)\n    };\n    msg.bot = bot;\n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
+        "func": "\n\nlet botname = msg.botname;\n\nconst gb = global.get('getbot_data')(botname);\n\ngb.then(gb => {\n    //node.warn(gb);\n    msg.bot.data = {\n        \"floors\": JSON.parse(gb.floors),\n        \"finance\": JSON.parse(gb.finance),\n        \"sales\": JSON.parse(gb.sales)\n    }\n    let bot = {\n        ...msg.bot,\n        \"floors\": JSON.parse(gb.floors),\n        \"finance\": JSON.parse(gb.finance),\n        \"sales\": JSON.parse(gb.sales)\n    };\n    msg.bot = bot;\n    global.set(msg.botname + \"-data\", msg.bot.data);\n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17138,7 +17172,7 @@
         "z": "5df15275.2888ec",
         "g": "f448f88c7c88caba",
         "name": "getbot_ttp",
-        "func": "\nconst gb = global.get('getbot_ttp')(msg.botname);\n\ngb.then(gb => {\n    msg.bot.ttp = JSON.parse(gb);\n    \n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    node.send(msg);\n\n}).catch(error => {\n    \n    \n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
+        "func": "\nconst gb = global.get('getbot_ttp')(msg.botname);\n\ngb.then(gb => {\n    msg.bot.ttp = JSON.parse(gb);\n\n    global.set(msg.botname + \"-ttp\", msg.bot.ttp);\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    node.send(msg);\n\n}).catch(error => {\n    \n    \n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17188,7 +17222,7 @@
         "z": "5df15275.2888ec",
         "g": "f448f88c7c88caba",
         "name": "getbot_onoff",
-        "func": "const gb = global.get('getbot_onoff')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.onoff = JSON.parse(gb);\n\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    node.send(msg);\n\n}).catch(error => {\n\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n\n    node.error(error);\n});",
+        "func": "const gb = global.get('getbot_onoff')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.onoff = JSON.parse(gb);\n\n    global.set(msg.botname + \"-onoff\", msg.bot.onoff);\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    node.send(msg);\n\n}).catch(error => {\n\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n\n    node.error(error);\n});",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -19164,44 +19198,6 @@
         "icon": "font-awesome/fa-bolt"
     },
     {
-        "id": "cc8156f9e3f2e4ef",
-        "type": "function",
-        "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
-        "name": "getbot_ttp",
-        "func": "msg.botname = msg.payload;\nlet bot = {};\nmsg.bot = bot;\n\nconst gb = global.get('getbot_ttp')(msg.botname);\n\ngb.then(gb => {\n    msg.bot.ttp = JSON.parse(gb);\n    \n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    node.send(msg);\n\n}).catch(error => {\n    \n    \n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 790,
-        "y": 360,
-        "wires": [
-            [
-                "d93ae22cd1d45e58"
-            ]
-        ]
-    },
-    {
-        "id": "d93ae22cd1d45e58",
-        "type": "function",
-        "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
-        "name": "global.set(msg.botname+\"-ttp\", msg.bot.ttp);",
-        "func": "\nglobal.set(msg.botname+\"-ttp\", msg.bot.ttp);\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1120,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f8cd782d3223fa1e",
         "type": "switch",
         "z": "5df15275.2888ec",
@@ -19548,7 +19544,7 @@
         "name": "",
         "info": "",
         "x": 1500,
-        "y": 120,
+        "y": 100,
         "wires": []
     },
     {
@@ -32924,6 +32920,76 @@
         "statusType": "msg",
         "x": 1070,
         "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4f161f513865a513",
+        "type": "function",
+        "z": "ef9c825cf92ee31b",
+        "name": "get info",
+        "func": "let botlist = global.get(\"botlist\");\n\nlet nb = \"botlistname\";\n\nlet newbotlist = [];\nif (msg.payload == null) {\n    newbotlist = [nb];\n} else {\n    let oldbotlist = botlist;\n    newbotlist = [...oldbotlist, nb];\n}\nglobal.set('botlist', newbotlist);\nmsg.payload = JSON.stringify(newbotlist);\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "gBinance",
+                "module": "node-binance-api"
+            }
+        ],
+        "x": 1340,
+        "y": 1360,
+        "wires": [
+            [
+                "9b6ec74f2c13d180"
+            ]
+        ]
+    },
+    {
+        "id": "98fdabe0e8746255",
+        "type": "inject",
+        "z": "ef9c825cf92ee31b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1150,
+        "y": 1360,
+        "wires": [
+            [
+                "4f161f513865a513"
+            ]
+        ]
+    },
+    {
+        "id": "9b6ec74f2c13d180",
+        "type": "debug",
+        "z": "ef9c825cf92ee31b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1510,
+        "y": 1360,
         "wires": []
     }
 ]

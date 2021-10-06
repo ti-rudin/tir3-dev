@@ -39,15 +39,15 @@ function execution_update(data) {
     //NEW, CANCELED, REPLACED, REJECTED, TRADE, EXPIRED
     console.log(symbol + "\t" + side + " " + executionType + " " + orderType + " ORDER #" + orderId);
     if ((orderStatus == "CANCELED") || (orderStatus == "NEW")) {
-        client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId, orderStatus, 'EX', 3);
-        client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId + "-price", price, 'EX', 3);
+        client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId, orderStatus, 'EX', 5);
+        client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId + "-price", price, 'EX', 5);
     }
     else {
         if (orderStatus == "PARTIALLY_FILLED") {
-            client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId, orderStatus, 'EX', 3);
+            client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId, orderStatus, 'EX', 5);
         }
         else {
-            client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId, orderStatus, 'EX', 3);
+            client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId, orderStatus, 'EX', 5);
             client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId + "-price", price, 'EX', 1728);
             client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId + "-comsa", comsa, 'EX', 1728);
             console.log(data);
@@ -73,7 +73,7 @@ function updatelist() {
 
         binance.websockets.userData(balance_update, execution_update);
 
-        if (((new Date) - start) < 49850) {
+        if (((new Date) - start) < 9850) {
             let endpoints = binance.websockets.subscriptions();
             for (let endpoint in endpoints) {
                 binance.websockets.terminate(endpoint);
@@ -83,4 +83,4 @@ function updatelist() {
         }
     }
 }
-const timerId = setInterval(updatelist, 50000);
+const timerId = setInterval(updatelist, 10000);
