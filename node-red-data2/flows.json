@@ -56,6 +56,13 @@
         "info": ""
     },
     {
+        "id": "245ee519b635b6cd",
+        "type": "tab",
+        "label": "main copy",
+        "disabled": true,
+        "info": ""
+    },
+    {
         "id": "90fc9ad8367cb513",
         "type": "subflow",
         "name": "floor check",
@@ -141,8 +148,8 @@
             "af6bd09e.c7c798",
             "9a835f6c.6a1ab"
         ],
-        "x": 1694,
-        "y": 419,
+        "x": 1774,
+        "y": 379,
         "w": 632,
         "h": 162
     },
@@ -335,7 +342,9 @@
             "dd73e1c4557a5e65"
         ],
         "x": 74,
-        "y": 439
+        "y": 439,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "8a452b1de9e087aa",
@@ -764,36 +773,6 @@
         "y": 39
     },
     {
-        "id": "7cf2ce1ee9aa09a0",
-        "type": "group",
-        "z": "5df15275.2888ec",
-        "name": "Расчет и регистрация МА",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d0265ad83b72f060",
-            "55cdeaeec842ce3d",
-            "400760a195d1bbab",
-            "8686597324b188ac",
-            "698a84fcef79c165",
-            "2bb16b5c84c65822",
-            "80f8ee4855b60755",
-            "5e3edac3f8d7b5e6",
-            "098806a63c0b488e",
-            "e7c80281db2cb5f7",
-            "b082667c299cc83e",
-            "c3754613797a5259",
-            "7b66467d81ab2834",
-            "f8cd782d3223fa1e",
-            "907b2cc664741e24"
-        ],
-        "x": 54,
-        "y": 639,
-        "w": 1972,
-        "h": 162
-    },
-    {
         "id": "f4f90b1391070951",
         "type": "group",
         "z": "2a761808.610238",
@@ -832,7 +811,9 @@
             "014ff17437138c5a"
         ],
         "x": 74,
-        "y": 59
+        "y": 59,
+        "w": 2182,
+        "h": 342
     },
     {
         "id": "a0fe11145e7edf84",
@@ -869,37 +850,9 @@
             "17aeeef6a2ea0467"
         ],
         "x": 54,
-        "y": 839,
+        "y": 899,
         "w": 2242,
         "h": 282
-    },
-    {
-        "id": "d45e3611d1eb4d7c",
-        "type": "group",
-        "z": "5df15275.2888ec",
-        "name": "Резервная запись статуса в редис",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "042f3914a0a15bd1",
-            "7c67107cf032f617",
-            "62dbb0111ba3a832",
-            "eeaeeab96ef014a9",
-            "0ec009c807fdf6b6",
-            "dd6e8b7c3cd4bd8f",
-            "5f90fe219f3162fa",
-            "ce5d5670a383e6ea",
-            "449d486fe59111a1",
-            "20e5dbec70a2054f",
-            "1e593dd0188fc77e",
-            "9ed590fb177c65fa",
-            "b71ccac226cfd352"
-        ],
-        "x": 54,
-        "y": 459,
-        "w": 1572,
-        "h": 142
     },
     {
         "id": "44cf135596e2716e",
@@ -922,34 +875,7 @@
             "d3e0688d41cc172c",
             "579577e08c6abb4c"
         ],
-        "x": 1674,
-        "y": 19,
-        "w": 472,
-        "h": 162
-    },
-    {
-        "id": "4db8c3813557a044",
-        "type": "group",
-        "z": "5df15275.2888ec",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "efa132132a7fa5d7",
-            "8e747d7d4ec5b050",
-            "f5fcc7414475be12",
-            "1719022f8617153c",
-            "c4ba62796dfec943",
-            "64dc395af95431e1",
-            "80d51c26998038af"
-        ],
-        "x": 914,
+        "x": 2114,
         "y": 19,
         "w": 472,
         "h": 162
@@ -1016,7 +942,7 @@
         ],
         "x": 34,
         "y": 39,
-        "w": 1552,
+        "w": 1652,
         "h": 502
     },
     {
@@ -1067,7 +993,9 @@
             "5f2ab5817634cafa"
         ],
         "x": 2834,
-        "y": 1299
+        "y": 1299,
+        "w": 592,
+        "h": 122
     },
     {
         "id": "b5c4460e3abcebce",
@@ -1211,45 +1139,6 @@
         "y": 599,
         "w": 1612,
         "h": 122
-    },
-    {
-        "id": "f448f88c7c88caba",
-        "type": "group",
-        "z": "5df15275.2888ec",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "180bacca6db5568a",
-            "0455a9fa615aae17",
-            "bace2b04002a3f4b",
-            "683b485facec8d47",
-            "56b6e820a4625a55",
-            "854a26d7e2200af1",
-            "9f766ac1e94864ba",
-            "7b940e6ce5fb40c7",
-            "f87e06e98b0d7917",
-            "6f4a714290c3b59b",
-            "1f12c2a908816a59",
-            "09ccb3a61ebb95eb",
-            "d81b89b8431c5219",
-            "286f7ee0bb73b702",
-            "9a90af117cd916e1",
-            "80d47e2e351d863d",
-            "47d3a98892504314",
-            "8bb5f49c6991f30b",
-            "44478e3953b12029"
-        ],
-        "x": 54,
-        "y": 199,
-        "w": 2792,
-        "h": 202
     },
     {
         "id": "ac1b5ff5e5af859c",
@@ -1422,7 +1311,9 @@
             "dec671d438d9990e"
         ],
         "x": 2494,
-        "y": 59
+        "y": 59,
+        "w": 932,
+        "h": 269.5
     },
     {
         "id": "17b2eb4baaa826d1",
@@ -1445,7 +1336,9 @@
             "503d53910c17c784"
         ],
         "x": 2864,
-        "y": 839
+        "y": 839,
+        "w": 692,
+        "h": 142
     },
     {
         "id": "b9356658d1993c51",
@@ -1888,6 +1781,454 @@
         ],
         "x": 2844,
         "y": 819
+    },
+    {
+        "id": "422e384634a8793d",
+        "type": "group",
+        "z": "5df15275.2888ec",
+        "name": "Расчёт МА",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d0265ad83b72f060",
+            "55cdeaeec842ce3d",
+            "400760a195d1bbab",
+            "8686597324b188ac",
+            "698a84fcef79c165",
+            "2bb16b5c84c65822",
+            "80f8ee4855b60755",
+            "5e3edac3f8d7b5e6",
+            "098806a63c0b488e",
+            "7b66467d81ab2834",
+            "eb82ec0d8388d754",
+            "a7cb1741d2b70005",
+            "76ccec41af84b9dd",
+            "2b846e417fd20188",
+            "94c9271545c13b40"
+        ],
+        "x": 54,
+        "y": 679,
+        "w": 1892,
+        "h": 162
+    },
+    {
+        "id": "804213ed1f644c18",
+        "type": "group",
+        "z": "245ee519b635b6cd",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7dee93c36ca1e396",
+            "4c0a3509cff3e63e",
+            "37d8e8f8d12efbae",
+            "492a012bb9ae1cde",
+            "a72c3ebff4a8f801",
+            "f5c2d0f574f4a8ef",
+            "8b98d49dbcdcdce6",
+            "c395995a8acc09f4",
+            "12857cf6a578d632",
+            "b2b7ee5c028e4006",
+            "a35f57ec75ccb698",
+            "468da73a6eff2f47",
+            "28158effdf3f1c1d",
+            "7fa3648e20936c23",
+            "12c8d3fef9235170",
+            "cb9632fa1e839402",
+            "1368293d06e8e7d1",
+            "f77f4875a21c3904",
+            "7f94504b1dc45263",
+            "dd6736649d0588fa",
+            "2c1dbffd57b83216"
+        ],
+        "x": 54,
+        "y": 259,
+        "w": 3332,
+        "h": 162
+    },
+    {
+        "id": "1fa5fd47f525b091",
+        "type": "group",
+        "z": "245ee519b635b6cd",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "0aa43d45b9c12f90",
+            "6da86ebecb22d774",
+            "13b1d3583f1ff591",
+            "e0de3f729ea19982",
+            "b55055ca49efabfd",
+            "7bd877588df0f86b",
+            "df24b9ca4d93ad81"
+        ],
+        "x": 2434,
+        "y": 1219,
+        "w": 892,
+        "h": 202
+    },
+    {
+        "id": "8132589a9074621b",
+        "type": "group",
+        "z": "245ee519b635b6cd",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "cbcbc078630448f8",
+            "2369e086307de62c",
+            "db686d9aed9b7051",
+            "dced5cf0e90e67f3",
+            "7533ed3ddff0e4d2",
+            "9b09688a79b35c51",
+            "bf1c618bb6273bab",
+            "2f5a7235513830dc",
+            "d7e83336f1c8bf06",
+            "73f369bb27e87375",
+            "4d906b8092a235b0",
+            "2b8fae6ba1dc61cc",
+            "7506aeb725ab94f8",
+            "497fa7608e82d7ca",
+            "7578e9167291e34f"
+        ],
+        "x": 54,
+        "y": 459,
+        "w": 1952,
+        "h": 162
+    },
+    {
+        "id": "cd66d4bac998a022",
+        "type": "group",
+        "z": "245ee519b635b6cd",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "785d4927091ba9f2",
+            "f0b97d8aca12724e",
+            "aac6db2bf4e1947b",
+            "ba94054bccbcfdd5",
+            "cf0b6ce7a8cc8d07",
+            "389cc2a8fd0c7754"
+        ],
+        "x": 1674,
+        "y": 19,
+        "w": 472,
+        "h": 162
+    },
+    {
+        "id": "1af14388992a8047",
+        "type": "group",
+        "z": "245ee519b635b6cd",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "571abc978ba16b86",
+            "c85c5c554399a355",
+            "5ed82a33d8be2c33",
+            "2dbc5136fc56a8c1",
+            "dfb05d8b0d1f8d27",
+            "7a41be22b034acb0"
+        ],
+        "x": 914,
+        "y": 59,
+        "w": 472,
+        "h": 122
+    },
+    {
+        "id": "b7fe2ed54eb759c7",
+        "type": "group",
+        "z": "245ee519b635b6cd",
+        "name": "Трек",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "113bd2062b804cb7",
+            "6c645824589d87c6",
+            "59730fae320c985e",
+            "8474d2d5aae35427",
+            "6cf4efe9f847bfc2",
+            "93b3d602bec2d48e",
+            "cac567fd67fb38b6",
+            "841ea8c311d8d9fb",
+            "01717c631850fad4",
+            "d31750b032bb8580",
+            "b59de952faf0ff5c",
+            "bef642f148d9d123",
+            "9de379cef9c2cbd0",
+            "60dd7d98d997b0b2",
+            "8d161ca3e631064e",
+            "820e6838ccce8ebc",
+            "f1fd44e398defcad",
+            "644a4d136e063982",
+            "60e17a1f95a71841",
+            "8dc6251aa4f9b385",
+            "3225e0a3c672a928",
+            "b962a2a2c976d1fe",
+            "de0165cc640bfd5f",
+            "3b088717ce222ea9"
+        ],
+        "x": 54,
+        "y": 839,
+        "w": 2242,
+        "h": 282
+    },
+    {
+        "id": "f0676b62c8f1c90c",
+        "type": "group",
+        "z": "245ee519b635b6cd",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9479aab7ed42de81",
+            "6761368fdaa06112",
+            "825c2644ad8db30b",
+            "61b7c0dba92d9bf5",
+            "aa7c1e183b23507f",
+            "57925429ca810cd2",
+            "c5b6726332f3e726",
+            "a8a74437434f8412",
+            "6f3d16f935eeebf3",
+            "36ab06a0e4700650",
+            "206a6cb6a12b9fd2",
+            "701789b1f837f763",
+            "79c861d199df158e",
+            "0b5862e9bd34e50c",
+            "8f6043c6e809c644",
+            "dd6df4705b145dee",
+            "e8c5c8e0d2b70fae",
+            "819c24b0e889db9a",
+            "1a5af93604004873",
+            "0f78ecf017b82cf4",
+            "513ec5caa8aebea9",
+            "7f858a5b4c716844",
+            "1b0156683381b2dc",
+            "ecf9c89c5e3e30e5",
+            "60f79fd782f2845a",
+            "da1a919755acbd3e",
+            "c750b1c8685c12f7",
+            "8bcbbf716ab8f8e9"
+        ],
+        "x": 54,
+        "y": 1299,
+        "w": 2082,
+        "h": 482
+    },
+    {
+        "id": "2dba9c518146d3f5",
+        "type": "group",
+        "z": "245ee519b635b6cd",
+        "name": "Резервная запись статуса в редис",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9c84d00eacac9bd1",
+            "c9148ce1900c483e",
+            "5b413adef9f089fe",
+            "d08c113009a92025",
+            "428865102bd340da",
+            "4dbb064b75f17368",
+            "40a47452c96d4782",
+            "c1bc2ab66ecee63b",
+            "014a162881b94b15",
+            "6a985194b9639041",
+            "53b9d0a2ac12adc5",
+            "907ed58545644825",
+            "b744408634efb2ef"
+        ],
+        "x": 54,
+        "y": 659,
+        "w": 1572,
+        "h": 142
+    },
+    {
+        "id": "039e1120c796f77c",
+        "type": "group",
+        "z": "245ee519b635b6cd",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8a3e02ad3f6d1d97",
+            "7d157c662d7225fe",
+            "a7d4e20b0541dda5",
+            "e73e5dec6c9f1aeb",
+            "5ce81e2546e4fd83",
+            "3ff9ad2afd9c823f"
+        ],
+        "x": 2274,
+        "y": 519,
+        "w": 592,
+        "h": 122
+    },
+    {
+        "id": "f53315307bbbc36f",
+        "type": "group",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "style": {
+            "label": true,
+            "fill": "#3f5787",
+            "fill-opacity": "0.37"
+        },
+        "nodes": [
+            "d007fe835129a210",
+            "e7768cd8d0ee8191",
+            "3ed8c652a6ccd32f",
+            "3beaa1a28c467e2d",
+            "d631b1503cb23271",
+            "318c1e760874427e",
+            "489046af1889b3ff"
+        ],
+        "x": 54,
+        "y": 59,
+        "w": 792,
+        "h": 122
+    },
+    {
+        "id": "814fe3ad47c48a59",
+        "type": "group",
+        "z": "5df15275.2888ec",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "180bacca6db5568a",
+            "0455a9fa615aae17",
+            "bace2b04002a3f4b",
+            "683b485facec8d47",
+            "56b6e820a4625a55",
+            "854a26d7e2200af1",
+            "9f766ac1e94864ba",
+            "7b940e6ce5fb40c7",
+            "f87e06e98b0d7917",
+            "e7c80281db2cb5f7",
+            "b082667c299cc83e",
+            "c3754613797a5259",
+            "f8cd782d3223fa1e",
+            "907b2cc664741e24",
+            "09ccb3a61ebb95eb",
+            "d81b89b8431c5219",
+            "286f7ee0bb73b702",
+            "9a90af117cd916e1",
+            "8bb5f49c6991f30b",
+            "44478e3953b12029",
+            "7a19b1d6c330e11b",
+            "12cdc134f2944261"
+        ],
+        "x": 54,
+        "y": 219,
+        "w": 3462,
+        "h": 162
+    },
+    {
+        "id": "01cdfc91bb42701f",
+        "type": "group",
+        "z": "5df15275.2888ec",
+        "name": "Резервная запись в редис",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "042f3914a0a15bd1",
+            "7c67107cf032f617",
+            "62dbb0111ba3a832",
+            "eeaeeab96ef014a9",
+            "0ec009c807fdf6b6",
+            "dd6e8b7c3cd4bd8f",
+            "5f90fe219f3162fa",
+            "ce5d5670a383e6ea",
+            "449d486fe59111a1",
+            "20e5dbec70a2054f",
+            "b71ccac226cfd352",
+            "9ed590fb177c65fa",
+            "950fa7fabc4ef79a"
+        ],
+        "x": 54,
+        "y": 419,
+        "w": 1272,
+        "h": 202
+    },
+    {
+        "id": "65ceb63d19a93d0f",
+        "type": "group",
+        "z": "5df15275.2888ec",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "efa132132a7fa5d7",
+            "8e747d7d4ec5b050",
+            "f5fcc7414475be12",
+            "1719022f8617153c",
+            "c4ba62796dfec943",
+            "64dc395af95431e1",
+            "28fda303e5196ddd",
+            "a1d4c1c74be64298"
+        ],
+        "x": 884,
+        "y": 59,
+        "w": 722,
+        "h": 122
     },
     {
         "id": "f120eab2.0a60a8",
@@ -2589,9 +2930,7 @@
         "x": 570,
         "y": 120,
         "wires": [
-            [
-                "175ac72efd396d95"
-            ]
+            []
         ]
     },
     {
@@ -3383,8 +3722,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 2030,
-        "y": 480,
+        "x": 2110,
+        "y": 440,
         "wires": [
             [
                 "9a835f6c.6a1ab"
@@ -3409,8 +3748,8 @@
         "topic": "",
         "payload": "binance",
         "payloadType": "str",
-        "x": 1810,
-        "y": 460,
+        "x": 1890,
+        "y": 420,
         "wires": [
             [
                 "1adeb6d2.0028b1"
@@ -3437,8 +3776,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1780,
-        "y": 500,
+        "x": 1860,
+        "y": 460,
         "wires": [
             [
                 "1adeb6d2.0028b1"
@@ -3464,8 +3803,8 @@
         "payload": "binance_backtest",
         "payloadType": "str",
         "topic": "",
-        "x": 1810,
-        "y": 540,
+        "x": 1890,
+        "y": 500,
         "wires": [
             [
                 "1adeb6d2.0028b1"
@@ -3485,8 +3824,8 @@
         "label": "mode now",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 2230,
-        "y": 480,
+        "x": 2310,
+        "y": 440,
         "wires": []
     },
     {
@@ -4395,7 +4734,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1720,
+        "x": 1680,
         "y": 960,
         "wires": [
             [
@@ -10202,7 +10541,7 @@
         "onceDelay": "0.01",
         "topic": "",
         "payloadType": "date",
-        "x": 1770,
+        "x": 2210,
         "y": 100,
         "wires": [
             [
@@ -10222,7 +10561,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1990,
+        "x": 2430,
         "y": 100,
         "wires": [
             []
@@ -10301,7 +10640,7 @@
         "topic": "",
         "payload": "detail",
         "payloadType": "str",
-        "x": 1770,
+        "x": 2210,
         "y": 140,
         "wires": [
             [
@@ -10321,7 +10660,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1990,
+        "x": 2430,
         "y": 140,
         "wires": [
             []
@@ -13524,7 +13863,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 1075,
         "y": 1660,
@@ -13539,7 +13879,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 2215,
         "y": 1760,
@@ -13554,7 +13895,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 2215,
         "y": 1840,
@@ -13569,7 +13911,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 1555,
         "y": 1700,
@@ -13584,7 +13927,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 1555,
         "y": 2180,
@@ -13599,7 +13943,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 815,
         "y": 2140,
@@ -13614,7 +13959,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 535,
         "y": 2380,
@@ -13629,7 +13975,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 1555,
         "y": 2240,
@@ -13644,7 +13991,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 1175,
         "y": 2260,
@@ -13659,7 +14007,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 1255,
         "y": 1600,
@@ -13674,7 +14023,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 1975,
         "y": 2020,
@@ -13689,7 +14039,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 2595,
         "y": 2040,
@@ -13704,7 +14055,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 2195,
         "y": 2120,
@@ -13718,7 +14070,8 @@
         "links": [
             "e34a5b68.726ec8",
             "e3e1e22a.f958b",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 795,
         "y": 2800,
@@ -17016,7 +17369,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1940,
+        "x": 2380,
         "y": 60,
         "wires": [
             []
@@ -17039,7 +17392,7 @@
         "onceDelay": "0.01",
         "topic": "",
         "payloadType": "date",
-        "x": 1780,
+        "x": 2220,
         "y": 60,
         "wires": [
             [
@@ -17051,20 +17404,19 @@
         "id": "180bacca6db5568a",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
-        "name": "getbotlist",
+        "g": "814fe3ad47c48a59",
+        "name": "getbotlist from redis",
         "func": "\nlet guid = global.get('guid');\n\nconst gbl = global.get('getbotlist')(guid);\n\ngbl.then(gbl => {\n\n    msg.payload = gbl;\n\n    global.set('botlist',JSON.parse(gbl));\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n\n    node.error(error);\n});",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 300,
+        "x": 380,
+        "y": 280,
         "wires": [
             [
-                "0455a9fa615aae17",
-                "80d47e2e351d863d"
+                "0455a9fa615aae17"
             ]
         ]
     },
@@ -17072,13 +17424,13 @@
         "id": "0455a9fa615aae17",
         "type": "json",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "",
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 490,
-        "y": 300,
+        "x": 570,
+        "y": 280,
         "wires": [
             [
                 "bace2b04002a3f4b"
@@ -17089,7 +17441,7 @@
         "id": "bace2b04002a3f4b",
         "type": "split",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "",
         "splt": "1",
         "spltType": "len",
@@ -17097,8 +17449,8 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 630,
-        "y": 300,
+        "x": 710,
+        "y": 280,
         "wires": [
             [
                 "683b485facec8d47"
@@ -17109,7 +17461,7 @@
         "id": "683b485facec8d47",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "getbot_settings",
         "func": "msg.botname = msg.payload;\nlet bot = {};\nmsg.bot = bot;\nconst gb = global.get('getbot_settings')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.settings = JSON.parse(gb);\n\n    global.set(msg.botname + \"-settings\", msg.bot.settings);\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.done();\n    node.send(msg);\n\n}).catch(error => {\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
         "outputs": 1,
@@ -17117,8 +17469,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 300,
+        "x": 880,
+        "y": 280,
         "wires": [
             [
                 "56b6e820a4625a55"
@@ -17129,20 +17481,19 @@
         "id": "56b6e820a4625a55",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "getbot_status",
-        "func": "\nconst gb = global.get('getbot_status')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.status = JSON.parse(gb);\n    global.set(msg.botname + \"-status\", msg.bot.status);\n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});\n\n",
+        "func": "\nconst gb = global.get('getbot_status')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.status = JSON.parse(gb);\n    \n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1000,
-        "y": 300,
+        "x": 1080,
+        "y": 280,
         "wires": [
             [
-                "854a26d7e2200af1",
-                "47d3a98892504314"
+                "854a26d7e2200af1"
             ]
         ]
     },
@@ -17150,16 +17501,16 @@
         "id": "854a26d7e2200af1",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "getbot_data",
-        "func": "\n\nlet botname = msg.botname;\n\nconst gb = global.get('getbot_data')(botname);\n\ngb.then(gb => {\n    //node.warn(gb);\n    msg.bot.data = {\n        \"floors\": JSON.parse(gb.floors),\n        \"finance\": JSON.parse(gb.finance),\n        \"sales\": JSON.parse(gb.sales)\n    }\n    let bot = {\n        ...msg.bot,\n        \"floors\": JSON.parse(gb.floors),\n        \"finance\": JSON.parse(gb.finance),\n        \"sales\": JSON.parse(gb.sales)\n    };\n    msg.bot = bot;\n    global.set(msg.botname + \"-data\", msg.bot.data);\n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
+        "func": "\n\nlet botname = msg.botname;\n\nconst gb = global.get('getbot_data')(botname);\n\ngb.then(gb => {\n    //node.warn(gb);\n\n    let bot = {\n        ...msg.bot,\n        \"floors\": JSON.parse(gb.floors),\n        \"finance\": JSON.parse(gb.finance),\n        \"sales\": JSON.parse(gb.sales)\n    };\n\n    msg.bot = bot;\n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1190,
-        "y": 300,
+        "x": 1270,
+        "y": 280,
         "wires": [
             [
                 "9f766ac1e94864ba"
@@ -17170,7 +17521,7 @@
         "id": "9f766ac1e94864ba",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "getbot_ttp",
         "func": "\nconst gb = global.get('getbot_ttp')(msg.botname);\n\ngb.then(gb => {\n    msg.bot.ttp = JSON.parse(gb);\n\n    global.set(msg.botname + \"-ttp\", msg.bot.ttp);\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    node.send(msg);\n\n}).catch(error => {\n    \n    \n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
         "outputs": 1,
@@ -17178,8 +17529,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1370,
-        "y": 300,
+        "x": 1450,
+        "y": 280,
         "wires": [
             [
                 "f87e06e98b0d7917"
@@ -17190,7 +17541,7 @@
         "id": "7b940e6ce5fb40c7",
         "type": "inject",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "start onload",
         "props": [
             {
@@ -17208,7 +17559,7 @@
         "topic": "",
         "payloadType": "date",
         "x": 170,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "180bacca6db5568a",
@@ -17220,7 +17571,7 @@
         "id": "f87e06e98b0d7917",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "getbot_onoff",
         "func": "const gb = global.get('getbot_onoff')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.onoff = JSON.parse(gb);\n\n    global.set(msg.botname + \"-onoff\", msg.bot.onoff);\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    node.send(msg);\n\n}).catch(error => {\n\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n\n    node.error(error);\n});",
         "outputs": 1,
@@ -17228,57 +17579,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1550,
-        "y": 300,
+        "x": 1630,
+        "y": 280,
         "wires": [
             [
-                "d81b89b8431c5219"
+                "e7c80281db2cb5f7"
             ]
         ]
-    },
-    {
-        "id": "6f4a714290c3b59b",
-        "type": "function",
-        "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
-        "name": "global.set(msg.botname, msg.bot)",
-        "func": "\nglobal.set(msg.botname, msg.bot);\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2680,
-        "y": 300,
-        "wires": [
-            [
-                "1f12c2a908816a59"
-            ]
-        ]
-    },
-    {
-        "id": "1f12c2a908816a59",
-        "type": "debug",
-        "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2610,
-        "y": 340,
-        "wires": []
     },
     {
         "id": "d0265ad83b72f060",
         "type": "trigger",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "422e384634a8793d",
         "name": "",
         "op1": "1",
         "op2": "0",
@@ -17293,7 +17606,7 @@
         "topic": "topic",
         "outputs": 1,
         "x": 530,
-        "y": 700,
+        "y": 740,
         "wires": [
             [
                 "80f8ee4855b60755"
@@ -17304,7 +17617,7 @@
         "id": "55cdeaeec842ce3d",
         "type": "redis-in",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "422e384634a8793d",
         "server": "f120eab2.0a60a8",
         "command": "subscribe",
         "name": "",
@@ -17312,7 +17625,7 @@
         "obj": true,
         "timeout": 0,
         "x": 130,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "400760a195d1bbab"
@@ -17323,7 +17636,7 @@
         "id": "400760a195d1bbab",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "422e384634a8793d",
         "name": "stop",
         "func": "msg.reset = true;\nmsg.payload = \"\";\n\nreturn msg;",
         "outputs": 1,
@@ -17332,7 +17645,7 @@
         "finalize": "",
         "libs": [],
         "x": 270,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "d0265ad83b72f060"
@@ -17343,7 +17656,7 @@
         "id": "8686597324b188ac",
         "type": "redis-in",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "422e384634a8793d",
         "server": "f120eab2.0a60a8",
         "command": "subscribe",
         "name": "",
@@ -17351,7 +17664,7 @@
         "obj": true,
         "timeout": 0,
         "x": 130,
-        "y": 700,
+        "y": 740,
         "wires": [
             [
                 "698a84fcef79c165"
@@ -17362,7 +17675,7 @@
         "id": "698a84fcef79c165",
         "type": "delay",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "422e384634a8793d",
         "name": "",
         "pauseType": "delay",
         "timeout": "50",
@@ -17376,7 +17689,7 @@
         "drop": false,
         "allowrate": false,
         "x": 290,
-        "y": 700,
+        "y": 740,
         "wires": [
             [
                 "d0265ad83b72f060"
@@ -17387,7 +17700,7 @@
         "id": "2bb16b5c84c65822",
         "type": "redis-in",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "422e384634a8793d",
         "server": "f120eab2.0a60a8",
         "command": "subscribe",
         "name": "",
@@ -17395,7 +17708,7 @@
         "obj": true,
         "timeout": 0,
         "x": 490,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "7b66467d81ab2834"
@@ -17406,16 +17719,16 @@
         "id": "80f8ee4855b60755",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "422e384634a8793d",
         "name": "getbotlist",
-        "func": "let a = global.get(\"botlist\");\nmsg.payload = a;\nreturn msg;",
+        "func": "\nmsg.payload = global.get(\"botlist\");\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 720,
-        "y": 700,
+        "y": 740,
         "wires": [
             [
                 "5e3edac3f8d7b5e6"
@@ -17426,7 +17739,7 @@
         "id": "5e3edac3f8d7b5e6",
         "type": "split",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "422e384634a8793d",
         "name": "",
         "splt": "1",
         "spltType": "len",
@@ -17435,7 +17748,7 @@
         "stream": false,
         "addname": "",
         "x": 870,
-        "y": 700,
+        "y": 740,
         "wires": [
             [
                 "098806a63c0b488e"
@@ -17446,19 +17759,19 @@
         "id": "098806a63c0b488e",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
-        "name": "getbot global",
-        "func": "\nlet botname = msg.payload;\nmsg.botname = botname;\nlet bot = global.get(botname);\nmsg.bot = bot;\n\nreturn msg;",
+        "g": "422e384634a8793d",
+        "name": "getbot ",
+        "func": "\nmsg.botname = msg.payload;\nmsg.bot = {};\nmsg.bot.settings = global.get(msg.botname + \"-settings\");\nmsg.bot.status = global.get(msg.botname + \"-status\");\nmsg.bot.onoff = global.get(msg.botname + \"-onoff\");\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1050,
-        "y": 700,
+        "x": 1010,
+        "y": 740,
         "wires": [
             [
-                "e7c80281db2cb5f7"
+                "eb82ec0d8388d754"
             ]
         ]
     },
@@ -17466,7 +17779,7 @@
         "id": "e7c80281db2cb5f7",
         "type": "filter",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "814fe3ad47c48a59",
         "name": "filter off",
         "property": "bot.onoff",
         "propertyType": "msg",
@@ -17481,8 +17794,8 @@
         ],
         "checkall": "true",
         "outputs": 1,
-        "x": 1240,
-        "y": 700,
+        "x": 1800,
+        "y": 280,
         "wires": [
             [
                 "b082667c299cc83e"
@@ -17493,9 +17806,9 @@
         "id": "b082667c299cc83e",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "814fe3ad47c48a59",
         "name": "get candlestick",
-        "func": "\n\nfunction parseApiError(error) {\n  if (error.body) {\n    try {\n      var resp = JSON.parse(error.body);\n      return resp.msg;\n    } catch (error) {/* pass thru */ }\n  }\n  return \"Unknown error. Status code: \" + error.statsCode;\n}\n\nlet LBinance = global.get('gBinance');\nlet key = global.get('key');\nlet secret = global.get('secret');\n\nlet binance = new LBinance().options({\n  APIKEY: key,\n  APISECRET: secret,\n  \"reconnect\": false\n});\n\nlet moneta = msg.bot.settings.moneta;\nlet deep = Number(msg.bot.settings.ma2);\n\n//node.warn(binance);\n\n\n//msg.payload = \"qjson.status\";\n\nbinance.useServerTime(function () {\n  binance.candlesticks(moneta, \"1m\", (error, ticks, symbol) => {\n    // console.info(\"candlesticks()\", ticks);\n    // let last_tick = ticks[ticks.length - 1];\n    // let [time, open, high, low, close, volume, closeTime, assetVolume, trades, buyBaseVolume, buyAssetVolume, ignored] = ticks;\n    //console.info(symbol+\" last close: \"+close);\n    if (error) {\n      var errorMsg = parseApiError(error) + \", moneta:\" + moneta;\n      node.error(errorMsg, msg);\n\n      msg.err = error;\n      node.status({ fill: \"red\", shape: \"ring\", text: errorMsg });\n\n      node.send(msg);\n      //return [msg, null];\n\n    }\n\n    msg.payload = ticks;\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n    //return;\n\n  }, { limit: deep });\n\n});\n",
+        "func": "\n\nfunction parseApiError(error) {\n  if (error.body) {\n    try {\n      var resp = JSON.parse(error.body);\n      return resp.msg;\n    } catch (error) {/* pass thru */ }\n  }\n  return \"Unknown error. Status code: \" + error.statsCode;\n}\n\nlet LBinance = global.get('gBinance');\nlet key = global.get('key');\nlet secret = global.get('secret');\n\nlet binance = new LBinance().options({\n  APIKEY: key,\n  APISECRET: secret,\n  \"reconnect\": false\n});\n\nlet moneta = msg.bot.settings.moneta;\nlet deep = Number(msg.bot.settings.ma2);\n\n//node.warn(binance);\n\n\n//msg.payload = \"qjson.status\";\n\nbinance.useServerTime(function () {\n  binance.candlesticks(moneta, \"1m\", (error, ticks, symbol) => {\n    // console.info(\"candlesticks()\", ticks);\n    // let last_tick = ticks[ticks.length - 1];\n    // let [time, open, high, low, close, volume, closeTime, assetVolume, trades, buyBaseVolume, buyAssetVolume, ignored] = ticks;\n    //console.info(symbol+\" last close: \"+close);\n    if (error) {\n      var errorMsg = parseApiError(error) + \", moneta:\" + moneta;\n      node.error(errorMsg, msg);\n\n      msg.err = error;\n      node.status({ fill: \"red\", shape: \"dot\", text: errorMsg });\n\n      node.send(msg);\n      //return [msg, null];\n\n    }\n\n    msg.payload = ticks;\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n    //return;\n\n  }, { limit: deep });\n\n});\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -17506,8 +17819,8 @@
                 "module": "node-binance-api"
             }
         ],
-        "x": 1440,
-        "y": 700,
+        "x": 2000,
+        "y": 280,
         "wires": [
             [
                 "f8cd782d3223fa1e"
@@ -17525,7 +17838,7 @@
         "id": "c3754613797a5259",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "814fe3ad47c48a59",
         "name": "расчет и запись MA flow.set",
         "func": "\n\nlet candles = msg.payload;\n\n\nlet heiken = candles.map(function(tick){\n  //  node.warn(tick);\n    \n    \n    return (Number(tick[1]) + Number(tick[2]) + Number(tick[3]) + Number(tick[4]))/4;\n});\n\n\n//node.warn(heiken);\nmsg.heiken = heiken;\n\n\nlet heiken_small = heiken.slice(-msg.bot.settings.ma1);\n\n//node.warn(heiken_small);\nlet sum_all = heiken.reduce(function(sum, current) {\n  return sum + current\n});\n\nlet sum_small = heiken_small.reduce(function(sum, current) {\n  return sum + current\n});\n\nmsg.bot.status.sr_ma_big = sum_all / msg.bot.settings.ma2;\nmsg.bot.status.sr_ma_small = sum_small / msg.bot.settings.ma1;\n\nlet volname = msg.bot.settings.botname + \"-MA-big\";\nflow.set(volname, msg.bot.status.sr_ma_big);\n\nlet volname2 = msg.bot.settings.botname + \"-MA-small\";\nflow.set(volname2, msg.bot.status.sr_ma_small);\n\nreturn msg;",
         "outputs": 1,
@@ -17533,17 +17846,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1880,
-        "y": 680,
+        "x": 2420,
+        "y": 260,
         "wires": [
-            []
+            [
+                "d81b89b8431c5219"
+            ]
         ]
     },
     {
         "id": "7b66467d81ab2834",
         "type": "delay",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "422e384634a8793d",
         "name": "",
         "pauseType": "delay",
         "timeout": "50",
@@ -17557,7 +17872,7 @@
         "drop": false,
         "allowrate": false,
         "x": 650,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "80f8ee4855b60755"
@@ -17572,7 +17887,7 @@
         "name": "Старт трека",
         "info": "",
         "x": 150,
-        "y": 900,
+        "y": 960,
         "wires": []
     },
     {
@@ -17594,7 +17909,7 @@
         "topic": "topic",
         "outputs": 1,
         "x": 500,
-        "y": 960,
+        "y": 1020,
         "wires": [
             [
                 "41fb2f2310eb3509"
@@ -17619,7 +17934,7 @@
         "drop": false,
         "allowrate": false,
         "x": 290,
-        "y": 960,
+        "y": 1020,
         "wires": [
             [
                 "6d9b202399150652"
@@ -17639,7 +17954,7 @@
         "finalize": "",
         "libs": [],
         "x": 270,
-        "y": 1020,
+        "y": 1080,
         "wires": [
             [
                 "6d9b202399150652"
@@ -17658,7 +17973,7 @@
         "obj": true,
         "timeout": 0,
         "x": 130,
-        "y": 1020,
+        "y": 1080,
         "wires": [
             [
                 "0c6bcd5098091952"
@@ -17677,7 +17992,7 @@
         "obj": true,
         "timeout": 0,
         "x": 130,
-        "y": 960,
+        "y": 1020,
         "wires": [
             [
                 "87d33f4cea444d76",
@@ -17697,11 +18012,9 @@
         "obj": true,
         "timeout": 0,
         "x": 550,
-        "y": 900,
+        "y": 960,
         "wires": [
-            [
-                "41fb2f2310eb3509"
-            ]
+            []
         ]
     },
     {
@@ -17712,7 +18025,7 @@
         "name": "Семафор = \"Занято\"",
         "info": "",
         "x": 2020,
-        "y": 880,
+        "y": 940,
         "wires": []
     },
     {
@@ -17728,7 +18041,7 @@
         "finalize": "",
         "libs": [],
         "x": 1870,
-        "y": 960,
+        "y": 1020,
         "wires": [
             [
                 "95dc92f2a89e0c4f",
@@ -17756,7 +18069,7 @@
         "checkall": "true",
         "outputs": 1,
         "x": 1300,
-        "y": 960,
+        "y": 1020,
         "wires": [
             [
                 "7d520c9f3f584426"
@@ -17776,7 +18089,7 @@
         "finalize": "",
         "libs": [],
         "x": 1470,
-        "y": 960,
+        "y": 1020,
         "wires": [
             [
                 "93be3c8c8ae3e0aa"
@@ -17796,7 +18109,7 @@
         "finalize": "",
         "libs": [],
         "x": 1660,
-        "y": 960,
+        "y": 1020,
         "wires": [
             [
                 "d57be83950b3e792"
@@ -17823,7 +18136,7 @@
         "finalize": "",
         "libs": [],
         "x": 2030,
-        "y": 960,
+        "y": 1020,
         "wires": [
             [
                 "ecc16c9fb4b93460",
@@ -17847,7 +18160,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2030,
-        "y": 920,
+        "y": 980,
         "wires": []
     },
     {
@@ -17863,7 +18176,7 @@
         "finalize": "",
         "libs": [],
         "x": 310,
-        "y": 900,
+        "y": 960,
         "wires": [
             []
         ]
@@ -17880,7 +18193,7 @@
         "initialize": "",
         "finalize": "",
         "x": 450,
-        "y": 1020,
+        "y": 1080,
         "wires": [
             []
         ]
@@ -17896,7 +18209,7 @@
             "4ccca7de15742d16"
         ],
         "x": 2255,
-        "y": 960,
+        "y": 1020,
         "wires": []
     },
     {
@@ -17914,7 +18227,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1310,
-        "y": 880,
+        "y": 940,
         "wires": []
     },
     {
@@ -17930,7 +18243,7 @@
         "finalize": "",
         "libs": [],
         "x": 760,
-        "y": 960,
+        "y": 1020,
         "wires": [
             [
                 "98795c7b07c3c6cc"
@@ -17950,7 +18263,7 @@
         "stream": false,
         "addname": "",
         "x": 910,
-        "y": 960,
+        "y": 1020,
         "wires": [
             [
                 "d0dafdf34722bfa4"
@@ -17970,7 +18283,7 @@
         "finalize": "",
         "libs": [],
         "x": 1090,
-        "y": 960,
+        "y": 1020,
         "wires": [
             [
                 "f581bb390118a24e",
@@ -17991,7 +18304,7 @@
         "finalize": "",
         "libs": [],
         "x": 1720,
-        "y": 1080,
+        "y": 1140,
         "wires": [
             [
                 "5611b6a43040daf1"
@@ -18013,7 +18326,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1870,
-        "y": 1080,
+        "y": 1140,
         "wires": []
     },
     {
@@ -18027,7 +18340,7 @@
             "366731da620fef8d"
         ],
         "x": 1895,
-        "y": 1000,
+        "y": 1060,
         "wires": [],
         "icon": "node-red/db.svg"
     },
@@ -19201,7 +19514,7 @@
         "id": "f8cd782d3223fa1e",
         "type": "switch",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "814fe3ad47c48a59",
         "name": "try second",
         "property": "payload",
         "propertyType": "msg",
@@ -19216,8 +19529,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1630,
-        "y": 700,
+        "x": 2190,
+        "y": 280,
         "wires": [
             [
                 "c3754613797a5259"
@@ -19232,7 +19545,7 @@
         "id": "907b2cc664741e24",
         "type": "debug",
         "z": "5df15275.2888ec",
-        "g": "7cf2ce1ee9aa09a0",
+        "g": "814fe3ad47c48a59",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -19242,15 +19555,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1670,
-        "y": 740,
+        "x": 2210,
+        "y": 320,
         "wires": []
     },
     {
         "id": "042f3914a0a15bd1",
         "type": "trigger",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
+        "g": "01cdfc91bb42701f",
         "name": "",
         "op1": "1",
         "op2": "0",
@@ -19265,7 +19578,7 @@
         "topic": "topic",
         "outputs": 1,
         "x": 520,
-        "y": 500,
+        "y": 460,
         "wires": [
             [
                 "5f90fe219f3162fa"
@@ -19276,7 +19589,7 @@
         "id": "7c67107cf032f617",
         "type": "redis-in",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
+        "g": "01cdfc91bb42701f",
         "server": "f120eab2.0a60a8",
         "command": "subscribe",
         "name": "",
@@ -19284,7 +19597,7 @@
         "obj": true,
         "timeout": 0,
         "x": 130,
-        "y": 560,
+        "y": 520,
         "wires": [
             [
                 "62dbb0111ba3a832"
@@ -19295,7 +19608,7 @@
         "id": "62dbb0111ba3a832",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
+        "g": "01cdfc91bb42701f",
         "name": "stop",
         "func": "msg.reset = true;\nmsg.payload = \"\";\n\nreturn msg;",
         "outputs": 1,
@@ -19304,7 +19617,7 @@
         "finalize": "",
         "libs": [],
         "x": 270,
-        "y": 560,
+        "y": 520,
         "wires": [
             [
                 "042f3914a0a15bd1"
@@ -19315,7 +19628,7 @@
         "id": "eeaeeab96ef014a9",
         "type": "redis-in",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
+        "g": "01cdfc91bb42701f",
         "server": "f120eab2.0a60a8",
         "command": "subscribe",
         "name": "",
@@ -19323,7 +19636,7 @@
         "obj": true,
         "timeout": 0,
         "x": 130,
-        "y": 500,
+        "y": 460,
         "wires": [
             [
                 "0ec009c807fdf6b6"
@@ -19334,7 +19647,7 @@
         "id": "0ec009c807fdf6b6",
         "type": "delay",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
+        "g": "01cdfc91bb42701f",
         "name": "",
         "pauseType": "delay",
         "timeout": "4",
@@ -19348,7 +19661,7 @@
         "drop": false,
         "allowrate": false,
         "x": 280,
-        "y": 500,
+        "y": 460,
         "wires": [
             [
                 "042f3914a0a15bd1"
@@ -19359,7 +19672,7 @@
         "id": "dd6e8b7c3cd4bd8f",
         "type": "redis-in",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
+        "g": "01cdfc91bb42701f",
         "server": "f120eab2.0a60a8",
         "command": "subscribe",
         "name": "",
@@ -19367,7 +19680,7 @@
         "obj": true,
         "timeout": 0,
         "x": 490,
-        "y": 560,
+        "y": 520,
         "wires": [
             [
                 "20e5dbec70a2054f"
@@ -19378,16 +19691,16 @@
         "id": "5f90fe219f3162fa",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
+        "g": "01cdfc91bb42701f",
         "name": "getbotlist",
-        "func": "let a = global.get(\"botlist\");\nmsg.payload = a;\nreturn msg;",
+        "func": "\nmsg.payload = global.get(\"botlist\");\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 720,
-        "y": 500,
+        "y": 460,
         "wires": [
             [
                 "ce5d5670a383e6ea"
@@ -19398,7 +19711,7 @@
         "id": "ce5d5670a383e6ea",
         "type": "split",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
+        "g": "01cdfc91bb42701f",
         "name": "",
         "splt": "1",
         "spltType": "len",
@@ -19407,7 +19720,7 @@
         "stream": false,
         "addname": "",
         "x": 870,
-        "y": 500,
+        "y": 460,
         "wires": [
             [
                 "449d486fe59111a1"
@@ -19418,19 +19731,21 @@
         "id": "449d486fe59111a1",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
-        "name": "getbot global",
-        "func": "\nlet botname = msg.payload;\nmsg.botname = botname;\nlet bot = global.get(botname);\nmsg.bot = bot;\n\nreturn msg;",
+        "g": "01cdfc91bb42701f",
+        "name": "getbot ",
+        "func": "\nmsg.botname = msg.payload;\nmsg.bot = {};\nmsg.bot.settings = global.get(msg.botname + \"-settings\");\nmsg.bot.ttp = global.get(msg.botname + \"-ttp\");\nmsg.bot.data = global.get(msg.botname + \"-data\");\nmsg.bot.status = global.get(msg.botname + \"-status\");\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1030,
-        "y": 500,
+        "x": 1010,
+        "y": 460,
         "wires": [
             [
-                "1e593dd0188fc77e"
+                "9ed590fb177c65fa",
+                "b71ccac226cfd352",
+                "950fa7fabc4ef79a"
             ]
         ]
     },
@@ -19438,7 +19753,7 @@
         "id": "20e5dbec70a2054f",
         "type": "delay",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
+        "g": "01cdfc91bb42701f",
         "name": "",
         "pauseType": "delay",
         "timeout": "50",
@@ -19452,7 +19767,7 @@
         "drop": false,
         "allowrate": false,
         "x": 650,
-        "y": 560,
+        "y": 520,
         "wires": [
             [
                 "5f90fe219f3162fa"
@@ -19460,40 +19775,19 @@
         ]
     },
     {
-        "id": "1e593dd0188fc77e",
-        "type": "function",
-        "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
-        "name": "getbot_ttp",
-        "func": "let a = global.get(msg.botname + \"-ttp\");\nmsg.bot.ttp = a;\nreturn msg;\n\n\n//const gb = global.get('getbot_ttp')(msg.bot.settings.botname);\n//\n//gb.then(gb => {\n//    msg.bot.ttp = JSON.parse(gb);\n//    \n//node.status({fill: \"green\", shape: \"ring\"});\n//\n//    node.send(msg);\n//\n//}).catch(error => {\n//    \n//    \n//    node.status({fill: \"red\", shape: \"ring\", text: \"error\"});\n//    node.error(error);\n//});",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1210,
-        "y": 500,
-        "wires": [
-            [
-                "9ed590fb177c65fa",
-                "b71ccac226cfd352"
-            ]
-        ]
-    },
-    {
         "id": "b71ccac226cfd352",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
-        "name": "update floos finace sales on redis",
-        "func": "let botname = msg.botname;\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet volname = msg.bot.settings.userid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\n\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\n\n\n\n\n\n\n",
+        "g": "01cdfc91bb42701f",
+        "name": "setbot_data to redis",
+        "func": "\nlet volname = msg.bot.settings.userid + \"-bots:\" + msg.botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(msg.bot.data.finance),\n    \"floors\": JSON.stringify(msg.bot.data.floors),\n    \"sales\": JSON.stringify(msg.bot.data.sales)\n\n};\n\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n    node.done();\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\n\n\n\n\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1460,
-        "y": 560,
+        "x": 1200,
+        "y": 520,
         "wires": [
             []
         ]
@@ -19502,16 +19796,16 @@
         "id": "9ed590fb177c65fa",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "d45e3611d1eb4d7c",
+        "g": "01cdfc91bb42701f",
         "name": "setbot_ttp to redis",
-        "func": "\nmsg.topic = msg.bot.settings.userid + \"-bots:\" + msg.bot.settings.botname + \":ttp\";\nmsg.payload = JSON.stringify(msg.bot.ttp);\n\nconst upd = global.get('setbot_ttp')(msg.topic, msg.payload);\n\nupd.then(upd => {\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});\nreturn msg;",
+        "func": "\nmsg.topic = msg.bot.settings.userid + \"-bots:\" + msg.botname + \":ttp\";\nmsg.payload = JSON.stringify(msg.bot.ttp);\n\nconst upd = global.get('setbot_ttp')(msg.topic, msg.payload);\n\nupd.then(upd => {\n    msg.payload = upd;\n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1410,
-        "y": 500,
+        "x": 1190,
+        "y": 460,
         "wires": [
             []
         ]
@@ -19520,19 +19814,20 @@
         "id": "09ccb3a61ebb95eb",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "сброс счетчиков busy",
-        "func": "//сброс счетчиков busy\nflow.set(msg.botname, 0);\nflow.set(msg.botname + \"-ttp\", 0);\nmsg.bot.busy = false;\nmsg.bot.ttp.ttpbusy = false;\nreturn msg;",
+        "func": "//сброс счетчиков busy\nflow.set(msg.botname, 0);\nflow.set(msg.botname + \"-ttp\", 0);\nmsg.bot.busy = false;\nmsg.bot.ttp.ttpbusy = false;\n\nglobal.set(msg.botname + \"-busy\", msg.bot.busy);\nglobal.set(msg.botname + \"-ttpbusy\", msg.bot.ttp.ttpbusy);\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2390,
-        "y": 300,
+        "x": 3310,
+        "y": 260,
         "wires": [
             [
-                "6f4a714290c3b59b"
+                "7a19b1d6c330e11b",
+                "12cdc134f2944261"
             ]
         ],
         "icon": "font-awesome/fa-bolt"
@@ -19543,8 +19838,8 @@
         "z": "5df15275.2888ec",
         "name": "",
         "info": "",
-        "x": 1500,
-        "y": 100,
+        "x": 1760,
+        "y": 120,
         "wires": []
     },
     {
@@ -19652,17 +19947,16 @@
         "id": "efa132132a7fa5d7",
         "type": "link in",
         "z": "5df15275.2888ec",
-        "g": "4db8c3813557a044",
+        "g": "65ceb63d19a93d0f",
         "name": "",
         "links": [
             "f937bdc295f372a8"
         ],
-        "x": 955,
+        "x": 1175,
         "y": 140,
         "wires": [
             [
-                "8e747d7d4ec5b050",
-                "80d51c26998038af"
+                "8e747d7d4ec5b050"
             ]
         ]
     },
@@ -19682,7 +19976,7 @@
         "id": "8e747d7d4ec5b050",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "4db8c3813557a044",
+        "g": "65ceb63d19a93d0f",
         "name": "tester___",
         "func": "let start_node_time = new Date().getTime();\n\nnode.status({fill: \"green\", shape: \"ring\", text: start_node_time});\n    \n\nreturn msg;",
         "outputs": 1,
@@ -19690,7 +19984,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1050,
+        "x": 1270,
         "y": 140,
         "wires": [
             []
@@ -19700,10 +19994,10 @@
         "id": "f5fcc7414475be12",
         "type": "comment",
         "z": "5df15275.2888ec",
-        "g": "4db8c3813557a044",
+        "g": "65ceb63d19a93d0f",
         "name": "main track",
         "info": "",
-        "x": 1050,
+        "x": 1270,
         "y": 100,
         "wires": []
     },
@@ -19714,7 +20008,8 @@
         "g": "8056eb88351f744f",
         "name": "to tester",
         "links": [
-            "1719022f8617153c"
+            "1719022f8617153c",
+            "2dbc5136fc56a8c1"
         ],
         "x": 2595,
         "y": 200,
@@ -19724,13 +20019,13 @@
         "id": "1719022f8617153c",
         "type": "link in",
         "z": "5df15275.2888ec",
-        "g": "4db8c3813557a044",
+        "g": "65ceb63d19a93d0f",
         "name": "",
         "links": [
             "365e54e1b5c77315",
             "493e13639b3ed804"
         ],
-        "x": 1205,
+        "x": 1425,
         "y": 140,
         "wires": [
             [
@@ -19742,7 +20037,7 @@
         "id": "c4ba62796dfec943",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "4db8c3813557a044",
+        "g": "65ceb63d19a93d0f",
         "name": "tester___",
         "func": "let start_node_time = new Date().getTime();\n\nnode.status({fill: \"green\", shape: \"ring\", text: start_node_time});\n    \n\nreturn msg;",
         "outputs": 1,
@@ -19750,7 +20045,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1300,
+        "x": 1520,
         "y": 140,
         "wires": [
             []
@@ -19760,10 +20055,10 @@
         "id": "64dc395af95431e1",
         "type": "comment",
         "z": "5df15275.2888ec",
-        "g": "4db8c3813557a044",
+        "g": "65ceb63d19a93d0f",
         "name": "ttp track",
         "info": "",
-        "x": 1300,
+        "x": 1520,
         "y": 100,
         "wires": []
     },
@@ -19977,7 +20272,7 @@
         "id": "d81b89b8431c5219",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "getprice, MA",
         "func": "\nlet moneta = msg.bot.settings.moneta;\n\nconst gp = global.get('getprice')(moneta);\n\ngp.then(gp => {\n\n    msg.bot.status.currentprice = gp;\n    let volname = msg.bot.settings.botname + \"-MA-big\";\n    msg.bot.status.sr_ma_big = Number(flow.get(volname));\n\n    let volname2 = msg.bot.settings.botname + \"-MA-small\";\n    msg.bot.status.sr_ma_small = Number(flow.get(volname2));\n\n\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
         "outputs": 1,
@@ -19985,8 +20280,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 300,
+        "x": 2650,
+        "y": 260,
         "wires": [
             [
                 "286f7ee0bb73b702"
@@ -19997,16 +20292,16 @@
         "id": "286f7ee0bb73b702",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "MA zapret calculate",
-        "func": "\nmsg.bot.status.currentprice = Number(msg.bot.status.currentprice);\n\nif ((msg.bot.status.currentprice > msg.bot.status.sr_ma_big) && (msg.bot.status.currentprice > msg.bot.status.sr_ma_small)) {\n    msg.bot.zapret_na_zakup = false;\n    msg.bot.status.rezhim = \"МА - закуп разрешен\";\n\n} else {\n    msg.bot.zapret_na_zakup = true;\n    msg.bot.status.rezhim = \"МА - закуп запрещён\";\n\n}\n\nnode.status({ fill: \"green\", shape: \"dot\" });\n\nreturn msg;",
+        "func": "\nmsg.bot.status.currentprice = Number(msg.bot.status.currentprice);\n\nif ((msg.bot.status.currentprice > msg.bot.status.sr_ma_big) && (msg.bot.status.currentprice > msg.bot.status.sr_ma_small)) {\n    msg.bot.zapret_na_zakup = false;\n    msg.bot.status.rezhim = \"МА - закуп разрешен\";\n\n} else {\n    msg.bot.zapret_na_zakup = true;\n    msg.bot.status.rezhim = \"МА - закуп запрещён\";\n\n}\nglobal.set(msg.botname + \"-status\", msg.bot.status);\nnode.status({ fill: \"green\", shape: \"dot\" });\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1940,
-        "y": 300,
+        "x": 2860,
+        "y": 260,
         "wires": [
             [
                 "9a90af117cd916e1"
@@ -20017,16 +20312,16 @@
         "id": "9a90af117cd916e1",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "пересчет депо",
-        "func": "\nlet p = Number(msg.bot.status.currentprice);\nmsg.bot.finance.depo = Number((Number(msg.bot.finance.quotanal) * p + Number(msg.bot.finance.quotainorders) * p + Number(msg.bot.finance.basenal) + Number(msg.bot.finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\nreturn msg;",
+        "func": "\nlet p = Number(msg.bot.status.currentprice);\nmsg.bot.finance.depo = Number((Number(msg.bot.finance.quotanal) * p + Number(msg.bot.finance.quotainorders) * p + Number(msg.bot.finance.basenal) + Number(msg.bot.finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\nlet data = {\n    \"floors\": msg.bot.floors,\n    \"finance\": msg.bot.finance,\n    \"sales\": msg.bot.sales\n}\n\nglobal.set(msg.botname + \"-data\", data);\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2160,
-        "y": 300,
+        "x": 3080,
+        "y": 260,
         "wires": [
             [
                 "09ccb3a61ebb95eb"
@@ -21206,7 +21501,8 @@
         "name": "",
         "links": [
             "e34a5b68.726ec8",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 2075,
         "y": 240,
@@ -21220,7 +21516,8 @@
         "name": "",
         "links": [
             "e34a5b68.726ec8",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 2115,
         "y": 440,
@@ -21278,42 +21575,6 @@
         ],
         "x": 1455,
         "y": 920,
-        "wires": []
-    },
-    {
-        "id": "80d47e2e351d863d",
-        "type": "debug",
-        "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 410,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "47d3a98892504314",
-        "type": "debug",
-        "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1170,
-        "y": 240,
         "wires": []
     },
     {
@@ -23011,7 +23272,7 @@
         "noerr": 0,
         "initialize": "\n// Code added here will be run once\n// whenever the node is deployed.\nlet getprice = function (moneta = msg.payload) {\n    \n    let promise = new Promise((resolve, reject) => {\n        msg.resolve = resolve;\n        msg.reject = reject;\n    });\n    \n\n    msg.topic = \"prices:\"+moneta;\n    msg.payload = [];\n\n    node.send(Object.assign({}, msg));\n    \n    return promise;\n};\n\nglobal.set('getprice', getprice);",
         "finalize": "",
-        "x": 1080,
+        "x": 320,
         "y": 80,
         "wires": [
             [
@@ -23031,7 +23292,7 @@
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "x": 900,
+        "x": 140,
         "y": 80,
         "wires": [
             [
@@ -23052,7 +23313,7 @@
         "paramsType": "json",
         "payloadType": "json",
         "block": false,
-        "x": 1240,
+        "x": 480,
         "y": 80,
         "wires": [
             [
@@ -23071,7 +23332,7 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1460,
+        "x": 700,
         "y": 80,
         "wires": []
     },
@@ -23088,7 +23349,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 140,
+        "y": 200,
         "wires": [
             [
                 "3cbc407f58d45bb0"
@@ -23108,7 +23369,7 @@
         "onceDelay": "1",
         "topic": "",
         "x": 140,
-        "y": 140,
+        "y": 200,
         "wires": [
             [
                 "91002369b1074d75"
@@ -23127,7 +23388,7 @@
         "initialize": "",
         "finalize": "",
         "x": 700,
-        "y": 140,
+        "y": 200,
         "wires": []
     },
     {
@@ -23143,7 +23404,7 @@
         "finalize": "",
         "libs": [],
         "x": 290,
-        "y": 80,
+        "y": 140,
         "wires": [
             [
                 "cc432a8e0784b0f9"
@@ -23163,7 +23424,7 @@
         "onceDelay": "1",
         "topic": "",
         "x": 130,
-        "y": 80,
+        "y": 140,
         "wires": [
             [
                 "85a473180350d074"
@@ -23184,7 +23445,7 @@
         "payloadType": "json",
         "block": false,
         "x": 460,
-        "y": 80,
+        "y": 140,
         "wires": [
             [
                 "2e7a67404d21442a"
@@ -23203,7 +23464,7 @@
         "initialize": "",
         "finalize": "",
         "x": 620,
-        "y": 80,
+        "y": 140,
         "wires": []
     },
     {
@@ -23220,7 +23481,7 @@
         "payloadType": "json",
         "block": false,
         "x": 520,
-        "y": 140,
+        "y": 200,
         "wires": [
             [
                 "38c8c689cb5c0e28"
@@ -23240,7 +23501,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 200,
+        "y": 260,
         "wires": [
             [
                 "33d2dd1688f92679"
@@ -23260,7 +23521,7 @@
         "onceDelay": "1",
         "topic": "",
         "x": 140,
-        "y": 200,
+        "y": 260,
         "wires": [
             [
                 "5b61de68b494bd33"
@@ -23279,7 +23540,7 @@
         "initialize": "",
         "finalize": "",
         "x": 720,
-        "y": 200,
+        "y": 260,
         "wires": []
     },
     {
@@ -23296,7 +23557,7 @@
         "payloadType": "json",
         "block": false,
         "x": 540,
-        "y": 200,
+        "y": 260,
         "wires": [
             [
                 "ebd3770efa8b27af"
@@ -23316,7 +23577,7 @@
         "finalize": "",
         "libs": [],
         "x": 310,
-        "y": 260,
+        "y": 320,
         "wires": [
             [
                 "f8e441b5bf25d02b"
@@ -23336,7 +23597,7 @@
         "onceDelay": "1",
         "topic": "",
         "x": 140,
-        "y": 260,
+        "y": 320,
         "wires": [
             [
                 "b58eea72b93f13de"
@@ -23355,7 +23616,7 @@
         "initialize": "",
         "finalize": "",
         "x": 680,
-        "y": 260,
+        "y": 320,
         "wires": []
     },
     {
@@ -23372,7 +23633,7 @@
         "payloadType": "json",
         "block": false,
         "x": 490,
-        "y": 260,
+        "y": 320,
         "wires": [
             [
                 "2d034a3b4969d69c"
@@ -23392,7 +23653,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 320,
+        "y": 380,
         "wires": [
             [
                 "806473f046ac801f"
@@ -23412,7 +23673,7 @@
         "onceDelay": "1",
         "topic": "",
         "x": 140,
-        "y": 320,
+        "y": 380,
         "wires": [
             [
                 "e9fba05140f9c559"
@@ -23431,7 +23692,7 @@
         "initialize": "",
         "finalize": "",
         "x": 700,
-        "y": 320,
+        "y": 380,
         "wires": []
     },
     {
@@ -23448,7 +23709,7 @@
         "payloadType": "json",
         "block": false,
         "x": 510,
-        "y": 320,
+        "y": 380,
         "wires": [
             [
                 "49e45671dc6dde59"
@@ -23467,8 +23728,8 @@
         "initialize": "\n// Code added here will be run once\n// whenever the node is deployed.\nlet setbotlist = function (guid = msg.payload.guid, botlist = msg.payload.botlist) {\n    \n    let promise = new Promise((resolve, reject) => {\n        msg.resolve = resolve;\n        msg.reject = reject;\n    });\n    \n\n    msg.topic = guid+\"-botlist\";\n    msg.payload = botlist;\n\n    node.send(Object.assign({}, msg));\n    \n    return promise;\n};\n\nglobal.set('setbotlist', setbotlist);",
         "finalize": "",
         "libs": [],
-        "x": 1090,
-        "y": 140,
+        "x": 1190,
+        "y": 80,
         "wires": [
             [
                 "f8b6987bf7dab58f"
@@ -23487,8 +23748,8 @@
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "x": 910,
-        "y": 140,
+        "x": 1010,
+        "y": 80,
         "wires": [
             [
                 "562ff39eb84e69fd"
@@ -23506,8 +23767,9 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1420,
-        "y": 140,
+        "libs": [],
+        "x": 1520,
+        "y": 80,
         "wires": []
     },
     {
@@ -23523,8 +23785,8 @@
         "paramsType": "json",
         "payloadType": "json",
         "block": false,
-        "x": 1260,
-        "y": 140,
+        "x": 1360,
+        "y": 80,
         "wires": [
             [
                 "fae5e5360b112e39"
@@ -23542,8 +23804,9 @@
         "noerr": 0,
         "initialize": "\nlet setbot_status = function (botname = msg.topic, status = msg.payload) {\n    \n    let promise = new Promise((resolve, reject) => {\n        msg.resolve = resolve;\n        msg.reject = reject;\n    });\n    \n\n    msg.topic = botname;\n    msg.payload = status;\n\n    node.send(Object.assign({}, msg));\n    \n    return promise;\n};\n\nglobal.set('setbot_status', setbot_status);",
         "finalize": "",
-        "x": 1120,
-        "y": 200,
+        "libs": [],
+        "x": 1220,
+        "y": 140,
         "wires": [
             [
                 "546128bed7ba8244"
@@ -23562,8 +23825,8 @@
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "x": 920,
-        "y": 200,
+        "x": 1020,
+        "y": 140,
         "wires": [
             [
                 "0b70f554344ed103"
@@ -23581,8 +23844,9 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1500,
-        "y": 200,
+        "libs": [],
+        "x": 1600,
+        "y": 140,
         "wires": []
     },
     {
@@ -23598,8 +23862,8 @@
         "paramsType": "json",
         "payloadType": "json",
         "block": false,
-        "x": 1310,
-        "y": 200,
+        "x": 1410,
+        "y": 140,
         "wires": [
             [
                 "1a76aa7a7ff5c2e2"
@@ -23618,7 +23882,7 @@
         "initialize": "let guid = env.get(\"GOOGLEUID\");\nlet getbot_data = function (botname = msg.payload) {\n    \n    let promise = new Promise((resolve, reject) => {\n        msg.resolve = resolve;\n        msg.reject = reject;\n    });\n    \n\n    msg.topic = guid+\"-bots:\"+botname+\":data\";\n    msg.payload = [];\n\n    node.send(Object.assign({}, msg));\n    \n    return promise;\n};\n\nglobal.set('getbot_data', getbot_data);",
         "finalize": "",
         "libs": [],
-        "x": 1070,
+        "x": 310,
         "y": 440,
         "wires": [
             [
@@ -23638,7 +23902,7 @@
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "x": 900,
+        "x": 140,
         "y": 440,
         "wires": [
             [
@@ -23657,7 +23921,7 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1460,
+        "x": 700,
         "y": 440,
         "wires": []
     },
@@ -23674,7 +23938,7 @@
         "paramsType": "json",
         "payloadType": "json",
         "block": false,
-        "x": 1250,
+        "x": 490,
         "y": 440,
         "wires": [
             [
@@ -23694,8 +23958,8 @@
         "initialize": "let guid = env.get(\"GOOGLEUID\");\nlet setbot_data = function (volname = msg.topic, data = msg.payload) {\n    \n    let promise = new Promise((resolve, reject) => {\n        msg.resolve = resolve;\n        msg.reject = reject;\n    });\n    \n\n    msg.topic = volname;\n    msg.payload = data;\n\n    node.send(Object.assign({}, msg));\n    \n    return promise;\n};\n\nglobal.set('setbot_data', setbot_data);",
         "finalize": "",
         "libs": [],
-        "x": 1070,
-        "y": 260,
+        "x": 1170,
+        "y": 200,
         "wires": [
             [
                 "9b5160469297046a"
@@ -23714,8 +23978,8 @@
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "x": 900,
-        "y": 260,
+        "x": 1000,
+        "y": 200,
         "wires": [
             [
                 "a667c0dd847aa312"
@@ -23733,8 +23997,9 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1460,
-        "y": 260,
+        "libs": [],
+        "x": 1560,
+        "y": 200,
         "wires": []
     },
     {
@@ -23750,8 +24015,8 @@
         "paramsType": "json",
         "payloadType": "json",
         "block": false,
-        "x": 1250,
-        "y": 260,
+        "x": 1350,
+        "y": 200,
         "wires": [
             [
                 "4f05bd668da083ff"
@@ -23770,7 +24035,7 @@
         "initialize": "let guid = env.get(\"GOOGLEUID\");\nlet getbot_start_set = function (botname = msg.payload) {\n    \n    let promise = new Promise((resolve, reject) => {\n        msg.resolve = resolve;\n        msg.reject = reject;\n    });\n    \n\n    msg.topic = guid+\"-bots:\"+botname+\":start_set\";\n    msg.payload = [];\n\n    node.send(Object.assign({}, msg));\n    \n    return promise;\n};\n\nglobal.set('getbot_start_set', getbot_start_set);",
         "finalize": "",
         "libs": [],
-        "x": 1090,
+        "x": 330,
         "y": 500,
         "wires": [
             [
@@ -23790,7 +24055,7 @@
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "x": 900,
+        "x": 140,
         "y": 500,
         "wires": [
             [
@@ -23809,7 +24074,7 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1500,
+        "x": 740,
         "y": 500,
         "wires": []
     },
@@ -23826,7 +24091,7 @@
         "paramsType": "json",
         "payloadType": "json",
         "block": false,
-        "x": 1310,
+        "x": 550,
         "y": 500,
         "wires": [
             [
@@ -23846,8 +24111,8 @@
         "initialize": "\nlet setbot_ttp = function (botname = msg.topic, ttp = msg.payload) {\n    \n    let promise = new Promise((resolve, reject) => {\n        msg.resolve = resolve;\n        msg.reject = reject;\n    });\n    \n\n    msg.topic = botname;\n    msg.payload = ttp;\n\n    node.send(Object.assign({}, msg));\n    \n    return promise;\n};\n\nglobal.set('setbot_ttp', setbot_ttp);",
         "finalize": "",
         "libs": [],
-        "x": 1110,
-        "y": 380,
+        "x": 1210,
+        "y": 260,
         "wires": [
             [
                 "2b18414b4a3f8aaa"
@@ -23866,8 +24131,8 @@
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "x": 910,
-        "y": 380,
+        "x": 1010,
+        "y": 260,
         "wires": [
             [
                 "d7b39504af93e7f7"
@@ -23885,8 +24150,9 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1500,
-        "y": 380,
+        "libs": [],
+        "x": 1600,
+        "y": 260,
         "wires": []
     },
     {
@@ -23902,8 +24168,8 @@
         "paramsType": "json",
         "payloadType": "json",
         "block": false,
-        "x": 1310,
-        "y": 380,
+        "x": 1410,
+        "y": 260,
         "wires": [
             [
                 "6d62a92d5a53f020"
@@ -26314,7 +26580,7 @@
         "id": "8bb5f49c6991f30b",
         "type": "function",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "Старт",
         "func": "msg.payload = \"Старт\";\n\nreturn msg;",
         "outputs": 1,
@@ -26323,7 +26589,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 360,
+        "y": 340,
         "wires": [
             [
                 "44478e3953b12029"
@@ -26334,14 +26600,14 @@
         "id": "44478e3953b12029",
         "type": "telegrambot-notify",
         "z": "5df15275.2888ec",
-        "g": "f448f88c7c88caba",
+        "g": "814fe3ad47c48a59",
         "name": "",
         "bot": "848f142.6165868",
         "chatId": "454883204",
         "message": "",
         "parseMode": "",
         "x": 500,
-        "y": 360,
+        "y": 340,
         "wires": []
     },
     {
@@ -26613,7 +26879,8 @@
         "name": "",
         "links": [
             "e34a5b68.726ec8",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 1815,
         "y": 520,
@@ -26627,7 +26894,8 @@
         "name": "",
         "links": [
             "e34a5b68.726ec8",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 1535,
         "y": 320,
@@ -27729,7 +27997,8 @@
         "g": "352d50cd10bc5d42",
         "name": "to tester",
         "links": [
-            "1719022f8617153c"
+            "1719022f8617153c",
+            "2dbc5136fc56a8c1"
         ],
         "x": 2575,
         "y": 180,
@@ -31660,7 +31929,8 @@
         "name": "",
         "links": [
             "e34a5b68.726ec8",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 2115,
         "y": 460,
@@ -31810,7 +32080,8 @@
         "name": "",
         "links": [
             "e34a5b68.726ec8",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 1815,
         "y": 540,
@@ -31997,7 +32268,8 @@
         "name": "",
         "links": [
             "e34a5b68.726ec8",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 2075,
         "y": 260,
@@ -32127,7 +32399,8 @@
         "name": "",
         "links": [
             "e34a5b68.726ec8",
-            "f45f3249dbec7058"
+            "f45f3249dbec7058",
+            "889c32dad255eacd"
         ],
         "x": 1535,
         "y": 340,
@@ -32905,24 +33178,6 @@
         ]
     },
     {
-        "id": "80d51c26998038af",
-        "type": "debug",
-        "z": "5df15275.2888ec",
-        "g": "4db8c3813557a044",
-        "name": "",
-        "active": true,
-        "tosidebar": false,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payoad",
-        "statusType": "msg",
-        "x": 1070,
-        "y": 60,
-        "wires": []
-    },
-    {
         "id": "4f161f513865a513",
         "type": "function",
         "z": "ef9c825cf92ee31b",
@@ -32991,5 +33246,3575 @@
         "x": 1510,
         "y": 1360,
         "wires": []
+    },
+    {
+        "id": "eb82ec0d8388d754",
+        "type": "filter",
+        "z": "5df15275.2888ec",
+        "g": "422e384634a8793d",
+        "name": "filter off",
+        "property": "bot.onoff",
+        "propertyType": "msg",
+        "asArray": false,
+        "itemProperty": "",
+        "itemPropertyType": "item",
+        "rules": [
+            {
+                "t": "true",
+                "output": 1
+            }
+        ],
+        "checkall": "true",
+        "outputs": 1,
+        "x": 1160,
+        "y": 740,
+        "wires": [
+            [
+                "a7cb1741d2b70005"
+            ]
+        ]
+    },
+    {
+        "id": "a7cb1741d2b70005",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "g": "422e384634a8793d",
+        "name": "get candlestick",
+        "func": "\n\nfunction parseApiError(error) {\n  if (error.body) {\n    try {\n      var resp = JSON.parse(error.body);\n      return resp.msg;\n    } catch (error) {/* pass thru */ }\n  }\n  return \"Unknown error. Status code: \" + error.statsCode;\n}\n\nlet LBinance = global.get('gBinance');\nlet key = global.get('key');\nlet secret = global.get('secret');\n\nlet binance = new LBinance().options({\n  APIKEY: key,\n  APISECRET: secret,\n  \"reconnect\": false\n});\n\nlet moneta = msg.bot.settings.moneta;\nlet deep = Number(msg.bot.settings.ma2);\n\n//node.warn(binance);\n\n\n//msg.payload = \"qjson.status\";\n\nbinance.useServerTime(function () {\n  binance.candlesticks(moneta, \"1m\", (error, ticks, symbol) => {\n    // console.info(\"candlesticks()\", ticks);\n    // let last_tick = ticks[ticks.length - 1];\n    // let [time, open, high, low, close, volume, closeTime, assetVolume, trades, buyBaseVolume, buyAssetVolume, ignored] = ticks;\n    //console.info(symbol+\" last close: \"+close);\n    if (error) {\n      var errorMsg = parseApiError(error) + \", moneta:\" + moneta;\n      node.error(errorMsg, msg);\n\n      msg.err = error;\n      node.status({ fill: \"red\", shape: \"ring\", text: errorMsg });\n\n      node.send(msg);\n      //return [msg, null];\n\n    }\n\n    msg.payload = ticks;\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n    //return;\n\n  }, { limit: deep });\n\n});\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "gBinance",
+                "module": "node-binance-api"
+            }
+        ],
+        "x": 1360,
+        "y": 740,
+        "wires": [
+            [
+                "2b846e417fd20188"
+            ]
+        ],
+        "inputLabels": [
+            "orderid, moneta"
+        ],
+        "outputLabels": [
+            "status"
+        ],
+        "icon": "font-awesome/fa-compress"
+    },
+    {
+        "id": "76ccec41af84b9dd",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "g": "422e384634a8793d",
+        "name": "расчет и запись MA flow.set",
+        "func": "\n\nlet candles = msg.payload;\n\n\nlet heiken = candles.map(function(tick){\n  //  node.warn(tick);\n    \n    \n    return (Number(tick[1]) + Number(tick[2]) + Number(tick[3]) + Number(tick[4]))/4;\n});\n\n\n//node.warn(heiken);\nmsg.heiken = heiken;\n\n\nlet heiken_small = heiken.slice(-msg.bot.settings.ma1);\n\n//node.warn(heiken_small);\nlet sum_all = heiken.reduce(function(sum, current) {\n  return sum + current\n});\n\nlet sum_small = heiken_small.reduce(function(sum, current) {\n  return sum + current\n});\n\nmsg.bot.status.sr_ma_big = sum_all / msg.bot.settings.ma2;\nmsg.bot.status.sr_ma_small = sum_small / msg.bot.settings.ma1;\n\nlet volname = msg.bot.settings.botname + \"-MA-big\";\nflow.set(volname, msg.bot.status.sr_ma_big);\n\nlet volname2 = msg.bot.settings.botname + \"-MA-small\";\nflow.set(volname2, msg.bot.status.sr_ma_small);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b846e417fd20188",
+        "type": "switch",
+        "z": "5df15275.2888ec",
+        "g": "422e384634a8793d",
+        "name": "try second",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1550,
+        "y": 740,
+        "wires": [
+            [
+                "76ccec41af84b9dd"
+            ],
+            [
+                "94c9271545c13b40",
+                "a7cb1741d2b70005"
+            ]
+        ]
+    },
+    {
+        "id": "94c9271545c13b40",
+        "type": "debug",
+        "z": "5df15275.2888ec",
+        "g": "422e384634a8793d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1590,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "7a19b1d6c330e11b",
+        "type": "debug",
+        "z": "5df15275.2888ec",
+        "g": "814fe3ad47c48a59",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3370,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e89641932b189412",
+        "type": "comment",
+        "z": "245ee519b635b6cd",
+        "name": "Финиш трека. ",
+        "info": "",
+        "x": 2580,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "64c2eb23a2449a31",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "finish track",
+        "func": "//<трекер<\nlet trackname = \"track-\" + msg.botname;\nlet track = flow.get(trackname);\nlet start_node_time = new Date().getTime();\nlet steptitle = node.name;\n\nlet laststep = track[track.length - 1];\nlet last_node_end_time = laststep.end_node_time;\n\nlet firststep = track[0];\nlet first_node_start_time = firststep.start_node_time;\n\nlet duration_track = last_node_end_time - first_node_start_time;\n//>трекер>\n\n//msg.bot.busy = false;\n//>трекер>\nlet end_node_time = new Date().getTime();\nlet duration = end_node_time - start_node_time;\nlet duration_step = end_node_time - last_node_end_time;\ntrack.push({\n    \"steptitle\": steptitle,\n    \"start_node_time\": start_node_time,\n    \"end_node_time\": end_node_time,\n    \"duration_node\": duration,\n    \"duration_step\": duration_track //только для финишной ноды\n});\nflow.set(trackname, track);\n\nflow.set(msg.botname, 0);\n\nnode.status({ fill: \"green\", shape: \"dot\" });\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2690,
+        "y": 960,
+        "wires": [
+            [
+                "0d3a730d6d6975e3",
+                "0aa43d45b9c12f90",
+                "e3337df647905e5e",
+                "aeaf9268f1b86763",
+                "8202188da133e16b"
+            ]
+        ],
+        "icon": "font-awesome/fa-bolt"
+    },
+    {
+        "id": "0d3a730d6d6975e3",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "duration",
+        "func": "let trackname = \"track-\" + msg.botname;\nlet track = flow.get(trackname);\n\nlet laststep = track[track.length-1];\nlet firststep = track[0];\nlet last_node_end_time = laststep.end_node_time;\nlet first_node_start_time = firststep.start_node_time;\n\nlet duration = last_node_end_time - first_node_start_time;\n//node.warn(duration);\nmsg.payload = duration;\n\nif (duration > 1900){\n            //запись в журнал\n\n        \n        let botname2 = msg.botname;\n        let data2 = \"Длительноть трека -\"+duration;\n        const tilog = global.get('tilog')(botname2,data2);\n        tilog;\n        //запись в журнал\n    \n}\nif (duration > 15000) {\n    let botname2 = msg.botname;\n    let data2 = \"REBOOT - Длительноть трека -\" + duration;\n    const tilog = global.get('tilog')(botname2, data2);\n    tilog;\n        //запись в журнал\nreturn [null,msg];\n}\n    \nreturn [msg, null];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2900,
+        "y": 960,
+        "wires": [
+            [
+                "5bf74dd0ac66dd70"
+            ],
+            [
+                "ac1302114a232642",
+                "05b3d0c54f2edf21",
+                "d75ea94e1cb42713"
+            ]
+        ]
+    },
+    {
+        "id": "5bf74dd0ac66dd70",
+        "type": "ui_chart",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "group": "f244fee6.d2627",
+        "order": 0,
+        "width": "4",
+        "height": "7",
+        "label": "main track",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "ss",
+        "interpolate": "bezier",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "40",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9a244f",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 3070,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "889c32dad255eacd",
+        "type": "link in",
+        "z": "245ee519b635b6cd",
+        "name": "finish track setbotfree",
+        "links": [
+            "04e23e81161e4a2f",
+            "04f838f4dcf92c27",
+            "072c1d3a07edfbfb",
+            "159777891efadb83",
+            "197f2eae23350bde",
+            "1ee59cd0dcc3c69b",
+            "79c861d199df158e",
+            "563d3c7cf2cd4b45",
+            "6460e25babb0c7cc",
+            "720d521686c307c6",
+            "84de70195e8eeec9",
+            "36ab06a0e4700650",
+            "97c944361390ef7f",
+            "c687d087.0896d",
+            "d108b7f4de207c72",
+            "d2965d20fb057ea3",
+            "e0a18e1cc9e2532d",
+            "c55aa818edeee318",
+            "ff26ac7ccf964923",
+            "1b3e671be6b572d5",
+            "378e488cecf6ffc2",
+            "822a640986e32473",
+            "9a2a545194209ea6",
+            "c6b2e3e9d09dc7ab",
+            "24b7b6edbf44e542",
+            "0cf1654560ff06a3",
+            "1a5af93604004873",
+            "dc25556dfb0429b4",
+            "a70c78aeb96b6bba",
+            "ed7621f56d07dc08",
+            "334dc59dd4302182",
+            "9286f6c79084e809",
+            "6e33907944a00520",
+            "5146160565d82180",
+            "359f868e6a108b92",
+            "a5d9d2953ce99426",
+            "11aebd69afd877b4",
+            "a78e47ef4a583aa3",
+            "8bb50be67bb00371",
+            "46817b364f8c4463",
+            "168d6b39a90f0979",
+            "c750b1c8685c12f7",
+            "8bcbbf716ab8f8e9",
+            "7f0a9ffb2eb5b4d8",
+            "2794da7d6f473613",
+            "eb3c309974af1cf2",
+            "8517ca0472294dec",
+            "20729f025f688461",
+            "a462aac9c71276fd"
+        ],
+        "x": 2475,
+        "y": 960,
+        "wires": [
+            [
+                "8b1470f8433b6561",
+                "64c2eb23a2449a31"
+            ]
+        ]
+    },
+    {
+        "id": "1b2f305e8be1e040",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "dump msg",
+        "func": "let trackname = msg.botname+'-dumpmsg';\n//node.warn(trackname);\nlet dumpmsg = JSON.stringify(msg);\nflow.set(trackname, msg);\nreturn msg;\n",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2570,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "89d9e153bc36b3b8",
+        "type": "link in",
+        "z": "245ee519b635b6cd",
+        "name": "dump",
+        "links": [
+            "f3ba2f9026195dd2",
+            "59d8a18476243435",
+            "6bfb4baf5f0bda62",
+            "ed01713a0f7a87c7",
+            "ab5c06142b412e58",
+            "9c807c67d5893c3b",
+            "aef48af278abbb63",
+            "fdc19edac875acf3",
+            "99d6e48354b6a474",
+            "241445ccf5ab4e35",
+            "0080451aaafcadd8",
+            "3b088717ce222ea9",
+            "2869480f6ddecc85",
+            "8b1470f8433b6561",
+            "120969bfc4862a7d",
+            "1eb94b3ec3aae58d",
+            "617cef96efe3397b",
+            "728f0b8d88ea3459",
+            "3064611857547212",
+            "bf61541489fa3866"
+        ],
+        "x": 2455,
+        "y": 1160,
+        "wires": [
+            [
+                "1b2f305e8be1e040"
+            ]
+        ]
+    },
+    {
+        "id": "8b1470f8433b6561",
+        "type": "link out",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "links": [
+            "89d9e153bc36b3b8",
+            "366731da620fef8d"
+        ],
+        "x": 2515,
+        "y": 1020,
+        "wires": [],
+        "icon": "node-red/db.svg"
+    },
+    {
+        "id": "01acf0dd01e3c354",
+        "type": "comment",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "info": "",
+        "x": 1500,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e3337df647905e5e",
+        "type": "link out",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "links": [
+            "571abc978ba16b86"
+        ],
+        "x": 2855,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "f979e85e0e283bf8",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "сброс busy",
+        "func": "msg.payload = \"сброс busy - \" + msg.botname;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1730,
+        "y": 1140,
+        "wires": [
+            [
+                "cbfe9ca30807e2a1"
+            ]
+        ]
+    },
+    {
+        "id": "cbfe9ca30807e2a1",
+        "type": "telegrambot-notify",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "bot": "848f142.6165868",
+        "chatId": "454883204",
+        "message": "",
+        "parseMode": "",
+        "x": 1940,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "4441d38af1c978e2",
+        "type": "catch",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 2500,
+        "y": 1660,
+        "wires": [
+            [
+                "881acfdf2f6ab8d6",
+                "a5a32b7472e795b8",
+                "7b3b5c63654a0f34"
+            ]
+        ]
+    },
+    {
+        "id": "881acfdf2f6ab8d6",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "d": true,
+        "name": "msg = {}",
+        "func": "msg = {};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2680,
+        "y": 1620,
+        "wires": [
+            [
+                "4a9a0647d388b3fe"
+            ]
+        ]
+    },
+    {
+        "id": "4a9a0647d388b3fe",
+        "type": "redis-out",
+        "z": "245ee519b635b6cd",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "stop",
+        "obj": true,
+        "x": 2830,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "3f38c666fc01e8db",
+        "type": "debug",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2810,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "a5a32b7472e795b8",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "get dump",
+        "func": "\nlet trackname = msg.botname + '-dumpmsg';\nmsg.dump = flow.get(trackname);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2680,
+        "y": 1660,
+        "wires": [
+            [
+                "3f38c666fc01e8db"
+            ]
+        ]
+    },
+    {
+        "id": "7b3b5c63654a0f34",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "catch all",
+        "func": "msg.payload = \"catch all - \" + msg.botname;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2680,
+        "y": 1720,
+        "wires": [
+            [
+                "b7ccdad680c25e71"
+            ]
+        ]
+    },
+    {
+        "id": "b7ccdad680c25e71",
+        "type": "telegrambot-notify",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "bot": "848f142.6165868",
+        "chatId": "454883204",
+        "message": "",
+        "parseMode": "",
+        "x": 2900,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "8202188da133e16b",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "update bot floors, finance triger",
+        "func": "let botname = msg.botname;\nlet guid = global.get('guid');\n\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet sumsales = 0;\nsales.all.forEach(function (element) {\n    sumsales = sumsales + element[5];\n\n});\n\nlet quotanal = 0;\nlet quotainorders = 0;\nlet basenal = Number(finance.startdepo) + Number(sumsales); \nlet baseinorders = 0;\n\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 1) {\n        baseinorders = baseinorders + Number(item[14]) * Number(item[3]);\n        basenal = basenal - Number(item[14]) * Number(item[3]);\n\n    }\n    if (item[7] === 2) {\n        quotanal = quotanal + Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n    if (item[7] === 3) {\n        quotainorders = quotainorders + Number(item[14]);\n        //quotanal = quotanal - Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n\n\n\n});\nfinance.quotanal = (Number(quotanal)).toFixed(msg.bot.settings.digitq);\nfinance.quotainorders = (Number(quotainorders)).toFixed(msg.bot.settings.digitq);\nfinance.basenal = (Number(basenal)).toFixed(msg.bot.settings.digitprice);\nfinance.baseinorders = (Number(baseinorders)).toFixed(msg.bot.settings.digitprice);\n\nlet p = Number(msg.bot.status.currentprice);\nfinance.depo = Number((Number(finance.quotanal) * p + Number(finance.quotainorders) * p + Number(finance.basenal) + Number(finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\nmsg.bot.finance = finance;\nmsg.bot.floors = floors;\nmsg.bot.sales = sales;\n\n\nglobal.set(msg.botname, msg.bot);\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2970,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aeaf9268f1b86763",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "setbot_status",
+        "func": "\n\nmsg.topic = msg.bot.settings.userid + \"-bots:\" + msg.bot.settings.botname + \":status\";\nmsg.bot.status.updated = new Date().getTime();\nmsg.payload = JSON.stringify(msg.bot.status);\nconst upd = global.get('setbot_status')(msg.topic, msg.payload);\n\n\nupd.then(upd => {\n\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2920,
+        "y": 1080,
+        "wires": [
+            []
+        ],
+        "icon": "font-awesome/fa-bolt"
+    },
+    {
+        "id": "ac1302114a232642",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "msg = {}",
+        "func": "\nmsg = {};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3220,
+        "y": 960,
+        "wires": [
+            [
+                "51198fc6541826b5",
+                "fb03ed7d9697762b"
+            ]
+        ]
+    },
+    {
+        "id": "51198fc6541826b5",
+        "type": "redis-out",
+        "z": "245ee519b635b6cd",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "stop",
+        "obj": true,
+        "x": 3370,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "fb03ed7d9697762b",
+        "type": "delay",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 3380,
+        "y": 1020,
+        "wires": [
+            [
+                "bb0aaf0448425db4"
+            ]
+        ]
+    },
+    {
+        "id": "bb0aaf0448425db4",
+        "type": "exec",
+        "z": "245ee519b635b6cd",
+        "command": "reboot",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 3530,
+        "y": 1020,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "05b3d0c54f2edf21",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "reboot",
+        "func": "\nmsg.payload = \"reboot - \" + msg.botname;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3210,
+        "y": 920,
+        "wires": [
+            [
+                "ee857fb859e973af"
+            ]
+        ]
+    },
+    {
+        "id": "ee857fb859e973af",
+        "type": "telegrambot-notify",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "bot": "848f142.6165868",
+        "chatId": "454883204",
+        "message": "",
+        "parseMode": "",
+        "x": 3380,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "e931df44d3fe8bc6",
+        "type": "delay",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 2680,
+        "y": 1520,
+        "wires": [
+            [
+                "efc690ebe686fdb3"
+            ]
+        ]
+    },
+    {
+        "id": "efc690ebe686fdb3",
+        "type": "exec",
+        "z": "245ee519b635b6cd",
+        "command": "reboot",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 2830,
+        "y": 1520,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8d25428694aef569",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "reboot",
+        "func": "msg.payload = \"reboot - \" + msg.botname;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2670,
+        "y": 1560,
+        "wires": [
+            [
+                "090b21acd1613081"
+            ]
+        ]
+    },
+    {
+        "id": "090b21acd1613081",
+        "type": "telegrambot-notify",
+        "z": "245ee519b635b6cd",
+        "name": "",
+        "bot": "848f142.6165868",
+        "chatId": "454883204",
+        "message": "",
+        "parseMode": "",
+        "x": 2840,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "d75ea94e1cb42713",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "name": "tilog",
+        "func": "var floors = msg.bot.floors;\nlet nonzeroflors = [];\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] != 0) {\n\n        nonzeroflors.push(item);\n\n    }\n});\n\nnonzeroflors = JSON.stringify(nonzeroflors || \"\", null, '\\t');\n\n\n\n\n\nlet botdump = JSON.stringify(msg.bot.ttp || \"\", null, '\\t');\n\n\n\n\nlet botname = msg.bot.settings.botname;\nlet data = \"reboot \" + botname + botdump + nonzeroflors;\n\n\nconst tilog = global.get('tilog')(botname, data);\n\ntilog.then(tilog => {\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    msg.error = error;\n    node.status({ fill: \"red\", shape: \"ring\" });\n\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3210,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7dee93c36ca1e396",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "getbotlist",
+        "func": "\nlet guid = global.get('guid');\n\nconst gbl = global.get('getbotlist')(guid);\n\ngbl.then(gbl => {\n\n    msg.payload = gbl;\n\n    global.set('botlist',JSON.parse(gbl));\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "4c0a3509cff3e63e"
+            ]
+        ]
+    },
+    {
+        "id": "4c0a3509cff3e63e",
+        "type": "json",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 490,
+        "y": 320,
+        "wires": [
+            [
+                "37d8e8f8d12efbae"
+            ]
+        ]
+    },
+    {
+        "id": "37d8e8f8d12efbae",
+        "type": "split",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "",
+        "splt": "1",
+        "spltType": "len",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [
+                "492a012bb9ae1cde"
+            ]
+        ]
+    },
+    {
+        "id": "492a012bb9ae1cde",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "getbot_settings",
+        "func": "msg.botname = msg.payload;\nlet bot = {};\nmsg.bot = bot;\nconst gb = global.get('getbot_settings')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.settings = JSON.parse(gb);\n\n    global.set(msg.botname + \"-settings\", msg.bot.settings);\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.done();\n    node.send(msg);\n\n}).catch(error => {\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 320,
+        "wires": [
+            [
+                "a72c3ebff4a8f801"
+            ]
+        ]
+    },
+    {
+        "id": "a72c3ebff4a8f801",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "getbot_status",
+        "func": "\nconst gb = global.get('getbot_status')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.status = JSON.parse(gb);\n    \n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 320,
+        "wires": [
+            [
+                "f5c2d0f574f4a8ef"
+            ]
+        ]
+    },
+    {
+        "id": "f5c2d0f574f4a8ef",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "getbot_data",
+        "func": "\n\nlet botname = msg.botname;\n\nconst gb = global.get('getbot_data')(botname);\n\ngb.then(gb => {\n    //node.warn(gb);\n\n    let bot = {\n        ...msg.bot,\n        \"floors\": JSON.parse(gb.floors),\n        \"finance\": JSON.parse(gb.finance),\n        \"sales\": JSON.parse(gb.sales)\n    };\n\n    msg.bot = bot;\n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 320,
+        "wires": [
+            [
+                "8b98d49dbcdcdce6"
+            ]
+        ]
+    },
+    {
+        "id": "8b98d49dbcdcdce6",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "getbot_ttp",
+        "func": "\nconst gb = global.get('getbot_ttp')(msg.botname);\n\ngb.then(gb => {\n    msg.bot.ttp = JSON.parse(gb);\n\n    global.set(msg.botname + \"-ttp\", msg.bot.ttp);\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    node.send(msg);\n\n}).catch(error => {\n    \n    \n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 320,
+        "wires": [
+            [
+                "12857cf6a578d632"
+            ]
+        ]
+    },
+    {
+        "id": "c395995a8acc09f4",
+        "type": "inject",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "start onload",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 320,
+        "wires": [
+            [
+                "7dee93c36ca1e396",
+                "7f94504b1dc45263"
+            ]
+        ]
+    },
+    {
+        "id": "12857cf6a578d632",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "getbot_onoff",
+        "func": "const gb = global.get('getbot_onoff')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.onoff = JSON.parse(gb);\n\n    global.set(msg.botname + \"-onoff\", msg.bot.onoff);\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    node.send(msg);\n\n}).catch(error => {\n\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1550,
+        "y": 320,
+        "wires": [
+            [
+                "b2b7ee5c028e4006"
+            ]
+        ]
+    },
+    {
+        "id": "b2b7ee5c028e4006",
+        "type": "filter",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "filter off",
+        "property": "bot.onoff",
+        "propertyType": "msg",
+        "asArray": false,
+        "itemProperty": "",
+        "itemPropertyType": "item",
+        "rules": [
+            {
+                "t": "true",
+                "output": 1
+            }
+        ],
+        "checkall": "true",
+        "outputs": 1,
+        "x": 1720,
+        "y": 320,
+        "wires": [
+            [
+                "a35f57ec75ccb698"
+            ]
+        ]
+    },
+    {
+        "id": "a35f57ec75ccb698",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "get candlestick",
+        "func": "\n\nfunction parseApiError(error) {\n  if (error.body) {\n    try {\n      var resp = JSON.parse(error.body);\n      return resp.msg;\n    } catch (error) {/* pass thru */ }\n  }\n  return \"Unknown error. Status code: \" + error.statsCode;\n}\n\nlet LBinance = global.get('gBinance');\nlet key = global.get('key');\nlet secret = global.get('secret');\n\nlet binance = new LBinance().options({\n  APIKEY: key,\n  APISECRET: secret,\n  \"reconnect\": false\n});\n\nlet moneta = msg.bot.settings.moneta;\nlet deep = Number(msg.bot.settings.ma2);\n\n//node.warn(binance);\n\n\n//msg.payload = \"qjson.status\";\n\nbinance.useServerTime(function () {\n  binance.candlesticks(moneta, \"1m\", (error, ticks, symbol) => {\n    // console.info(\"candlesticks()\", ticks);\n    // let last_tick = ticks[ticks.length - 1];\n    // let [time, open, high, low, close, volume, closeTime, assetVolume, trades, buyBaseVolume, buyAssetVolume, ignored] = ticks;\n    //console.info(symbol+\" last close: \"+close);\n    if (error) {\n      var errorMsg = parseApiError(error) + \", moneta:\" + moneta;\n      node.error(errorMsg, msg);\n\n      msg.err = error;\n      node.status({ fill: \"red\", shape: \"ring\", text: errorMsg });\n\n      node.send(msg);\n      //return [msg, null];\n\n    }\n\n    msg.payload = ticks;\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n    //return;\n\n  }, { limit: deep });\n\n});\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "gBinance",
+                "module": "node-binance-api"
+            }
+        ],
+        "x": 1920,
+        "y": 320,
+        "wires": [
+            [
+                "28158effdf3f1c1d"
+            ]
+        ],
+        "inputLabels": [
+            "orderid, moneta"
+        ],
+        "outputLabels": [
+            "status"
+        ],
+        "icon": "font-awesome/fa-compress"
+    },
+    {
+        "id": "468da73a6eff2f47",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "расчет и запись MA flow.set",
+        "func": "\n\nlet candles = msg.payload;\n\n\nlet heiken = candles.map(function(tick){\n  //  node.warn(tick);\n    \n    \n    return (Number(tick[1]) + Number(tick[2]) + Number(tick[3]) + Number(tick[4]))/4;\n});\n\n\n//node.warn(heiken);\nmsg.heiken = heiken;\n\n\nlet heiken_small = heiken.slice(-msg.bot.settings.ma1);\n\n//node.warn(heiken_small);\nlet sum_all = heiken.reduce(function(sum, current) {\n  return sum + current\n});\n\nlet sum_small = heiken_small.reduce(function(sum, current) {\n  return sum + current\n});\n\nmsg.bot.status.sr_ma_big = sum_all / msg.bot.settings.ma2;\nmsg.bot.status.sr_ma_small = sum_small / msg.bot.settings.ma1;\n\nlet volname = msg.bot.settings.botname + \"-MA-big\";\nflow.set(volname, msg.bot.status.sr_ma_big);\n\nlet volname2 = msg.bot.settings.botname + \"-MA-small\";\nflow.set(volname2, msg.bot.status.sr_ma_small);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 300,
+        "wires": [
+            [
+                "cb9632fa1e839402"
+            ]
+        ]
+    },
+    {
+        "id": "28158effdf3f1c1d",
+        "type": "switch",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "try second",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2110,
+        "y": 320,
+        "wires": [
+            [
+                "468da73a6eff2f47"
+            ],
+            [
+                "7fa3648e20936c23",
+                "a35f57ec75ccb698"
+            ]
+        ]
+    },
+    {
+        "id": "7fa3648e20936c23",
+        "type": "debug",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2150,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "12c8d3fef9235170",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "сброс счетчиков busy",
+        "func": "//сброс счетчиков busy\nflow.set(msg.botname, 0);\nflow.set(msg.botname + \"-ttp\", 0);\nmsg.bot.busy = false;\nmsg.bot.ttp.ttpbusy = false;\n\nglobal.set(msg.botname + \"-busy\", msg.bot.busy);\nglobal.set(msg.botname + \"-ttpbusy\", msg.bot.ttp.ttpbusy);\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3250,
+        "y": 300,
+        "wires": [
+            [
+                "2c1dbffd57b83216"
+            ]
+        ],
+        "icon": "font-awesome/fa-bolt"
+    },
+    {
+        "id": "cb9632fa1e839402",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "getprice, MA",
+        "func": "\nlet moneta = msg.bot.settings.moneta;\n\nconst gp = global.get('getprice')(moneta);\n\ngp.then(gp => {\n\n    msg.bot.status.currentprice = gp;\n    let volname = msg.bot.settings.botname + \"-MA-big\";\n    msg.bot.status.sr_ma_big = Number(flow.get(volname));\n\n    let volname2 = msg.bot.settings.botname + \"-MA-small\";\n    msg.bot.status.sr_ma_small = Number(flow.get(volname2));\n\n\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2590,
+        "y": 300,
+        "wires": [
+            [
+                "1368293d06e8e7d1"
+            ]
+        ]
+    },
+    {
+        "id": "1368293d06e8e7d1",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "MA zapret calculate",
+        "func": "\nmsg.bot.status.currentprice = Number(msg.bot.status.currentprice);\n\nif ((msg.bot.status.currentprice > msg.bot.status.sr_ma_big) && (msg.bot.status.currentprice > msg.bot.status.sr_ma_small)) {\n    msg.bot.zapret_na_zakup = false;\n    msg.bot.status.rezhim = \"МА - закуп разрешен\";\n\n} else {\n    msg.bot.zapret_na_zakup = true;\n    msg.bot.status.rezhim = \"МА - закуп запрещён\";\n\n}\nglobal.set(msg.botname + \"-status\", msg.bot.status);\nnode.status({ fill: \"green\", shape: \"dot\" });\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2800,
+        "y": 300,
+        "wires": [
+            [
+                "f77f4875a21c3904"
+            ]
+        ]
+    },
+    {
+        "id": "f77f4875a21c3904",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "пересчет депо",
+        "func": "\nlet p = Number(msg.bot.status.currentprice);\nmsg.bot.finance.depo = Number((Number(msg.bot.finance.quotanal) * p + Number(msg.bot.finance.quotainorders) * p + Number(msg.bot.finance.basenal) + Number(msg.bot.finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\nlet data = {\n    \"floors\": msg.bot.floors,\n    \"finance\": msg.bot.finance,\n    \"sales\": msg.bot.sales\n}\n\nglobal.set(msg.botname + \"-data\", data);\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3020,
+        "y": 300,
+        "wires": [
+            [
+                "12c8d3fef9235170"
+            ]
+        ]
+    },
+    {
+        "id": "7f94504b1dc45263",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "Старт",
+        "func": "msg.payload = \"Старт\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 380,
+        "wires": [
+            [
+                "dd6736649d0588fa"
+            ]
+        ]
+    },
+    {
+        "id": "dd6736649d0588fa",
+        "type": "telegrambot-notify",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "",
+        "bot": "848f142.6165868",
+        "chatId": "454883204",
+        "message": "",
+        "parseMode": "",
+        "x": 500,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "2c1dbffd57b83216",
+        "type": "debug",
+        "z": "245ee519b635b6cd",
+        "g": "804213ed1f644c18",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3290,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "0aa43d45b9c12f90",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "d": true,
+        "g": "1fa5fd47f525b091",
+        "name": "get flow.track",
+        "func": "\n//<трекер<\nlet trackname = \"track-\" + msg.botname;\nlet track = flow.get(trackname);\nlet start_node_time = Date.parse(new Date())/1000;\nlet steptitle = node.name;\n//>трекер>\n\nmsg.payload = track;\n\n//<трекер< \n //   let end_node_time = Date.parse(new Date())/1000;\n //   let duration = end_node_time-start_node_time;\n //   track.push([steptitle,start_node_time,end_node_time,duration]);\n //   msg.track = track;\n //   flow.set(\"track\", track);\n//>трекер>\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3060,
+        "y": 1380,
+        "wires": [
+            [
+                "13b1d3583f1ff591",
+                "e0de3f729ea19982"
+            ]
+        ]
+    },
+    {
+        "id": "6da86ebecb22d774",
+        "type": "inject",
+        "z": "245ee519b635b6cd",
+        "g": "1fa5fd47f525b091",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2760,
+        "y": 1320,
+        "wires": [
+            [
+                "0aa43d45b9c12f90"
+            ]
+        ]
+    },
+    {
+        "id": "13b1d3583f1ff591",
+        "type": "debug",
+        "z": "245ee519b635b6cd",
+        "g": "1fa5fd47f525b091",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3230,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "e0de3f729ea19982",
+        "type": "ui_table",
+        "z": "245ee519b635b6cd",
+        "d": true,
+        "g": "1fa5fd47f525b091",
+        "group": "a328c3be.7f91c8",
+        "name": "",
+        "order": 2,
+        "width": "14",
+        "height": "9",
+        "columns": [
+            {
+                "field": "steptitle",
+                "title": "steptitle",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "duration_node",
+                "title": "duration_node",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "duration_step",
+                "title": "duration_step",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 3230,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "b55055ca49efabfd",
+        "type": "comment",
+        "z": "245ee519b635b6cd",
+        "g": "1fa5fd47f525b091",
+        "name": "Отладка",
+        "info": "",
+        "x": 2600,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "7bd877588df0f86b",
+        "type": "delay",
+        "z": "245ee519b635b6cd",
+        "g": "1fa5fd47f525b091",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 2650,
+        "y": 1380,
+        "wires": [
+            [
+                "0aa43d45b9c12f90"
+            ]
+        ]
+    },
+    {
+        "id": "df24b9ca4d93ad81",
+        "type": "redis-in",
+        "z": "245ee519b635b6cd",
+        "g": "1fa5fd47f525b091",
+        "server": "f120eab2.0a60a8",
+        "command": "subscribe",
+        "name": "",
+        "topic": "start1",
+        "obj": true,
+        "timeout": 0,
+        "x": 2510,
+        "y": 1380,
+        "wires": [
+            [
+                "7bd877588df0f86b"
+            ]
+        ]
+    },
+    {
+        "id": "cbcbc078630448f8",
+        "type": "trigger",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-10",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 530,
+        "y": 520,
+        "wires": [
+            [
+                "bf1c618bb6273bab"
+            ]
+        ]
+    },
+    {
+        "id": "2369e086307de62c",
+        "type": "redis-in",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "server": "f120eab2.0a60a8",
+        "command": "subscribe",
+        "name": "",
+        "topic": "stop",
+        "obj": true,
+        "timeout": 0,
+        "x": 130,
+        "y": 580,
+        "wires": [
+            [
+                "db686d9aed9b7051"
+            ]
+        ]
+    },
+    {
+        "id": "db686d9aed9b7051",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "stop",
+        "func": "msg.reset = true;\nmsg.payload = \"\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 580,
+        "wires": [
+            [
+                "cbcbc078630448f8"
+            ]
+        ]
+    },
+    {
+        "id": "dced5cf0e90e67f3",
+        "type": "redis-in",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "server": "f120eab2.0a60a8",
+        "command": "subscribe",
+        "name": "",
+        "topic": "start",
+        "obj": true,
+        "timeout": 0,
+        "x": 130,
+        "y": 520,
+        "wires": [
+            [
+                "7533ed3ddff0e4d2"
+            ]
+        ]
+    },
+    {
+        "id": "7533ed3ddff0e4d2",
+        "type": "delay",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 290,
+        "y": 520,
+        "wires": [
+            [
+                "cbcbc078630448f8"
+            ]
+        ]
+    },
+    {
+        "id": "9b09688a79b35c51",
+        "type": "redis-in",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "server": "f120eab2.0a60a8",
+        "command": "subscribe",
+        "name": "",
+        "topic": "start1",
+        "obj": true,
+        "timeout": 0,
+        "x": 490,
+        "y": 580,
+        "wires": [
+            [
+                "73f369bb27e87375"
+            ]
+        ]
+    },
+    {
+        "id": "bf1c618bb6273bab",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "getbotlist",
+        "func": "let a = global.get(\"botlist\");\nmsg.payload = a;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 520,
+        "wires": [
+            [
+                "2f5a7235513830dc"
+            ]
+        ]
+    },
+    {
+        "id": "2f5a7235513830dc",
+        "type": "split",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "",
+        "splt": "1",
+        "spltType": "len",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 870,
+        "y": 520,
+        "wires": [
+            [
+                "d7e83336f1c8bf06"
+            ]
+        ]
+    },
+    {
+        "id": "d7e83336f1c8bf06",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "getbot global",
+        "func": "\nlet botname = msg.payload;\nmsg.botname = botname;\nlet bot = global.get(botname);\nmsg.bot = bot;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 520,
+        "wires": [
+            [
+                "4d906b8092a235b0"
+            ]
+        ]
+    },
+    {
+        "id": "73f369bb27e87375",
+        "type": "delay",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 650,
+        "y": 580,
+        "wires": [
+            [
+                "bf1c618bb6273bab"
+            ]
+        ]
+    },
+    {
+        "id": "4d906b8092a235b0",
+        "type": "filter",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "filter off",
+        "property": "bot.onoff",
+        "propertyType": "msg",
+        "asArray": false,
+        "itemProperty": "",
+        "itemPropertyType": "item",
+        "rules": [
+            {
+                "t": "true",
+                "output": 1
+            }
+        ],
+        "checkall": "true",
+        "outputs": 1,
+        "x": 1220,
+        "y": 520,
+        "wires": [
+            [
+                "2b8fae6ba1dc61cc"
+            ]
+        ]
+    },
+    {
+        "id": "2b8fae6ba1dc61cc",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "get candlestick",
+        "func": "\n\nfunction parseApiError(error) {\n  if (error.body) {\n    try {\n      var resp = JSON.parse(error.body);\n      return resp.msg;\n    } catch (error) {/* pass thru */ }\n  }\n  return \"Unknown error. Status code: \" + error.statsCode;\n}\n\nlet LBinance = global.get('gBinance');\nlet key = global.get('key');\nlet secret = global.get('secret');\n\nlet binance = new LBinance().options({\n  APIKEY: key,\n  APISECRET: secret,\n  \"reconnect\": false\n});\n\nlet moneta = msg.bot.settings.moneta;\nlet deep = Number(msg.bot.settings.ma2);\n\n//node.warn(binance);\n\n\n//msg.payload = \"qjson.status\";\n\nbinance.useServerTime(function () {\n  binance.candlesticks(moneta, \"1m\", (error, ticks, symbol) => {\n    // console.info(\"candlesticks()\", ticks);\n    // let last_tick = ticks[ticks.length - 1];\n    // let [time, open, high, low, close, volume, closeTime, assetVolume, trades, buyBaseVolume, buyAssetVolume, ignored] = ticks;\n    //console.info(symbol+\" last close: \"+close);\n    if (error) {\n      var errorMsg = parseApiError(error) + \", moneta:\" + moneta;\n      node.error(errorMsg, msg);\n\n      msg.err = error;\n      node.status({ fill: \"red\", shape: \"ring\", text: errorMsg });\n\n      node.send(msg);\n      //return [msg, null];\n\n    }\n\n    msg.payload = ticks;\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n    //return;\n\n  }, { limit: deep });\n\n});\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "gBinance",
+                "module": "node-binance-api"
+            }
+        ],
+        "x": 1420,
+        "y": 520,
+        "wires": [
+            [
+                "497fa7608e82d7ca"
+            ]
+        ],
+        "inputLabels": [
+            "orderid, moneta"
+        ],
+        "outputLabels": [
+            "status"
+        ],
+        "icon": "font-awesome/fa-compress"
+    },
+    {
+        "id": "7506aeb725ab94f8",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "расчет и запись MA flow.set",
+        "func": "\n\nlet candles = msg.payload;\n\n\nlet heiken = candles.map(function(tick){\n  //  node.warn(tick);\n    \n    \n    return (Number(tick[1]) + Number(tick[2]) + Number(tick[3]) + Number(tick[4]))/4;\n});\n\n\n//node.warn(heiken);\nmsg.heiken = heiken;\n\n\nlet heiken_small = heiken.slice(-msg.bot.settings.ma1);\n\n//node.warn(heiken_small);\nlet sum_all = heiken.reduce(function(sum, current) {\n  return sum + current\n});\n\nlet sum_small = heiken_small.reduce(function(sum, current) {\n  return sum + current\n});\n\nmsg.bot.status.sr_ma_big = sum_all / msg.bot.settings.ma2;\nmsg.bot.status.sr_ma_small = sum_small / msg.bot.settings.ma1;\n\nlet volname = msg.bot.settings.botname + \"-MA-big\";\nflow.set(volname, msg.bot.status.sr_ma_big);\n\nlet volname2 = msg.bot.settings.botname + \"-MA-small\";\nflow.set(volname2, msg.bot.status.sr_ma_small);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "497fa7608e82d7ca",
+        "type": "switch",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "try second",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1610,
+        "y": 520,
+        "wires": [
+            [
+                "7506aeb725ab94f8"
+            ],
+            [
+                "7578e9167291e34f",
+                "2b8fae6ba1dc61cc"
+            ]
+        ]
+    },
+    {
+        "id": "7578e9167291e34f",
+        "type": "debug",
+        "z": "245ee519b635b6cd",
+        "g": "8132589a9074621b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1650,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "785d4927091ba9f2",
+        "type": "inject",
+        "z": "245ee519b635b6cd",
+        "g": "cd66d4bac998a022",
+        "name": "0.015",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.01",
+        "topic": "",
+        "payloadType": "date",
+        "x": 1770,
+        "y": 100,
+        "wires": [
+            [
+                "f0b97d8aca12724e"
+            ]
+        ]
+    },
+    {
+        "id": "f0b97d8aca12724e",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "cd66d4bac998a022",
+        "name": "global.set(\"commision\", 0.075)",
+        "func": "global.set(\"commision\", 0.075);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1990,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aac6db2bf4e1947b",
+        "type": "inject",
+        "z": "245ee519b635b6cd",
+        "g": "cd66d4bac998a022",
+        "name": "detail",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.01",
+        "topic": "",
+        "payload": "detail",
+        "payloadType": "str",
+        "x": 1770,
+        "y": 140,
+        "wires": [
+            [
+                "ba94054bccbcfdd5"
+            ]
+        ]
+    },
+    {
+        "id": "ba94054bccbcfdd5",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "cd66d4bac998a022",
+        "name": "global.set(\"logmode\", \"detail\");",
+        "func": "global.set(\"logmode\", \"detail\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1990,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf0b6ce7a8cc8d07",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "cd66d4bac998a022",
+        "name": "get env",
+        "func": "let guid = env.get(\"GOOGLEUID\");\nglobal.set(\"guid\", guid);\n\n//let botlistname = guid + \"-botlist\";\n//global.set(botlistname, []);\n\nlet key = env.get(\"BINANCEKEY\");\nlet secret = env.get(\"BINANCESECRET\");\nglobal.set(\"key\", key);\nglobal.set(\"secret\", secret);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1940,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "389cc2a8fd0c7754",
+        "type": "inject",
+        "z": "245ee519b635b6cd",
+        "g": "cd66d4bac998a022",
+        "name": "onLoad",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.01",
+        "topic": "",
+        "payloadType": "date",
+        "x": 1780,
+        "y": 60,
+        "wires": [
+            [
+                "cf0b6ce7a8cc8d07"
+            ]
+        ]
+    },
+    {
+        "id": "571abc978ba16b86",
+        "type": "link in",
+        "z": "245ee519b635b6cd",
+        "g": "1af14388992a8047",
+        "name": "",
+        "links": [
+            "e3337df647905e5e"
+        ],
+        "x": 955,
+        "y": 140,
+        "wires": [
+            [
+                "c85c5c554399a355"
+            ]
+        ]
+    },
+    {
+        "id": "c85c5c554399a355",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "1af14388992a8047",
+        "name": "tester___",
+        "func": "let start_node_time = new Date().getTime();\n\nnode.status({fill: \"green\", shape: \"ring\", text: start_node_time});\n    \n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ed82a33d8be2c33",
+        "type": "comment",
+        "z": "245ee519b635b6cd",
+        "g": "1af14388992a8047",
+        "name": "main track",
+        "info": "",
+        "x": 1050,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2dbc5136fc56a8c1",
+        "type": "link in",
+        "z": "245ee519b635b6cd",
+        "g": "1af14388992a8047",
+        "name": "",
+        "links": [
+            "365e54e1b5c77315",
+            "493e13639b3ed804"
+        ],
+        "x": 1205,
+        "y": 140,
+        "wires": [
+            [
+                "dfb05d8b0d1f8d27"
+            ]
+        ]
+    },
+    {
+        "id": "dfb05d8b0d1f8d27",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "1af14388992a8047",
+        "name": "tester___",
+        "func": "let start_node_time = new Date().getTime();\n\nnode.status({fill: \"green\", shape: \"ring\", text: start_node_time});\n    \n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a41be22b034acb0",
+        "type": "comment",
+        "z": "245ee519b635b6cd",
+        "g": "1af14388992a8047",
+        "name": "ttp track",
+        "info": "",
+        "x": 1300,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "113bd2062b804cb7",
+        "type": "comment",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "Старт трека",
+        "info": "",
+        "x": 150,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "6c645824589d87c6",
+        "type": "trigger",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 500,
+        "y": 960,
+        "wires": [
+            [
+                "60e17a1f95a71841"
+            ]
+        ]
+    },
+    {
+        "id": "59730fae320c985e",
+        "type": "delay",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 290,
+        "y": 960,
+        "wires": [
+            [
+                "6c645824589d87c6"
+            ]
+        ]
+    },
+    {
+        "id": "8474d2d5aae35427",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "stop",
+        "func": "let botname = \"syslog.txt\";\nlet data = \"Стоп\";\nconst syslog = global.get('tilog')(botname,data);\nsyslog;\n        \n\n        \nmsg.reset = true;\nmsg.payload = \"\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1020,
+        "wires": [
+            [
+                "6c645824589d87c6"
+            ]
+        ]
+    },
+    {
+        "id": "6cf4efe9f847bfc2",
+        "type": "redis-in",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "server": "f120eab2.0a60a8",
+        "command": "subscribe",
+        "name": "",
+        "topic": "stop",
+        "obj": true,
+        "timeout": 0,
+        "x": 130,
+        "y": 1020,
+        "wires": [
+            [
+                "8474d2d5aae35427"
+            ]
+        ]
+    },
+    {
+        "id": "93b3d602bec2d48e",
+        "type": "redis-in",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "server": "f120eab2.0a60a8",
+        "command": "subscribe",
+        "name": "",
+        "topic": "start",
+        "obj": true,
+        "timeout": 0,
+        "x": 130,
+        "y": 960,
+        "wires": [
+            [
+                "59730fae320c985e",
+                "8d161ca3e631064e"
+            ]
+        ]
+    },
+    {
+        "id": "cac567fd67fb38b6",
+        "type": "redis-in",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "server": "f120eab2.0a60a8",
+        "command": "subscribe",
+        "name": "",
+        "topic": "start1",
+        "obj": true,
+        "timeout": 0,
+        "x": 550,
+        "y": 900,
+        "wires": [
+            [
+                "60e17a1f95a71841"
+            ]
+        ]
+    },
+    {
+        "id": "841ea8c311d8d9fb",
+        "type": "comment",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "Семафор = \"Занято\"",
+        "info": "",
+        "x": 2020,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "01717c631850fad4",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "start",
+        "func": "//<трекер<\n////>только для стартовой ноды>\nlet track = [];\nlet start_track_time = new Date().getTime();\nlet start_node_time = start_track_time;\nlet steptitle = node.name;\n////>только для стартовой ноды>\n//>трекер>\n\n\n\nmsg.payload = global.get('guid');\n\n\n//>трекер>\n    let end_node_time = new Date().getTime();\n    let duration = end_node_time - start_node_time;\n    track.push({\n        \"steptitle\": steptitle,\n        \"start_node_time\": start_node_time,\n        \"end_node_time\": end_node_time,\n        \"duration_node\": duration,\n        \"duration_step\": 0\n    });\n    let trackname = \"track-\" + msg.botname;\n    flow.set(trackname, track);\n//>трекер>\nnode.status({ fill: \"green\", shape: \"ring\", text: duration });\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1870,
+        "y": 960,
+        "wires": [
+            [
+                "9de379cef9c2cbd0",
+                "3b088717ce222ea9"
+            ]
+        ]
+    },
+    {
+        "id": "d31750b032bb8580",
+        "type": "filter",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "filter off",
+        "property": "bot.onoff",
+        "propertyType": "msg",
+        "asArray": false,
+        "itemProperty": "",
+        "itemPropertyType": "item",
+        "rules": [
+            {
+                "t": "true",
+                "output": 1
+            }
+        ],
+        "checkall": "true",
+        "outputs": 1,
+        "x": 1300,
+        "y": 960,
+        "wires": [
+            [
+                "b59de952faf0ff5c"
+            ]
+        ]
+    },
+    {
+        "id": "b59de952faf0ff5c",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "getbot_busy",
+        "func": "msg.payload = msg.bot.busy;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 960,
+        "wires": [
+            [
+                "bef642f148d9d123"
+            ]
+        ]
+    },
+    {
+        "id": "bef642f148d9d123",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "busy === false ",
+        "func": "if (msg.bot.busy === false) {\n    msg.rate = 250;\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    return [msg, null, null];\n}\n\nelse {\n\n    let id = msg.botname;\n    msg.payload = [];\n\n    var count = flow.get(id) || 0;\n    count += 1;\n\n\n    node.status({ fill: \"blue\", shape: \"dot\" });\n\n\n    if (count > 16) {\n\n        let trackname = \"track-\" + msg.botname;\n        let lasttrack = flow.get(trackname);\n        msg.lasttrack = lasttrack;\n        lasttrack = JSON.stringify(lasttrack || \"\", null, '\\t');\n\n\n\n        //запись в журнал\n        let botname = \"syslog.txt\";\n        let data = \"Сброс \" + msg.botname + \" \\n \" + lasttrack;\n        const syslog = global.get('tilog')(botname, data);\n        syslog;\n\n        let botname2 = msg.botname;\n        let data2 = \"Сброс busy \\n \" + lasttrack;\n        const tilog = global.get('tilog')(botname2, data2);\n        tilog;\n        //запись в журнал\n\n        node.status({ fill: \"red\", shape: \"dot\" });\n\n        flow.set(id, 0);\n\n        msg.bot.busy = false;\n\n        return [null, null, msg];\n\n    }\n    flow.set(id, count);\n    return [null, msg, null];\n}\n\n\n\n\n\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1660,
+        "y": 960,
+        "wires": [
+            [
+                "01717c631850fad4"
+            ],
+            [],
+            [
+                "b962a2a2c976d1fe",
+                "f979e85e0e283bf8",
+                "01717c631850fad4"
+            ]
+        ],
+        "icon": "font-awesome/fa-bolt"
+    },
+    {
+        "id": "9de379cef9c2cbd0",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "service step count",
+        "func": "//<трекер<\nlet trackname = \"track-\" + msg.botname;\nlet track = flow.get(trackname);\nlet start_node_time = new Date().getTime();\nlet steptitle = node.name;\n\nlet laststep = track[track.length - 1];\nlet last_node_end_time = laststep.end_node_time;\n//>трекер>\n\n//msg.bot.busy = true;\n\nlet id = \"srv-\" + msg.botname;\nvar count = flow.get(id) || 0;\ncount += 1;\n//node.warn(count);\nflow.set(id, count);\nif (count >= 10) {\n    msg.service = true;\n    flow.set(id, 0);\n} else {\n    msg.service = false;\n\n}\nnode.status({ fill: \"green\", shape: \"dot\" });\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2030,
+        "y": 960,
+        "wires": [
+            [
+                "f1fd44e398defcad",
+                "60dd7d98d997b0b2"
+            ]
+        ],
+        "icon": "font-awesome/fa-bolt"
+    },
+    {
+        "id": "60dd7d98d997b0b2",
+        "type": "debug",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2030,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "8d161ca3e631064e",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "syslog",
+        "func": "let botname = \"syslog.txt\";\nlet data = \" \\n \\n Старт\";\nconst tilog = global.get('tilog')(botname,data);\n\ntilog.then(tilog => {\n\n\n        node.status({fill:\"green\",shape:\"dot\"});\n    node.send(msg);\n     \n    \n\n}).catch(error => {\n    \n    msg.error = error;\n    node.status({fill:\"red\",shape: \"ring\"});\n    \n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "820e6838ccce8ebc",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "syslog",
+        "func": "let botname = \"syslog.txt\";\nlet data = \"Стоп\";\nconst tilog = global.get('tilog')(botname,data);\n\ntilog.then(tilog => {\n\n\n        node.status({fill:\"green\",shape:\"dot\"});\n    node.send(msg);\n     \n    \n\n}).catch(error => {\n    \n    msg.error = error;\n    node.status({fill:\"red\",shape: \"ring\"});\n    \n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1fd44e398defcad",
+        "type": "link out",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "",
+        "links": [
+            "9479aab7ed42de81",
+            "4ccca7de15742d16"
+        ],
+        "x": 2255,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "644a4d136e063982",
+        "type": "debug",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "60e17a1f95a71841",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "getbotlist",
+        "func": "let a = global.get(\"botlist\");\nmsg.payload = a;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 960,
+        "wires": [
+            [
+                "8dc6251aa4f9b385"
+            ]
+        ]
+    },
+    {
+        "id": "8dc6251aa4f9b385",
+        "type": "split",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "",
+        "splt": "1",
+        "spltType": "len",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 910,
+        "y": 960,
+        "wires": [
+            [
+                "3225e0a3c672a928"
+            ]
+        ]
+    },
+    {
+        "id": "3225e0a3c672a928",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "getbot global",
+        "func": "\nlet botname = msg.payload;\nmsg.botname = botname;\nlet bot = global.get(botname);\nmsg.bot = bot;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 960,
+        "wires": [
+            [
+                "644a4d136e063982",
+                "d31750b032bb8580"
+            ]
+        ]
+    },
+    {
+        "id": "b962a2a2c976d1fe",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "get dump",
+        "func": "\nlet trackname = msg.botname + '-dumpmsg';\nmsg.dump = flow.get(trackname);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1720,
+        "y": 1080,
+        "wires": [
+            [
+                "de0165cc640bfd5f"
+            ]
+        ]
+    },
+    {
+        "id": "de0165cc640bfd5f",
+        "type": "debug",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1870,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "3b088717ce222ea9",
+        "type": "link out",
+        "z": "245ee519b635b6cd",
+        "g": "b7fe2ed54eb759c7",
+        "name": "",
+        "links": [
+            "89d9e153bc36b3b8",
+            "366731da620fef8d"
+        ],
+        "x": 1895,
+        "y": 1000,
+        "wires": [],
+        "icon": "node-red/db.svg"
+    },
+    {
+        "id": "9479aab7ed42de81",
+        "type": "link in",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "links": [
+            "40175d8a.67b97c",
+            "7e6df2c2.aa43bc",
+            "f1fd44e398defcad"
+        ],
+        "x": 95,
+        "y": 1600,
+        "wires": [
+            [
+                "825c2644ad8db30b",
+                "6761368fdaa06112"
+            ]
+        ]
+    },
+    {
+        "id": "6761368fdaa06112",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "getprice, MA",
+        "func": "\nlet moneta = msg.bot.settings.moneta;\n\nconst gp = global.get('getprice')(moneta);\n\ngp.then(gp => {\n\n    msg.bot.status.currentprice = gp;\n    let volname = msg.bot.settings.botname + \"-MA-big\";\n    msg.bot.status.sr_ma_big = Number(flow.get(volname));\n\n    let volname2 = msg.bot.settings.botname + \"-MA-small\";\n    msg.bot.status.sr_ma_small = Number(flow.get(volname2));\n\n\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 1600,
+        "wires": [
+            [
+                "61b7c0dba92d9bf5"
+            ]
+        ]
+    },
+    {
+        "id": "825c2644ad8db30b",
+        "type": "debug",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 270,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "61b7c0dba92d9bf5",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "MA zapret calculate",
+        "func": "\nmsg.bot.status.currentprice = Number(msg.bot.status.currentprice);\n\nif ((msg.bot.status.currentprice > msg.bot.status.sr_ma_big) && (msg.bot.status.currentprice > msg.bot.status.sr_ma_small)) {\n    msg.bot.zapret_na_zakup = false;\n    msg.bot.status.rezhim = \"МА - закуп разрешен\";\n\n} else {\n    msg.bot.zapret_na_zakup = true;\n    msg.bot.status.rezhim = \"МА - закуп запрещён\";\n\n}\n\nnode.status({ fill: \"green\", shape: \"dot\" });\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 1600,
+        "wires": [
+            [
+                "0f78ecf017b82cf4"
+            ]
+        ]
+    },
+    {
+        "id": "aa7c1e183b23507f",
+        "type": "switch",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "service tick",
+        "property": "service",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1030,
+        "y": 1680,
+        "wires": [
+            [
+                "57925429ca810cd2"
+            ],
+            [
+                "0b5862e9bd34e50c"
+            ]
+        ]
+    },
+    {
+        "id": "57925429ca810cd2",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "определяем этаж",
+        "func": "\nlet lp = Number(msg.bot.status.currentprice);\nlet f = msg.bot.floors;\n\nvar curfloor = f.filter(function (floor) {\n    return ((floor[1] <= lp) && (floor[2] > lp));\n});\n\nif (curfloor[0]) {\n\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n\n    msg.bot.currentfloor = curfloor[0];\n    msg.bot.status.lastfloor = msg.bot.status.currentfloor;\n    msg.bot.status.currentfloor = curfloor[0][0];\n\n    msg.bot.downfloor = f[msg.bot.status.currentfloor - 2];\n    return [msg, null];\n}\nelse {\n\n    node.status({ fill: \"blue\", shape: \"dot\" });\n    // node.warn(\"вне сетки\"); \n    return [null, msg];\n}\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 1620,
+        "wires": [
+            [
+                "701789b1f837f763"
+            ],
+            [
+                "8bcbbf716ab8f8e9"
+            ]
+        ]
+    },
+    {
+        "id": "c5b6726332f3e726",
+        "type": "comment",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "вне сетки",
+        "info": "",
+        "x": 1440,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "a8a74437434f8412",
+        "type": "switch",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "sold ?",
+        "property": "bot.ttp.sold",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 830,
+        "y": 1600,
+        "wires": [
+            [
+                "1b0156683381b2dc"
+            ],
+            [
+                "aa7c1e183b23507f"
+            ]
+        ]
+    },
+    {
+        "id": "6f3d16f935eeebf3",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "setbot_ttp reset",
+        "func": "\nmsg.bot.ttp.curstop = 0;\nmsg.bot.ttp.raschstopprice = 0;\nmsg.bot.ttp.curorderid = 0;\nmsg.bot.ttp.sold = false;\n//msg.bot.ttp.ttpbusy = false;\nmsg.bot.ttp.currentprice = 0;\nmsg.bot.ttp.quantity = 0;\nmsg.bot.ttp.final_price = 0;\nmsg.bot.ttp.finalorder = 0;\nmsg.bot.ttp.proskal = false;\n\nglobal.set(msg.botname + \"-ttp\", msg.bot.ttp);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 1500,
+        "wires": [
+            [
+                "36ab06a0e4700650"
+            ]
+        ],
+        "icon": "font-awesome/fa-bolt"
+    },
+    {
+        "id": "36ab06a0e4700650",
+        "type": "link out",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "links": [
+            "889c32dad255eacd"
+        ],
+        "x": 1675,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "206a6cb6a12b9fd2",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "регистрация сделки",
+        "func": "\nnode.warn(\"регистрация сделки\");\nlet commision = global.get(\"commision\");\n\nlet sellprice = Number(msg.bot.ttp.final_price);\n\nlet tempfin = Number(Number(msg.bot.finance.quotainorders) - Number(msg.bot.ttp.quantity));\nlet tempfin2 = Number(Number(msg.bot.finance.basenal) + Number(msg.bot.ttp.quantity) * sellprice);\n\nvar floors = msg.bot.floors;\nlet sumsales = 0;\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 3) {\n        let buyprice = Number(item[10]);\n        let quantity = Number(item[14]);\n        let p = quantity * (sellprice - buyprice);\n        let c = quantity * (Number(sellprice + buyprice)) / 100 * commision;\n        let net = p - c;\n        tempfin2 = tempfin2 - c;\n        msg.bot.sales.today.push([buyprice, sellprice, quantity, p, c, net]);\n        msg.bot.sales.all.push([buyprice, sellprice, quantity, p, c, net]);\n        sumsales = sumsales + net\n        node.warn([buyprice, sellprice, quantity, p, c, net]);\n        \n        let botname = msg.botname;\n        let datamsg = \"регистрация сделки - \" + [buyprice, sellprice, quantity, p, c, net];\n        const tilog = global.get('tilog')(botname, datamsg);\n        tilog;\n        \n\n        item[7] = 0;\n        item[8] = 0;\n        item[9] = 0;\n        item[10] = 0;\n        item[11] = 0;\n        item[12] = 0;\n        item[13] = 0;\n        item[14] = 0;\n\n    }\n});\nif (sumsales != 0) {\n\nmsg.sumsales = sumsales;\nmsg.bot.finance.quotainorders = tempfin.toFixed(msg.bot.settings.digitprice);\nmsg.bot.finance.basenal = tempfin2.toFixed(msg.bot.settings.digitq);\n\nif (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\nif (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\nmsg.bot.floors = floors;\n}\n\nreturn msg;\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1500,
+        "wires": [
+            [
+                "6f3d16f935eeebf3",
+                "513ec5caa8aebea9"
+            ]
+        ]
+    },
+    {
+        "id": "701789b1f837f763",
+        "type": "subflow:90fc9ad8367cb513",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "env": [],
+        "x": 1450,
+        "y": 1600,
+        "wires": [
+            [
+                "79c861d199df158e"
+            ]
+        ]
+    },
+    {
+        "id": "79c861d199df158e",
+        "type": "link out",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "links": [
+            "889c32dad255eacd"
+        ],
+        "x": 1575,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "0b5862e9bd34e50c",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "floors array prepare",
+        "func": "msg.payload = msg.bot.floors;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 1740,
+        "wires": [
+            [
+                "8f6043c6e809c644"
+            ]
+        ]
+    },
+    {
+        "id": "8f6043c6e809c644",
+        "type": "split",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 1430,
+        "y": 1740,
+        "wires": [
+            [
+                "dd6df4705b145dee"
+            ]
+        ]
+    },
+    {
+        "id": "dd6df4705b145dee",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "concrete floor select",
+        "func": "msg.bot.currentfloor = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 1740,
+        "wires": [
+            [
+                "819c24b0e889db9a"
+            ]
+        ]
+    },
+    {
+        "id": "e8c5c8e0d2b70fae",
+        "type": "join",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1990,
+        "y": 1740,
+        "wires": [
+            [
+                "1a5af93604004873"
+            ]
+        ]
+    },
+    {
+        "id": "819c24b0e889db9a",
+        "type": "subflow:cde16a2385b7b659",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "env": [],
+        "x": 1830,
+        "y": 1740,
+        "wires": [
+            [
+                "e8c5c8e0d2b70fae"
+            ]
+        ]
+    },
+    {
+        "id": "1a5af93604004873",
+        "type": "link out",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "links": [
+            "889c32dad255eacd"
+        ],
+        "x": 2095,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "0f78ecf017b82cf4",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "пересчет депо",
+        "func": "\nlet p = Number(msg.bot.status.currentprice);\nmsg.bot.finance.depo = Number((Number(msg.bot.finance.quotanal) * p + Number(msg.bot.finance.quotainorders) * p + Number(msg.bot.finance.basenal) + Number(msg.bot.finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 1600,
+        "wires": [
+            [
+                "a8a74437434f8412"
+            ]
+        ]
+    },
+    {
+        "id": "513ec5caa8aebea9",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "сделка",
+        "func": "msg.payload = \"завершен ттп - \" + msg.botname + \" прибыль: \"+ msg.sumsales;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 1440,
+        "wires": [
+            [
+                "7f858a5b4c716844"
+            ]
+        ]
+    },
+    {
+        "id": "7f858a5b4c716844",
+        "type": "telegrambot-notify",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "bot": "848f142.6165868",
+        "chatId": "454883204",
+        "message": "",
+        "parseMode": "",
+        "x": 1700,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "1b0156683381b2dc",
+        "type": "switch",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "bot.ttp.final_price > 0",
+        "property": "bot.ttp.final_price",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1060,
+        "y": 1420,
+        "wires": [
+            [
+                "ecf9c89c5e3e30e5",
+                "da1a919755acbd3e",
+                "c750b1c8685c12f7"
+            ],
+            [
+                "206a6cb6a12b9fd2"
+            ]
+        ]
+    },
+    {
+        "id": "ecf9c89c5e3e30e5",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "final price = 0",
+        "func": "msg.payload = \"final price = 0\" + msg.botname;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 1380,
+        "wires": [
+            [
+                "60f79fd782f2845a"
+            ]
+        ]
+    },
+    {
+        "id": "60f79fd782f2845a",
+        "type": "telegrambot-notify",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "bot": "848f142.6165868",
+        "chatId": "454883204",
+        "message": "",
+        "parseMode": "",
+        "x": 1480,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "da1a919755acbd3e",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "tilog",
+        "func": "var floors = msg.bot.floors;\nlet nonzeroflors = [];\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] != 0) {\n\n        nonzeroflors.push(item);\n\n    }\n});\n\nnonzeroflors = JSON.stringify(nonzeroflors || \"\", null, '\\t');\n\n\n\n\n\nlet botdump = JSON.stringify(msg.bot.ttp || \"\", null, '\\t');\n\n\n\n\nlet botname = msg.bot.settings.botname;\nlet data = \"final price = 0 : \" + botname + botdump + nonzeroflors;\n\n\nconst tilog = global.get('tilog')(botname, data);\n\ntilog.then(tilog => {\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    msg.error = error;\n    node.status({ fill: \"red\", shape: \"ring\" });\n\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c750b1c8685c12f7",
+        "type": "link out",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "links": [
+            "889c32dad255eacd"
+        ],
+        "x": 1235,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "8bcbbf716ab8f8e9",
+        "type": "link out",
+        "z": "245ee519b635b6cd",
+        "g": "f0676b62c8f1c90c",
+        "name": "",
+        "links": [
+            "889c32dad255eacd"
+        ],
+        "x": 1535,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "9c84d00eacac9bd1",
+        "type": "trigger",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-1",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 520,
+        "y": 700,
+        "wires": [
+            [
+                "40a47452c96d4782"
+            ]
+        ]
+    },
+    {
+        "id": "c9148ce1900c483e",
+        "type": "redis-in",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "server": "f120eab2.0a60a8",
+        "command": "subscribe",
+        "name": "",
+        "topic": "stop",
+        "obj": true,
+        "timeout": 0,
+        "x": 130,
+        "y": 760,
+        "wires": [
+            [
+                "5b413adef9f089fe"
+            ]
+        ]
+    },
+    {
+        "id": "5b413adef9f089fe",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "name": "stop",
+        "func": "msg.reset = true;\nmsg.payload = \"\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 760,
+        "wires": [
+            [
+                "9c84d00eacac9bd1"
+            ]
+        ]
+    },
+    {
+        "id": "d08c113009a92025",
+        "type": "redis-in",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "server": "f120eab2.0a60a8",
+        "command": "subscribe",
+        "name": "",
+        "topic": "start",
+        "obj": true,
+        "timeout": 0,
+        "x": 130,
+        "y": 700,
+        "wires": [
+            [
+                "428865102bd340da"
+            ]
+        ]
+    },
+    {
+        "id": "428865102bd340da",
+        "type": "delay",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 280,
+        "y": 700,
+        "wires": [
+            [
+                "9c84d00eacac9bd1"
+            ]
+        ]
+    },
+    {
+        "id": "4dbb064b75f17368",
+        "type": "redis-in",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "server": "f120eab2.0a60a8",
+        "command": "subscribe",
+        "name": "",
+        "topic": "start1",
+        "obj": true,
+        "timeout": 0,
+        "x": 490,
+        "y": 760,
+        "wires": [
+            [
+                "6a985194b9639041"
+            ]
+        ]
+    },
+    {
+        "id": "40a47452c96d4782",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "name": "getbotlist",
+        "func": "let a = global.get(\"botlist\");\nmsg.payload = a;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 700,
+        "wires": [
+            [
+                "c1bc2ab66ecee63b"
+            ]
+        ]
+    },
+    {
+        "id": "c1bc2ab66ecee63b",
+        "type": "split",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "name": "",
+        "splt": "1",
+        "spltType": "len",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 870,
+        "y": 700,
+        "wires": [
+            [
+                "014a162881b94b15"
+            ]
+        ]
+    },
+    {
+        "id": "014a162881b94b15",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "name": "getbot global",
+        "func": "\nlet botname = msg.payload;\nmsg.botname = botname;\nlet bot = global.get(botname);\nmsg.bot = bot;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 700,
+        "wires": [
+            [
+                "53b9d0a2ac12adc5"
+            ]
+        ]
+    },
+    {
+        "id": "6a985194b9639041",
+        "type": "delay",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 650,
+        "y": 760,
+        "wires": [
+            [
+                "40a47452c96d4782"
+            ]
+        ]
+    },
+    {
+        "id": "53b9d0a2ac12adc5",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "name": "getbot_ttp",
+        "func": "let a = global.get(msg.botname + \"-ttp\");\nmsg.bot.ttp = a;\nreturn msg;\n\n\n//const gb = global.get('getbot_ttp')(msg.bot.settings.botname);\n//\n//gb.then(gb => {\n//    msg.bot.ttp = JSON.parse(gb);\n//    \n//node.status({fill: \"green\", shape: \"ring\"});\n//\n//    node.send(msg);\n//\n//}).catch(error => {\n//    \n//    \n//    node.status({fill: \"red\", shape: \"ring\", text: \"error\"});\n//    node.error(error);\n//});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 700,
+        "wires": [
+            [
+                "907ed58545644825",
+                "b744408634efb2ef"
+            ]
+        ]
+    },
+    {
+        "id": "907ed58545644825",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "name": "setbot_ttp to redis",
+        "func": "\nmsg.topic = msg.bot.settings.userid + \"-bots:\" + msg.bot.settings.botname + \":ttp\";\nmsg.payload = JSON.stringify(msg.bot.ttp);\n\nconst upd = global.get('setbot_ttp')(msg.topic, msg.payload);\n\nupd.then(upd => {\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1410,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b744408634efb2ef",
+        "type": "function",
+        "z": "245ee519b635b6cd",
+        "g": "2dba9c518146d3f5",
+        "name": "update floos finace sales on redis",
+        "func": "let botname = msg.botname;\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet volname = msg.bot.settings.userid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\n\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\n\n\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a3e02ad3f6d1d97",
+        "type": "inject",
+        "z": "245ee519b635b6cd",
+        "g": "039e1120c796f77c",
+        "name": " stop",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "reset",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2790,
+        "y": 560,
+        "wires": [
+            [
+                "7d157c662d7225fe"
+            ]
+        ]
+    },
+    {
+        "id": "7d157c662d7225fe",
+        "type": "redis-out",
+        "z": "245ee519b635b6cd",
+        "g": "039e1120c796f77c",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "stop",
+        "obj": false,
+        "x": 2790,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a7d4e20b0541dda5",
+        "type": "inject",
+        "z": "245ee519b635b6cd",
+        "g": "039e1120c796f77c",
+        "name": "start",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 2370,
+        "y": 560,
+        "wires": [
+            [
+                "e73e5dec6c9f1aeb"
+            ]
+        ]
+    },
+    {
+        "id": "e73e5dec6c9f1aeb",
+        "type": "redis-out",
+        "z": "245ee519b635b6cd",
+        "g": "039e1120c796f77c",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "start",
+        "obj": false,
+        "x": 2370,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "5ce81e2546e4fd83",
+        "type": "inject",
+        "z": "245ee519b635b6cd",
+        "g": "039e1120c796f77c",
+        "name": "start1",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2550,
+        "y": 560,
+        "wires": [
+            [
+                "3ff9ad2afd9c823f"
+            ]
+        ]
+    },
+    {
+        "id": "3ff9ad2afd9c823f",
+        "type": "redis-out",
+        "z": "245ee519b635b6cd",
+        "g": "039e1120c796f77c",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "start1",
+        "obj": false,
+        "x": 2550,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "d007fe835129a210",
+        "type": "inject",
+        "z": "245ee519b635b6cd",
+        "g": "f53315307bbbc36f",
+        "name": " stop",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "reset",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 570,
+        "y": 100,
+        "wires": [
+            [
+                "e7768cd8d0ee8191"
+            ]
+        ]
+    },
+    {
+        "id": "e7768cd8d0ee8191",
+        "type": "redis-out",
+        "z": "245ee519b635b6cd",
+        "g": "f53315307bbbc36f",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "stop",
+        "obj": false,
+        "x": 570,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "3ed8c652a6ccd32f",
+        "type": "inject",
+        "z": "245ee519b635b6cd",
+        "g": "f53315307bbbc36f",
+        "name": "start",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "9",
+        "topic": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "3beaa1a28c467e2d"
+            ]
+        ]
+    },
+    {
+        "id": "3beaa1a28c467e2d",
+        "type": "redis-out",
+        "z": "245ee519b635b6cd",
+        "g": "f53315307bbbc36f",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "start",
+        "obj": false,
+        "x": 150,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d631b1503cb23271",
+        "type": "inject",
+        "z": "245ee519b635b6cd",
+        "g": "f53315307bbbc36f",
+        "name": "start1",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "318c1e760874427e"
+            ]
+        ]
+    },
+    {
+        "id": "318c1e760874427e",
+        "type": "redis-out",
+        "z": "245ee519b635b6cd",
+        "g": "f53315307bbbc36f",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "start1",
+        "obj": false,
+        "x": 330,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "489046af1889b3ff",
+        "type": "redis-instance",
+        "z": "245ee519b635b6cd",
+        "g": "f53315307bbbc36f",
+        "server": "f120eab2.0a60a8",
+        "name": "",
+        "topic": "redis",
+        "location": "flow",
+        "x": 770,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "28fda303e5196ddd",
+        "type": "link in",
+        "z": "5df15275.2888ec",
+        "g": "65ceb63d19a93d0f",
+        "name": "",
+        "links": [
+            "12cdc134f2944261"
+        ],
+        "x": 925,
+        "y": 140,
+        "wires": [
+            [
+                "a1d4c1c74be64298"
+            ]
+        ]
+    },
+    {
+        "id": "a1d4c1c74be64298",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "g": "65ceb63d19a93d0f",
+        "name": "bot ready",
+        "func": "node.status({ fill: \"green\", shape: \"dot\" });\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12cdc134f2944261",
+        "type": "link out",
+        "z": "5df15275.2888ec",
+        "g": "814fe3ad47c48a59",
+        "name": "",
+        "links": [
+            "28fda303e5196ddd"
+        ],
+        "x": 3475,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "950fa7fabc4ef79a",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "g": "01cdfc91bb42701f",
+        "name": "setbot_status to redis",
+        "func": "\nmsg.topic = msg.bot.settings.userid + \"-bots:\" + msg.botname + \":status\";\nmsg.payload = JSON.stringify(msg.bot.status);\n\nconst upd = global.get('setbot_status')(msg.topic, msg.payload);\n\nupd.then(upd => {\n    msg.payload = upd;\n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 580,
+        "wires": [
+            []
+        ]
     }
 ]
