@@ -1712,7 +1712,9 @@
             "2c1dbffd57b83216"
         ],
         "x": 54,
-        "y": 259
+        "y": 259,
+        "w": 3332,
+        "h": 162
     },
     {
         "id": "1fa5fd47f525b091",
@@ -1737,7 +1739,9 @@
             "df24b9ca4d93ad81"
         ],
         "x": 2434,
-        "y": 1219
+        "y": 1219,
+        "w": 892,
+        "h": 202
     },
     {
         "id": "8132589a9074621b",
@@ -1770,7 +1774,9 @@
             "7578e9167291e34f"
         ],
         "x": 54,
-        "y": 459
+        "y": 459,
+        "w": 1952,
+        "h": 162
     },
     {
         "id": "cd66d4bac998a022",
@@ -1794,7 +1800,9 @@
             "389cc2a8fd0c7754"
         ],
         "x": 1674,
-        "y": 19
+        "y": 19,
+        "w": 472,
+        "h": 162
     },
     {
         "id": "1af14388992a8047",
@@ -1818,7 +1826,9 @@
             "7a41be22b034acb0"
         ],
         "x": 914,
-        "y": 59
+        "y": 59,
+        "w": 472,
+        "h": 122
     },
     {
         "id": "f0676b62c8f1c90c",
@@ -1864,7 +1874,9 @@
             "8bcbbf716ab8f8e9"
         ],
         "x": 54,
-        "y": 1299
+        "y": 1299,
+        "w": 2082,
+        "h": 482
     },
     {
         "id": "2dba9c518146d3f5",
@@ -1890,7 +1902,9 @@
             "b744408634efb2ef"
         ],
         "x": 54,
-        "y": 659
+        "y": 659,
+        "w": 1572,
+        "h": 142
     },
     {
         "id": "039e1120c796f77c",
@@ -1914,7 +1928,9 @@
             "3ff9ad2afd9c823f"
         ],
         "x": 2274,
-        "y": 519
+        "y": 519,
+        "w": 592,
+        "h": 122
     },
     {
         "id": "f53315307bbbc36f",
@@ -1936,7 +1952,9 @@
             "489046af1889b3ff"
         ],
         "x": 54,
-        "y": 59
+        "y": 59,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "814fe3ad47c48a59",
@@ -2061,7 +2079,9 @@
             "edba0ad4410deb95"
         ],
         "x": 1374,
-        "y": 2539
+        "y": 2539,
+        "w": 892,
+        "h": 202
     },
     {
         "id": "251a240e36b31c14",
@@ -38433,7 +38453,7 @@
         "y": 440,
         "wires": [
             [
-                "143a749463398893"
+                "446039aefc6efaf0"
             ]
         ]
     },
@@ -38554,7 +38574,7 @@
         "y": 800,
         "wires": [
             [
-                "dd998b700bdae2f0"
+                "6047d32d13caab4d"
             ]
         ]
     },
@@ -38651,7 +38671,7 @@
         "y": 720,
         "wires": [
             [
-                "3a80ac675cc5b41a"
+                "d8536023cc099910"
             ]
         ]
     },
@@ -38709,7 +38729,7 @@
         "links": [
             "c1de80b9cafdd278"
         ],
-        "x": 1875,
+        "x": 2255,
         "y": 440,
         "wires": []
     },
@@ -38721,7 +38741,7 @@
         "links": [
             "c1de80b9cafdd278"
         ],
-        "x": 1915,
+        "x": 2355,
         "y": 720,
         "wires": []
     },
@@ -38745,7 +38765,7 @@
         "links": [
             "c1de80b9cafdd278"
         ],
-        "x": 975,
+        "x": 1315,
         "y": 800,
         "wires": []
     },
@@ -39222,8 +39242,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2070,
-        "y": 440,
+        "x": 1990,
+        "y": 500,
         "wires": []
     },
     {
@@ -39240,7 +39260,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2630,
-        "y": 420,
+        "y": 460,
         "wires": []
     },
     {
@@ -39298,6 +39318,63 @@
         "y": 600,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "d8536023cc099910",
+        "type": "function",
+        "z": "64c098ab57cae330",
+        "name": "update bot floors, finance triger + on redis",
+        "func": "let botname = msg.botname;\nlet guid = global.get('guid');\n\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet sumsales = 0;\nsales.all.forEach(function (element) {\n    sumsales = sumsales + element[5];\n\n});\n\nlet quotanal = 0;\nlet quotainorders = 0;\nlet basenal = Number(finance.startdepo) + Number(sumsales);\nlet baseinorders = 0;\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 1) {\n        baseinorders = baseinorders + Number(item[14]) * Number(item[3]);\n        basenal = basenal - Number(item[14]) * Number(item[3]);\n\n    }\n    if (item[7] === 2) {\n        quotanal = quotanal + Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n    if (item[7] === 3) {\n        quotainorders = quotainorders + Number(item[14]);\n        //quotanal = quotanal - Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n\n\n\n});\nfinance.quotanal = (Number(quotanal)).toFixed(msg.bot.settings.digitq);\nfinance.quotainorders = (Number(quotainorders)).toFixed(msg.bot.settings.digitq);\nfinance.basenal = (Number(basenal)).toFixed(msg.bot.settings.digitprice);\nfinance.baseinorders = (Number(baseinorders)).toFixed(msg.bot.settings.digitprice);\n\nlet p = Number(msg.bot.status.currentprice);\nfinance.depo = Number((Number(finance.quotanal) * p + Number(finance.quotainorders) * p + Number(finance.basenal) + Number(finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\n\n\n\nmsg.bot.finance = finance;\nmsg.bot.floors = floors;\nmsg.bot.sales = sales;\n\n//global.set(msg.botname, msg.bot);\n\nlet volname = guid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2100,
+        "y": 720,
+        "wires": [
+            [
+                "3a80ac675cc5b41a"
+            ]
+        ]
+    },
+    {
+        "id": "446039aefc6efaf0",
+        "type": "function",
+        "z": "64c098ab57cae330",
+        "name": "update bot floors, finance triger + on redis",
+        "func": "let botname = msg.botname;\nlet guid = global.get('guid');\n\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet sumsales = 0;\nsales.all.forEach(function (element) {\n    sumsales = sumsales + element[5];\n\n});\n\nlet quotanal = 0;\nlet quotainorders = 0;\nlet basenal = Number(finance.startdepo) + Number(sumsales);\nlet baseinorders = 0;\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 1) {\n        baseinorders = baseinorders + Number(item[14]) * Number(item[3]);\n        basenal = basenal - Number(item[14]) * Number(item[3]);\n\n    }\n    if (item[7] === 2) {\n        quotanal = quotanal + Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n    if (item[7] === 3) {\n        quotainorders = quotainorders + Number(item[14]);\n        //quotanal = quotanal - Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n\n\n\n});\nfinance.quotanal = (Number(quotanal)).toFixed(msg.bot.settings.digitq);\nfinance.quotainorders = (Number(quotainorders)).toFixed(msg.bot.settings.digitq);\nfinance.basenal = (Number(basenal)).toFixed(msg.bot.settings.digitprice);\nfinance.baseinorders = (Number(baseinorders)).toFixed(msg.bot.settings.digitprice);\n\nlet p = Number(msg.bot.status.currentprice);\nfinance.depo = Number((Number(finance.quotanal) * p + Number(finance.quotainorders) * p + Number(finance.basenal) + Number(finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\n\n\n\nmsg.bot.finance = finance;\nmsg.bot.floors = floors;\nmsg.bot.sales = sales;\n\n//global.set(msg.botname, msg.bot);\n\nlet volname = guid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 440,
+        "wires": [
+            [
+                "143a749463398893"
+            ]
+        ]
+    },
+    {
+        "id": "6047d32d13caab4d",
+        "type": "function",
+        "z": "64c098ab57cae330",
+        "name": "update bot floors, finance triger + on redis",
+        "func": "let botname = msg.botname;\nlet guid = global.get('guid');\n\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet sumsales = 0;\nsales.all.forEach(function (element) {\n    sumsales = sumsales + element[5];\n\n});\n\nlet quotanal = 0;\nlet quotainorders = 0;\nlet basenal = Number(finance.startdepo) + Number(sumsales);\nlet baseinorders = 0;\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 1) {\n        baseinorders = baseinorders + Number(item[14]) * Number(item[3]);\n        basenal = basenal - Number(item[14]) * Number(item[3]);\n\n    }\n    if (item[7] === 2) {\n        quotanal = quotanal + Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n    if (item[7] === 3) {\n        quotainorders = quotainorders + Number(item[14]);\n        //quotanal = quotanal - Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n\n\n\n});\nfinance.quotanal = (Number(quotanal)).toFixed(msg.bot.settings.digitq);\nfinance.quotainorders = (Number(quotainorders)).toFixed(msg.bot.settings.digitq);\nfinance.basenal = (Number(basenal)).toFixed(msg.bot.settings.digitprice);\nfinance.baseinorders = (Number(baseinorders)).toFixed(msg.bot.settings.digitprice);\n\nlet p = Number(msg.bot.status.currentprice);\nfinance.depo = Number((Number(finance.quotanal) * p + Number(finance.quotainorders) * p + Number(finance.basenal) + Number(finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\n\n\n\nmsg.bot.finance = finance;\nmsg.bot.floors = floors;\nmsg.bot.sales = sales;\n\n//global.set(msg.botname, msg.bot);\n\nlet volname = guid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 800,
+        "wires": [
+            [
+                "dd998b700bdae2f0"
+            ]
         ]
     }
 ]
