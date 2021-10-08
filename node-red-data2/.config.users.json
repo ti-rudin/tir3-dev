@@ -22,7 +22,7 @@
                 "view-show-tips": false
             },
             "context": {
-                "flowRefresh": true
+                "flowRefresh": false
             }
         },
         "menu-menu-item-palette": true,
