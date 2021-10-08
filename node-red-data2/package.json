@@ -5,6 +5,7 @@
     "private": true,
     "dependencies": {
         "node-binance-api": "^0.12.5",
+        "node-red-contrib-dsm": "~0.14.1",
         "node-red-contrib-filter": "~0.1.4",
         "node-red-contrib-finite-statemachine": "~2.0.0",
         "node-red-contrib-graphql": "~1.1.0",

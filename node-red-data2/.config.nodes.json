@@ -970,5 +970,24 @@
                 "file": "/data/node_modules/node-red-contrib-xstate-machine/dist/smxstate-node.js"
             }
         }
+    },
+    "node-red-contrib-dsm": {
+        "name": "node-red-contrib-dsm",
+        "version": "0.14.1",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "dsm": {
+                "name": "dsm",
+                "types": [
+                    "dsm"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-dsm",
+                "file": "/data/node_modules/node-red-contrib-dsm/dsm.js"
+            }
+        }
     }
 }
