@@ -22,13 +22,13 @@
                 "view-show-tips": false
             },
             "context": {
-                "flowRefresh": false
+                "flowRefresh": true
             }
         },
         "menu-menu-item-palette": true,
         "menu-menu-item-sidebar": true,
-        "menu-deploymenu-item-flow": true,
-        "menu-deploymenu-item-full": false,
+        "menu-deploymenu-item-flow": false,
+        "menu-deploymenu-item-full": true,
         "menu-deploymenu-item-node": false
     }
 }
