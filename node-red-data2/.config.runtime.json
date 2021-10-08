@@ -7,6 +7,18 @@
             "availableRenderers": [
                 "smcat"
             ]
-        }
+        },
+        "cache": [
+            {
+                "expire": 1636067243888,
+                "file": "58580e8f38b1862ef5a50066bbec9041.json",
+                "hash": "58580e8f38b1862ef5a50066bbec9041"
+            },
+            {
+                "expire": 1636067464683,
+                "file": "2f0e0f2f57a8965398699236ddc862b7.json",
+                "hash": "2f0e0f2f57a8965398699236ddc862b7"
+            }
+        ]
     }
 }

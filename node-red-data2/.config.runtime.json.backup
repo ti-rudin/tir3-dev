@@ -1,3 +1,19 @@
 {
-    "_credentialSecret": "cbffa4845fa892f47bd54f68699e2889ad37d9cc2569d6aa5872ff1a5670f9cf"
+    "_credentialSecret": "cbffa4845fa892f47bd54f68699e2889ad37d9cc2569d6aa5872ff1a5670f9cf",
+    "smxstate": {
+        "settings": {
+            "renderTimeoutMs": 20000,
+            "renderer": "smcat",
+            "availableRenderers": [
+                "smcat"
+            ]
+        },
+        "cache": [
+            {
+                "expire": 1636067243888,
+                "file": "58580e8f38b1862ef5a50066bbec9041.json",
+                "hash": "58580e8f38b1862ef5a50066bbec9041"
+            }
+        ]
+    }
 }
