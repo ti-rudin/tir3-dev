@@ -163,7 +163,9 @@
             "9a835f6c.6a1ab"
         ],
         "x": 1774,
-        "y": 379
+        "y": 379,
+        "w": 632,
+        "h": 162
     },
     {
         "id": "3684cd36.8432c2",
@@ -255,7 +257,9 @@
             "527f5893eeafc366"
         ],
         "x": 2554,
-        "y": 39
+        "y": 39,
+        "w": 1052,
+        "h": 502
     },
     {
         "id": "f8a5c66461864831",
@@ -301,7 +305,9 @@
             "c4cf96930d013efb"
         ],
         "x": 1614,
-        "y": 1739
+        "y": 1739,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "586e39dc007e0cae",
@@ -363,7 +369,9 @@
             "e5b3f65c64087091"
         ],
         "x": 2554,
-        "y": 579
+        "y": 579,
+        "w": 1052,
+        "h": 502
     },
     {
         "id": "b1c9866420e73130",
@@ -401,7 +409,9 @@
             "9f0a5643b5b416e8"
         ],
         "x": 2554,
-        "y": 1599
+        "y": 1599,
+        "w": 692,
+        "h": 562
     },
     {
         "id": "5bb9e782aa7a8a39",
@@ -650,7 +660,9 @@
             "d3749cac89a0e2c9"
         ],
         "x": 2554,
-        "y": 1119
+        "y": 1119,
+        "w": 1352,
+        "h": 82
     },
     {
         "id": "7f9b2dd857a6dfb2",
@@ -673,7 +685,9 @@
             "792187aede59b6ac"
         ],
         "x": 2554,
-        "y": 1239
+        "y": 1239,
+        "w": 912,
+        "h": 82
     },
     {
         "id": "9364657534c1325f",
@@ -694,7 +708,9 @@
             "62dad41be283ec5d"
         ],
         "x": 2554,
-        "y": 1359
+        "y": 1359,
+        "w": 572,
+        "h": 82
     },
     {
         "id": "a2350d1c1b2611d2",
@@ -715,7 +731,9 @@
             "f2b2077b7903a0bf"
         ],
         "x": 2554,
-        "y": 1479
+        "y": 1479,
+        "w": 632,
+        "h": 82
     },
     {
         "id": "5cf80cfa258dfe5b",
@@ -737,7 +755,9 @@
             "e4eeb03c78ec0577"
         ],
         "x": 54,
-        "y": 39
+        "y": 39,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "44cf135596e2716e",
@@ -826,7 +846,9 @@
             "2b18414b4a3f8aaa"
         ],
         "x": 34,
-        "y": 39
+        "y": 39,
+        "w": 1652,
+        "h": 502
     },
     {
         "id": "0a3bcf6fb5324ab9",
@@ -914,7 +936,9 @@
             "bf190e9d.225ad"
         ],
         "x": 154,
-        "y": 1699
+        "y": 1699,
+        "w": 1232,
+        "h": 402
     },
     {
         "id": "014ce62956a26f95",
@@ -986,7 +1010,9 @@
             "6250c3310b6d177b"
         ],
         "x": 34,
-        "y": 779
+        "y": 779,
+        "w": 2092,
+        "h": 822
     },
     {
         "id": "d508da9d29e25c1b",
@@ -1013,7 +1039,9 @@
             "04c874ce359ca023"
         ],
         "x": 34,
-        "y": 599
+        "y": 599,
+        "w": 1612,
+        "h": 122
     },
     {
         "id": "d73a3420024b2417",
@@ -1046,7 +1074,9 @@
             "2794da7d6f473613"
         ],
         "x": 54,
-        "y": 199
+        "y": 199,
+        "w": 2062,
+        "h": 162
     },
     {
         "id": "b988821087e2e632",
@@ -1080,7 +1110,9 @@
             "7f0a9ffb2eb5b4d8"
         ],
         "x": 54,
-        "y": 399
+        "y": 399,
+        "w": 2102,
+        "h": 162
     },
     {
         "id": "17b2eb4baaa826d1",
@@ -2004,7 +2036,9 @@
             "2f83bb2fab63d1bd"
         ],
         "x": 1114,
-        "y": 1119
+        "y": 1119,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "666006aaa2e325fc",
@@ -2026,7 +2060,9 @@
             "7fad8acded27ae4f"
         ],
         "x": 1114,
-        "y": 1179
+        "y": 1179,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "2044fa36820f41ee",
@@ -18838,7 +18874,7 @@
         "z": "5df15275.2888ec",
         "g": "65ceb63d19a93d0f",
         "name": "tester___",
-        "func": "let trackname = msg.trackname;\nflow.set(trackname);\nnode.status({ fill: \"green\", shape: \"ring\", text: msg.payload });\nreturn msg;",
+        "func": "\nnode.status({ fill: \"green\", shape: \"ring\", text: msg.payload });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -39926,7 +39962,7 @@
         "y": 1300,
         "wires": [
             [
-                "13712c4ee722b181"
+                "356eb2cdc76d6009"
             ]
         ]
     },
@@ -39953,27 +39989,6 @@
             [
                 "87e2b8e40f329a18",
                 "008e0a14a57f5f04"
-            ]
-        ],
-        "icon": "font-awesome/fa-bolt"
-    },
-    {
-        "id": "13712c4ee722b181",
-        "type": "function",
-        "z": "2a761808.610238",
-        "name": "service step count",
-        "func": "\nlet id = \"srv-\" + msg.botname;\nvar count = flow.get(id) || 0;\ncount += 1;\n//node.warn(count);\nflow.set(id, count);\nif (count >= 10) {\n    msg.service = true;\n    flow.set(id, 0);\n} else {\n    msg.service = false;\n\n}\nnode.status({ fill: \"green\", shape: \"dot\" });\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 810,
-        "y": 1300,
-        "wires": [
-            [
-                "46786a3ff18154fe",
-                "356eb2cdc76d6009"
             ]
         ],
         "icon": "font-awesome/fa-bolt"
@@ -40157,7 +40172,7 @@
         "z": "2a761808.610238",
         "g": "2044fa36820f41ee",
         "name": "duration",
-        "func": "let trackname = msg.trackname;\nlet track = flow.get(trackname);\nif (track) {\n\n    let laststep = track[track.length - 1];\n    let firststep = track[0];\n    let last_node_end_time = laststep.end_node_time;\n    let first_node_start_time = firststep.start_node_time;\n\n    let duration = last_node_end_time - first_node_start_time;\n    //node.warn(duration);\n    msg.payload = duration;\n\n\n\n    return msg;\n}",
+        "func": "let trackname = msg.trackname;\nlet track = flow.get(trackname);\nif (track) {\n\n    let laststep = track[track.length - 1];\n    let firststep = track[0];\n    let last_node_end_time = laststep.end_node_time;\n    let first_node_start_time = firststep.start_node_time;\n\n    let duration = last_node_end_time - first_node_start_time;\n    //node.warn(duration);\n    msg.payload = duration;\n\n    flow.set(trackname);\n\n\n\n    return msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -40721,7 +40736,7 @@
         "links": [
             "e84c68c5.b035e8"
         ],
-        "x": 1025,
+        "x": 755,
         "y": 1300,
         "wires": []
     },
@@ -41288,7 +41303,7 @@
         "type": "debug",
         "z": "5df15275.2888ec",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
