@@ -1948,13 +1948,12 @@
             "c4ba62796dfec943",
             "64dc395af95431e1",
             "28fda303e5196ddd",
-            "a1d4c1c74be64298",
-            "5080192e26c83250"
+            "a1d4c1c74be64298"
         ],
         "x": 884,
-        "y": 19,
+        "y": 59,
         "w": 722,
-        "h": 162
+        "h": 122
     },
     {
         "id": "21876e7f6d644fb4",
@@ -18913,15 +18912,13 @@
         "links": [
             "f937bdc295f372a8",
             "a98eccc2c1f43b19",
-            "37bbf599414e2577",
-            "6bf31a93727ebe85"
+            "37bbf599414e2577"
         ],
         "x": 1175,
         "y": 140,
         "wires": [
             [
-                "8e747d7d4ec5b050",
-                "5080192e26c83250"
+                "8e747d7d4ec5b050"
             ]
         ]
     },
@@ -18931,7 +18928,7 @@
         "z": "5df15275.2888ec",
         "g": "65ceb63d19a93d0f",
         "name": "tester___",
-        "func": "\nnode.status({fill: \"green\", shape: \"ring\", text: msg.payload});   \nreturn msg;",
+        "func": "let trackname = msg.trackname;\nflow.set(trackname);\nnode.status({fill: \"green\", shape: \"ring\", text: msg.payload});   \nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -18972,11 +18969,12 @@
         "type": "link in",
         "z": "5df15275.2888ec",
         "g": "65ceb63d19a93d0f",
-        "name": "",
+        "name": "meter ttp",
         "links": [
             "365e54e1b5c77315",
+            "47155355f2403ac8",
             "493e13639b3ed804",
-            "47155355f2403ac8"
+            "6bf31a93727ebe85"
         ],
         "x": 1425,
         "y": 140,
@@ -18992,7 +18990,7 @@
         "z": "5df15275.2888ec",
         "g": "65ceb63d19a93d0f",
         "name": "tester___",
-        "func": "let start_node_time = new Date().getTime();\n\nnode.status({fill: \"green\", shape: \"ring\", text: start_node_time});\n    \n\nreturn msg;",
+        "func": "let trackname = msg.trackname;\nflow.set(trackname);\nnode.status({ fill: \"green\", shape: \"ring\", text: msg.payload });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -35530,24 +35528,6 @@
         "wires": []
     },
     {
-        "id": "5080192e26c83250",
-        "type": "function",
-        "z": "5df15275.2888ec",
-        "g": "65ceb63d19a93d0f",
-        "name": "flow.set(trackname,\"\");",
-        "func": "let trackname = msg.trackname;\nflow.set(trackname);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1340,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "41fc95c9cb2c3b5c",
         "type": "link in",
         "z": "5df15275.2888ec",
@@ -40452,7 +40432,7 @@
         "g": "2044fa36820f41ee",
         "name": "",
         "links": [
-            "efa132132a7fa5d7"
+            "1719022f8617153c"
         ],
         "x": 2415,
         "y": 960,
