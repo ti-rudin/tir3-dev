@@ -737,9 +737,7 @@
             "e4eeb03c78ec0577"
         ],
         "x": 54,
-        "y": 39,
-        "w": 792,
-        "h": 122
+        "y": 39
     },
     {
         "id": "44cf135596e2716e",
@@ -1048,9 +1046,7 @@
             "2794da7d6f473613"
         ],
         "x": 54,
-        "y": 199,
-        "w": 2062,
-        "h": 162
+        "y": 199
     },
     {
         "id": "b988821087e2e632",
@@ -1084,9 +1080,7 @@
             "7f0a9ffb2eb5b4d8"
         ],
         "x": 54,
-        "y": 399,
-        "w": 2102,
-        "h": 162
+        "y": 399
     },
     {
         "id": "17b2eb4baaa826d1",
@@ -1135,9 +1129,7 @@
             "0320c2a9d42441f7"
         ],
         "x": 2814,
-        "y": 1279,
-        "w": 592,
-        "h": 122
+        "y": 1279
     },
     {
         "id": "014207cc7ff92b1d",
@@ -1159,9 +1151,7 @@
             "eb44c598e131cbec"
         ],
         "x": 54,
-        "y": 419,
-        "w": 792,
-        "h": 122
+        "y": 419
     },
     {
         "id": "352d50cd10bc5d42",
@@ -1189,9 +1179,7 @@
             "54312a83a6b701f5"
         ],
         "x": 2474,
-        "y": 39,
-        "w": 932,
-        "h": 269.5
+        "y": 39
     },
     {
         "id": "2d97f49a8108d498",
@@ -1344,9 +1332,7 @@
             "b68694ba34076e89"
         ],
         "x": 54,
-        "y": 579,
-        "w": 3662,
-        "h": 1782
+        "y": 579
     },
     {
         "id": "55c7f8e5a968efb7",
@@ -1387,9 +1373,7 @@
             "9ad3551093ac1119"
         ],
         "x": 54,
-        "y": 39,
-        "w": 2182,
-        "h": 342
+        "y": 39
     },
     {
         "id": "14dcb1e93340de92",
@@ -1608,9 +1592,7 @@
             "2c1dbffd57b83216"
         ],
         "x": 54,
-        "y": 259,
-        "w": 3332,
-        "h": 162
+        "y": 259
     },
     {
         "id": "1fa5fd47f525b091",
@@ -1635,9 +1617,7 @@
             "df24b9ca4d93ad81"
         ],
         "x": 2434,
-        "y": 1219,
-        "w": 892,
-        "h": 202
+        "y": 1219
     },
     {
         "id": "8132589a9074621b",
@@ -1670,9 +1650,7 @@
             "7578e9167291e34f"
         ],
         "x": 54,
-        "y": 459,
-        "w": 1952,
-        "h": 162
+        "y": 459
     },
     {
         "id": "cd66d4bac998a022",
@@ -1696,9 +1674,7 @@
             "389cc2a8fd0c7754"
         ],
         "x": 1674,
-        "y": 19,
-        "w": 472,
-        "h": 162
+        "y": 19
     },
     {
         "id": "1af14388992a8047",
@@ -1722,9 +1698,7 @@
             "7a41be22b034acb0"
         ],
         "x": 914,
-        "y": 59,
-        "w": 472,
-        "h": 122
+        "y": 59
     },
     {
         "id": "2dba9c518146d3f5",
@@ -1750,9 +1724,7 @@
             "b744408634efb2ef"
         ],
         "x": 54,
-        "y": 659,
-        "w": 1572,
-        "h": 142
+        "y": 659
     },
     {
         "id": "039e1120c796f77c",
@@ -1776,9 +1748,7 @@
             "3ff9ad2afd9c823f"
         ],
         "x": 2274,
-        "y": 519,
-        "w": 592,
-        "h": 122
+        "y": 519
     },
     {
         "id": "f53315307bbbc36f",
@@ -1800,9 +1770,7 @@
             "489046af1889b3ff"
         ],
         "x": 54,
-        "y": 59,
-        "w": 792,
-        "h": 122
+        "y": 59
     },
     {
         "id": "814fe3ad47c48a59",
@@ -1926,9 +1894,7 @@
             "edba0ad4410deb95"
         ],
         "x": 1374,
-        "y": 2539,
-        "w": 892,
-        "h": 202
+        "y": 2539
     },
     {
         "id": "251a240e36b31c14",
@@ -2172,9 +2138,7 @@
             "edd6fdfec715b339"
         ],
         "x": 2844,
-        "y": 819,
-        "w": 692,
-        "h": 142
+        "y": 819
     },
     {
         "id": "f120eab2.0a60a8",
@@ -18863,7 +18827,8 @@
         "y": 140,
         "wires": [
             [
-                "c4ba62796dfec943"
+                "c4ba62796dfec943",
+                "368c7c1a223bc39b"
             ]
         ]
     },
@@ -41130,7 +41095,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1520,
+        "x": 1860,
         "y": 1600,
         "wires": [
             [
@@ -41147,7 +41112,7 @@
         "links": [
             "41fc95c9cb2c3b5c"
         ],
-        "x": 1655,
+        "x": 1995,
         "y": 1600,
         "wires": []
     },
@@ -41166,8 +41131,8 @@
         "y": 1600,
         "wires": [
             [
-                "af843f8c5aec7d33",
-                "84cc33dcd6efcdfb"
+                "84cc33dcd6efcdfb",
+                "9edee8174b84386e"
             ]
         ]
     },
@@ -41297,6 +41262,42 @@
         ],
         "x": 1215,
         "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "9edee8174b84386e",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "name": "update bot floors, finance triger + on redis",
+        "func": "let botname = msg.botname;\nlet guid = global.get('guid');\n\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet sumsales = 0;\nsales.all.forEach(function (element) {\n    sumsales = sumsales + element[5];\n\n});\n\nlet quotanal = 0;\nlet quotainorders = 0;\nlet basenal = Number(finance.startdepo) + Number(sumsales);\nlet baseinorders = 0;\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 1) {\n        baseinorders = baseinorders + Number(item[14]) * Number(item[3]);\n        basenal = basenal - Number(item[14]) * Number(item[3]);\n\n    }\n    if (item[7] === 2) {\n        quotanal = quotanal + Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n    if (item[7] === 3) {\n        quotainorders = quotainorders + Number(item[14]);\n        //quotanal = quotanal - Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n\n\n\n});\nfinance.quotanal = (Number(quotanal)).toFixed(msg.bot.settings.digitq);\nfinance.quotainorders = (Number(quotainorders)).toFixed(msg.bot.settings.digitq);\nfinance.basenal = (Number(basenal)).toFixed(msg.bot.settings.digitprice);\nfinance.baseinorders = (Number(baseinorders)).toFixed(msg.bot.settings.digitprice);\n\nlet p = Number(msg.bot.status.currentprice);\nfinance.depo = Number((Number(finance.quotanal) * p + Number(finance.quotainorders) * p + Number(finance.basenal) + Number(finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\n\n\n\nmsg.bot.finance = finance;\nmsg.bot.floors = floors;\nmsg.bot.sales = sales;\n\n//global.set(msg.botname, msg.bot);\n\nlet volname = guid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 1600,
+        "wires": [
+            [
+                "af843f8c5aec7d33"
+            ]
+        ]
+    },
+    {
+        "id": "368c7c1a223bc39b",
+        "type": "debug",
+        "z": "5df15275.2888ec",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1730,
+        "y": 160,
         "wires": []
     }
 ]

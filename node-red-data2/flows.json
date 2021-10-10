@@ -737,9 +737,7 @@
             "e4eeb03c78ec0577"
         ],
         "x": 54,
-        "y": 39,
-        "w": 792,
-        "h": 122
+        "y": 39
     },
     {
         "id": "44cf135596e2716e",
@@ -1048,9 +1046,7 @@
             "2794da7d6f473613"
         ],
         "x": 54,
-        "y": 199,
-        "w": 2062,
-        "h": 162
+        "y": 199
     },
     {
         "id": "b988821087e2e632",
@@ -1084,9 +1080,7 @@
             "7f0a9ffb2eb5b4d8"
         ],
         "x": 54,
-        "y": 399,
-        "w": 2102,
-        "h": 162
+        "y": 399
     },
     {
         "id": "17b2eb4baaa826d1",
@@ -1135,9 +1129,7 @@
             "0320c2a9d42441f7"
         ],
         "x": 2814,
-        "y": 1279,
-        "w": 592,
-        "h": 122
+        "y": 1279
     },
     {
         "id": "014207cc7ff92b1d",
@@ -1159,9 +1151,7 @@
             "eb44c598e131cbec"
         ],
         "x": 54,
-        "y": 419,
-        "w": 792,
-        "h": 122
+        "y": 419
     },
     {
         "id": "352d50cd10bc5d42",
@@ -1189,9 +1179,7 @@
             "54312a83a6b701f5"
         ],
         "x": 2474,
-        "y": 39,
-        "w": 932,
-        "h": 269.5
+        "y": 39
     },
     {
         "id": "2d97f49a8108d498",
@@ -1344,9 +1332,7 @@
             "b68694ba34076e89"
         ],
         "x": 54,
-        "y": 579,
-        "w": 3662,
-        "h": 1782
+        "y": 579
     },
     {
         "id": "55c7f8e5a968efb7",
@@ -1387,9 +1373,7 @@
             "9ad3551093ac1119"
         ],
         "x": 54,
-        "y": 39,
-        "w": 2182,
-        "h": 342
+        "y": 39
     },
     {
         "id": "14dcb1e93340de92",
@@ -1608,9 +1592,7 @@
             "2c1dbffd57b83216"
         ],
         "x": 54,
-        "y": 259,
-        "w": 3332,
-        "h": 162
+        "y": 259
     },
     {
         "id": "1fa5fd47f525b091",
@@ -1635,9 +1617,7 @@
             "df24b9ca4d93ad81"
         ],
         "x": 2434,
-        "y": 1219,
-        "w": 892,
-        "h": 202
+        "y": 1219
     },
     {
         "id": "8132589a9074621b",
@@ -1670,9 +1650,7 @@
             "7578e9167291e34f"
         ],
         "x": 54,
-        "y": 459,
-        "w": 1952,
-        "h": 162
+        "y": 459
     },
     {
         "id": "cd66d4bac998a022",
@@ -1696,9 +1674,7 @@
             "389cc2a8fd0c7754"
         ],
         "x": 1674,
-        "y": 19,
-        "w": 472,
-        "h": 162
+        "y": 19
     },
     {
         "id": "1af14388992a8047",
@@ -1722,9 +1698,7 @@
             "7a41be22b034acb0"
         ],
         "x": 914,
-        "y": 59,
-        "w": 472,
-        "h": 122
+        "y": 59
     },
     {
         "id": "2dba9c518146d3f5",
@@ -1750,9 +1724,7 @@
             "b744408634efb2ef"
         ],
         "x": 54,
-        "y": 659,
-        "w": 1572,
-        "h": 142
+        "y": 659
     },
     {
         "id": "039e1120c796f77c",
@@ -1776,9 +1748,7 @@
             "3ff9ad2afd9c823f"
         ],
         "x": 2274,
-        "y": 519,
-        "w": 592,
-        "h": 122
+        "y": 519
     },
     {
         "id": "f53315307bbbc36f",
@@ -1800,9 +1770,7 @@
             "489046af1889b3ff"
         ],
         "x": 54,
-        "y": 59,
-        "w": 792,
-        "h": 122
+        "y": 59
     },
     {
         "id": "814fe3ad47c48a59",
@@ -1926,9 +1894,7 @@
             "edba0ad4410deb95"
         ],
         "x": 1374,
-        "y": 2539,
-        "w": 892,
-        "h": 202
+        "y": 2539
     },
     {
         "id": "251a240e36b31c14",
@@ -2060,9 +2026,7 @@
             "7fad8acded27ae4f"
         ],
         "x": 1114,
-        "y": 1179,
-        "w": 792,
-        "h": 122
+        "y": 1179
     },
     {
         "id": "2044fa36820f41ee",
@@ -2174,9 +2138,7 @@
             "edd6fdfec715b339"
         ],
         "x": 2844,
-        "y": 819,
-        "w": 692,
-        "h": 142
+        "y": 819
     },
     {
         "id": "f120eab2.0a60a8",
@@ -18865,7 +18827,8 @@
         "y": 140,
         "wires": [
             [
-                "c4ba62796dfec943"
+                "c4ba62796dfec943",
+                "368c7c1a223bc39b"
             ]
         ]
     },
@@ -18875,7 +18838,7 @@
         "z": "5df15275.2888ec",
         "g": "65ceb63d19a93d0f",
         "name": "tester___",
-        "func": "let trackname = msg.trackname;\nflow.set(trackname);\nnode.status({ fill: \"green\", shape: \"ring\", text: msg.payload });\nreturn msg;",
+        "func": "\nnode.status({ fill: \"green\", shape: \"ring\", text: msg.payload });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -40194,7 +40157,7 @@
         "z": "2a761808.610238",
         "g": "2044fa36820f41ee",
         "name": "duration",
-        "func": "let trackname = msg.trackname;\nlet track = flow.get(trackname);\nif (track) {\n\n    let laststep = track[track.length - 1];\n    let firststep = track[0];\n    let last_node_end_time = laststep.end_node_time;\n    let first_node_start_time = firststep.start_node_time;\n\n    let duration = last_node_end_time - first_node_start_time;\n    //node.warn(duration);\n    msg.payload = duration;\n\n\n\n    return msg;\n}",
+        "func": "let trackname = msg.trackname;\nlet track = flow.get(trackname);\nif (track) {\n\n    let laststep = track[track.length - 1];\n    let firststep = track[0];\n    let last_node_end_time = laststep.end_node_time;\n    let first_node_start_time = firststep.start_node_time;\n\n    let duration = last_node_end_time - first_node_start_time;\n    //node.warn(duration);\n    msg.payload = duration;\n\n    flow.set(trackname);\n\n\n\n    return msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -41319,5 +41282,22 @@
                 "af843f8c5aec7d33"
             ]
         ]
+    },
+    {
+        "id": "368c7c1a223bc39b",
+        "type": "debug",
+        "z": "5df15275.2888ec",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1730,
+        "y": 160,
+        "wires": []
     }
 ]
