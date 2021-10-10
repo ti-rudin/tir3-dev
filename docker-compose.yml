@@ -62,6 +62,14 @@ services:
     networks:
       - tibotnet
 
+  #rabbitmq:
+  #  image: rabbitmq:3.6-management-alpine
+  #  environment:
+  #    RABBITMQ_DEFAULT_USER: tibot
+  #    RABBITMQ_DEFAULT_PASS: tibot
+  #  ports:
+  #    - 15672:15672
+      
 volumes:
   redis-data:
   node-red-data2:

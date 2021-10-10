@@ -892,66 +892,6 @@
             }
         }
     },
-    "node-red-contrib-state": {
-        "name": "node-red-contrib-state",
-        "version": "1.5.1",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "shared-state": {
-                "name": "shared-state",
-                "types": [
-                    "shared-state"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-state",
-                "file": "/data/node_modules/node-red-contrib-state/lib/state.js"
-            },
-            "get-shared-state": {
-                "name": "get-shared-state",
-                "types": [
-                    "get-shared-state"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-state",
-                "file": "/data/node_modules/node-red-contrib-state/lib/getState.js"
-            },
-            "set-shared-state": {
-                "name": "set-shared-state",
-                "types": [
-                    "set-shared-state"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-state",
-                "file": "/data/node_modules/node-red-contrib-state/lib/setState.js"
-            }
-        }
-    },
-    "node-red-contrib-state-machine": {
-        "name": "node-red-contrib-state-machine",
-        "version": "1.2.0",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "state-machine": {
-                "name": "state-machine",
-                "types": [
-                    "state-machine"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-state-machine",
-                "file": "/data/node_modules/node-red-contrib-state-machine/state-machine.js"
-            }
-        }
-    },
     "node-red-contrib-xstate-machine": {
         "name": "node-red-contrib-xstate-machine",
         "version": "1.1.1",
@@ -968,25 +908,6 @@
                 "user": false,
                 "module": "node-red-contrib-xstate-machine",
                 "file": "/data/node_modules/node-red-contrib-xstate-machine/dist/smxstate-node.js"
-            }
-        }
-    },
-    "node-red-contrib-dsm": {
-        "name": "node-red-contrib-dsm",
-        "version": "0.14.1",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "dsm": {
-                "name": "dsm",
-                "types": [
-                    "dsm"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-dsm",
-                "file": "/data/node_modules/node-red-contrib-dsm/dsm.js"
             }
         }
     }

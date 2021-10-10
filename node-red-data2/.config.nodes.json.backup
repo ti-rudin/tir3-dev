@@ -892,66 +892,6 @@
             }
         }
     },
-    "node-red-contrib-state": {
-        "name": "node-red-contrib-state",
-        "version": "1.5.1",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "shared-state": {
-                "name": "shared-state",
-                "types": [
-                    "shared-state"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-state",
-                "file": "/data/node_modules/node-red-contrib-state/lib/state.js"
-            },
-            "get-shared-state": {
-                "name": "get-shared-state",
-                "types": [
-                    "get-shared-state"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-state",
-                "file": "/data/node_modules/node-red-contrib-state/lib/getState.js"
-            },
-            "set-shared-state": {
-                "name": "set-shared-state",
-                "types": [
-                    "set-shared-state"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-state",
-                "file": "/data/node_modules/node-red-contrib-state/lib/setState.js"
-            }
-        }
-    },
-    "node-red-contrib-state-machine": {
-        "name": "node-red-contrib-state-machine",
-        "version": "1.2.0",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "state-machine": {
-                "name": "state-machine",
-                "types": [
-                    "state-machine"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-state-machine",
-                "file": "/data/node_modules/node-red-contrib-state-machine/state-machine.js"
-            }
-        }
-    },
     "node-red-contrib-xstate-machine": {
         "name": "node-red-contrib-xstate-machine",
         "version": "1.1.1",
@@ -968,6 +908,58 @@
                 "user": false,
                 "module": "node-red-contrib-xstate-machine",
                 "file": "/data/node_modules/node-red-contrib-xstate-machine/dist/smxstate-node.js"
+            }
+        }
+    },
+    "@meowwolf/node-red-contrib-amqp": {
+        "name": "@meowwolf/node-red-contrib-amqp",
+        "version": "2.4.1",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "amqp-in": {
+                "name": "amqp-in",
+                "types": [
+                    "amqp-in"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "@meowwolf/node-red-contrib-amqp",
+                "file": "/data/node_modules/@meowwolf/node-red-contrib-amqp/build/src/nodes/amqp-in.js"
+            },
+            "amqp-out": {
+                "name": "amqp-out",
+                "types": [
+                    "amqp-out"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "@meowwolf/node-red-contrib-amqp",
+                "file": "/data/node_modules/@meowwolf/node-red-contrib-amqp/build/src/nodes/amqp-out.js"
+            },
+            "amqp-broker": {
+                "name": "amqp-broker",
+                "types": [
+                    "amqp-broker"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "@meowwolf/node-red-contrib-amqp",
+                "file": "/data/node_modules/@meowwolf/node-red-contrib-amqp/build/src/nodes/amqp-broker.js"
+            },
+            "amqp-in-manual-ack": {
+                "name": "amqp-in-manual-ack",
+                "types": [
+                    "amqp-in-manual-ack"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "@meowwolf/node-red-contrib-amqp",
+                "file": "/data/node_modules/@meowwolf/node-red-contrib-amqp/build/src/nodes/amqp-in-manual-ack.js"
             }
         }
     }
