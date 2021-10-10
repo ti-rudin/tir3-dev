@@ -2158,13 +2158,13 @@
             "5439d7c0b172fac9",
             "6bf31a93727ebe85",
             "ee5baed57022e2b9",
-            "fc11744d397cacf9",
             "eaeb53af2f0c10d4",
-            "806f4e430374bace"
+            "806f4e430374bace",
+            "3520419ec219563a"
         ],
         "x": 1934,
         "y": 879,
-        "w": 632,
+        "w": 612,
         "h": 162
     },
     {
@@ -18433,56 +18433,11 @@
         "x": 2880,
         "y": 160,
         "wires": [
-            [
-                "60eb6ef5.3e20b"
-            ],
+            [],
             [
                 "840c0c4320bf7885",
                 "feb238643809075e"
             ]
-        ]
-    },
-    {
-        "id": "60eb6ef5.3e20b",
-        "type": "ui_chart",
-        "z": "2a761808.610238",
-        "name": "",
-        "group": "f244fee6.d2627",
-        "order": 0,
-        "width": "4",
-        "height": "7",
-        "label": "ttp track",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "ss",
-        "interpolate": "cubic",
-        "nodata": "",
-        "dot": true,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": "10",
-        "removeOlderPoints": "100",
-        "removeOlderUnit": "1",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9a244f",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "x": 3040,
-        "y": 140,
-        "wires": [
-            []
         ]
     },
     {
@@ -40519,53 +40474,9 @@
         "y": 940,
         "wires": [
             [
-                "fc11744d397cacf9",
-                "6bf31a93727ebe85"
+                "6bf31a93727ebe85",
+                "3520419ec219563a"
             ]
-        ]
-    },
-    {
-        "id": "fc11744d397cacf9",
-        "type": "ui_chart",
-        "z": "2a761808.610238",
-        "g": "2044fa36820f41ee",
-        "name": "",
-        "group": "f244fee6.d2627",
-        "order": 0,
-        "width": "4",
-        "height": "7",
-        "label": "main track",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "ss",
-        "interpolate": "bezier",
-        "nodata": "",
-        "dot": true,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": "10",
-        "removeOlderPoints": "40",
-        "removeOlderUnit": "1",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9a244f",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "x": 2470,
-        "y": 920,
-        "wires": [
-            []
         ]
     },
     {
@@ -40722,7 +40633,8 @@
         "y": 940,
         "wires": [
             [
-                "d90a37138c4b882a"
+                "d90a37138c4b882a",
+                "535ef5733e21adba"
             ]
         ]
     },
@@ -41198,5 +41110,49 @@
         "x": 1655,
         "y": 1340,
         "wires": []
+    },
+    {
+        "id": "3520419ec219563a",
+        "type": "ui_chart",
+        "z": "2a761808.610238",
+        "g": "2044fa36820f41ee",
+        "name": "",
+        "group": "f244fee6.d2627",
+        "order": 0,
+        "width": "4",
+        "height": "7",
+        "label": "ttp track",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "ss",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9a244f",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 2460,
+        "y": 920,
+        "wires": [
+            []
+        ]
     }
 ]
