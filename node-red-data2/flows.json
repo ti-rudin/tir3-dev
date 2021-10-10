@@ -214,7 +214,9 @@
             "43e93874.b7141"
         ],
         "x": 2274,
-        "y": 519
+        "y": 519,
+        "w": 592,
+        "h": 122
     },
     {
         "id": "1ce3921709fe3854",
@@ -275,7 +277,9 @@
             "a7628168.861ce"
         ],
         "x": 54,
-        "y": 59
+        "y": 59,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "a6e4d859c0057b6f",
@@ -319,7 +323,9 @@
             "dd73e1c4557a5e65"
         ],
         "x": 74,
-        "y": 439
+        "y": 439,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "8a452b1de9e087aa",
@@ -757,7 +763,9 @@
             "579577e08c6abb4c"
         ],
         "x": 2114,
-        "y": 19
+        "y": 19,
+        "w": 472,
+        "h": 162
     },
     {
         "id": "6cca532bb4a349c9",
@@ -868,7 +876,9 @@
             "5f2ab5817634cafa"
         ],
         "x": 2874,
-        "y": 2519
+        "y": 2519,
+        "w": 592,
+        "h": 122
     },
     {
         "id": "b5c4460e3abcebce",
@@ -1099,7 +1109,9 @@
             "503d53910c17c784"
         ],
         "x": 2904,
-        "y": 2059
+        "y": 2059,
+        "w": 692,
+        "h": 142
     },
     {
         "id": "b9356658d1993c51",
@@ -1123,7 +1135,9 @@
             "0320c2a9d42441f7"
         ],
         "x": 2814,
-        "y": 1279
+        "y": 1279,
+        "w": 592,
+        "h": 122
     },
     {
         "id": "014207cc7ff92b1d",
@@ -1145,7 +1159,9 @@
             "eb44c598e131cbec"
         ],
         "x": 54,
-        "y": 419
+        "y": 419,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "352d50cd10bc5d42",
@@ -1173,7 +1189,9 @@
             "54312a83a6b701f5"
         ],
         "x": 2474,
-        "y": 39
+        "y": 39,
+        "w": 932,
+        "h": 269.5
     },
     {
         "id": "2d97f49a8108d498",
@@ -1326,7 +1344,9 @@
             "b68694ba34076e89"
         ],
         "x": 54,
-        "y": 579
+        "y": 579,
+        "w": 3662,
+        "h": 1782
     },
     {
         "id": "55c7f8e5a968efb7",
@@ -1367,7 +1387,9 @@
             "9ad3551093ac1119"
         ],
         "x": 54,
-        "y": 39
+        "y": 39,
+        "w": 2182,
+        "h": 342
     },
     {
         "id": "14dcb1e93340de92",
@@ -1545,7 +1567,9 @@
             "94c9271545c13b40"
         ],
         "x": 54,
-        "y": 679
+        "y": 679,
+        "w": 1892,
+        "h": 162
     },
     {
         "id": "804213ed1f644c18",
@@ -1584,7 +1608,9 @@
             "2c1dbffd57b83216"
         ],
         "x": 54,
-        "y": 259
+        "y": 259,
+        "w": 3332,
+        "h": 162
     },
     {
         "id": "1fa5fd47f525b091",
@@ -1609,7 +1635,9 @@
             "df24b9ca4d93ad81"
         ],
         "x": 2434,
-        "y": 1219
+        "y": 1219,
+        "w": 892,
+        "h": 202
     },
     {
         "id": "8132589a9074621b",
@@ -1642,7 +1670,9 @@
             "7578e9167291e34f"
         ],
         "x": 54,
-        "y": 459
+        "y": 459,
+        "w": 1952,
+        "h": 162
     },
     {
         "id": "cd66d4bac998a022",
@@ -1666,7 +1696,9 @@
             "389cc2a8fd0c7754"
         ],
         "x": 1674,
-        "y": 19
+        "y": 19,
+        "w": 472,
+        "h": 162
     },
     {
         "id": "1af14388992a8047",
@@ -1690,53 +1722,9 @@
             "7a41be22b034acb0"
         ],
         "x": 914,
-        "y": 59
-    },
-    {
-        "id": "f0676b62c8f1c90c",
-        "type": "group",
-        "z": "245ee519b635b6cd",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "9479aab7ed42de81",
-            "6761368fdaa06112",
-            "825c2644ad8db30b",
-            "61b7c0dba92d9bf5",
-            "aa7c1e183b23507f",
-            "57925429ca810cd2",
-            "c5b6726332f3e726",
-            "a8a74437434f8412",
-            "6f3d16f935eeebf3",
-            "36ab06a0e4700650",
-            "206a6cb6a12b9fd2",
-            "701789b1f837f763",
-            "79c861d199df158e",
-            "0b5862e9bd34e50c",
-            "8f6043c6e809c644",
-            "dd6df4705b145dee",
-            "e8c5c8e0d2b70fae",
-            "819c24b0e889db9a",
-            "1a5af93604004873",
-            "0f78ecf017b82cf4",
-            "513ec5caa8aebea9",
-            "7f858a5b4c716844",
-            "1b0156683381b2dc",
-            "ecf9c89c5e3e30e5",
-            "60f79fd782f2845a",
-            "da1a919755acbd3e",
-            "c750b1c8685c12f7",
-            "8bcbbf716ab8f8e9"
-        ],
-        "x": 54,
-        "y": 1299
+        "y": 59,
+        "w": 472,
+        "h": 122
     },
     {
         "id": "2dba9c518146d3f5",
@@ -1762,7 +1750,9 @@
             "b744408634efb2ef"
         ],
         "x": 54,
-        "y": 659
+        "y": 659,
+        "w": 1572,
+        "h": 142
     },
     {
         "id": "039e1120c796f77c",
@@ -1786,7 +1776,9 @@
             "3ff9ad2afd9c823f"
         ],
         "x": 2274,
-        "y": 519
+        "y": 519,
+        "w": 592,
+        "h": 122
     },
     {
         "id": "f53315307bbbc36f",
@@ -1808,7 +1800,9 @@
             "489046af1889b3ff"
         ],
         "x": 54,
-        "y": 59
+        "y": 59,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "814fe3ad47c48a59",
@@ -1849,7 +1843,9 @@
             "a37ec54854f75f01"
         ],
         "x": 54,
-        "y": 219
+        "y": 219,
+        "w": 3582,
+        "h": 162
     },
     {
         "id": "01cdfc91bb42701f",
@@ -1875,7 +1871,9 @@
             "950fa7fabc4ef79a"
         ],
         "x": 54,
-        "y": 419
+        "y": 419,
+        "w": 1272,
+        "h": 202
     },
     {
         "id": "65ceb63d19a93d0f",
@@ -1901,7 +1899,9 @@
             "a1d4c1c74be64298"
         ],
         "x": 884,
-        "y": 59
+        "y": 59,
+        "w": 722,
+        "h": 122
     },
     {
         "id": "21876e7f6d644fb4",
@@ -1926,7 +1926,9 @@
             "edba0ad4410deb95"
         ],
         "x": 1374,
-        "y": 2539
+        "y": 2539,
+        "w": 892,
+        "h": 202
     },
     {
         "id": "251a240e36b31c14",
@@ -1950,7 +1952,9 @@
             "355607853c06794c"
         ],
         "x": 1834,
-        "y": 959
+        "y": 959,
+        "w": 632,
+        "h": 162
     },
     {
         "id": "a098ebd7bc13168a",
@@ -1972,7 +1976,9 @@
             "58c7424d21936ed2"
         ],
         "x": 814,
-        "y": 1159
+        "y": 1159,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "47ccdad2d228ed4b",
@@ -2008,7 +2014,9 @@
             "aff2e0df221f4a3e"
         ],
         "x": 54,
-        "y": 899
+        "y": 899,
+        "w": 1682,
+        "h": 222
     },
     {
         "id": "c723fa7827c597d2",
@@ -2052,7 +2060,9 @@
             "7fad8acded27ae4f"
         ],
         "x": 1114,
-        "y": 1179
+        "y": 1179,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "2044fa36820f41ee",
@@ -2076,7 +2086,9 @@
             "3520419ec219563a"
         ],
         "x": 1934,
-        "y": 879
+        "y": 879,
+        "w": 612,
+        "h": 162
     },
     {
         "id": "55e30606c2e4a038",
@@ -2112,7 +2124,9 @@
             "3aa78e92fd51af7b"
         ],
         "x": 154,
-        "y": 819
+        "y": 819,
+        "w": 1682,
+        "h": 222
     },
     {
         "id": "73c30bbe5f45e91f",
@@ -2134,7 +2148,9 @@
             "ca72074c8d540aae"
         ],
         "x": 914,
-        "y": 1079
+        "y": 1079,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "b68694ba34076e89",
@@ -2158,7 +2174,9 @@
             "edd6fdfec715b339"
         ],
         "x": 2844,
-        "y": 819
+        "y": 819,
+        "w": 692,
+        "h": 142
     },
     {
         "id": "f120eab2.0a60a8",
@@ -2531,70 +2549,6 @@
         "wires": []
     },
     {
-        "id": "ccd55cdb.7ed72",
-        "type": "link in",
-        "z": "2a761808.610238",
-        "name": "fibish ttp in",
-        "links": [
-            "06ee55c7f64e90e8",
-            "1115296679a9cef0",
-            "125460d2daa6c560",
-            "1c88751ca624541e",
-            "1d26132c.06016d",
-            "2055a0b0f09d357a",
-            "2457696296d8e638",
-            "25e5da747f055ffb",
-            "2c0ca6c8b35ddbad",
-            "2cab2371e70473ee",
-            "3257b8646462c83f",
-            "396f3856733c5e5a",
-            "3ab3f5ece6ebd7ba",
-            "400703b3d0a09d2f",
-            "41ed2184ea044881",
-            "431d4a9d89f23bfd",
-            "43656eb1fac8a3d6",
-            "4715a6d7245e2835",
-            "489ced1e0bff9a66",
-            "4b4fa1ce.2d444",
-            "53a7bd28e3a4888c",
-            "550777029e1aaff1",
-            "5e1ddf6dffe66d4e",
-            "639392368e9dd325",
-            "63cb05daef63aa4e",
-            "69fa5228fd8ebd53",
-            "6aa6b9efab30f353",
-            "717f89b519c99b53",
-            "7791762b8f3177d7",
-            "8a25ccb6829d8c84",
-            "8c12181324662e5c",
-            "9011d963f8a5cefa",
-            "952e6be0316b3cd3",
-            "a30f7a41973f098b",
-            "a4a508658e9f742d",
-            "b7d10635e5230bc7",
-            "be918fe0c6266db7",
-            "cbede69abd64c9b3",
-            "d97b347c8d93ee47",
-            "d9b0eb22e5a3033c",
-            "df02a0b8de9ad90d",
-            "e0cd7d8281ad2e8d",
-            "e356e4d991bd7fbc",
-            "ebc54e94aedd6d5a",
-            "eff1206988b0fd71",
-            "f3d254f3a9ced1b1",
-            "f3fda139104116cf",
-            "f6c1050a0ede61d5",
-            "feeed921662c3ca8"
-        ],
-        "x": 2535,
-        "y": 160,
-        "wires": [
-            [
-                "365e54e1b5c77315"
-            ]
-        ]
-    },
-    {
         "id": "14218f4f.622ba1",
         "type": "link out",
         "z": "2a761808.610238",
@@ -2706,7 +2660,7 @@
                 "515429a6.bb3a88"
             ],
             [
-                "4939160435a4e188"
+                "8910df8c8a01ef46"
             ]
         ]
     },
@@ -19222,8 +19176,8 @@
         "name": "",
         "topic": "",
         "obj": true,
-        "x": 1340,
-        "y": 2360,
+        "x": 1720,
+        "y": 1960,
         "wires": []
     },
     {
@@ -19237,8 +19191,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1170,
-        "y": 2360,
+        "x": 1510,
+        "y": 1960,
         "wires": [
             [
                 "bdf04cf696930d9c"
@@ -20239,7 +20193,7 @@
         "y": 2240,
         "wires": [
             [
-                "6756bec9ff782c4e"
+                "359826635d024ff3"
             ],
             [
                 "a30f7a41973f098b"
@@ -33965,7 +33919,6 @@
         "id": "9479aab7ed42de81",
         "type": "link in",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "links": [
             "40175d8a.67b97c",
@@ -33985,7 +33938,6 @@
         "id": "6761368fdaa06112",
         "type": "function",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "getprice, MA",
         "func": "\nlet moneta = msg.bot.settings.moneta;\n\nconst gp = global.get('getprice')(moneta);\n\ngp.then(gp => {\n\n    msg.bot.status.currentprice = gp;\n    let volname = msg.bot.settings.botname + \"-MA-big\";\n    msg.bot.status.sr_ma_big = Number(flow.get(volname));\n\n    let volname2 = msg.bot.settings.botname + \"-MA-small\";\n    msg.bot.status.sr_ma_small = Number(flow.get(volname2));\n\n\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});",
         "outputs": 1,
@@ -34005,7 +33957,6 @@
         "id": "825c2644ad8db30b",
         "type": "debug",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -34023,7 +33974,6 @@
         "id": "61b7c0dba92d9bf5",
         "type": "function",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "MA zapret calculate",
         "func": "\nmsg.bot.status.currentprice = Number(msg.bot.status.currentprice);\n\nif ((msg.bot.status.currentprice > msg.bot.status.sr_ma_big) && (msg.bot.status.currentprice > msg.bot.status.sr_ma_small)) {\n    msg.bot.zapret_na_zakup = false;\n    msg.bot.status.rezhim = \"МА - закуп разрешен\";\n\n} else {\n    msg.bot.zapret_na_zakup = true;\n    msg.bot.status.rezhim = \"МА - закуп запрещён\";\n\n}\n\nnode.status({ fill: \"green\", shape: \"dot\" });\n\nreturn msg;",
         "outputs": 1,
@@ -34043,7 +33993,6 @@
         "id": "aa7c1e183b23507f",
         "type": "switch",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "service tick",
         "property": "service",
         "propertyType": "msg",
@@ -34073,7 +34022,6 @@
         "id": "57925429ca810cd2",
         "type": "function",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "определяем этаж",
         "func": "\nlet lp = Number(msg.bot.status.currentprice);\nlet f = msg.bot.floors;\n\nvar curfloor = f.filter(function (floor) {\n    return ((floor[1] <= lp) && (floor[2] > lp));\n});\n\nif (curfloor[0]) {\n\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n\n    msg.bot.currentfloor = curfloor[0];\n    msg.bot.status.lastfloor = msg.bot.status.currentfloor;\n    msg.bot.status.currentfloor = curfloor[0][0];\n\n    msg.bot.downfloor = f[msg.bot.status.currentfloor - 2];\n    return [msg, null];\n}\nelse {\n\n    node.status({ fill: \"blue\", shape: \"dot\" });\n    // node.warn(\"вне сетки\"); \n    return [null, msg];\n}\n\n",
         "outputs": 2,
@@ -34096,7 +34044,6 @@
         "id": "c5b6726332f3e726",
         "type": "comment",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "вне сетки",
         "info": "",
         "x": 1440,
@@ -34107,7 +34054,6 @@
         "id": "a8a74437434f8412",
         "type": "switch",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "sold ?",
         "property": "bot.ttp.sold",
         "propertyType": "msg",
@@ -34137,7 +34083,6 @@
         "id": "6f3d16f935eeebf3",
         "type": "function",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "setbot_ttp reset",
         "func": "\nmsg.bot.ttp.curstop = 0;\nmsg.bot.ttp.raschstopprice = 0;\nmsg.bot.ttp.curorderid = 0;\nmsg.bot.ttp.sold = false;\n//msg.bot.ttp.ttpbusy = false;\nmsg.bot.ttp.currentprice = 0;\nmsg.bot.ttp.quantity = 0;\nmsg.bot.ttp.final_price = 0;\nmsg.bot.ttp.finalorder = 0;\nmsg.bot.ttp.proskal = false;\n\nglobal.set(msg.botname + \"-ttp\", msg.bot.ttp);\n\nreturn msg;",
         "outputs": 1,
@@ -34158,7 +34103,6 @@
         "id": "36ab06a0e4700650",
         "type": "link out",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "links": [
             "889c32dad255eacd"
@@ -34171,7 +34115,6 @@
         "id": "206a6cb6a12b9fd2",
         "type": "function",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "регистрация сделки",
         "func": "\nnode.warn(\"регистрация сделки\");\nlet commision = global.get(\"commision\");\n\nlet sellprice = Number(msg.bot.ttp.final_price);\n\nlet tempfin = Number(Number(msg.bot.finance.quotainorders) - Number(msg.bot.ttp.quantity));\nlet tempfin2 = Number(Number(msg.bot.finance.basenal) + Number(msg.bot.ttp.quantity) * sellprice);\n\nvar floors = msg.bot.floors;\nlet sumsales = 0;\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 3) {\n        let buyprice = Number(item[10]);\n        let quantity = Number(item[14]);\n        let p = quantity * (sellprice - buyprice);\n        let c = quantity * (Number(sellprice + buyprice)) / 100 * commision;\n        let net = p - c;\n        tempfin2 = tempfin2 - c;\n        msg.bot.sales.today.push([buyprice, sellprice, quantity, p, c, net]);\n        msg.bot.sales.all.push([buyprice, sellprice, quantity, p, c, net]);\n        sumsales = sumsales + net\n        node.warn([buyprice, sellprice, quantity, p, c, net]);\n        \n        let botname = msg.botname;\n        let datamsg = \"регистрация сделки - \" + [buyprice, sellprice, quantity, p, c, net];\n        const tilog = global.get('tilog')(botname, datamsg);\n        tilog;\n        \n\n        item[7] = 0;\n        item[8] = 0;\n        item[9] = 0;\n        item[10] = 0;\n        item[11] = 0;\n        item[12] = 0;\n        item[13] = 0;\n        item[14] = 0;\n\n    }\n});\nif (sumsales != 0) {\n\nmsg.sumsales = sumsales;\nmsg.bot.finance.quotainorders = tempfin.toFixed(msg.bot.settings.digitprice);\nmsg.bot.finance.basenal = tempfin2.toFixed(msg.bot.settings.digitq);\n\nif (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\nif (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\nmsg.bot.floors = floors;\n}\n\nreturn msg;\n\n\n\n\n",
         "outputs": 1,
@@ -34192,7 +34135,6 @@
         "id": "701789b1f837f763",
         "type": "subflow:90fc9ad8367cb513",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "env": [],
         "x": 1450,
@@ -34207,7 +34149,6 @@
         "id": "79c861d199df158e",
         "type": "link out",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "links": [
             "889c32dad255eacd"
@@ -34220,7 +34161,6 @@
         "id": "0b5862e9bd34e50c",
         "type": "function",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "floors array prepare",
         "func": "msg.payload = msg.bot.floors;\nreturn msg;",
         "outputs": 1,
@@ -34240,7 +34180,6 @@
         "id": "8f6043c6e809c644",
         "type": "split",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "splt": "\\n",
         "spltType": "str",
@@ -34260,7 +34199,6 @@
         "id": "dd6df4705b145dee",
         "type": "function",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "concrete floor select",
         "func": "msg.bot.currentfloor = msg.payload;\nreturn msg;",
         "outputs": 1,
@@ -34280,7 +34218,6 @@
         "id": "e8c5c8e0d2b70fae",
         "type": "join",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "mode": "auto",
         "build": "object",
@@ -34309,7 +34246,6 @@
         "id": "819c24b0e889db9a",
         "type": "subflow:cde16a2385b7b659",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "env": [],
         "x": 1830,
@@ -34324,7 +34260,6 @@
         "id": "1a5af93604004873",
         "type": "link out",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "links": [
             "889c32dad255eacd"
@@ -34337,7 +34272,6 @@
         "id": "0f78ecf017b82cf4",
         "type": "function",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "пересчет депо",
         "func": "\nlet p = Number(msg.bot.status.currentprice);\nmsg.bot.finance.depo = Number((Number(msg.bot.finance.quotanal) * p + Number(msg.bot.finance.quotainorders) * p + Number(msg.bot.finance.basenal) + Number(msg.bot.finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\nreturn msg;",
         "outputs": 1,
@@ -34357,7 +34291,6 @@
         "id": "513ec5caa8aebea9",
         "type": "function",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "сделка",
         "func": "msg.payload = \"завершен ттп - \" + msg.botname + \" прибыль: \"+ msg.sumsales;\nreturn msg;",
         "outputs": 1,
@@ -34377,7 +34310,6 @@
         "id": "7f858a5b4c716844",
         "type": "telegrambot-notify",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "bot": "848f142.6165868",
         "chatId": "454883204",
@@ -34391,7 +34323,6 @@
         "id": "1b0156683381b2dc",
         "type": "switch",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "bot.ttp.final_price > 0",
         "property": "bot.ttp.final_price",
         "propertyType": "msg",
@@ -34427,7 +34358,6 @@
         "id": "ecf9c89c5e3e30e5",
         "type": "function",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "final price = 0",
         "func": "msg.payload = \"final price = 0\" + msg.botname;\n\nreturn msg;",
         "outputs": 1,
@@ -34447,7 +34377,6 @@
         "id": "60f79fd782f2845a",
         "type": "telegrambot-notify",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "bot": "848f142.6165868",
         "chatId": "454883204",
@@ -34461,7 +34390,6 @@
         "id": "da1a919755acbd3e",
         "type": "function",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "tilog",
         "func": "var floors = msg.bot.floors;\nlet nonzeroflors = [];\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] != 0) {\n\n        nonzeroflors.push(item);\n\n    }\n});\n\nnonzeroflors = JSON.stringify(nonzeroflors || \"\", null, '\\t');\n\n\n\n\n\nlet botdump = JSON.stringify(msg.bot.ttp || \"\", null, '\\t');\n\n\n\n\nlet botname = msg.bot.settings.botname;\nlet data = \"final price = 0 : \" + botname + botdump + nonzeroflors;\n\n\nconst tilog = global.get('tilog')(botname, data);\n\ntilog.then(tilog => {\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    msg.error = error;\n    node.status({ fill: \"red\", shape: \"ring\" });\n\n    node.error(error);\n});",
         "outputs": 1,
@@ -34479,7 +34407,6 @@
         "id": "c750b1c8685c12f7",
         "type": "link out",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "links": [
             "889c32dad255eacd"
@@ -34492,7 +34419,6 @@
         "id": "8bcbbf716ab8f8e9",
         "type": "link out",
         "z": "245ee519b635b6cd",
-        "g": "f0676b62c8f1c90c",
         "name": "",
         "links": [
             "889c32dad255eacd"
@@ -35410,7 +35336,9 @@
             "e3528b9ed8ed61ad",
             "9542eb88cb3f8639",
             "548b4a7bdac897fb",
-            "ecdf9874c91eb6b0"
+            "ecdf9874c91eb6b0",
+            "a893c89e459b32b2",
+            "c29cb281b2d54456"
         ],
         "x": 1515,
         "y": 1380,
@@ -36833,7 +36761,9 @@
         "x": 970,
         "y": 1820,
         "wires": [
-            [],
+            [
+                "7213180bb142a85e"
+            ],
             [
                 "699432d934559763"
             ]
@@ -36945,8 +36875,8 @@
         "z": "5df15275.2888ec",
         "name": "",
         "env": [],
-        "x": 1670,
-        "y": 1640,
+        "x": 2190,
+        "y": 1560,
         "wires": [
             []
         ]
@@ -39950,8 +39880,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1500,
-        "y": 1660,
+        "x": 1420,
+        "y": 1740,
         "wires": [
             []
         ]
@@ -39984,8 +39914,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1940,
-        "y": 1640,
+        "x": 2060,
+        "y": 1720,
         "wires": [
             []
         ]
@@ -40887,7 +40817,10 @@
             "f3fda139104116cf",
             "f48f2978a8c94b10",
             "f6c1050a0ede61d5",
-            "feeed921662c3ca8"
+            "feeed921662c3ca8",
+            "7349d9389a589eda",
+            "ad0fb632abff683c",
+            "08534863e7dbe58f"
         ],
         "x": 1595,
         "y": 1300,
@@ -40953,6 +40886,438 @@
         "y": 920,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "8910df8c8a01ef46",
+        "type": "function",
+        "z": "2a761808.610238",
+        "name": "orderexec setsell",
+        "func": "let cmd = \"setsell\";\nlet moneta = msg.bot.settings.moneta;\nlet quantity = (Number(msg.bot.ttp.quantity)).toFixed(msg.bot.settings.digitq);\n\nlet priceb = (Number((msg.bot.ttp.raschstopprice - msg.bot.ttp.raschstopprice / 100 * msg.bot.settings.ofsetbottom))).toFixed(msg.bot.settings.digitprice);\nlet stopprice = (Number(msg.bot.ttp.raschstopprice)).toFixed(msg.bot.settings.digitprice);\n\n\nlet data = { \"moneta\": moneta, \"quantity\": quantity, \"priceb\": priceb, \"stopprice\": stopprice,  };\nconst orderexec = global.get('order_exec')(cmd, data);\n\norderexec.then(orderexec => {\n    msg.orderexec = orderexec;\n    if (orderexec.statusCode === \"ok\") {\n        node.status({ fill: \"green\", shape: \"dot\", text: orderexec.statusBody.orderId });\n \n        msg.bot.ttp.curorderid = msg.orderexec.statusBody.orderId;\n        msg.bot.ttp.curstop = msg.bot.ttp.raschstopprice\n        //msg.bot.ttp.quantity = msg.orderexec.statusBody.origQty;\n        node.warn(\"bot: \"+ msg.botname + \"sp:\" + stopprice + \" p:\" + priceb + \" q:\" + quantity);\n\n        node.send(msg);\n\n    } else {\n        node.status({ fill: \"red\", shape: \"dot\" });\n\n        node.send(msg);\n    }\n\n}).catch(error => {\n\n    msg.error = error;\n    node.status({ fill: \"red\", shape: \"ring\" });\n\n    node.error(error);\n});\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 2340,
+        "wires": [
+            [
+                "07b16a16aa5bb3a9"
+            ]
+        ]
+    },
+    {
+        "id": "07b16a16aa5bb3a9",
+        "type": "switch",
+        "z": "2a761808.610238",
+        "name": "statusCode",
+        "property": "orderexec.statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ok",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "not ok",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1370,
+        "y": 2340,
+        "wires": [
+            [
+                "7349d9389a589eda"
+            ],
+            [
+                "6d4136b6b5f95b74"
+            ]
+        ]
+    },
+    {
+        "id": "6d4136b6b5f95b74",
+        "type": "function",
+        "z": "2a761808.610238",
+        "name": "tilog",
+        "func": "let botname = msg.bot.settings.botname;\nlet data = \"Ошибка при выставлении ордера - \"+msg.orderexec.statusBody;\nconst tilog = global.get('tilog')(botname,data);\n\ntilog.then(tilog => {\n\n\n        node.status({fill:\"green\",shape:\"dot\"});\n    node.send(msg);\n     \n    \n\n}).catch(error => {\n    \n    msg.error = error;\n    node.status({fill:\"red\",shape: \"ring\"});\n    \n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1390,
+        "y": 2380,
+        "wires": [
+            [
+                "7349d9389a589eda"
+            ]
+        ]
+    },
+    {
+        "id": "7349d9389a589eda",
+        "type": "link out",
+        "z": "2a761808.610238",
+        "name": "",
+        "links": [
+            "ccd55cdb.7ed72",
+            "ba0d11a51ae4f860"
+        ],
+        "x": 1535,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "359826635d024ff3",
+        "type": "function",
+        "z": "2a761808.610238",
+        "name": "orderexec cansel",
+        "func": "let cmd = \"cansel\";\n\nlet orderid = msg.bot.ttp.curorderid;\nlet moneta = msg.bot.settings.moneta;\n\nlet data = {\"moneta\":moneta, \"orderid\": orderid};\nconst orderexec = global.get('order_exec')(cmd,data);\n\nlet botname = msg.topic;\n\n//let data2 = botname+\":\"+cmd+\": orderid:\"+orderid;\n//const tilog = global.get('tilog')(botname,data2);\n//tilog;\n\norderexec.then(orderexec => {\n    msg.orderexec = orderexec;\n    if (orderexec.statusCode === \"ok\"){\n        node.status({fill:\"green\",shape:\"dot\", text: orderexec.statusBody.orderId});\n        //msg.bot.ttp.curorderid = 0;\n        //msg.bot.ttp.curstop = 0;\n        let tempfin = Number(Number(msg.bot.finance.baseinorders) - Number(msg.bot.ttp.quantity) * Number(msg.bot.ttp.curstop));\n        let tempfin2 = Number(Number(msg.bot.finance.basenal) + Number(msg.bot.ttp.quantity) * Number(msg.bot.ttp.curstop));\n\n        msg.bot.finance.baseinorders = tempfin.toFixed(msg.bot.settings.digitprice);\n        msg.bot.finance.basenal = tempfin2.toFixed(msg.bot.settings.digitprice);\n\n        node.send(msg);\n        \n    } else {\n        node.status({fill:\"red\",shape:\"dot\"});\n        \n        node.send(msg);\n    }\n    \n\n}).catch(error => {\n    \n    msg.error = error;\n    node.status({fill:\"red\",shape: \"ring\"});\n    \n    node.error(error);\n});\n\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1850,
+        "y": 2080,
+        "wires": [
+            [
+                "a6c5cfab1d7f1824"
+            ]
+        ]
+    },
+    {
+        "id": "a6c5cfab1d7f1824",
+        "type": "switch",
+        "z": "2a761808.610238",
+        "name": "statusCode",
+        "property": "orderexec.statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ok",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "not ok",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2050,
+        "y": 2080,
+        "wires": [
+            [
+                "36d2e441fe71ddef"
+            ],
+            [
+                "ad0fb632abff683c"
+            ]
+        ]
+    },
+    {
+        "id": "36d2e441fe71ddef",
+        "type": "function",
+        "z": "2a761808.610238",
+        "name": "orderexec setsell",
+        "func": "let cmd = \"setsell\";\nlet moneta = msg.bot.settings.moneta;\nlet quantity = (Number(msg.bot.ttp.quantity)).toFixed(msg.bot.settings.digitq);\n\nlet priceb = (Number((msg.bot.ttp.raschstopprice - msg.bot.ttp.raschstopprice / 100 * msg.bot.settings.ofsetbottom))).toFixed(msg.bot.settings.digitprice);\nlet stopprice = (Number(msg.bot.ttp.raschstopprice)).toFixed(msg.bot.settings.digitprice);\n\n\nlet data = { \"moneta\": moneta, \"quantity\": quantity, \"priceb\": priceb, \"stopprice\": stopprice,  };\nconst orderexec = global.get('order_exec')(cmd, data);\n\norderexec.then(orderexec => {\n    msg.orderexec = orderexec;\n    if (orderexec.statusCode === \"ok\") {\n        node.status({ fill: \"green\", shape: \"dot\", text: orderexec.statusBody.orderId });\n \n        msg.bot.ttp.curorderid = msg.orderexec.statusBody.orderId;\n        msg.bot.ttp.curstop = msg.bot.ttp.raschstopprice\n        //msg.bot.ttp.quantity = msg.orderexec.statusBody.origQty;\n        node.warn(\"bot: \"+ msg.botname + \"sp:\" + stopprice + \" p:\" + priceb + \" q:\" + quantity);\n\n        node.send(msg);\n\n    } else {\n        node.status({ fill: \"red\", shape: \"dot\" });\n\n        node.send(msg);\n    }\n\n}).catch(error => {\n\n    msg.error = error;\n    node.status({ fill: \"red\", shape: \"ring\" });\n\n    node.error(error);\n});\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2250,
+        "y": 2040,
+        "wires": [
+            [
+                "5e25e412fd59d70a"
+            ]
+        ]
+    },
+    {
+        "id": "5e25e412fd59d70a",
+        "type": "switch",
+        "z": "2a761808.610238",
+        "name": "statusCode",
+        "property": "orderexec.statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ok",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "not ok",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2450,
+        "y": 2040,
+        "wires": [
+            [
+                "08534863e7dbe58f"
+            ],
+            [
+                "8f3ee867a169b3ce"
+            ]
+        ]
+    },
+    {
+        "id": "8f3ee867a169b3ce",
+        "type": "function",
+        "z": "2a761808.610238",
+        "name": "tilog",
+        "func": "let botname = msg.bot.settings.botname;\nlet data = \"Ошибка при выставлении ордера - \"+msg.orderexec.statusBody;\nconst tilog = global.get('tilog')(botname,data);\n\ntilog.then(tilog => {\n\n\n        node.status({fill:\"green\",shape:\"dot\"});\n    node.send(msg);\n     \n    \n\n}).catch(error => {\n    \n    msg.error = error;\n    node.status({fill:\"red\",shape: \"ring\"});\n    \n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2470,
+        "y": 2080,
+        "wires": [
+            [
+                "08534863e7dbe58f"
+            ]
+        ]
+    },
+    {
+        "id": "ad0fb632abff683c",
+        "type": "link out",
+        "z": "2a761808.610238",
+        "name": "",
+        "links": [
+            "ccd55cdb.7ed72",
+            "ba0d11a51ae4f860"
+        ],
+        "x": 2175,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "08534863e7dbe58f",
+        "type": "link out",
+        "z": "2a761808.610238",
+        "name": "",
+        "links": [
+            "ccd55cdb.7ed72",
+            "ba0d11a51ae4f860"
+        ],
+        "x": 2615,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "af843f8c5aec7d33",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "name": "setbot_ttp reset",
+        "func": "\nmsg.bot.ttp.curstop = 0;\nmsg.bot.ttp.raschstopprice = 0;\nmsg.bot.ttp.curorderid = 0;\nmsg.bot.ttp.sold = false;\n//msg.bot.ttp.ttpbusy = false;\nmsg.bot.ttp.currentprice = 0;\nmsg.bot.ttp.quantity = 0;\nmsg.bot.ttp.final_price = 0;\nmsg.bot.ttp.finalorder = 0;\nmsg.bot.ttp.proskal = false;\n\nglobal.set(msg.botname + \"-ttp\", msg.bot.ttp);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 1600,
+        "wires": [
+            [
+                "c29cb281b2d54456"
+            ]
+        ],
+        "icon": "font-awesome/fa-bolt"
+    },
+    {
+        "id": "c29cb281b2d54456",
+        "type": "link out",
+        "z": "5df15275.2888ec",
+        "name": "",
+        "links": [
+            "41fc95c9cb2c3b5c"
+        ],
+        "x": 1995,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "e681279a23d56ae3",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "name": "регистрация сделки",
+        "func": "\nnode.warn(\"регистрация сделки\");\nlet commision = global.get(\"commision\");\n\nlet sellprice = Number(msg.bot.ttp.final_price);\n\nlet tempfin = Number(Number(msg.bot.finance.quotainorders) - Number(msg.bot.ttp.quantity));\nlet tempfin2 = Number(Number(msg.bot.finance.basenal) + Number(msg.bot.ttp.quantity) * sellprice);\n\nvar floors = msg.bot.floors;\nlet sumsales = 0;\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 3) {\n        let buyprice = Number(item[10]);\n        let quantity = Number(item[14]);\n        let p = quantity * (sellprice - buyprice);\n        let c = quantity * (Number(sellprice + buyprice)) / 100 * commision;\n        let net = p - c;\n        tempfin2 = tempfin2 - c;\n        msg.bot.sales.today.push([buyprice, sellprice, quantity, p, c, net]);\n        msg.bot.sales.all.push([buyprice, sellprice, quantity, p, c, net]);\n        sumsales = sumsales + net\n        node.warn([buyprice, sellprice, quantity, p, c, net]);\n        \n        let botname = msg.botname;\n        let datamsg = \"регистрация сделки - \" + [buyprice, sellprice, quantity, p, c, net];\n        const tilog = global.get('tilog')(botname, datamsg);\n        tilog;\n        \n\n        item[7] = 0;\n        item[8] = 0;\n        item[9] = 0;\n        item[10] = 0;\n        item[11] = 0;\n        item[12] = 0;\n        item[13] = 0;\n        item[14] = 0;\n\n    }\n});\nif (sumsales != 0) {\n\nmsg.sumsales = sumsales;\nmsg.bot.finance.quotainorders = tempfin.toFixed(msg.bot.settings.digitprice);\nmsg.bot.finance.basenal = tempfin2.toFixed(msg.bot.settings.digitq);\n\nif (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\nif (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\nmsg.bot.floors = floors;\n}\n\nreturn msg;\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 1600,
+        "wires": [
+            [
+                "84cc33dcd6efcdfb",
+                "9edee8174b84386e"
+            ]
+        ]
+    },
+    {
+        "id": "84cc33dcd6efcdfb",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "name": "сделка",
+        "func": "msg.payload = \"завершен ттп - \" + msg.botname + \" прибыль: \"+ msg.sumsales;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 1540,
+        "wires": [
+            [
+                "2db37087e3da343f"
+            ]
+        ]
+    },
+    {
+        "id": "2db37087e3da343f",
+        "type": "telegrambot-notify",
+        "z": "5df15275.2888ec",
+        "name": "",
+        "bot": "848f142.6165868",
+        "chatId": "454883204",
+        "message": "",
+        "parseMode": "",
+        "x": 1680,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "7213180bb142a85e",
+        "type": "switch",
+        "z": "5df15275.2888ec",
+        "name": "bot.ttp.final_price > 0",
+        "property": "bot.ttp.final_price",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1040,
+        "y": 1520,
+        "wires": [
+            [
+                "9519af6af7411643",
+                "a4938af49eb2fcc1",
+                "a893c89e459b32b2"
+            ],
+            [
+                "e681279a23d56ae3"
+            ]
+        ]
+    },
+    {
+        "id": "9519af6af7411643",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "name": "final price = 0",
+        "func": "msg.payload = \"final price = 0\" + msg.botname;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 1480,
+        "wires": [
+            [
+                "1beac7193ed6fee1"
+            ]
+        ]
+    },
+    {
+        "id": "1beac7193ed6fee1",
+        "type": "telegrambot-notify",
+        "z": "5df15275.2888ec",
+        "name": "",
+        "bot": "848f142.6165868",
+        "chatId": "454883204",
+        "message": "",
+        "parseMode": "",
+        "x": 1460,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "a4938af49eb2fcc1",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "name": "tilog",
+        "func": "var floors = msg.bot.floors;\nlet nonzeroflors = [];\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] != 0) {\n\n        nonzeroflors.push(item);\n\n    }\n});\n\nnonzeroflors = JSON.stringify(nonzeroflors || \"\", null, '\\t');\n\n\n\n\n\nlet botdump = JSON.stringify(msg.bot.ttp || \"\", null, '\\t');\n\n\n\n\nlet botname = msg.bot.settings.botname;\nlet data = \"final price = 0 : \" + botname + botdump + nonzeroflors;\n\n\nconst tilog = global.get('tilog')(botname, data);\n\ntilog.then(tilog => {\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    msg.error = error;\n    node.status({ fill: \"red\", shape: \"ring\" });\n\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a893c89e459b32b2",
+        "type": "link out",
+        "z": "5df15275.2888ec",
+        "name": "",
+        "links": [
+            "41fc95c9cb2c3b5c"
+        ],
+        "x": 1215,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "9edee8174b84386e",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "name": "update bot floors, finance triger + on redis",
+        "func": "let botname = msg.botname;\nlet guid = global.get('guid');\n\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet sumsales = 0;\nsales.all.forEach(function (element) {\n    sumsales = sumsales + element[5];\n\n});\n\nlet quotanal = 0;\nlet quotainorders = 0;\nlet basenal = Number(finance.startdepo) + Number(sumsales);\nlet baseinorders = 0;\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 1) {\n        baseinorders = baseinorders + Number(item[14]) * Number(item[3]);\n        basenal = basenal - Number(item[14]) * Number(item[3]);\n\n    }\n    if (item[7] === 2) {\n        quotanal = quotanal + Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n    if (item[7] === 3) {\n        quotainorders = quotainorders + Number(item[14]);\n        //quotanal = quotanal - Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n\n\n\n});\nfinance.quotanal = (Number(quotanal)).toFixed(msg.bot.settings.digitq);\nfinance.quotainorders = (Number(quotainorders)).toFixed(msg.bot.settings.digitq);\nfinance.basenal = (Number(basenal)).toFixed(msg.bot.settings.digitprice);\nfinance.baseinorders = (Number(baseinorders)).toFixed(msg.bot.settings.digitprice);\n\nlet p = Number(msg.bot.status.currentprice);\nfinance.depo = Number((Number(finance.quotanal) * p + Number(finance.quotainorders) * p + Number(finance.basenal) + Number(finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\n\n\n\nmsg.bot.finance = finance;\nmsg.bot.floors = floors;\nmsg.bot.sales = sales;\n\n//global.set(msg.botname, msg.bot);\n\nlet volname = guid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 1600,
+        "wires": [
+            [
+                "af843f8c5aec7d33"
+            ]
         ]
     }
 ]
