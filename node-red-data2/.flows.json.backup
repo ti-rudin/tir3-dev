@@ -955,6 +955,31 @@
         "h": 569.5
     },
     {
+        "id": "f6ba3116da1e0f10",
+        "type": "group",
+        "z": "5f98db3a.7ab21c",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "21cd38c62816a61a",
+            "bc33c7343d313967",
+            "187dac154381e841",
+            "4459c9f4d6a83a36",
+            "869be0a90b76a3ef"
+        ],
+        "x": 2554,
+        "y": 219,
+        "w": 1032,
+        "h": 142
+    },
+    {
         "id": "f120eab2.0a60a8",
         "type": "redis-config",
         "name": "redis:6379",
@@ -3429,17 +3454,17 @@
         "id": "21cd38c62816a61a",
         "type": "http in",
         "z": "5f98db3a.7ab21c",
+        "g": "f6ba3116da1e0f10",
         "name": "",
         "url": "/bot_delete",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
         "x": 2660,
-        "y": 80,
+        "y": 260,
         "wires": [
             [
                 "bc33c7343d313967",
-                "527f5893eeafc366",
                 "4459c9f4d6a83a36"
             ]
         ]
@@ -3448,28 +3473,12 @@
         "id": "bc33c7343d313967",
         "type": "http response",
         "z": "5f98db3a.7ab21c",
+        "g": "f6ba3116da1e0f10",
         "name": "",
         "statusCode": "200",
         "headers": {},
         "x": 2680,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "527f5893eeafc366",
-        "type": "debug",
-        "z": "5f98db3a.7ab21c",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2650,
-        "y": 220,
+        "y": 320,
         "wires": []
     },
     {
@@ -6122,8 +6131,8 @@
         "z": "5df15275.2888ec",
         "name": "",
         "info": "",
-        "x": 1800,
-        "y": 80,
+        "x": 1720,
+        "y": 60,
         "wires": []
     },
     {
@@ -14360,6 +14369,7 @@
         "id": "187dac154381e841",
         "type": "redis-command",
         "z": "5f98db3a.7ab21c",
+        "g": "f6ba3116da1e0f10",
         "server": "f120eab2.0a60a8",
         "command": "getset",
         "name": "",
@@ -14369,7 +14379,7 @@
         "payloadType": "json",
         "block": false,
         "x": 3490,
-        "y": 80,
+        "y": 260,
         "wires": [
             []
         ]
@@ -14378,6 +14388,7 @@
         "id": "4459c9f4d6a83a36",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "f6ba3116da1e0f10",
         "name": "prepare for get botlist",
         "func": "\nmsg.botlistname = msg.payload.user_id_from_google + \"-botlist\";\n\nmsg.botname = msg.payload.botname;\nmsg.payload = global.get(\"botlist\");\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;\n",
         "outputs": 1,
@@ -14386,11 +14397,10 @@
         "finalize": "",
         "libs": [],
         "x": 2960,
-        "y": 80,
+        "y": 260,
         "wires": [
             [
-                "869be0a90b76a3ef",
-                "0ad3e490087de219"
+                "869be0a90b76a3ef"
             ]
         ]
     },
@@ -14398,6 +14408,7 @@
         "id": "869be0a90b76a3ef",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "f6ba3116da1e0f10",
         "name": "prepare for add botlist",
         "func": "\nlet botlist = msg.payload;\n\nbotlist = botlist.filter(val => val !== msg.botname);\nglobal.set(\"botlist\", botlist);\n\nmsg.topic = msg.botlistname;\nmsg.payload = JSON.stringify(botlist);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
@@ -14406,75 +14417,11 @@
         "finalize": "",
         "libs": [],
         "x": 3200,
-        "y": 80,
+        "y": 260,
         "wires": [
             [
-                "2115859a18619095",
                 "187dac154381e841"
             ]
         ]
-    },
-    {
-        "id": "25edd5696e8d184c",
-        "type": "inject",
-        "z": "5f98db3a.7ab21c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 2770,
-        "y": 300,
-        "wires": [
-            [
-                "4459c9f4d6a83a36"
-            ]
-        ]
-    },
-    {
-        "id": "2115859a18619095",
-        "type": "debug",
-        "z": "5f98db3a.7ab21c",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3510,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "0ad3e490087de219",
-        "type": "debug",
-        "z": "5f98db3a.7ab21c",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3170,
-        "y": 340,
-        "wires": []
     }
 ]
