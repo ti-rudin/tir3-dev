@@ -5,9 +5,11 @@
   import TextField from "smelte/src/components/TextField";
   import ProgressLinear from "smelte/src/components/ProgressLinear";
   import { stateStore } from "../stores/statebot.js";
+  import { authStore } from '../stores/auth';
 
   var selectbotname = $stateStore.selectbotname;
   let urlhost = $stateStore.urlhost;
+  let userid = $authStore.user.uid;
 
   let botsettingsjson = urlhost + "bot_settings";
   let botonoffjson = urlhost + "bot_onoff";
@@ -125,7 +127,10 @@
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    var raw = JSON.stringify({ botname: selectbotname });
+    var raw = JSON.stringify({
+      botname: selectbotname,
+      user_id_from_google: userid,
+    });
     var requestOptions = {
       method: "POST",
       headers: myHeaders,
