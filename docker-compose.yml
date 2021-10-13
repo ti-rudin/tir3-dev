@@ -44,6 +44,21 @@ services:
       - redis
     networks:
       - tibotnet
+
+  telegrambot:
+    container_name: telegrambot
+    build:
+      context: ./telegrambot
+      dockerfile: ./Dockerfile.dev
+    env_file: .env
+    volumes:
+      - './telegrambot/:/usr/src/app'
+    #command: nodemon -L --watch /telegrambot/tgbot.js /usr/src/app/tgbot.js
+    restart: on-failure
+    depends_on:
+      - redis
+    networks:
+      - tibotnet
   
   front:
     container_name: front
