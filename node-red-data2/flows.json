@@ -62,7 +62,9 @@
             "9a835f6c.6a1ab"
         ],
         "x": 1774,
-        "y": 379
+        "y": 379,
+        "w": 632,
+        "h": 162
     },
     {
         "id": "e83aa13614517c81",
@@ -134,7 +136,9 @@
             "c4cf96930d013efb"
         ],
         "x": 1614,
-        "y": 1739
+        "y": 1739,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "586e39dc007e0cae",
@@ -197,7 +201,9 @@
             "8aa6fd668c527afd"
         ],
         "x": 2554,
-        "y": 1599
+        "y": 1599,
+        "w": 692,
+        "h": 562
     },
     {
         "id": "1af578fa0e07ad5a",
@@ -223,7 +229,9 @@
             "d3749cac89a0e2c9"
         ],
         "x": 2554,
-        "y": 1119
+        "y": 1119,
+        "w": 1352,
+        "h": 82
     },
     {
         "id": "7f9b2dd857a6dfb2",
@@ -246,7 +254,9 @@
             "792187aede59b6ac"
         ],
         "x": 2554,
-        "y": 1239
+        "y": 1239,
+        "w": 912,
+        "h": 82
     },
     {
         "id": "9364657534c1325f",
@@ -267,7 +277,9 @@
             "62dad41be283ec5d"
         ],
         "x": 2554,
-        "y": 1359
+        "y": 1359,
+        "w": 572,
+        "h": 82
     },
     {
         "id": "a2350d1c1b2611d2",
@@ -288,7 +300,9 @@
             "f2b2077b7903a0bf"
         ],
         "x": 2554,
-        "y": 1479
+        "y": 1479,
+        "w": 632,
+        "h": 82
     },
     {
         "id": "44cf135596e2716e",
@@ -377,7 +391,9 @@
             "2b18414b4a3f8aaa"
         ],
         "x": 34,
-        "y": 39
+        "y": 39,
+        "w": 1652,
+        "h": 502
     },
     {
         "id": "b5c4460e3abcebce",
@@ -415,7 +431,9 @@
             "bf190e9d.225ad"
         ],
         "x": 154,
-        "y": 1699
+        "y": 1699,
+        "w": 1232,
+        "h": 402
     },
     {
         "id": "014ce62956a26f95",
@@ -487,7 +505,9 @@
             "6250c3310b6d177b"
         ],
         "x": 34,
-        "y": 779
+        "y": 779,
+        "w": 2092,
+        "h": 822
     },
     {
         "id": "d508da9d29e25c1b",
@@ -511,10 +531,14 @@
             "9018737c.12e188",
             "81a608ac.0eeab8",
             "d615849.c726078",
-            "04c874ce359ca023"
+            "04c874ce359ca023",
+            "907c3e2556fdc41d",
+            "fc93db1897b02d17"
         ],
         "x": 34,
-        "y": 599
+        "y": 579,
+        "w": 1612,
+        "h": 162
     },
     {
         "id": "17b2eb4baaa826d1",
@@ -603,11 +627,11 @@
             "d81b89b8431c5219",
             "286f7ee0bb73b702",
             "9a90af117cd916e1",
-            "8bb5f49c6991f30b",
-            "44478e3953b12029",
             "7a19b1d6c330e11b",
             "12cdc134f2944261",
-            "a37ec54854f75f01"
+            "a37ec54854f75f01",
+            "b8dd96d5d9b54edd",
+            "642ebd6d0bd5aa4a"
         ],
         "x": 54,
         "y": 219,
@@ -974,7 +998,9 @@
             "869be0a90b76a3ef"
         ],
         "x": 2554,
-        "y": 219
+        "y": 219,
+        "w": 1032,
+        "h": 142
     },
     {
         "id": "f120eab2.0a60a8",
@@ -4641,8 +4667,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 670,
-        "y": 640,
+        "x": 690,
+        "y": 700,
         "wires": [
             []
         ]
@@ -5222,7 +5248,7 @@
         "wires": [
             [
                 "180bacca6db5568a",
-                "8bb5f49c6991f30b"
+                "b8dd96d5d9b54edd"
             ]
         ]
     },
@@ -5380,7 +5406,7 @@
         "z": "5df15275.2888ec",
         "g": "422e384634a8793d",
         "name": "getbotlist",
-        "func": "\nmsg.payload = global.get(\"botlist\");\nreturn msg;",
+        "func": "\nmsg.payload = global.get(\"botlist\");\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5420,7 +5446,7 @@
         "z": "5df15275.2888ec",
         "g": "422e384634a8793d",
         "name": "getbot ",
-        "func": "\nmsg.botname = msg.payload;\nmsg.bot = {};\nmsg.bot.settings = global.get(msg.botname + \"-settings\");\nmsg.bot.status = global.get(msg.botname + \"-status\");\nmsg.bot.onoff = global.get(msg.botname + \"-onoff\");\n\n\nreturn msg;",
+        "func": "\nmsg.botname = msg.payload;\nmsg.bot = {};\nmsg.bot.settings = global.get(msg.botname + \"-settings\");\nmsg.bot.status = global.get(msg.botname + \"-status\");\nmsg.bot.onoff = global.get(msg.botname + \"-onoff\");\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5499,7 +5525,7 @@
         "z": "5df15275.2888ec",
         "g": "814fe3ad47c48a59",
         "name": "расчет и запись MA flow.set",
-        "func": "\n\nlet candles = msg.payload;\n\n\nlet heiken = candles.map(function(tick){\n  //  node.warn(tick);\n    \n    \n    return (Number(tick[1]) + Number(tick[2]) + Number(tick[3]) + Number(tick[4]))/4;\n});\n\n\n//node.warn(heiken);\nmsg.heiken = heiken;\n\n\nlet heiken_small = heiken.slice(-msg.bot.settings.ma1);\n\n//node.warn(heiken_small);\nlet sum_all = heiken.reduce(function(sum, current) {\n  return sum + current\n});\n\nlet sum_small = heiken_small.reduce(function(sum, current) {\n  return sum + current\n});\n\nmsg.bot.status.sr_ma_big = sum_all / msg.bot.settings.ma2;\nmsg.bot.status.sr_ma_small = sum_small / msg.bot.settings.ma1;\n\nlet volname = msg.bot.settings.botname + \"-MA-big\";\nflow.set(volname, msg.bot.status.sr_ma_big);\n\nlet volname2 = msg.bot.settings.botname + \"-MA-small\";\nflow.set(volname2, msg.bot.status.sr_ma_small);\n\nreturn msg;",
+        "func": "\n\nlet candles = msg.payload;\n\n\nlet heiken = candles.map(function(tick){\n  //  node.warn(tick);\n    \n    \n    return (Number(tick[1]) + Number(tick[2]) + Number(tick[3]) + Number(tick[4]))/4;\n});\n\n\n//node.warn(heiken);\nmsg.heiken = heiken;\n\n\nlet heiken_small = heiken.slice(-msg.bot.settings.ma1);\n\n//node.warn(heiken_small);\nlet sum_all = heiken.reduce(function(sum, current) {\n  return sum + current\n});\n\nlet sum_small = heiken_small.reduce(function(sum, current) {\n  return sum + current\n});\n\nmsg.bot.status.sr_ma_big = sum_all / msg.bot.settings.ma2;\nmsg.bot.status.sr_ma_small = sum_small / msg.bot.settings.ma1;\n\nlet volname = msg.bot.settings.botname + \"-MA-big\";\nflow.set(volname, msg.bot.status.sr_ma_big);\n\nlet volname2 = msg.bot.settings.botname + \"-MA-small\";\nflow.set(volname2, msg.bot.status.sr_ma_small);\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5746,7 +5772,7 @@
         "z": "5df15275.2888ec",
         "g": "47ccdad2d228ed4b",
         "name": "getbotlist",
-        "func": "msg.payload = global.get(\"botlist\");\nreturn msg;",
+        "func": "msg.payload = global.get(\"botlist\");\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5786,7 +5812,7 @@
         "z": "5df15275.2888ec",
         "g": "47ccdad2d228ed4b",
         "name": "getbot global",
-        "func": "\nmsg.botname = msg.payload;\nmsg.bot = {};\nmsg.bot.busy = global.get(msg.botname + \"-busy\");\nmsg.bot.data = global.get(msg.botname + \"-data\");\nmsg.bot.onoff = global.get(msg.botname + \"-onoff\");\nmsg.bot.settings = global.get(msg.botname + \"-settings\");\nmsg.bot.status = global.get(msg.botname + \"-status\");\nmsg.bot.ttp = global.get(msg.botname + \"-ttp\");\nmsg.bot.ttpbusy = global.get(msg.botname + \"-ttpbusy\");\n\nmsg.bot.floors = msg.bot.data.floors;\nmsg.bot.finance = msg.bot.data.finance;\nmsg.bot.sales = msg.bot.data.sales;\nreturn msg;",
+        "func": "\nmsg.botname = msg.payload;\nmsg.bot = {};\nmsg.bot.busy = global.get(msg.botname + \"-busy\");\nmsg.bot.data = global.get(msg.botname + \"-data\");\nmsg.bot.onoff = global.get(msg.botname + \"-onoff\");\nmsg.bot.settings = global.get(msg.botname + \"-settings\");\nmsg.bot.status = global.get(msg.botname + \"-status\");\nmsg.bot.ttp = global.get(msg.botname + \"-ttp\");\nmsg.bot.ttpbusy = global.get(msg.botname + \"-ttpbusy\");\n\nmsg.bot.floors = msg.bot.data.floors;\nmsg.bot.finance = msg.bot.data.finance;\nmsg.bot.sales = msg.bot.data.sales;\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5983,7 +6009,7 @@
         "z": "5df15275.2888ec",
         "g": "01cdfc91bb42701f",
         "name": "getbotlist",
-        "func": "\nmsg.payload = global.get(\"botlist\");\nreturn msg;",
+        "func": "msg.payload = global.get(\"botlist\");\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6023,7 +6049,7 @@
         "z": "5df15275.2888ec",
         "g": "01cdfc91bb42701f",
         "name": "getbot ",
-        "func": "\nmsg.botname = msg.payload;\nmsg.bot = {};\nmsg.bot.settings = global.get(msg.botname + \"-settings\");\nmsg.bot.ttp = global.get(msg.botname + \"-ttp\");\nmsg.bot.data = global.get(msg.botname + \"-data\");\nmsg.bot.status = global.get(msg.botname + \"-status\");\n\nreturn msg;",
+        "func": "\nmsg.botname = msg.payload;\nmsg.bot = {};\nmsg.bot.settings = global.get(msg.botname + \"-settings\");\nmsg.bot.ttp = global.get(msg.botname + \"-ttp\");\nmsg.bot.data = global.get(msg.botname + \"-data\");\nmsg.bot.status = global.get(msg.botname + \"-status\");\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6137,7 +6163,7 @@
         "type": "function",
         "z": "2a761808.610238",
         "name": "calculate quantity",
-        "func": "var floors = msg.bot.floors;\nlet quantity = 0;\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 3) {\n\n        quantity = Number(quantity) + Number(item[14]);\n\n\n    }\n});\n\n\n\n\nmsg.bot.ttp.quantity = Number(quantity);\n\n\nreturn msg;\n\n\n",
+        "func": "var floors = msg.bot.floors;\nlet quantity = 0;\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 3) {\n\n        quantity = Number(quantity) + Number(item[14]);\n\n\n    }\n});\n\nmsg.bot.ttp.quantity = Number(quantity);\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6412,7 +6438,7 @@
         "wires": [
             [
                 "2bdb3fbb3925c0df",
-                "deda99f111556bea"
+                "91319a1e89f66e6c"
             ],
             [
                 "9011d963f8a5cefa"
@@ -8921,40 +8947,6 @@
         "wires": []
     },
     {
-        "id": "8bb5f49c6991f30b",
-        "type": "function",
-        "z": "5df15275.2888ec",
-        "g": "814fe3ad47c48a59",
-        "name": "Старт",
-        "func": "msg.payload = \"Старт\";\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 340,
-        "wires": [
-            [
-                "44478e3953b12029"
-            ]
-        ]
-    },
-    {
-        "id": "44478e3953b12029",
-        "type": "telegrambot-notify",
-        "z": "5df15275.2888ec",
-        "g": "814fe3ad47c48a59",
-        "name": "",
-        "bot": "848f142.6165868",
-        "chatId": "454883204",
-        "message": "",
-        "parseMode": "",
-        "x": 500,
-        "y": 340,
-        "wires": []
-    },
-    {
         "id": "80ab5788d3fea38c",
         "type": "comment",
         "z": "2a761808.610238",
@@ -9104,7 +9096,7 @@
         "z": "5df15275.2888ec",
         "g": "422e384634a8793d",
         "name": "get candlestick",
-        "func": "\n\nfunction parseApiError(error) {\n  if (error.body) {\n    try {\n      var resp = JSON.parse(error.body);\n      return resp.msg;\n    } catch (error) {/* pass thru */ }\n  }\n  return \"Unknown error. Status code: \" + error.statsCode;\n}\n\nlet LBinance = global.get('gBinance');\nlet key = global.get('key');\nlet secret = global.get('secret');\n\nlet binance = new LBinance().options({\n  APIKEY: key,\n  APISECRET: secret,\n  \"reconnect\": false\n});\n\nlet moneta = msg.bot.settings.moneta;\nlet deep = Number(msg.bot.settings.ma2);\n\n//node.warn(binance);\n\n\n//msg.payload = \"qjson.status\";\n\nbinance.useServerTime(function () {\n  binance.candlesticks(moneta, \"1m\", (error, ticks, symbol) => {\n    // console.info(\"candlesticks()\", ticks);\n    // let last_tick = ticks[ticks.length - 1];\n    // let [time, open, high, low, close, volume, closeTime, assetVolume, trades, buyBaseVolume, buyAssetVolume, ignored] = ticks;\n    //console.info(symbol+\" last close: \"+close);\n    if (error) {\n      var errorMsg = parseApiError(error) + \", moneta:\" + moneta;\n      node.error(errorMsg, msg);\n\n      msg.err = error;\n      node.status({ fill: \"red\", shape: \"ring\", text: errorMsg });\n\n      node.send(msg);\n      //return [msg, null];\n\n    }\n\n    msg.payload = ticks;\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n    //return;\n\n  }, { limit: deep });\n\n});\n",
+        "func": "function parseApiError(error) {\n  if (error.body) {\n    try {\n      var resp = JSON.parse(error.body);\n      return resp.msg;\n    } catch (error) {/* pass thru */ }\n  }\n  return \"Unknown error. Status code: \" + error.statsCode;\n}\n\nlet LBinance = global.get('gBinance');\nlet key = global.get('key');\nlet secret = global.get('secret');\n\nlet binance = new LBinance().options({\n  APIKEY: key,\n  APISECRET: secret,\n  \"reconnect\": false\n});\n\nlet moneta = msg.bot.settings.moneta;\nlet deep = Number(msg.bot.settings.ma2);\n\nbinance.useServerTime(function () {\n  binance.candlesticks(moneta, \"1m\", (error, ticks, symbol) => {\n\n    if (error) {\n      var errorMsg = parseApiError(error) + \", moneta:\" + moneta;\n      node.error(errorMsg, msg);\n\n      msg.err = error;\n      node.status({ fill: \"red\", shape: \"dot\", text: errorMsg });\n\n      node.send(msg);\n\n    }\n\n    msg.payload = ticks;\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n  }, { limit: deep });\n\n});\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9136,7 +9128,7 @@
         "z": "5df15275.2888ec",
         "g": "422e384634a8793d",
         "name": "расчет и запись MA flow.set",
-        "func": "\n\nlet candles = msg.payload;\n\n\nlet heiken = candles.map(function(tick){\n  //  node.warn(tick);\n    \n    \n    return (Number(tick[1]) + Number(tick[2]) + Number(tick[3]) + Number(tick[4]))/4;\n});\n\n\n//node.warn(heiken);\nmsg.heiken = heiken;\n\n\nlet heiken_small = heiken.slice(-msg.bot.settings.ma1);\n\n//node.warn(heiken_small);\nlet sum_all = heiken.reduce(function(sum, current) {\n  return sum + current\n});\n\nlet sum_small = heiken_small.reduce(function(sum, current) {\n  return sum + current\n});\n\nmsg.bot.status.sr_ma_big = sum_all / msg.bot.settings.ma2;\nmsg.bot.status.sr_ma_small = sum_small / msg.bot.settings.ma1;\n\nlet volname = msg.bot.settings.botname + \"-MA-big\";\nflow.set(volname, msg.bot.status.sr_ma_big);\n\nlet volname2 = msg.bot.settings.botname + \"-MA-small\";\nflow.set(volname2, msg.bot.status.sr_ma_small);\n\nreturn msg;",
+        "func": "\n\nlet candles = msg.payload;\n\n\nlet heiken = candles.map(function(tick){\n  //  node.warn(tick);\n    \n    \n    return (Number(tick[1]) + Number(tick[2]) + Number(tick[3]) + Number(tick[4]))/4;\n});\n\n\n//node.warn(heiken);\nmsg.heiken = heiken;\n\n\nlet heiken_small = heiken.slice(-msg.bot.settings.ma1);\n\n//node.warn(heiken_small);\nlet sum_all = heiken.reduce(function(sum, current) {\n  return sum + current\n});\n\nlet sum_small = heiken_small.reduce(function(sum, current) {\n  return sum + current\n});\n\nmsg.bot.status.sr_ma_big = sum_all / msg.bot.settings.ma2;\nmsg.bot.status.sr_ma_small = sum_small / msg.bot.settings.ma1;\n\nlet volname = msg.bot.settings.botname + \"-MA-big\";\nflow.set(volname, msg.bot.status.sr_ma_big);\n\nlet volname2 = msg.bot.settings.botname + \"-MA-small\";\nflow.set(volname2, msg.bot.status.sr_ma_small);\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9321,7 +9313,7 @@
         "z": "5df15275.2888ec",
         "g": "251a240e36b31c14",
         "name": "duration",
-        "func": "let trackname = msg.trackname;\nlet track = flow.get(trackname);\nif (track) {\n\n    let laststep = track[track.length - 1];\n    let firststep = track[0];\n    let last_node_end_time = laststep.end_node_time;\n    let first_node_start_time = firststep.start_node_time;\n\n    let duration = last_node_end_time - first_node_start_time;\n    //node.warn(duration);\n    msg.payload = duration;\n\n\n\n    return msg;\n}",
+        "func": "let trackname = msg.trackname;\nlet track = flow.get(trackname);\nif (track) {\n\n    let laststep = track[track.length - 1];\n    let firststep = track[0];\n    let last_node_end_time = laststep.end_node_time;\n    let first_node_start_time = firststep.start_node_time;\n\n    let duration = last_node_end_time - first_node_start_time;\n    //node.warn(duration);\n    msg.payload = duration;\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    return msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9405,7 +9397,7 @@
         "z": "5df15275.2888ec",
         "g": "47ccdad2d228ed4b",
         "name": "botname: msg.botname",
-        "func": "msg.topic = msg.botname;\n\nreturn msg;",
+        "func": "msg.topic = msg.botname;\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9713,7 +9705,7 @@
         "z": "5df15275.2888ec",
         "g": "47ccdad2d228ed4b",
         "name": "start",
-        "func": "\n//<трекер<\n////>только для стартовой ноды>\nlet track = [];\nlet start_track_time = new Date().getTime();\nlet start_node_time = start_track_time;\nlet steptitle = node.name;\n\nlet end_node_time = new Date().getTime();\nlet duration = end_node_time - start_node_time;\ntrack.push({\n    \"steptitle\": steptitle,\n    \"start_node_time\": start_node_time,\n    \"end_node_time\": end_node_time,\n    \"duration_node\": duration,\n    \"duration_step\": 0\n});\n\nlet trackname = \"track-\" + msg.botname + msg._msgid;\nflow.set(trackname, track);\nmsg.trackname = trackname;\n//>трекер>\n\nnode.status({ fill: \"green\", shape: \"ring\", text: duration });\nreturn msg;\n\n",
+        "func": "\n//<трекер<\n////>только для стартовой ноды>\nlet track = [];\nlet start_track_time = new Date().getTime();\nlet start_node_time = start_track_time;\nlet steptitle = node.name;\n\nlet end_node_time = new Date().getTime();\nlet duration = end_node_time - start_node_time;\ntrack.push({\n    \"steptitle\": steptitle,\n    \"start_node_time\": start_node_time,\n    \"end_node_time\": end_node_time,\n    \"duration_node\": duration,\n    \"duration_step\": 0\n});\n\nlet trackname = \"track-\" + msg.botname + msg._msgid;\nflow.set(trackname, track);\nmsg.trackname = trackname;\n//>трекер>\n\nnode.status({ fill: \"green\", shape: \"dot\", text: duration });\n\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9757,7 +9749,7 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "busy = true",
-        "func": "\nglobal.set(msg.botname+\"-busy\", true);\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;\n\n",
+        "func": "\nglobal.set(msg.botname+\"-busy\", true);\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9823,7 +9815,7 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "busy = false",
-        "func": "\nglobal.set(msg.botname+\"-busy\", false);\nflow.set(msg.botname, 0);\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;\n\n",
+        "func": "\nglobal.set(msg.botname+\"-busy\", false);\nflow.set(msg.botname, 0);\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9913,7 +9905,7 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "пересчет депо",
-        "func": "\nlet p = Number(msg.bot.status.currentprice);\nmsg.bot.finance.depo = Number((Number(msg.bot.finance.quotanal) * p + Number(msg.bot.finance.quotainorders) * p + Number(msg.bot.finance.basenal) + Number(msg.bot.finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\nreturn msg;",
+        "func": "\nlet p = Number(msg.bot.status.currentprice);\nmsg.bot.finance.depo = Number((Number(msg.bot.finance.quotanal) * p + Number(msg.bot.finance.quotainorders) * p + Number(msg.bot.finance.basenal) + Number(msg.bot.finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9933,7 +9925,7 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "setbot global",
-        "func": "\nglobal.set(msg.botname + \"-status\", msg.bot.status);\n\nlet data = {\n    \"floors\": msg.bot.floors,\n    \"finance\": msg.bot.finance,\n    \"sales\": msg.bot.sales\n}\n//msg.bot.data = data;\nglobal.set(msg.botname + \"-data\", data);\n\nreturn msg;",
+        "func": "\nglobal.set(msg.botname + \"-status\", msg.bot.status);\n\nlet data = {\n    \"floors\": msg.bot.floors,\n    \"finance\": msg.bot.finance,\n    \"sales\": msg.bot.sales\n}\n//msg.bot.data = data;\nglobal.set(msg.botname + \"-data\", data);\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10033,7 +10025,7 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "floors array prepare",
-        "func": "msg.payload = msg.bot.floors;\nreturn msg;",
+        "func": "msg.payload = msg.bot.floors;\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10073,7 +10065,7 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "concrete floor select",
-        "func": "msg.bot.currentfloor = msg.payload;\nreturn msg;",
+        "func": "msg.bot.currentfloor = msg.payload;\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10690,7 +10682,7 @@
         "type": "function",
         "z": "64c098ab57cae330",
         "name": "change floors",
-        "func": "node.warn(\"filled order \" + msg.bot.currentfloor[14]);\n//let tempfin = Number(Number(msg.bot.finance.baseinorders) - Number(msg.bot.currentfloor[14]) * Number(msg.bot.currentfloor[10]));\n//\n//let tempfin2 = Number(Number(msg.bot.finance.quotanal) + Number(msg.bot.currentfloor[14]));\n//\n//msg.bot.finance.baseinorders = tempfin.toFixed(msg.bot.settings.digitprice);\n//msg.bot.finance.quotanal = tempfin2.toFixed(msg.bot.settings.digitq);\n//\n//if (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\n//if (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\nlet currentfloor = msg.bot.currentfloor;\ncurrentfloor[7] = 2;\n\nmsg.bot.floors[currentfloor[0] - 1] = currentfloor;\n\nlet data = \"Ордер на покупку исполнен, ID - \" + msg.bot.currentfloor[8];\nconst tilog = global.get('tilog')(msg.bot.settings.botname, data);\ntilog;\n\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;",
+        "func": "node.warn(\"filled order \" + msg.bot.currentfloor[14]);\nlet node_time = new Date().getTime();\n\nlet currentfloor = msg.bot.currentfloor;\ncurrentfloor[7] = 2;\ncurrentfloor[9] = node_time;\nmsg.bot.floors[currentfloor[0] - 1] = currentfloor;\n\nlet data = \"Ордер на покупку исполнен, ID - \" + msg.bot.currentfloor[8];\nconst tilog = global.get('tilog')(msg.bot.settings.botname, data);\ntilog;\n\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10908,7 +10900,7 @@
         "type": "function",
         "z": "64c098ab57cae330",
         "name": "change floors",
-        "func": "\nnode.warn(\"filled order \" + msg.bot.currentfloor[14]);\n//let tempfin = Number(Number(msg.bot.finance.baseinorders) - Number(msg.bot.currentfloor[14]) * Number(msg.bot.currentfloor[10]));\n//\n//let tempfin2 = Number(Number(msg.bot.finance.quotanal) + Number(msg.bot.currentfloor[14]));\n//\n//msg.bot.finance.baseinorders = tempfin.toFixed(msg.bot.settings.digitprice);\n//msg.bot.finance.quotanal = tempfin2.toFixed(msg.bot.settings.digitq);\n//\n//if (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\n//if (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\nlet currentfloor = msg.bot.currentfloor;\ncurrentfloor[7] = 2;\n\nmsg.bot.floors[currentfloor[0] - 1] = currentfloor;\n\nlet data = \"Ордер на покупку исполнен, ID - \" + msg.bot.currentfloor[8];\nconst tilog = global.get('tilog')(msg.bot.settings.botname, data);\ntilog;\n\n\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;",
+        "func": "node.warn(\"filled order \" + msg.bot.currentfloor[14]);\nlet node_time = new Date().getTime();\n\nlet currentfloor = msg.bot.currentfloor;\ncurrentfloor[7] = 2;\ncurrentfloor[9] = node_time;\nmsg.bot.floors[currentfloor[0] - 1] = currentfloor;\n\nlet data = \"Ордер на покупку исполнен, ID - \" + msg.bot.currentfloor[8];\nconst tilog = global.get('tilog')(msg.bot.settings.botname, data);\ntilog;\n\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12116,7 +12108,7 @@
         "type": "function",
         "z": "f6f5d41e533a8b1a",
         "name": "change floors",
-        "func": "node.warn(\"filled order \" + msg.bot.currentfloor[14]);\n//let tempfin = Number(Number(msg.bot.finance.baseinorders) - Number(msg.bot.currentfloor[14]) * Number(msg.bot.currentfloor[10]));\n//\n//let tempfin2 = Number(Number(msg.bot.finance.quotanal) + Number(msg.bot.currentfloor[14]));\n//\n//msg.bot.finance.baseinorders = tempfin.toFixed(msg.bot.settings.digitprice);\n//msg.bot.finance.quotanal = tempfin2.toFixed(msg.bot.settings.digitq);\n//\n//if (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\n//if (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\nlet currentfloor = msg.bot.currentfloor;\ncurrentfloor[7] = 2;\n\nmsg.bot.floors[currentfloor[0] - 1] = currentfloor;\n\nlet data = \"Ордер на покупку исполнен, ID - \" + msg.bot.currentfloor[8];\nconst tilog = global.get('tilog')(msg.bot.settings.botname, data);\ntilog;\n\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;",
+        "func": "node.warn(\"filled order \" + msg.bot.currentfloor[14]);\nlet node_time = new Date().getTime();\n\nlet currentfloor = msg.bot.currentfloor;\ncurrentfloor[7] = 2;\ncurrentfloor[9] = node_time;\nmsg.bot.floors[currentfloor[0] - 1] = currentfloor;\n\nlet data = \"Ордер на покупку исполнен, ID - \" + msg.bot.currentfloor[8];\nconst tilog = global.get('tilog')(msg.bot.settings.botname, data);\ntilog;\n\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12334,7 +12326,7 @@
         "type": "function",
         "z": "f6f5d41e533a8b1a",
         "name": "change floors",
-        "func": "\nnode.warn(\"filled order \" + msg.bot.currentfloor[14]);\n//let tempfin = Number(Number(msg.bot.finance.baseinorders) - Number(msg.bot.currentfloor[14]) * Number(msg.bot.currentfloor[10]));\n//\n//let tempfin2 = Number(Number(msg.bot.finance.quotanal) + Number(msg.bot.currentfloor[14]));\n//\n//msg.bot.finance.baseinorders = tempfin.toFixed(msg.bot.settings.digitprice);\n//msg.bot.finance.quotanal = tempfin2.toFixed(msg.bot.settings.digitq);\n//\n//if (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\n//if (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\nlet currentfloor = msg.bot.currentfloor;\ncurrentfloor[7] = 2;\n\nmsg.bot.floors[currentfloor[0] - 1] = currentfloor;\n\nlet data = \"Ордер на покупку исполнен, ID - \" + msg.bot.currentfloor[8];\nconst tilog = global.get('tilog')(msg.bot.settings.botname, data);\ntilog;\n\n\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;",
+        "func": "node.warn(\"filled order \" + msg.bot.currentfloor[14]);\nlet node_time = new Date().getTime();\n\nlet currentfloor = msg.bot.currentfloor;\ncurrentfloor[7] = 2;\ncurrentfloor[9] = node_time;\nmsg.bot.floors[currentfloor[0] - 1] = currentfloor;\n\nlet data = \"Ордер на покупку исполнен, ID - \" + msg.bot.currentfloor[8];\nconst tilog = global.get('tilog')(msg.bot.settings.botname, data);\ntilog;\n\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12946,7 +12938,7 @@
         "type": "function",
         "z": "2a761808.610238",
         "name": "busy = true",
-        "func": "\nglobal.set(msg.botname+\"-ttpbusy\", true);\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;\n\n",
+        "func": "\nglobal.set(msg.botname+\"-ttpbusy\", true);\nnode.status({ fill: \"green\", shape: \"dot\"});\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -12989,7 +12981,7 @@
         "type": "function",
         "z": "2a761808.610238",
         "name": "busy = false",
-        "func": "\nglobal.set(msg.botname+\"-ttpbusy\", false);\nflow.set(msg.botname + \"-ttpbusy\", 0);\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;\n\n",
+        "func": "\nglobal.set(msg.botname+\"-ttpbusy\", false);\nflow.set(msg.botname + \"-ttpbusy\", 0);\nnode.status({ fill: \"green\", shape: \"dot\"});\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13008,7 +13000,7 @@
         "type": "function",
         "z": "2a761808.610238",
         "name": "setbot global",
-        "func": "\nglobal.set(msg.botname + \"-ttp\", msg.bot.ttp);\n\n\nreturn msg;",
+        "func": "global.set(msg.botname + \"-ttp\", msg.bot.ttp);\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13112,7 +13104,7 @@
         "z": "2a761808.610238",
         "g": "2044fa36820f41ee",
         "name": "duration",
-        "func": "let trackname = msg.trackname;\nlet track = flow.get(trackname);\nif (track) {\n\n    let laststep = track[track.length - 1];\n    let firststep = track[0];\n    let last_node_end_time = laststep.end_node_time;\n    let first_node_start_time = firststep.start_node_time;\n\n    let duration = last_node_end_time - first_node_start_time;\n    //node.warn(duration);\n    msg.payload = duration;\n\n    flow.set(trackname);\n\n\n\n    return msg;\n}",
+        "func": "let trackname = msg.trackname;\nlet track = flow.get(trackname);\nif (track) {\n\n    let laststep = track[track.length - 1];\n    let firststep = track[0];\n    let last_node_end_time = laststep.end_node_time;\n    let first_node_start_time = firststep.start_node_time;\n\n    let duration = last_node_end_time - first_node_start_time;\n    //node.warn(duration);\n    msg.payload = duration;\n\n    flow.set(trackname);\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n\n    return msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13391,7 +13383,7 @@
         "z": "2a761808.610238",
         "g": "55e30606c2e4a038",
         "name": "getbotlist",
-        "func": "msg.payload = global.get(\"botlist\");\nreturn msg;",
+        "func": "msg.payload = global.get(\"botlist\");\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13431,7 +13423,7 @@
         "z": "2a761808.610238",
         "g": "55e30606c2e4a038",
         "name": "getbot global",
-        "func": "\nmsg.botname = msg.payload;\nmsg.bot = {};\nmsg.bot.busy = global.get(msg.botname + \"-busy\");\nmsg.bot.data = global.get(msg.botname + \"-data\");\nmsg.bot.onoff = global.get(msg.botname + \"-onoff\");\nmsg.bot.settings = global.get(msg.botname + \"-settings\");\nmsg.bot.status = global.get(msg.botname + \"-status\");\nmsg.bot.ttp = global.get(msg.botname + \"-ttp\");\nmsg.bot.ttpbusy = global.get(msg.botname + \"-ttpbusy\");\n\nmsg.bot.floors = msg.bot.data.floors;\nmsg.bot.finance = msg.bot.data.finance;\nmsg.bot.sales = msg.bot.data.sales;\nreturn msg;",
+        "func": "\nmsg.botname = msg.payload;\nmsg.bot = {};\nmsg.bot.busy = global.get(msg.botname + \"-busy\");\nmsg.bot.data = global.get(msg.botname + \"-data\");\nmsg.bot.onoff = global.get(msg.botname + \"-onoff\");\nmsg.bot.settings = global.get(msg.botname + \"-settings\");\nmsg.bot.status = global.get(msg.botname + \"-status\");\nmsg.bot.ttp = global.get(msg.botname + \"-ttp\");\nmsg.bot.ttpbusy = global.get(msg.botname + \"-ttpbusy\");\n\nmsg.bot.floors = msg.bot.data.floors;\nmsg.bot.finance = msg.bot.data.finance;\nmsg.bot.sales = msg.bot.data.sales;\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13481,7 +13473,7 @@
         "z": "2a761808.610238",
         "g": "55e30606c2e4a038",
         "name": "botname: msg.botname",
-        "func": "msg.topic = msg.botname;\n\nreturn msg;",
+        "func": "msg.topic = msg.botname;\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -13517,7 +13509,7 @@
         "z": "2a761808.610238",
         "g": "55e30606c2e4a038",
         "name": "start",
-        "func": "\n//<трекер<\n////>только для стартовой ноды>\nlet track = [];\nlet start_track_time = new Date().getTime();\nlet start_node_time = start_track_time;\nlet steptitle = node.name;\n\nlet end_node_time = new Date().getTime();\nlet duration = end_node_time - start_node_time;\ntrack.push({\n    \"steptitle\": steptitle,\n    \"start_node_time\": start_node_time,\n    \"end_node_time\": end_node_time,\n    \"duration_node\": duration,\n    \"duration_step\": 0\n});\n\nlet trackname = \"ttp-track-\" + msg.botname + msg._msgid;\nflow.set(trackname, track);\nmsg.trackname = trackname;\n//>трекер>\n\nnode.status({ fill: \"green\", shape: \"ring\", text: duration });\nreturn msg;\n\n",
+        "func": "\n//<трекер<\n////>только для стартовой ноды>\nlet track = [];\nlet start_track_time = new Date().getTime();\nlet start_node_time = start_track_time;\nlet steptitle = node.name;\n\nlet end_node_time = new Date().getTime();\nlet duration = end_node_time - start_node_time;\ntrack.push({\n    \"steptitle\": steptitle,\n    \"start_node_time\": start_node_time,\n    \"end_node_time\": end_node_time,\n    \"duration_node\": duration,\n    \"duration_step\": 0\n});\n\nlet trackname = \"ttp-track-\" + msg.botname + msg._msgid;\nflow.set(trackname, track);\nmsg.trackname = trackname;\n//>трекер>\n\nnode.status({ fill: \"green\", shape: \"dot\", text: duration });\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -14031,7 +14023,7 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "setbot_ttp reset",
-        "func": "\nmsg.bot.ttp.curstop = 0;\nmsg.bot.ttp.raschstopprice = 0;\nmsg.bot.ttp.curorderid = 0;\nmsg.bot.ttp.sold = false;\n//msg.bot.ttp.ttpbusy = false;\nmsg.bot.ttp.currentprice = 0;\nmsg.bot.ttp.quantity = 0;\nmsg.bot.ttp.final_price = 0;\nmsg.bot.ttp.finalorder = 0;\nmsg.bot.ttp.proskal = false;\n\nglobal.set(msg.botname + \"-ttp\", msg.bot.ttp);\n\nreturn msg;",
+        "func": "\nmsg.bot.ttp.curstop = 0;\nmsg.bot.ttp.raschstopprice = 0;\nmsg.bot.ttp.curorderid = 0;\nmsg.bot.ttp.sold = false;\n//msg.bot.ttp.ttpbusy = false;\nmsg.bot.ttp.currentprice = 0;\nmsg.bot.ttp.quantity = 0;\nmsg.bot.ttp.final_price = 0;\nmsg.bot.ttp.finalorder = 0;\nmsg.bot.ttp.proskal = false;\n\nglobal.set(msg.botname + \"-ttp\", msg.bot.ttp);\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -14065,7 +14057,7 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "регистрация сделки",
-        "func": "\nnode.warn(\"регистрация сделки\");\nlet commision = global.get(\"commision\");\n\nlet sellprice = Number(msg.bot.ttp.final_price);\n\nlet tempfin = Number(Number(msg.bot.finance.quotainorders) - Number(msg.bot.ttp.quantity));\nlet tempfin2 = Number(Number(msg.bot.finance.basenal) + Number(msg.bot.ttp.quantity) * sellprice);\n\nvar floors = msg.bot.floors;\nlet sumsales = 0;\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 3) {\n        let buyprice = Number(item[10]);\n        let quantity = Number(item[14]);\n        let p = quantity * (sellprice - buyprice);\n        let c = quantity * (Number(sellprice + buyprice)) / 100 * commision;\n        let net = p - c;\n        tempfin2 = tempfin2 - c;\n        msg.bot.sales.today.push([buyprice, sellprice, quantity, p, c, net]);\n        msg.bot.sales.all.push([buyprice, sellprice, quantity, p, c, net]);\n        sumsales = sumsales + net\n        node.warn([buyprice, sellprice, quantity, p, c, net]);\n        \n        let botname = msg.botname;\n        let datamsg = \"регистрация сделки - \" + [buyprice, sellprice, quantity, p, c, net];\n        const tilog = global.get('tilog')(botname, datamsg);\n        tilog;\n        \n\n        item[7] = 0;\n        item[8] = 0;\n        item[9] = 0;\n        item[10] = 0;\n        item[11] = 0;\n        item[12] = 0;\n        item[13] = 0;\n        item[14] = 0;\n\n    }\n});\nif (sumsales != 0) {\n\nmsg.sumsales = sumsales;\nmsg.bot.finance.quotainorders = tempfin.toFixed(msg.bot.settings.digitprice);\nmsg.bot.finance.basenal = tempfin2.toFixed(msg.bot.settings.digitq);\n\nif (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\nif (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\nmsg.bot.floors = floors;\n}\n\nreturn msg;\n\n\n\n\n",
+        "func": "let node_time = new Date().getTime();\nlet date = new Date();\n\n\nlet endtime = date.toString().split('GMT')[0];\n\nnode.warn(\"регистрация сделки\");\nlet commision = global.get(\"commision\");\n\nlet sellprice = Number(msg.bot.ttp.final_price);\n\nlet tempfin = Number(Number(msg.bot.finance.quotainorders) - Number(msg.bot.ttp.quantity));\nlet tempfin2 = Number(Number(msg.bot.finance.basenal) + Number(msg.bot.ttp.quantity) * sellprice);\n\nvar floors = msg.bot.floors;\nlet sumsales = 0;\n\n\n\n\n\nfunction formatTime(timestamp) {\n    let date = new Date(timestamp);\n    let time = new Date(timestamp).getTime();\n    return date.toString().split('GMT')[0] + \"-\" + time;\n}\n\n\n\nfunction timeDistance (date1, date2) {\n    let distance = Math.abs(date1 - date2);\n    const hours = Math.floor(distance / 3600000);\n    distance -= hours * 3600000;\n    const minutes = Math.floor(distance / 60000);\n    distance -= minutes * 60000;\n    const seconds = Math.floor(distance / 1000);\n    return `${hours}:${('0' + minutes).slice(-2)}:${('0' + seconds).slice(-2)}`;\n};\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 3) {\n\n\n        let starttime = formatTime(item[9]);\n        \n        let duration = timeDistance(node_time, item[9]);\n\n        let buyprice = Number(item[10]);\n        let quantity = Number(item[14]);\n        let p = quantity * (sellprice - buyprice);\n        let c = quantity * (Number(sellprice + buyprice)) / 100 * commision;\n        let net = p - c;\n        tempfin2 = tempfin2 - c;\n        msg.bot.sales.today.push([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n        msg.bot.sales.all.push([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n        sumsales = sumsales + net;\n\n        node.warn([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n\n        let botname = msg.botname;\n        let datamsg = \"регистрация сделки - \" + [buyprice, sellprice, quantity, p, c, net] + \" Покупка: \" + starttime + \" Продажа: \" + endtime + \" Длительность: \" + duration;\n        const tilog = global.get('tilog')(botname, datamsg);\n        tilog;\n\n        item[7] = 0;\n        item[8] = 0;\n        item[9] = 0;\n        item[10] = 0;\n        item[11] = 0;\n        item[12] = 0;\n        item[13] = 0;\n        item[14] = 0;\n\n    }\n});\nif (sumsales != 0) {\n\n    msg.sumsales = sumsales;\n    msg.bot.finance.quotainorders = tempfin.toFixed(msg.bot.settings.digitprice);\n    msg.bot.finance.basenal = tempfin2.toFixed(msg.bot.settings.digitq);\n\n    if (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\n    if (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\n    msg.bot.floors = floors;\n}\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -14086,7 +14078,7 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "сделка",
-        "func": "msg.payload = \"завершен ттп - \" + msg.botname + \" прибыль: \"+ msg.sumsales;\nreturn msg;",
+        "func": "msg.payload = \"завершен ттп - \" + msg.botname + \" прибыль: \"+ msg.sumsales;\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -14221,7 +14213,7 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "update bot floors, finance triger + on redis",
-        "func": "let botname = msg.botname;\nlet guid = global.get('guid');\n\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet sumsales = 0;\nsales.all.forEach(function (element) {\n    sumsales = sumsales + element[5];\n\n});\n\nlet quotanal = 0;\nlet quotainorders = 0;\nlet basenal = Number(finance.startdepo) + Number(sumsales);\nlet baseinorders = 0;\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 1) {\n        baseinorders = baseinorders + Number(item[14]) * Number(item[3]);\n        basenal = basenal - Number(item[14]) * Number(item[3]);\n\n    }\n    if (item[7] === 2) {\n        quotanal = quotanal + Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n    if (item[7] === 3) {\n        quotainorders = quotainorders + Number(item[14]);\n        //quotanal = quotanal - Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n\n\n\n});\nfinance.quotanal = (Number(quotanal)).toFixed(msg.bot.settings.digitq);\nfinance.quotainorders = (Number(quotainorders)).toFixed(msg.bot.settings.digitq);\nfinance.basenal = (Number(basenal)).toFixed(msg.bot.settings.digitprice);\nfinance.baseinorders = (Number(baseinorders)).toFixed(msg.bot.settings.digitprice);\n\nlet p = Number(msg.bot.status.currentprice);\nfinance.depo = Number((Number(finance.quotanal) * p + Number(finance.quotainorders) * p + Number(finance.basenal) + Number(finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\n\n\n\nmsg.bot.finance = finance;\nmsg.bot.floors = floors;\nmsg.bot.sales = sales;\n\n//global.set(msg.botname, msg.bot);\n\nlet volname = guid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\nreturn msg;\n\n\n",
+        "func": "let botname = msg.botname;\nlet guid = global.get('guid');\n\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet sumsales = 0;\nsales.all.forEach(function (element) {\n    sumsales = sumsales + element[5];\n\n});\n\nlet quotanal = 0;\nlet quotainorders = 0;\nlet basenal = Number(finance.startdepo) + Number(sumsales);\nlet baseinorders = 0;\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 1) {\n        baseinorders = baseinorders + Number(item[14]) * Number(item[3]);\n        basenal = basenal - Number(item[14]) * Number(item[3]);\n\n    }\n    if (item[7] === 2) {\n        quotanal = quotanal + Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n    if (item[7] === 3) {\n        quotainorders = quotainorders + Number(item[14]);\n        //quotanal = quotanal - Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n\n\n\n});\nfinance.quotanal = (Number(quotanal)).toFixed(msg.bot.settings.digitq);\nfinance.quotainorders = (Number(quotainorders)).toFixed(msg.bot.settings.digitq);\nfinance.basenal = (Number(basenal)).toFixed(msg.bot.settings.digitprice);\nfinance.baseinorders = (Number(baseinorders)).toFixed(msg.bot.settings.digitprice);\n\nlet p = Number(msg.bot.status.currentprice);\nfinance.depo = Number((Number(finance.quotanal) * p + Number(finance.quotainorders) * p + Number(finance.basenal) + Number(finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\n\n\n\nmsg.bot.finance = finance;\nmsg.bot.floors = floors;\nmsg.bot.sales = sales;\n\n//global.set(msg.botname, msg.bot);\n\nlet volname = guid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -14425,14 +14417,14 @@
         "id": "c28c4941e663b8f3",
         "type": "function",
         "z": "8ca38a6b3d25dd3b",
-        "name": "msg = {}",
-        "func": "let tgmsg = \"tgmsg\";\nlet guid = global.get('guid');\nmsg = {};\nmsg.payload = {tgmsg, guid};\nreturn msg;",
+        "name": "tgmsg",
+        "func": "let tgmsg = \"tgmsg\";\n\nlet guid = global.get('guid');\nmsg = {};\nmsg.payload = {tgmsg, guid};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
+        "x": 570,
         "y": 280,
         "wires": [
             [
@@ -14515,6 +14507,138 @@
         "statusType": "auto",
         "x": 700,
         "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b8dd96d5d9b54edd",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "g": "814fe3ad47c48a59",
+        "name": "Start",
+        "func": "let tgmsg = \"Start\";\n\nlet guid = global.get('guid');\nmsg = {};\nmsg.payload = {tgmsg, guid};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 340,
+        "wires": [
+            [
+                "642ebd6d0bd5aa4a"
+            ]
+        ]
+    },
+    {
+        "id": "642ebd6d0bd5aa4a",
+        "type": "redis-out",
+        "z": "5df15275.2888ec",
+        "g": "814fe3ad47c48a59",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "tgpost",
+        "obj": true,
+        "x": 470,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9c73485e3218bf6f",
+        "type": "redis-out",
+        "z": "5df15275.2888ec",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "tgpost",
+        "obj": true,
+        "x": 1990,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "6992d75a1f4b52e3",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "name": "tgmsg",
+        "func": "let tgmsg = \"Start\";\n\nlet guid = global.get('guid');\nmsg = {};\nmsg.payload = {tgmsg, guid};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1850,
+        "y": 1320,
+        "wires": [
+            [
+                "9c73485e3218bf6f"
+            ]
+        ]
+    },
+    {
+        "id": "fc93db1897b02d17",
+        "type": "function",
+        "z": "5f98db3a.7ab21c",
+        "g": "d508da9d29e25c1b",
+        "name": "tgmsg",
+        "func": "let tgmsg = msg.payload;\n\nlet guid = global.get('guid');\nmsg = {};\nmsg.payload = {tgmsg, guid};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 620,
+        "wires": [
+            [
+                "907c3e2556fdc41d"
+            ]
+        ]
+    },
+    {
+        "id": "907c3e2556fdc41d",
+        "type": "redis-out",
+        "z": "5f98db3a.7ab21c",
+        "g": "d508da9d29e25c1b",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "tgpost",
+        "obj": true,
+        "x": 730,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "91319a1e89f66e6c",
+        "type": "function",
+        "z": "2a761808.610238",
+        "name": "проскальзывание",
+        "func": "let tgmsg = \"Проскальзывание - \" + msg.botname;;\n\nlet guid = global.get('guid');\nmsg = {};\nmsg.payload = {tgmsg, guid};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 1360,
+        "wires": [
+            [
+                "e69cc8920dbe3d97"
+            ]
+        ]
+    },
+    {
+        "id": "e69cc8920dbe3d97",
+        "type": "redis-out",
+        "z": "2a761808.610238",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "tgpost",
+        "obj": true,
+        "x": 1450,
+        "y": 1360,
         "wires": []
     }
 ]
