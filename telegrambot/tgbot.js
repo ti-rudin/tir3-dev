@@ -1,59 +1,45 @@
 
-const fs = require("fs");
 const redis = require("redis");
 const TelegramBot = require('node-telegram-bot-api');
 
-//hardcore
-let chatid = Number(fs.readFileSync('chatid')) || 0;
-console.log("chatid:" + chatid);
 const tgkey = process.env.TELEGRAM_BOT_TOKEN;
+const chatid = process.env.CHATID;
 const userid = process.env.GOOGLEUID;
 
-//const userid = "d3fmoh2rVoVNgIcpLTFZBE0jHnI2";
-//const tgkey = "2080569073:AAFbriREPchioL2nLd9szAGWbse9uMF8BEU";
+console.log("chatid:" + chatid);
 
 if (tgkey === undefined) {
   throw new TypeError('BOT_TOKEN must be provided!')
 }
-const bot = new TelegramBot(tgkey);
+const bot = new TelegramBot(tgkey, { polling: true });
 
-bot.on('message', (msg) => {
-  const chatId = msg.chat.id;
-  console.log(chatId);
-  bot.sendMessage(chatId, chatId);
-  //fs.writeFileSync('chatid', chatId);
-    
-
-});
-
-
-
-
-var subscriber = redis.createClient("//redis:6379");
-subscriber.auth("YzRAdGgkFg");
-
-function send(msg){
-  let msgg = JSON.parse(msg);
-  bot.sendMessage(chatid, msgg.d);
+function send(tgpost) {
+  bot.sendMessage(chatid, tgpost);
 }
 
+var subscriber = redis.createClient("//redis:6379");
+//var subscriber = redis.createClient("//localhost:6379");
+subscriber.auth("YzRAdGgkFg");
+
 subscriber.on("message", function (channel, message) {
+  let msgg = JSON.parse(message);
 
-  send(message);
+  if (msgg.guid == userid) {
+
+    console.log(msgg);
+    send(msgg.tgmsg);
+
+  }
 });
-
 
 subscriber.subscribe("tgpost");
 
-//const client = redis.createClient("//redis:6379");
-//client.auth("YzRAdGgkFg");
 
-//const userid = process.env.GOOGLEUID;
+bot.on('message', (msg) => {
 
+  bot.sendMessage(msg.chat.id, "CHAT ID: " + msg.chat.id);
 
-
-
-
+});
 
 // Enable graceful stop
 process.once('SIGINT', () => bot.stop('SIGINT'))

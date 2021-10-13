@@ -14426,7 +14426,7 @@
         "type": "function",
         "z": "8ca38a6b3d25dd3b",
         "name": "msg = {}",
-        "func": "\nmsg = {};\nmsg.payload = {\"d\":2};\nreturn msg;",
+        "func": "let tgmsg = \"tgmsg\";\nlet guid = global.get('guid');\nmsg = {};\nmsg.payload = {tgmsg, guid};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
