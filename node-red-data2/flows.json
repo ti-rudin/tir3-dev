@@ -14961,7 +14961,7 @@
         "name": "",
         "statusCode": "200",
         "headers": {},
-        "x": 3080,
+        "x": 2960,
         "y": 540,
         "wires": []
     },
@@ -14980,54 +14980,8 @@
         "y": 540,
         "wires": [
             [
-                "934068b2b402b8c6",
-                "4bde536b9a13aa81"
+                "934068b2b402b8c6"
             ]
         ]
-    },
-    {
-        "id": "6765740732df9b78",
-        "type": "inject",
-        "z": "5f98db3a.7ab21c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 2730,
-        "y": 480,
-        "wires": [
-            [
-                "83b0f499b25cf021"
-            ]
-        ]
-    },
-    {
-        "id": "4bde536b9a13aa81",
-        "type": "debug",
-        "z": "5f98db3a.7ab21c",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2980,
-        "y": 480,
-        "wires": []
     }
 ]

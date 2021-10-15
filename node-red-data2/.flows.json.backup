@@ -14970,7 +14970,7 @@
         "type": "function",
         "z": "5f98db3a.7ab21c",
         "name": "",
-        "func": "\nlet guid = global.get('guid');\nlet leads = global.get(guid + \"-leads\");\nmsg.payload = leads;\n\nlet count = leads.length;\n\nvar sum = 0;\nfor (var i = 0; i < leads.length; i++) {\n\n    let lead = leads[i];\n    //node.warn(lead);\n    sum = sum + lead.profit;\n\n}\n\nlet sr = sum / count;\n\n\nnode.warn(count + \"  \" + sum.toFixed(2) + \"  \" + sr.toFixed(2));\nreturn msg;",
+        "func": "\nlet guid = global.get('guid');\nlet leads = global.get(guid + \"-leads\");\n\n\nlet count = leads.length;\n\nvar sum = 0;\nfor (var i = 0; i < leads.length; i++) {\n\n    let lead = leads[i];\n    //node.warn(lead);\n    sum = sum + lead.profit;\n\n}\n\nlet sr = sum / count;\n\n\nmsg.payload = {\n    \"count\" : count,\n    \"sum\": sum.toFixed(2),\n    \"sr\": sr.toFixed(2)\n};\n\nnode.warn(count + \"  \" + sum.toFixed(2) + \"  \" + sr.toFixed(2));\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
