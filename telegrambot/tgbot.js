@@ -15,6 +15,11 @@ function send(tgpost) {
   bot.sendMessage(chatid, tgpost);
 }
 
+function sendlead(botname, profit, duration) {
+  let tgpost = '<b>' + botname + '</b> \nПрибыль: ' + profit + '\nДлительность: '+duration;
+  bot.sendMessage(chatid, tgpost, { parse_mode: "HTML" });
+}
+
 var subscriber = redis.createClient("//redis:6379");
 //var subscriber = redis.createClient("//localhost:6379");
 subscriber.auth("YzRAdGgkFg");
@@ -24,7 +29,15 @@ subscriber.on("message", function (channel, message) {
 
   if (msgg.guid == userid) {
     console.log(msgg);
-    send(msgg.tgmsg);
+    if (msgg.typemsg == "lead") {
+
+      msgg.posttg = JSON.parse(msgg.posttg);
+
+      sendlead(msgg.posttg.botname, msgg.posttg.profit, msgg.posttg.duration);
+    } else {
+      send(msgg.tgmsg);
+    }
+
   }
 });
 
