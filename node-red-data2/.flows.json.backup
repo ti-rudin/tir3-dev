@@ -635,12 +635,14 @@
             "12cdc134f2944261",
             "a37ec54854f75f01",
             "b8dd96d5d9b54edd",
-            "642ebd6d0bd5aa4a"
+            "642ebd6d0bd5aa4a",
+            "aee34947d1368921",
+            "619115ba263b2add"
         ],
         "x": 54,
         "y": 219,
         "w": 3582,
-        "h": 162
+        "h": 202
     },
     {
         "id": "01cdfc91bb42701f",
@@ -663,7 +665,9 @@
             "20e5dbec70a2054f",
             "b71ccac226cfd352",
             "9ed590fb177c65fa",
-            "950fa7fabc4ef79a"
+            "950fa7fabc4ef79a",
+            "3d1bef8b5ea92205",
+            "6407a990a596d253"
         ],
         "x": 54,
         "y": 419,
@@ -975,7 +979,7 @@
             "9a2840420c57f1f3"
         ],
         "x": 54,
-        "y": 1091.5,
+        "y": 1111.5,
         "w": 2262,
         "h": 569.5
     },
@@ -5938,7 +5942,8 @@
         "y": 520,
         "wires": [
             [
-                "042f3914a0a15bd1"
+                "042f3914a0a15bd1",
+                "6407a990a596d253"
             ]
         ]
     },
@@ -5982,7 +5987,8 @@
         "y": 460,
         "wires": [
             [
-                "042f3914a0a15bd1"
+                "042f3914a0a15bd1",
+                "6407a990a596d253"
             ]
         ]
     },
@@ -9487,7 +9493,7 @@
             "c29cb281b2d54456"
         ],
         "x": 1275,
-        "y": 1140,
+        "y": 1160,
         "wires": [
             [
                 "c4b26fb79a2daa5e"
@@ -9504,7 +9510,7 @@
             "c80bf4b14fe4742e"
         ],
         "x": 95,
-        "y": 1140,
+        "y": 1160,
         "wires": [
             [
                 "547df9114d11385c"
@@ -9718,7 +9724,7 @@
             "c63e2cc4400d40fe"
         ],
         "x": 1715,
-        "y": 1140,
+        "y": 1160,
         "wires": []
     },
     {
@@ -9729,7 +9735,7 @@
         "name": "FLOOR CHECK",
         "info": "",
         "x": 1520,
-        "y": 1460,
+        "y": 1480,
         "wires": []
     },
     {
@@ -9745,7 +9751,7 @@
         "finalize": "",
         "libs": [],
         "x": 470,
-        "y": 1140,
+        "y": 1160,
         "wires": [
             [
                 "3878d6f90ee19f79"
@@ -9765,7 +9771,7 @@
         "finalize": "",
         "libs": [],
         "x": 240,
-        "y": 1140,
+        "y": 1160,
         "wires": [
             [
                 "d518ad315a4638e0"
@@ -9790,7 +9796,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 1140,
+        "y": 1160,
         "wires": [
             [
                 "14eb54fb95edf5f2"
@@ -9811,7 +9817,7 @@
         "finalize": "",
         "libs": [],
         "x": 1590,
-        "y": 1140,
+        "y": 1160,
         "wires": [
             [
                 "0499474fee1e3bdb"
@@ -9831,7 +9837,7 @@
         "finalize": "",
         "libs": [],
         "x": 230,
-        "y": 1420,
+        "y": 1440,
         "wires": [
             [
                 "cb21eeee8bf63c16"
@@ -9851,7 +9857,7 @@
         "finalize": "",
         "libs": [],
         "x": 440,
-        "y": 1420,
+        "y": 1440,
         "wires": [
             [
                 "37cac379d5fbf6c4"
@@ -9878,7 +9884,7 @@
         "repair": false,
         "outputs": 2,
         "x": 830,
-        "y": 1420,
+        "y": 1440,
         "wires": [
             [
                 "7213180bb142a85e"
@@ -9901,7 +9907,7 @@
         "finalize": "",
         "libs": [],
         "x": 660,
-        "y": 1420,
+        "y": 1440,
         "wires": [
             [
                 "60490b1d8f670554"
@@ -9921,7 +9927,7 @@
         "finalize": "",
         "libs": [],
         "x": 1410,
-        "y": 1140,
+        "y": 1160,
         "wires": [
             [
                 "26218d3cb1810007"
@@ -9948,7 +9954,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1030,
-        "y": 1560,
+        "y": 1580,
         "wires": [
             [
                 "41aa253a481d040d"
@@ -9971,7 +9977,7 @@
         "finalize": "",
         "libs": [],
         "x": 1250,
-        "y": 1500,
+        "y": 1520,
         "wires": [
             [
                 "9540463a0607bccd"
@@ -9989,7 +9995,7 @@
         "name": "вне сетки",
         "info": "",
         "x": 1500,
-        "y": 1540,
+        "y": 1560,
         "wires": []
     },
     {
@@ -10005,7 +10011,7 @@
             "a4527bfabf64a1b1"
         ],
         "x": 1715,
-        "y": 1460,
+        "y": 1480,
         "wires": []
     },
     {
@@ -10021,7 +10027,7 @@
         "finalize": "",
         "libs": [],
         "x": 1250,
-        "y": 1620,
+        "y": 1640,
         "wires": [
             [
                 "871e29f2da9b6656"
@@ -10041,7 +10047,7 @@
         "stream": false,
         "addname": "",
         "x": 1430,
-        "y": 1620,
+        "y": 1640,
         "wires": [
             [
                 "bf333c66bc20e77f"
@@ -10061,7 +10067,7 @@
         "finalize": "",
         "libs": [],
         "x": 1620,
-        "y": 1620,
+        "y": 1640,
         "wires": [
             [
                 "b2784332410b0273"
@@ -10090,7 +10096,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 2170,
-        "y": 1620,
+        "y": 1640,
         "wires": [
             [
                 "6edb1398e9f20d80"
@@ -10110,7 +10116,7 @@
             "a4527bfabf64a1b1"
         ],
         "x": 2275,
-        "y": 1620,
+        "y": 1640,
         "wires": []
     },
     {
@@ -10126,7 +10132,7 @@
             "a4527bfabf64a1b1"
         ],
         "x": 1395,
-        "y": 1540,
+        "y": 1560,
         "wires": []
     },
     {
@@ -11007,7 +11013,7 @@
             "179defa09285937f"
         ],
         "x": 1395,
-        "y": 1460,
+        "y": 1480,
         "wires": []
     },
     {
@@ -11032,7 +11038,7 @@
             "a2375dc0e61e0bfc"
         ],
         "x": 1655,
-        "y": 1460,
+        "y": 1480,
         "wires": [
             [
                 "3f37fb0637f78e15",
@@ -12843,7 +12849,7 @@
         "name": "FLOOR SERVICE",
         "info": "",
         "x": 1920,
-        "y": 1620,
+        "y": 1640,
         "wires": []
     },
     {
@@ -12856,7 +12862,7 @@
             "a0bc75354d0a725c"
         ],
         "x": 1775,
-        "y": 1620,
+        "y": 1640,
         "wires": []
     },
     {
@@ -12869,7 +12875,7 @@
             "d1f5e69b0d94d6c0"
         ],
         "x": 2055,
-        "y": 1620,
+        "y": 1640,
         "wires": [
             [
                 "28adb87a291e95d6"
@@ -12889,7 +12895,7 @@
         "finalize": "",
         "libs": [],
         "x": 1820,
-        "y": 1460,
+        "y": 1480,
         "wires": [
             []
         ]
@@ -14019,7 +14025,7 @@
         "finalize": "",
         "libs": [],
         "x": 1900,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "c29cb281b2d54456"
@@ -14037,7 +14043,7 @@
             "41fc95c9cb2c3b5c"
         ],
         "x": 2035,
-        "y": 1380,
+        "y": 1400,
         "wires": []
     },
     {
@@ -14046,18 +14052,17 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "регистрация сделки",
-        "func": "let guid = global.get('guid');\n\n\n\nlet lead = {};\n\nlet node_time = new Date().getTime();\nlet date = new Date();\n\nlet endtime = date.toString().split('GMT')[0];\nlet posttg = [];\nlet commision = global.get(\"commision\");\n\nlet sellprice = Number(msg.bot.ttp.final_price);\n\nlet tempfin = Number(Number(msg.bot.finance.quotainorders) - Number(msg.bot.ttp.quantity));\nlet tempfin2 = Number(Number(msg.bot.finance.basenal) + Number(msg.bot.ttp.quantity) * sellprice);\n\nvar floors = msg.bot.floors;\nlet sumsales = 0;\n\n\nfunction formatTime(timestamp) {\n    let date = new Date(timestamp);\n    //let time = new Date(timestamp).getTime();\n    return date.toString().split('GMT')[0];\n}\n\nfunction timeDistance(date1, date2) {\n    let distance = Math.abs(date1 - date2);\n    const hours = Math.floor(distance / 3600000);\n    distance -= hours * 3600000;\n    const minutes = Math.floor(distance / 60000);\n    distance -= minutes * 60000;\n    const seconds = Math.floor(distance / 1000);\n    return `${hours}:${('0' + minutes).slice(-2)}:${('0' + seconds).slice(-2)}`;\n};\n\nconst getleads = global.get('getleads')(guid);\nvar leads = {};\n\ngetleads.then(gbl => {\n    leads = JSON.parse(gbl);\n});\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 3) {\n\n\n        let starttime = formatTime(item[9]);\n\n        let duration = timeDistance(node_time, item[9]);\n\n        let buyprice = Number(item[10]);\n        let quantity = Number(item[14]);\n        let p = quantity * (sellprice - buyprice);\n        let c = quantity * (Number(sellprice + buyprice)) / 100 * commision;\n        let net = p - c;\n        tempfin2 = tempfin2 - c;\n        msg.bot.sales.today.push([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n        msg.bot.sales.all.push([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n        sumsales = sumsales + net;\n\n        //node.warn([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n\n        let botname = msg.botname;\n        let datamsg = \"\\n\" + botname\n            + \"\\n Прибыль\" + net.toFixed(msg.bot.settings.digitq)\n            + \"\\n Покупка: \" + starttime + \"Цена:\" + buyprice\n            + \"\\n Продажа: \" + endtime + \"Цена:\" + sellprice\n            + \"\\n Длительность: \" + duration;\n        const tilog = global.get('tilog')(botname, datamsg);\n        tilog;\n\n        let msgfortg = {\n            \"botname\": botname,\n            \"profit\": net,\n            \"duration\": duration\n        };\n\n        let posttg = JSON.stringify(msgfortg);\n        let typemsg = \"lead\";\n        const tglead = global.get('tglead')(posttg, guid, typemsg);\n        tglead;\n\n\n        //posttg.push(msgfortg);\n\n        node.warn(msgfortg);\n\n        item[7] = 0;\n        item[8] = 0;\n        item[9] = 0;\n        item[10] = 0;\n        item[11] = 0;\n        item[12] = 0;\n        item[13] = 0;\n        item[14] = 0;\n\n\n\n\n\n\n\n        if (leads) {\n            lead = {\n                \"count\": leads.count + 1 || 1,\n                \"profit\": leads.profit + net || net\n            }\n        } else {\n            lead = {\n                \"count\": 1,\n                \"profit\": net\n            }\n        }\n\n\n        const addlead = global.get('addlead')(guid, JSON.stringify(lead));\n        addlead;\n\n\n\n        node.status({ fill: \"green\", shape: \"dot\" });\n\n\n    }\n});\n\n\n\nmsg.posttg = posttg;\n\n\n\n\nif (sumsales != 0) {\n\n    msg.sumsales = sumsales;\n    msg.bot.finance.quotainorders = tempfin.toFixed(msg.bot.settings.digitprice);\n    msg.bot.finance.basenal = tempfin2.toFixed(msg.bot.settings.digitq);\n\n    if (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\n    if (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\n    msg.bot.floors = floors;\n}\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nnode.warn(\"регистрация сделки\");\nreturn msg;",
+        "func": "let guid = global.get('guid');\nlet leads = global.get(guid + '-leads') || [];\n\n\nlet lead = {};\n\nlet node_time = new Date().getTime();\nlet date = new Date();\n\nlet endtime = date.toString().split('GMT')[0];\nlet posttg = [];\nlet commision = global.get(\"commision\");\n\nlet sellprice = Number(msg.bot.ttp.final_price);\n\nlet tempfin = Number(Number(msg.bot.finance.quotainorders) - Number(msg.bot.ttp.quantity));\nlet tempfin2 = Number(Number(msg.bot.finance.basenal) + Number(msg.bot.ttp.quantity) * sellprice);\n\nvar floors = msg.bot.floors;\nlet sumsales = 0;\n\n\nfunction formatTime(timestamp) {\n    let date = new Date(timestamp);\n    //let time = new Date(timestamp).getTime();\n    return date.toString().split('GMT')[0];\n}\n\nfunction timeDistance(date1, date2) {\n    let distance = Math.abs(date1 - date2);\n    const hours = Math.floor(distance / 3600000);\n    distance -= hours * 3600000;\n    const minutes = Math.floor(distance / 60000);\n    distance -= minutes * 60000;\n    const seconds = Math.floor(distance / 1000);\n    return `${hours}:${('0' + minutes).slice(-2)}:${('0' + seconds).slice(-2)}`;\n};\n\n//const getleads = global.get('getleads')(guid);\n//var leads = {};\n//\n//getleads.then(gbl => {\n//    leads = JSON.parse(gbl);\n//});\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 3) {\n\n\n        let starttime = formatTime(item[9]);\n\n        let duration = timeDistance(node_time, item[9]);\n\n        let buyprice = Number(item[10]);\n        let quantity = Number(item[14]);\n        let p = quantity * (sellprice - buyprice);\n        let c = quantity * (Number(sellprice + buyprice)) / 100 * commision;\n        let net = p - c;\n        tempfin2 = tempfin2 - c;\n        msg.bot.sales.today.push([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n        msg.bot.sales.all.push([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n        sumsales = sumsales + net;\n\n        //node.warn([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n\n        let botname = msg.botname;\n        let datamsg = \"\\n\" + botname\n            + \"\\n Прибыль\" + net.toFixed(msg.bot.settings.digitq)\n            + \"\\n Покупка: \" + starttime + \"Цена:\" + buyprice\n            + \"\\n Продажа: \" + endtime + \"Цена:\" + sellprice\n            + \"\\n Длительность: \" + duration;\n        const tilog = global.get('tilog')(botname, datamsg);\n        tilog;\n\n        let msgfortg = {\n            \"botname\": botname,\n            \"profit\": net,\n            \"duration\": duration,\n            \"moneta\": msg.bot.settings.basecoin\n        };\n\n\n\n        let posttg = JSON.stringify(msgfortg);\n\n        leads.push(msgfortg);\n        global.set(guid + '-leads', leads);\n\n        let typemsg = \"lead\";\n        const tglead = global.get('tglead')(posttg, guid, typemsg);\n        tglead;\n\n\n        //posttg.push(msgfortg);\n\n        node.warn(msgfortg);\n\n        item[7] = 0;\n        item[8] = 0;\n        item[9] = 0;\n        item[10] = 0;\n        item[11] = 0;\n        item[12] = 0;\n        item[13] = 0;\n        item[14] = 0;\n\n\n\n\n        //count += 1;\n//\n\n       // if (leads) {\n       //     lead = {\n       //         \"count\": leads.count + 1 || 1,\n       //         \"profit\": leads.profit + net || net\n       //     }\n       // } else {\n       //     lead = {\n       //         \"count\": 1,\n       //         \"profit\": net\n       //     }\n       // }\n//\n//\n       // const addlead = global.get('addlead')(guid, JSON.stringify(lead));\n       // addlead;\n\n\n\n        node.status({ fill: \"green\", shape: \"dot\" });\n\n\n    }\n});\n\n\n\nmsg.posttg = posttg;\n\n\n\n\nif (sumsales != 0) {\n\n    msg.sumsales = sumsales;\n    msg.bot.finance.quotainorders = tempfin.toFixed(msg.bot.settings.digitprice);\n    msg.bot.finance.basenal = tempfin2.toFixed(msg.bot.settings.digitq);\n\n    if (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\n    if (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\n    msg.bot.floors = floors;\n}\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nnode.warn(\"регистрация сделки\");\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 1320,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
-                "9edee8174b84386e",
-                "84cc33dcd6efcdfb"
+                "9edee8174b84386e"
             ]
         ]
     },
@@ -14074,7 +14079,7 @@
         "finalize": "",
         "libs": [],
         "x": 1520,
-        "y": 1320,
+        "y": 1340,
         "wires": [
             [
                 "2db37087e3da343f"
@@ -14092,7 +14097,7 @@
         "message": "",
         "parseMode": "",
         "x": 1700,
-        "y": 1260,
+        "y": 1280,
         "wires": []
     },
     {
@@ -14119,7 +14124,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1060,
-        "y": 1300,
+        "y": 1320,
         "wires": [
             [
                 "9519af6af7411643",
@@ -14145,7 +14150,7 @@
         "finalize": "",
         "libs": [],
         "x": 1300,
-        "y": 1260,
+        "y": 1280,
         "wires": [
             [
                 "1beac7193ed6fee1"
@@ -14163,7 +14168,7 @@
         "message": "",
         "parseMode": "",
         "x": 1500,
-        "y": 1260,
+        "y": 1280,
         "wires": []
     },
     {
@@ -14179,7 +14184,7 @@
         "finalize": "",
         "libs": [],
         "x": 1270,
-        "y": 1220,
+        "y": 1240,
         "wires": [
             []
         ]
@@ -14194,14 +14199,13 @@
             "41fc95c9cb2c3b5c"
         ],
         "x": 1235,
-        "y": 1300,
+        "y": 1320,
         "wires": []
     },
     {
         "id": "9edee8174b84386e",
         "type": "function",
         "z": "5df15275.2888ec",
-        "d": true,
         "g": "4b5621a5daf6eb8e",
         "name": "update bot floors, finance triger + on redis",
         "func": "let botname = msg.botname;\nlet guid = global.get('guid');\n\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet sumsales = 0;\nsales.all.forEach(function (element) {\n    sumsales = sumsales + element[5];\n\n});\n\nlet quotanal = 0;\nlet quotainorders = 0;\nlet basenal = Number(finance.startdepo) + Number(sumsales);\nlet baseinorders = 0;\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 1) {\n        baseinorders = baseinorders + Number(item[14]) * Number(item[3]);\n        basenal = basenal - Number(item[14]) * Number(item[3]);\n\n    }\n    if (item[7] === 2) {\n        quotanal = quotanal + Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n    if (item[7] === 3) {\n        quotainorders = quotainorders + Number(item[14]);\n        //quotanal = quotanal - Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n\n\n\n});\nfinance.quotanal = (Number(quotanal)).toFixed(msg.bot.settings.digitq);\nfinance.quotainorders = (Number(quotainorders)).toFixed(msg.bot.settings.digitq);\nfinance.basenal = (Number(basenal)).toFixed(msg.bot.settings.digitprice);\nfinance.baseinorders = (Number(baseinorders)).toFixed(msg.bot.settings.digitprice);\n\nlet p = Number(msg.bot.status.currentprice);\nfinance.depo = Number((Number(finance.quotanal) * p + Number(finance.quotainorders) * p + Number(finance.basenal) + Number(finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\n\n\n\nmsg.bot.finance = finance;\nmsg.bot.floors = floors;\nmsg.bot.sales = sales;\n\n//global.set(msg.botname, msg.bot);\n\nlet volname = guid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;\n\n\n",
@@ -14210,7 +14214,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1640,
+        "x": 1620,
         "y": 1400,
         "wires": [
             [
@@ -14655,11 +14659,11 @@
         "id": "52bb7aacce10da86",
         "type": "function",
         "z": "5f98db3a.7ab21c",
-        "name": "addlead()",
+        "name": "setleads()",
         "func": "",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "\nlet addlead = function (guid = msg.payload.guid, lead = msg.payload.lead) {\n    \n    let promise = new Promise((resolve, reject) => {\n        msg.resolve = resolve;\n        msg.reject = reject;\n    });\n    \n\n    msg.topic = guid+\"-leads\";\n    msg.payload = lead;\n\n    node.send(Object.assign({}, msg));\n    \n    return promise;\n};\n\nglobal.set('addlead', addlead);",
+        "initialize": "let guid = global.get('guid');\nlet setleads = function (leads = msg.payload) {\n    \n    let promise = new Promise((resolve, reject) => {\n        msg.resolve = resolve;\n        msg.reject = reject;\n    });\n    \n\n    msg.topic = guid+\"-leads\";\n    msg.payload = JSON.stringify(leads);\n\n    node.send(Object.assign({}, msg));\n    \n    return promise;\n};\n\nglobal.set('setleads', setleads);",
         "finalize": "",
         "libs": [],
         "x": 1180,
@@ -14811,7 +14815,7 @@
         "finalize": "",
         "libs": [],
         "x": 1150,
-        "y": 1440,
+        "y": 1460,
         "wires": [
             [
                 "e681279a23d56ae3"
@@ -14841,7 +14845,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 1010,
-        "y": 1460,
+        "y": 1480,
         "wires": [
             [
                 "13ad98b8ecd2464f"
@@ -14914,5 +14918,97 @@
         "x": 1330,
         "y": 520,
         "wires": []
+    },
+    {
+        "id": "3d1bef8b5ea92205",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "g": "01cdfc91bb42701f",
+        "name": "setleads to redis",
+        "func": "let guid = global.get('guid');\nlet volname = guid + \"-leads\";\nlet leads = global.get(volname) || [];\n\nconst upd = global.get('setleads')(leads);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n    node.done();\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6407a990a596d253",
+        "type": "trigger",
+        "z": "5df15275.2888ec",
+        "g": "01cdfc91bb42701f",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-30",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 550,
+        "y": 580,
+        "wires": [
+            [
+                "3d1bef8b5ea92205"
+            ]
+        ]
+    },
+    {
+        "id": "aee34947d1368921",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "g": "814fe3ad47c48a59",
+        "name": "getleads from redis",
+        "func": "let guid = global.get('guid');\nlet volname = guid + \"-leads\";\n\nconst upd = global.get('getleads')(guid);\n\nupd.then(upd => {\n    global.set(volname, JSON.parse(upd));\n\n    msg.payload = upd;\n    node.done();\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "619115ba263b2add",
+        "type": "inject",
+        "z": "5df15275.2888ec",
+        "g": "814fe3ad47c48a59",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 510,
+        "y": 380,
+        "wires": [
+            [
+                "aee34947d1368921"
+            ]
+        ]
     }
 ]

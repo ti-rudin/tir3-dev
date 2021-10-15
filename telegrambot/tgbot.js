@@ -1,5 +1,9 @@
 
 const redis = require("redis");
+
+const client = redis.createClient("//redis:6379");
+client.auth("YzRAdGgkFg");
+
 const TelegramBot = require('node-telegram-bot-api');
 
 const tgkey = process.env.TELEGRAM_BOT_TOKEN;
@@ -15,14 +19,52 @@ function send(tgpost) {
   bot.sendMessage(chatid, tgpost);
 }
 
-function sendlead(botname, profit, duration) {
-  let tgpost = '<b>' + botname + '</b> \nПрибыль: ' + profit + '\nДлительность: '+duration;
+let leads;
+function sendlead(botname, profit, duration, moneta) {
+  let tgpost = '<b>' + botname + '</b> \nПрибыль: <pre>' + profit.toFixed(2) + ' ' + moneta +'</pre>\nДлительность: ' + duration;
   bot.sendMessage(chatid, tgpost, { parse_mode: "HTML" });
+
+
+
+
+
+  //client.get(userid + "-leads", function (err, reply) {
+  //  leads = JSON.parse(reply);
+  //  //console.log("leads count " + leads.count);
+//
+  //  let lead;
+  //  if (!leads) {
+  //    lead = {
+  //      "count": 1,
+  //      "profit": profit
+  //    }
+  //    client.set(userid + "-leads", JSON.stringify(lead));
+//
+  //  } else {
+//
+  //    console.log("leads count " + leads.count);
+  //    leads.count++;
+  //    leads.profit = leads.profit + profit;
+  //    lead = {
+  //      "count": leads.count,
+  //      "profit": leads.profit
+  //    }
+  //    client.set(userid + "-leads", JSON.stringify(lead));
+  //  }
+//
+//
+//
+  //});
+
+
+
+
 }
 
 var subscriber = redis.createClient("//redis:6379");
 //var subscriber = redis.createClient("//localhost:6379");
 subscriber.auth("YzRAdGgkFg");
+
 
 subscriber.on("message", function (channel, message) {
   let msgg = JSON.parse(message);
@@ -33,7 +75,9 @@ subscriber.on("message", function (channel, message) {
 
       msgg.posttg = JSON.parse(msgg.posttg);
 
-      sendlead(msgg.posttg.botname, msgg.posttg.profit, msgg.posttg.duration);
+      sendlead(msgg.posttg.botname, msgg.posttg.profit, msgg.posttg.duration, msgg.posttg.moneta);
+
+
     } else {
       send(msgg.tgmsg);
     }

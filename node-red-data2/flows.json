@@ -635,7 +635,8 @@
             "12cdc134f2944261",
             "a37ec54854f75f01",
             "b8dd96d5d9b54edd",
-            "642ebd6d0bd5aa4a"
+            "642ebd6d0bd5aa4a",
+            "aee34947d1368921"
         ],
         "x": 54,
         "y": 219,
@@ -663,7 +664,9 @@
             "20e5dbec70a2054f",
             "b71ccac226cfd352",
             "9ed590fb177c65fa",
-            "950fa7fabc4ef79a"
+            "950fa7fabc4ef79a",
+            "3d1bef8b5ea92205",
+            "6407a990a596d253"
         ],
         "x": 54,
         "y": 419,
@@ -5250,7 +5253,8 @@
         "wires": [
             [
                 "180bacca6db5568a",
-                "b8dd96d5d9b54edd"
+                "b8dd96d5d9b54edd",
+                "aee34947d1368921"
             ]
         ]
     },
@@ -5938,7 +5942,8 @@
         "y": 520,
         "wires": [
             [
-                "042f3914a0a15bd1"
+                "042f3914a0a15bd1",
+                "6407a990a596d253"
             ]
         ]
     },
@@ -5982,7 +5987,8 @@
         "y": 460,
         "wires": [
             [
-                "042f3914a0a15bd1"
+                "042f3914a0a15bd1",
+                "6407a990a596d253"
             ]
         ]
     },
@@ -14046,7 +14052,7 @@
         "z": "5df15275.2888ec",
         "g": "4b5621a5daf6eb8e",
         "name": "регистрация сделки",
-        "func": "let guid = global.get('guid');\n\n\n\nlet lead = {};\n\nlet node_time = new Date().getTime();\nlet date = new Date();\n\nlet endtime = date.toString().split('GMT')[0];\nlet posttg = [];\nlet commision = global.get(\"commision\");\n\nlet sellprice = Number(msg.bot.ttp.final_price);\n\nlet tempfin = Number(Number(msg.bot.finance.quotainorders) - Number(msg.bot.ttp.quantity));\nlet tempfin2 = Number(Number(msg.bot.finance.basenal) + Number(msg.bot.ttp.quantity) * sellprice);\n\nvar floors = msg.bot.floors;\nlet sumsales = 0;\n\n\nfunction formatTime(timestamp) {\n    let date = new Date(timestamp);\n    //let time = new Date(timestamp).getTime();\n    return date.toString().split('GMT')[0];\n}\n\nfunction timeDistance(date1, date2) {\n    let distance = Math.abs(date1 - date2);\n    const hours = Math.floor(distance / 3600000);\n    distance -= hours * 3600000;\n    const minutes = Math.floor(distance / 60000);\n    distance -= minutes * 60000;\n    const seconds = Math.floor(distance / 1000);\n    return `${hours}:${('0' + minutes).slice(-2)}:${('0' + seconds).slice(-2)}`;\n};\n\nconst getleads = global.get('getleads')(guid);\nvar leads = {};\n\ngetleads.then(gbl => {\n    leads = JSON.parse(gbl);\n});\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 3) {\n\n\n        let starttime = formatTime(item[9]);\n\n        let duration = timeDistance(node_time, item[9]);\n\n        let buyprice = Number(item[10]);\n        let quantity = Number(item[14]);\n        let p = quantity * (sellprice - buyprice);\n        let c = quantity * (Number(sellprice + buyprice)) / 100 * commision;\n        let net = p - c;\n        tempfin2 = tempfin2 - c;\n        msg.bot.sales.today.push([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n        msg.bot.sales.all.push([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n        sumsales = sumsales + net;\n\n        //node.warn([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n\n        let botname = msg.botname;\n        let datamsg = \"\\n\" + botname\n            + \"\\n Прибыль\" + net.toFixed(msg.bot.settings.digitq)\n            + \"\\n Покупка: \" + starttime + \"Цена:\" + buyprice\n            + \"\\n Продажа: \" + endtime + \"Цена:\" + sellprice\n            + \"\\n Длительность: \" + duration;\n        const tilog = global.get('tilog')(botname, datamsg);\n        tilog;\n\n        let msgfortg = {\n            \"botname\": botname,\n            \"profit\": net,\n            \"duration\": duration\n        };\n\n        let posttg = JSON.stringify(msgfortg);\n        let typemsg = \"lead\";\n        const tglead = global.get('tglead')(posttg, guid, typemsg);\n        tglead;\n\n\n        //posttg.push(msgfortg);\n\n        node.warn(msgfortg);\n\n        item[7] = 0;\n        item[8] = 0;\n        item[9] = 0;\n        item[10] = 0;\n        item[11] = 0;\n        item[12] = 0;\n        item[13] = 0;\n        item[14] = 0;\n\n\n\n\n\n\n\n        if (leads) {\n            lead = {\n                \"count\": leads.count + 1 || 1,\n                \"profit\": leads.profit + net || net\n            }\n        } else {\n            lead = {\n                \"count\": 1,\n                \"profit\": net\n            }\n        }\n\n\n        const addlead = global.get('addlead')(guid, JSON.stringify(lead));\n        addlead;\n\n\n\n        node.status({ fill: \"green\", shape: \"dot\" });\n\n\n    }\n});\n\n\n\nmsg.posttg = posttg;\n\n\n\n\nif (sumsales != 0) {\n\n    msg.sumsales = sumsales;\n    msg.bot.finance.quotainorders = tempfin.toFixed(msg.bot.settings.digitprice);\n    msg.bot.finance.basenal = tempfin2.toFixed(msg.bot.settings.digitq);\n\n    if (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\n    if (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\n    msg.bot.floors = floors;\n}\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nnode.warn(\"регистрация сделки\");\nreturn msg;",
+        "func": "let guid = global.get('guid');\nlet leads = global.get(guid + '-leads') || [];\n\n\nlet lead = {};\n\nlet node_time = new Date().getTime();\nlet date = new Date();\n\nlet endtime = date.toString().split('GMT')[0];\nlet posttg = [];\nlet commision = global.get(\"commision\");\n\nlet sellprice = Number(msg.bot.ttp.final_price);\n\nlet tempfin = Number(Number(msg.bot.finance.quotainorders) - Number(msg.bot.ttp.quantity));\nlet tempfin2 = Number(Number(msg.bot.finance.basenal) + Number(msg.bot.ttp.quantity) * sellprice);\n\nvar floors = msg.bot.floors;\nlet sumsales = 0;\n\n\nfunction formatTime(timestamp) {\n    let date = new Date(timestamp);\n    //let time = new Date(timestamp).getTime();\n    return date.toString().split('GMT')[0];\n}\n\nfunction timeDistance(date1, date2) {\n    let distance = Math.abs(date1 - date2);\n    const hours = Math.floor(distance / 3600000);\n    distance -= hours * 3600000;\n    const minutes = Math.floor(distance / 60000);\n    distance -= minutes * 60000;\n    const seconds = Math.floor(distance / 1000);\n    return `${hours}:${('0' + minutes).slice(-2)}:${('0' + seconds).slice(-2)}`;\n};\n\n//const getleads = global.get('getleads')(guid);\n//var leads = {};\n//\n//getleads.then(gbl => {\n//    leads = JSON.parse(gbl);\n//});\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 3) {\n\n\n        let starttime = formatTime(item[9]);\n\n        let duration = timeDistance(node_time, item[9]);\n\n        let buyprice = Number(item[10]);\n        let quantity = Number(item[14]);\n        let p = quantity * (sellprice - buyprice);\n        let c = quantity * (Number(sellprice + buyprice)) / 100 * commision;\n        let net = p - c;\n        tempfin2 = tempfin2 - c;\n        msg.bot.sales.today.push([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n        msg.bot.sales.all.push([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n        sumsales = sumsales + net;\n\n        //node.warn([buyprice, sellprice, quantity, p, c, net, starttime, endtime, duration]);\n\n        let botname = msg.botname;\n        let datamsg = \"\\n\" + botname\n            + \"\\n Прибыль\" + net.toFixed(msg.bot.settings.digitq)\n            + \"\\n Покупка: \" + starttime + \"Цена:\" + buyprice\n            + \"\\n Продажа: \" + endtime + \"Цена:\" + sellprice\n            + \"\\n Длительность: \" + duration;\n        const tilog = global.get('tilog')(botname, datamsg);\n        tilog;\n\n        let msgfortg = {\n            \"botname\": botname,\n            \"profit\": net,\n            \"duration\": duration,\n            \"moneta\": msg.bot.settings.basecoin\n        };\n\n\n\n        let posttg = JSON.stringify(msgfortg);\n\n        leads.push(msgfortg);\n        global.set(guid + '-leads', leads);\n\n        let typemsg = \"lead\";\n        const tglead = global.get('tglead')(posttg, guid, typemsg);\n        tglead;\n\n\n        //posttg.push(msgfortg);\n\n        node.warn(msgfortg);\n\n        item[7] = 0;\n        item[8] = 0;\n        item[9] = 0;\n        item[10] = 0;\n        item[11] = 0;\n        item[12] = 0;\n        item[13] = 0;\n        item[14] = 0;\n\n\n\n\n        //count += 1;\n//\n\n       // if (leads) {\n       //     lead = {\n       //         \"count\": leads.count + 1 || 1,\n       //         \"profit\": leads.profit + net || net\n       //     }\n       // } else {\n       //     lead = {\n       //         \"count\": 1,\n       //         \"profit\": net\n       //     }\n       // }\n//\n//\n       // const addlead = global.get('addlead')(guid, JSON.stringify(lead));\n       // addlead;\n\n\n\n        node.status({ fill: \"green\", shape: \"dot\" });\n\n\n    }\n});\n\n\n\nmsg.posttg = posttg;\n\n\n\n\nif (sumsales != 0) {\n\n    msg.sumsales = sumsales;\n    msg.bot.finance.quotainorders = tempfin.toFixed(msg.bot.settings.digitprice);\n    msg.bot.finance.basenal = tempfin2.toFixed(msg.bot.settings.digitq);\n\n    if (msg.bot.finance.baseinorders == -0) { msg.bot.finance.baseinorders = 0; }\n    if (msg.bot.finance.basenal == -0) { msg.bot.finance.basenal = 0; }\n\n    msg.bot.floors = floors;\n}\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nnode.warn(\"регистрация сделки\");\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -14653,11 +14659,11 @@
         "id": "52bb7aacce10da86",
         "type": "function",
         "z": "5f98db3a.7ab21c",
-        "name": "addlead()",
+        "name": "setleads()",
         "func": "",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "\nlet addlead = function (guid = msg.payload.guid, lead = msg.payload.lead) {\n    \n    let promise = new Promise((resolve, reject) => {\n        msg.resolve = resolve;\n        msg.reject = reject;\n    });\n    \n\n    msg.topic = guid+\"-leads\";\n    msg.payload = lead;\n\n    node.send(Object.assign({}, msg));\n    \n    return promise;\n};\n\nglobal.set('addlead', addlead);",
+        "initialize": "let guid = global.get('guid');\nlet setleads = function (leads = msg.payload) {\n    \n    let promise = new Promise((resolve, reject) => {\n        msg.resolve = resolve;\n        msg.reject = reject;\n    });\n    \n\n    msg.topic = guid+\"-leads\";\n    msg.payload = JSON.stringify(leads);\n\n    node.send(Object.assign({}, msg));\n    \n    return promise;\n};\n\nglobal.set('setleads', setleads);",
         "finalize": "",
         "libs": [],
         "x": 1180,
@@ -14912,5 +14918,67 @@
         "x": 1330,
         "y": 520,
         "wires": []
+    },
+    {
+        "id": "3d1bef8b5ea92205",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "g": "01cdfc91bb42701f",
+        "name": "setleads to redis",
+        "func": "let guid = global.get('guid');\nlet volname = guid + \"-leads\";\nlet leads = global.get(volname) || [];\n\nconst upd = global.get('setleads')(leads);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n    node.done();\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6407a990a596d253",
+        "type": "trigger",
+        "z": "5df15275.2888ec",
+        "g": "01cdfc91bb42701f",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-30",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 550,
+        "y": 580,
+        "wires": [
+            [
+                "3d1bef8b5ea92205"
+            ]
+        ]
+    },
+    {
+        "id": "aee34947d1368921",
+        "type": "function",
+        "z": "5df15275.2888ec",
+        "g": "814fe3ad47c48a59",
+        "name": "getleads from redis",
+        "func": "let guid = global.get('guid');\nlet volname = guid + \"-leads\";\n\nconst upd = global.get('getleads')(guid);\n\nupd.then(upd => {\n    global.set(volname, JSON.parse(upd));\n\n    msg.payload = upd;\n    node.done();\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 340,
+        "wires": [
+            []
+        ]
     }
 ]
