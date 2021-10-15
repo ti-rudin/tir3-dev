@@ -24,41 +24,6 @@ function sendlead(botname, profit, duration, moneta) {
   let tgpost = '<b>' + botname + '</b> \nПрибыль: <pre>' + profit.toFixed(2) + ' ' + moneta +'</pre>\nДлительность: ' + duration;
   bot.sendMessage(chatid, tgpost, { parse_mode: "HTML" });
 
-
-
-
-
-  //client.get(userid + "-leads", function (err, reply) {
-  //  leads = JSON.parse(reply);
-  //  //console.log("leads count " + leads.count);
-//
-  //  let lead;
-  //  if (!leads) {
-  //    lead = {
-  //      "count": 1,
-  //      "profit": profit
-  //    }
-  //    client.set(userid + "-leads", JSON.stringify(lead));
-//
-  //  } else {
-//
-  //    console.log("leads count " + leads.count);
-  //    leads.count++;
-  //    leads.profit = leads.profit + profit;
-  //    lead = {
-  //      "count": leads.count,
-  //      "profit": leads.profit
-  //    }
-  //    client.set(userid + "-leads", JSON.stringify(lead));
-  //  }
-//
-//
-//
-  //});
-
-
-
-
 }
 
 var subscriber = redis.createClient("//redis:6379");
