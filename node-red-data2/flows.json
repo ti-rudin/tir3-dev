@@ -88,9 +88,7 @@
             "43e93874.b7141"
         ],
         "x": 1394,
-        "y": 459,
-        "w": 592,
-        "h": 122
+        "y": 459
     },
     {
         "id": "f8a5c66461864831",
@@ -112,9 +110,7 @@
             "a7628168.861ce"
         ],
         "x": 54,
-        "y": 59,
-        "w": 792,
-        "h": 122
+        "y": 59
     },
     {
         "id": "a6e4d859c0057b6f",
@@ -160,9 +156,7 @@
             "dd73e1c4557a5e65"
         ],
         "x": 3234,
-        "y": 1499,
-        "w": 792,
-        "h": 122
+        "y": 1499
     },
     {
         "id": "b1c9866420e73130",
@@ -326,9 +320,7 @@
             "579577e08c6abb4c"
         ],
         "x": 2114,
-        "y": 19,
-        "w": 472,
-        "h": 162
+        "y": 19
     },
     {
         "id": "6cca532bb4a349c9",
@@ -565,9 +557,7 @@
             "503d53910c17c784"
         ],
         "x": 3424,
-        "y": 499,
-        "w": 692,
-        "h": 142
+        "y": 499
     },
     {
         "id": "422e384634a8793d",
@@ -595,9 +585,7 @@
             "94c9271545c13b40"
         ],
         "x": 54,
-        "y": 659,
-        "w": 1892,
-        "h": 162
+        "y": 659
     },
     {
         "id": "814fe3ad47c48a59",
@@ -639,9 +627,7 @@
             "aee34947d1368921"
         ],
         "x": 54,
-        "y": 219,
-        "w": 3582,
-        "h": 162
+        "y": 219
     },
     {
         "id": "01cdfc91bb42701f",
@@ -669,9 +655,7 @@
             "6407a990a596d253"
         ],
         "x": 54,
-        "y": 419,
-        "w": 1272,
-        "h": 202
+        "y": 419
     },
     {
         "id": "65ceb63d19a93d0f",
@@ -697,9 +681,7 @@
             "a1d4c1c74be64298"
         ],
         "x": 884,
-        "y": 59,
-        "w": 722,
-        "h": 122
+        "y": 59
     },
     {
         "id": "251a240e36b31c14",
@@ -724,9 +706,7 @@
             "6274a170dc04552c"
         ],
         "x": 1794,
-        "y": 859,
-        "w": 632,
-        "h": 202
+        "y": 859
     },
     {
         "id": "a098ebd7bc13168a",
@@ -748,9 +728,7 @@
             "58c7424d21936ed2"
         ],
         "x": 54,
-        "y": 1699,
-        "w": 792,
-        "h": 122
+        "y": 1699
     },
     {
         "id": "47ccdad2d228ed4b",
@@ -784,9 +762,7 @@
             "aff2e0df221f4a3e"
         ],
         "x": 54,
-        "y": 859,
-        "w": 1682,
-        "h": 202
+        "y": 859
     },
     {
         "id": "c723fa7827c597d2",
@@ -854,9 +830,7 @@
             "3520419ec219563a"
         ],
         "x": 1854,
-        "y": 119,
-        "w": 612,
-        "h": 162
+        "y": 119
     },
     {
         "id": "55e30606c2e4a038",
@@ -892,9 +866,7 @@
             "3aa78e92fd51af7b"
         ],
         "x": 74,
-        "y": 59,
-        "w": 1682,
-        "h": 222
+        "y": 59
     },
     {
         "id": "73c30bbe5f45e91f",
@@ -916,9 +888,7 @@
             "ca72074c8d540aae"
         ],
         "x": 714,
-        "y": 319,
-        "w": 792,
-        "h": 122
+        "y": 319
     },
     {
         "id": "4b5621a5daf6eb8e",
@@ -978,9 +948,7 @@
             "9a2840420c57f1f3"
         ],
         "x": 54,
-        "y": 1111.5,
-        "w": 2262,
-        "h": 569.5
+        "y": 1111.5
     },
     {
         "id": "f6ba3116da1e0f10",
@@ -3647,7 +3615,7 @@
         "type": "function",
         "z": "5f98db3a.7ab21c",
         "name": "prepare data for create bot",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":data\";\nlet botdata = {\"finance\":msg.payload.finance,\"floors\":msg.payload.floors,\"sales\":msg.payload.sales};\nmsg.payload = botdata;\nglobal.set(msg.payload.botname+\"-data\", botdata);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;\n\n",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":data\";\nlet botdata = {\"finance\":msg.payload.finance,\"floors\":msg.payload.floors,\"sales\":msg.payload.sales};\nglobal.set(msg.payload.botname + \"-data\", botdata);\nmsg.payload = botdata;\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3752,7 +3720,7 @@
         "type": "function",
         "z": "5f98db3a.7ab21c",
         "name": "prepare for add bot status",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":status\";\nmsg.payload.status.updated = new Date().getTime();\nmsg.payload = msg.payload.status;\nglobal.set(msg.payload.botname + \"-status\", msg.payload);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":status\";\nmsg.payload.status.updated = new Date().getTime();\nglobal.set(msg.payload.botname + \"-status\", msg.payload.status);\nmsg.payload = msg.payload.status;\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3789,7 +3757,7 @@
         "type": "function",
         "z": "5f98db3a.7ab21c",
         "name": "prepare for add bot settings",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":settings\";\n\nmsg.payload = msg.payload.settings;\nglobal.set(msg.payload.botname + \"-settings\", msg.payload);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":settings\";\nglobal.set(msg.payload.botname + \"-settings\", msg.payload.settings);\nmsg.payload = msg.payload.settings;\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3826,7 +3794,7 @@
         "type": "function",
         "z": "5f98db3a.7ab21c",
         "name": "prepare for add bot ttp",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":ttp\";\n\nmsg.payload = msg.payload.ttp;\nglobal.set(msg.payload.botname + \"-ttp\", msg.payload);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":ttp\";\n\n\nglobal.set(msg.payload.botname + \"-ttp\", msg.payload.ttp);\nmsg.payload = msg.payload.ttp;\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3863,7 +3831,7 @@
         "type": "function",
         "z": "5f98db3a.7ab21c",
         "name": "prepare for add bot onoff",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":onoff\";\n\nmsg.payload = JSON.stringify(msg.payload.onoff);\nglobal.set(msg.payload.botname + \"-onoff\", msg.payload);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":onoff\";\nglobal.set(msg.payload.botname + \"-onoff\", msg.payload.onoff);\n\nmsg.payload = JSON.stringify(msg.payload.onoff);\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3900,7 +3868,7 @@
         "type": "function",
         "z": "5f98db3a.7ab21c",
         "name": "prepare for add bot busy",
-        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":busy\";\n\nmsg.payload = JSON.stringify(msg.payload.busy);\nglobal.set(msg.payload.botname + \"-busy\", msg.payload);\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
+        "func": "msg.topic = msg.payload.user_id_from_google+\"-bots:\"+msg.payload.botname+\":busy\";\nglobal.set(msg.payload.botname + \"-busy\", msg.payload.busy);\n\nmsg.payload = JSON.stringify(msg.payload.busy);\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
