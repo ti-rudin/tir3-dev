@@ -88,7 +88,9 @@
             "43e93874.b7141"
         ],
         "x": 1394,
-        "y": 459
+        "y": 459,
+        "w": 592,
+        "h": 122
     },
     {
         "id": "f8a5c66461864831",
@@ -110,7 +112,9 @@
             "a7628168.861ce"
         ],
         "x": 54,
-        "y": 59
+        "y": 59,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "a6e4d859c0057b6f",
@@ -320,7 +324,9 @@
             "579577e08c6abb4c"
         ],
         "x": 2114,
-        "y": 19
+        "y": 19,
+        "w": 472,
+        "h": 162
     },
     {
         "id": "6cca532bb4a349c9",
@@ -585,7 +591,9 @@
             "94c9271545c13b40"
         ],
         "x": 54,
-        "y": 659
+        "y": 659,
+        "w": 1892,
+        "h": 162
     },
     {
         "id": "814fe3ad47c48a59",
@@ -627,7 +635,9 @@
             "aee34947d1368921"
         ],
         "x": 54,
-        "y": 219
+        "y": 219,
+        "w": 3582,
+        "h": 162
     },
     {
         "id": "01cdfc91bb42701f",
@@ -655,7 +665,9 @@
             "6407a990a596d253"
         ],
         "x": 54,
-        "y": 419
+        "y": 419,
+        "w": 1272,
+        "h": 202
     },
     {
         "id": "65ceb63d19a93d0f",
@@ -681,7 +693,9 @@
             "a1d4c1c74be64298"
         ],
         "x": 884,
-        "y": 59
+        "y": 59,
+        "w": 722,
+        "h": 122
     },
     {
         "id": "251a240e36b31c14",
@@ -706,7 +720,9 @@
             "6274a170dc04552c"
         ],
         "x": 1794,
-        "y": 859
+        "y": 859,
+        "w": 632,
+        "h": 202
     },
     {
         "id": "a098ebd7bc13168a",
@@ -728,7 +744,9 @@
             "58c7424d21936ed2"
         ],
         "x": 54,
-        "y": 1699
+        "y": 1699,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "47ccdad2d228ed4b",
@@ -762,7 +780,9 @@
             "aff2e0df221f4a3e"
         ],
         "x": 54,
-        "y": 859
+        "y": 859,
+        "w": 1682,
+        "h": 202
     },
     {
         "id": "c723fa7827c597d2",
@@ -784,7 +804,9 @@
             "2f83bb2fab63d1bd"
         ],
         "x": 1114,
-        "y": 1119
+        "y": 1119,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "666006aaa2e325fc",
@@ -936,8 +958,6 @@
             "af843f8c5aec7d33",
             "c29cb281b2d54456",
             "e681279a23d56ae3",
-            "84cc33dcd6efcdfb",
-            "2db37087e3da343f",
             "7213180bb142a85e",
             "9519af6af7411643",
             "1beac7193ed6fee1",
@@ -948,7 +968,9 @@
             "9a2840420c57f1f3"
         ],
         "x": 54,
-        "y": 1111.5
+        "y": 1111.5,
+        "w": 2262,
+        "h": 569.5
     },
     {
         "id": "f6ba3116da1e0f10",
@@ -14035,40 +14057,6 @@
         ]
     },
     {
-        "id": "84cc33dcd6efcdfb",
-        "type": "function",
-        "z": "5df15275.2888ec",
-        "g": "4b5621a5daf6eb8e",
-        "name": "сделка",
-        "func": "msg.payload = \"завершен ттп - \" + msg.botname + \" прибыль: \"+ msg.sumsales;\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1520,
-        "y": 1340,
-        "wires": [
-            [
-                "2db37087e3da343f"
-            ]
-        ]
-    },
-    {
-        "id": "2db37087e3da343f",
-        "type": "telegrambot-notify",
-        "z": "5df15275.2888ec",
-        "g": "4b5621a5daf6eb8e",
-        "name": "",
-        "bot": "848f142.6165868",
-        "chatId": "454883204",
-        "message": "",
-        "parseMode": "",
-        "x": 1700,
-        "y": 1280,
-        "wires": []
-    },
-    {
         "id": "7213180bb142a85e",
         "type": "switch",
         "z": "5df15275.2888ec",
@@ -14948,5 +14936,98 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "3c769996e9026472",
+        "type": "http in",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "url": "/leads",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 2640,
+        "y": 540,
+        "wires": [
+            [
+                "83b0f499b25cf021"
+            ]
+        ]
+    },
+    {
+        "id": "934068b2b402b8c6",
+        "type": "http response",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 3080,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "83b0f499b25cf021",
+        "type": "function",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "func": "\nlet guid = global.get('guid');\nlet leads = global.get(guid + \"-leads\");\nmsg.payload = leads;\n\nlet count = leads.length;\n\nvar sum = 0;\nfor (var i = 0; i < leads.length; i++) {\n\n    let lead = leads[i];\n    //node.warn(lead);\n    sum = sum + lead.profit;\n\n}\n\nlet sr = sum / count;\n\n\nnode.warn(count + \"  \" + sum.toFixed(2) + \"  \" + sr.toFixed(2));\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2800,
+        "y": 540,
+        "wires": [
+            [
+                "934068b2b402b8c6",
+                "4bde536b9a13aa81"
+            ]
+        ]
+    },
+    {
+        "id": "6765740732df9b78",
+        "type": "inject",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2730,
+        "y": 480,
+        "wires": [
+            [
+                "83b0f499b25cf021"
+            ]
+        ]
+    },
+    {
+        "id": "4bde536b9a13aa81",
+        "type": "debug",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2980,
+        "y": 480,
+        "wires": []
     }
 ]

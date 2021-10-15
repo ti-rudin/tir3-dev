@@ -84,7 +84,7 @@
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 3rem;
+        margin-top: 3.5rem;
         justify-content: center;
     }
     .fill-current:hover {

@@ -804,7 +804,9 @@
             "2f83bb2fab63d1bd"
         ],
         "x": 1114,
-        "y": 1119
+        "y": 1119,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "666006aaa2e325fc",
@@ -14934,5 +14936,98 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "3c769996e9026472",
+        "type": "http in",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "url": "/leads",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 2640,
+        "y": 540,
+        "wires": [
+            [
+                "83b0f499b25cf021"
+            ]
+        ]
+    },
+    {
+        "id": "934068b2b402b8c6",
+        "type": "http response",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 3080,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "83b0f499b25cf021",
+        "type": "function",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "func": "\nlet guid = global.get('guid');\nlet leads = global.get(guid + \"-leads\");\n\n\nlet count = leads.length;\n\nvar sum = 0;\nfor (var i = 0; i < leads.length; i++) {\n\n    let lead = leads[i];\n    //node.warn(lead);\n    sum = sum + lead.profit;\n\n}\n\nlet sr = sum / count;\n\n\nmsg.payload = {\n    \"count\" : count,\n    \"sum\": sum.toFixed(2),\n    \"sr\": sr.toFixed(2)\n};\n\nnode.warn(count + \"  \" + sum.toFixed(2) + \"  \" + sr.toFixed(2));\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2800,
+        "y": 540,
+        "wires": [
+            [
+                "934068b2b402b8c6",
+                "4bde536b9a13aa81"
+            ]
+        ]
+    },
+    {
+        "id": "6765740732df9b78",
+        "type": "inject",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2730,
+        "y": 480,
+        "wires": [
+            [
+                "83b0f499b25cf021"
+            ]
+        ]
+    },
+    {
+        "id": "4bde536b9a13aa81",
+        "type": "debug",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2980,
+        "y": 480,
+        "wires": []
     }
 ]
