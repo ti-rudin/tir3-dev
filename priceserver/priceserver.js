@@ -24,6 +24,7 @@ function balance_update(data) {
         client.set("balances" + "-" + userid + ":" + asset + "- available", available, 1728);
         client.set("balances" + "-" + userid + ":" + asset + "- onOrder", onOrderv);
     }
+    return;
 }
 
 function execution_update(data) {
@@ -42,6 +43,7 @@ function execution_update(data) {
     if ((orderStatus == "CANCELED") || (orderStatus == "NEW")) {
         client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId, orderStatus, 'EX', 5);
         client.set("orders-status" + "-" + userid + ":" + symbol + ":" + orderId + "-price", price, 'EX', 5);
+        console.log(JSON.parse(data));
     }
     else {
         if (orderStatus == "PARTIALLY_FILLED") {
@@ -54,7 +56,7 @@ function execution_update(data) {
             console.log(data);
         }
     }
-    
+    return;
 }
 
 function updatelist() {

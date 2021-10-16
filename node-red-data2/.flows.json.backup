@@ -160,7 +160,9 @@
             "dd73e1c4557a5e65"
         ],
         "x": 3234,
-        "y": 1499
+        "y": 1499,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "b1c9866420e73130",
@@ -446,7 +448,9 @@
             "503d53910c17c784"
         ],
         "x": 3424,
-        "y": 499
+        "y": 499,
+        "w": 692,
+        "h": 142
     },
     {
         "id": "422e384634a8793d",
@@ -687,7 +691,9 @@
             "2f83bb2fab63d1bd"
         ],
         "x": 1114,
-        "y": 1119
+        "y": 1119,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "666006aaa2e325fc",
@@ -709,7 +715,9 @@
             "7fad8acded27ae4f"
         ],
         "x": 1114,
-        "y": 1179
+        "y": 1179,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "2044fa36820f41ee",
@@ -733,7 +741,9 @@
             "3520419ec219563a"
         ],
         "x": 1854,
-        "y": 119
+        "y": 119,
+        "w": 612,
+        "h": 162
     },
     {
         "id": "55e30606c2e4a038",
@@ -769,7 +779,9 @@
             "3aa78e92fd51af7b"
         ],
         "x": 74,
-        "y": 59
+        "y": 59,
+        "w": 1682,
+        "h": 222
     },
     {
         "id": "73c30bbe5f45e91f",
@@ -791,7 +803,9 @@
             "ca72074c8d540aae"
         ],
         "x": 714,
-        "y": 319
+        "y": 319,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "4b5621a5daf6eb8e",
@@ -9017,14 +9031,14 @@
         "id": "21da88c81f6082a2",
         "type": "function",
         "z": "2a761808.610238",
-        "name": "orderexec cansel",
+        "name": "msg.bot.ttp.curorderid = 0;",
         "func": "\nmsg.bot.ttp.curorderid = 0;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1650,
+        "x": 1680,
         "y": 1540,
         "wires": [
             [
@@ -15096,5 +15110,75 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "72322fe554ea0335",
+        "type": "function",
+        "z": "8ca38a6b3d25dd3b",
+        "name": "get balances on binance",
+        "func": "\nfunction parseApiError(error) {\n  if (error.body) {\n    try {\n      var resp = JSON.parse(error.body);\n      return resp.msg;\n    } catch (error) {/* pass thru */}\n  }\n  return \"Unknown error. Status code: \"+error.statsCode;\n}\n\nlet LBinance = global.get('gBinance');\n//node.warn(LBinance);\n//let key = global.get('key');\n//let secret = global.get('secret');\nlet key = env.get(\"BINANCEKEY\");\nlet secret = env.get(\"BINANCESECRET\");\n\nlet binance = new LBinance().options({\n\tAPIKEY: key,\n\tAPISECRET: secret,\n\tuseServerTime: true,\n\tadjustForTimeDifference: true \n});\n\n\nlet balance\n\nbinance.useServerTime(function() {\n\n  binance.balance((error, balances) => {\n    if (error) console.error(error);\n    let btc = 0.00;\n    for (let asset in balances) {\n      let obj = balances[asset];\n      obj.available = parseFloat(obj.available);\n      //if ( !obj.available ) continue;\n      obj.onOrder = parseFloat(obj.onOrder);\n      obj.btcValue = 0;\n      obj.btcTotal = 0;\n      if (asset == 'BTC') obj.btcValue = obj.available;\n      else if (asset == 'USDT') obj.btcValue = obj.available / global.ticker.BTCUSDT;\n      else obj.btcValue = obj.available * global.ticker[asset + 'BTC'];\n      if (asset == 'BTC') obj.btcTotal = obj.available + obj.onOrder;\n      else if (asset == 'USDT') obj.btcTotal = (obj.available + obj.onOrder) / global.ticker.BTCUSDT;\n      else obj.btcTotal = (obj.available + obj.onOrder) * global.ticker[asset + 'BTC'];\n      if (isNaN(obj.btcValue)) obj.btcValue = 0;\n      if (isNaN(obj.btcTotal)) obj.btcTotal = 0;\n      btc += obj.btcTotal;\n      balance[asset] = obj;\n    }\n    node.warn(JSON.stringify(balance, null, 4));\n    node.send(balance);\n    //fs.writeFile(\"json/balance.json\", JSON.stringify(global.balance, null, 4), (err)=>{});\n  });\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "gBinance",
+                "module": "node-binance-api"
+            }
+        ],
+        "x": 610,
+        "y": 740,
+        "wires": [
+            [
+                "261a6550f6f16952"
+            ]
+        ]
+    },
+    {
+        "id": "9b5d7cde2dbbb030",
+        "type": "inject",
+        "z": "8ca38a6b3d25dd3b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 400,
+        "y": 720,
+        "wires": [
+            [
+                "72322fe554ea0335"
+            ]
+        ]
+    },
+    {
+        "id": "261a6550f6f16952",
+        "type": "debug",
+        "z": "8ca38a6b3d25dd3b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 740,
+        "wires": []
     }
 ]
