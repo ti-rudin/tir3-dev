@@ -99,6 +99,19 @@
     setTimeout(goback, 1000);
   }
 
+  function onofftogle() {
+    //botsettings.isrunning = !botsettings.isrunning;
+    fetch(botonoffjson, {
+      method: "post",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(botonoff),
+    });
+
+  }
+
   function resetsettings() {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
