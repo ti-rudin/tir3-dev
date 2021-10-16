@@ -27,6 +27,7 @@ function balance_update(data) {
 }
 
 function execution_update(data) {
+    console.log(JSON.parse(data));
     let { x: executionType, s: symbol, L: price, q: quantity, S: side, o: orderType, i: orderId, X: orderStatus, n: comsa } = data;
     if (executionType == "NEW") {
         if (orderStatus == "REJECTED") {
@@ -53,7 +54,7 @@ function execution_update(data) {
             console.log(data);
         }
     }
-    return;
+    
 }
 
 function updatelist() {
@@ -71,7 +72,8 @@ function updatelist() {
 
         });
 
-        binance.websockets.userData(balance_update, execution_update);
+        binance.websockets.userData(execution_update);
+        binance.websockets.userData(balance_update);
 
         if (((new Date) - start) < 9850) {
             let endpoints = binance.websockets.subscriptions();
