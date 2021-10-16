@@ -1,20 +1,29 @@
 
 const redis = require("redis");
+const TelegramBot = require('node-telegram-bot-api');
+
+var subscriber = redis.createClient("//redis:6379");
+//var subscriber = redis.createClient("//localhost:6379");
+subscriber.auth("YzRAdGgkFg");
 
 const client = redis.createClient("//redis:6379");
 client.auth("YzRAdGgkFg");
 
-const TelegramBot = require('node-telegram-bot-api');
-
-const tgkey = process.env.TELEGRAM_BOT_TOKEN;
-const chatid = process.env.CHATID;
 const userid = process.env.GOOGLEUID;
 
+const tgkey = process.env.TELEGRAM_BOT_TOKEN;
 if (tgkey === undefined) {
-
   throw new TypeError('BOT_TOKEN must be provided!')
-
 }
+
+let chatidfromredis;
+client.get(userid + "-chatid", function (err, reply) {
+  chatidfromredis = reply;
+  console.log("chat id " + chatidfromredis);
+});
+
+let chatid = process.env.CHATID || chatidfromredis;
+
 const bot = new TelegramBot(tgkey, { polling: true });
 
 function send(tgpost) {
@@ -30,9 +39,7 @@ function sendlead(botname, profit, duration, moneta) {
 
 }
 
-var subscriber = redis.createClient("//redis:6379");
-//var subscriber = redis.createClient("//localhost:6379");
-subscriber.auth("YzRAdGgkFg");
+
 
 subscriber.on("message", function (channel, message) {
   let msgg = JSON.parse(message);
@@ -60,6 +67,10 @@ bot.on('message', (msg) => {
 
   if ((msg.text == 'id') || (msg.text == 'Id') || (msg.text == 'ID')) {
     bot.sendMessage(msg.chat.id, "CHAT ID: " + msg.chat.id);
+
+
+     client.set(userid + "-chatid", msg.chat.id);
+
 
   } else {
 
