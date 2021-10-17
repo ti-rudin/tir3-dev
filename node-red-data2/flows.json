@@ -62,9 +62,7 @@
             "9a835f6c.6a1ab"
         ],
         "x": 2554,
-        "y": 19,
-        "w": 632,
-        "h": 162
+        "y": 19
     },
     {
         "id": "e83aa13614517c81",
@@ -136,9 +134,7 @@
             "c4cf96930d013efb"
         ],
         "x": 1614,
-        "y": 1739,
-        "w": 792,
-        "h": 122
+        "y": 1739
     },
     {
         "id": "586e39dc007e0cae",
@@ -160,9 +156,7 @@
             "dd73e1c4557a5e65"
         ],
         "x": 3234,
-        "y": 1499,
-        "w": 792,
-        "h": 122
+        "y": 1499
     },
     {
         "id": "b1c9866420e73130",
@@ -201,9 +195,7 @@
             "8aa6fd668c527afd"
         ],
         "x": 2554,
-        "y": 1599,
-        "w": 692,
-        "h": 562
+        "y": 1599
     },
     {
         "id": "1af578fa0e07ad5a",
@@ -229,9 +221,7 @@
             "d3749cac89a0e2c9"
         ],
         "x": 2554,
-        "y": 1119,
-        "w": 1352,
-        "h": 82
+        "y": 1119
     },
     {
         "id": "7f9b2dd857a6dfb2",
@@ -254,9 +244,7 @@
             "792187aede59b6ac"
         ],
         "x": 2554,
-        "y": 1239,
-        "w": 912,
-        "h": 82
+        "y": 1239
     },
     {
         "id": "44cf135596e2716e",
@@ -320,9 +308,7 @@
             "bf190e9d.225ad"
         ],
         "x": 154,
-        "y": 1699,
-        "w": 1232,
-        "h": 402
+        "y": 1699
     },
     {
         "id": "014ce62956a26f95",
@@ -394,9 +380,7 @@
             "6250c3310b6d177b"
         ],
         "x": 34,
-        "y": 779,
-        "w": 2092,
-        "h": 822
+        "y": 779
     },
     {
         "id": "d508da9d29e25c1b",
@@ -423,9 +407,7 @@
             "04c874ce359ca023"
         ],
         "x": 34,
-        "y": 639,
-        "w": 1612,
-        "h": 102
+        "y": 639
     },
     {
         "id": "17b2eb4baaa826d1",
@@ -448,9 +430,7 @@
             "503d53910c17c784"
         ],
         "x": 3424,
-        "y": 499,
-        "w": 692,
-        "h": 142
+        "y": 499
     },
     {
         "id": "422e384634a8793d",
@@ -741,9 +721,7 @@
             "3520419ec219563a"
         ],
         "x": 1854,
-        "y": 119,
-        "w": 612,
-        "h": 162
+        "y": 119
     },
     {
         "id": "55e30606c2e4a038",
@@ -779,9 +757,7 @@
             "3aa78e92fd51af7b"
         ],
         "x": 74,
-        "y": 59,
-        "w": 1682,
-        "h": 222
+        "y": 59
     },
     {
         "id": "73c30bbe5f45e91f",
@@ -803,9 +779,7 @@
             "ca72074c8d540aae"
         ],
         "x": 714,
-        "y": 319,
-        "w": 792,
-        "h": 122
+        "y": 319
     },
     {
         "id": "4b5621a5daf6eb8e",
@@ -888,38 +862,7 @@
             "869be0a90b76a3ef"
         ],
         "x": 2554,
-        "y": 219,
-        "w": 1032,
-        "h": 142
-    },
-    {
-        "id": "54197cf454887ecb",
-        "type": "group",
-        "z": "5f98db3a.7ab21c",
-        "g": "048120318edbeca7",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "8d14f5fc3845adff",
-            "6a1466a03b9d3d55",
-            "a0695b5f57215c9a",
-            "5c90fc22745f5191",
-            "9cca35f02ce4d817",
-            "bfb1e76b54a7b1fb",
-            "ddc7f34243674b87",
-            "96bdef7048780d35"
-        ],
-        "x": 54,
-        "y": 59,
-        "w": 792,
-        "h": 122
+        "y": 219
     },
     {
         "id": "048120318edbeca7",
@@ -997,9 +940,34 @@
             "54197cf454887ecb"
         ],
         "x": 28,
-        "y": 33,
-        "w": 2078,
-        "h": 588
+        "y": 33
+    },
+    {
+        "id": "54197cf454887ecb",
+        "type": "group",
+        "z": "5f98db3a.7ab21c",
+        "g": "048120318edbeca7",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8d14f5fc3845adff",
+            "6a1466a03b9d3d55",
+            "a0695b5f57215c9a",
+            "5c90fc22745f5191",
+            "9cca35f02ce4d817",
+            "bfb1e76b54a7b1fb",
+            "ddc7f34243674b87",
+            "96bdef7048780d35"
+        ],
+        "x": 54,
+        "y": 59
     },
     {
         "id": "f120eab2.0a60a8",
@@ -10172,7 +10140,10 @@
             "84065a7178289056",
             "34ae5b9f4b1fedc4",
             "7e04d87f3c65e53f",
-            "8d10b8e8b4a2df34"
+            "8d10b8e8b4a2df34",
+            "f2d991f44297d869",
+            "41a9873ca478fbd4",
+            "c54248bd9b2a7809"
         ],
         "x": 175,
         "y": 140,
@@ -10543,8 +10514,8 @@
         "z": "64c098ab57cae330",
         "name": "NEW",
         "info": "",
-        "x": 1590,
-        "y": 300,
+        "x": 1610,
+        "y": 260,
         "wires": []
     },
     {
@@ -10599,7 +10570,8 @@
                 "8f0c5b57b5119af8"
             ],
             [
-                "8f0c5b57b5119af8"
+                "d7492a66d6fdb9e7",
+                "93eae2cd196c21ef"
             ],
             [
                 "cf3d5d02c2733e7b"
@@ -10687,8 +10659,8 @@
         "links": [
             "c1de80b9cafdd278"
         ],
-        "x": 1515,
-        "y": 300,
+        "x": 1535,
+        "y": 260,
         "wires": []
     },
     {
@@ -10709,7 +10681,7 @@
         "z": "64c098ab57cae330",
         "name": "PARTIALLY_FILLED",
         "info": "",
-        "x": 1750,
+        "x": 1650,
         "y": 300,
         "wires": []
     },
@@ -10719,8 +10691,8 @@
         "z": "64c098ab57cae330",
         "name": "null",
         "info": "",
-        "x": 1930,
-        "y": 300,
+        "x": 1730,
+        "y": 260,
         "wires": []
     },
     {
@@ -11638,7 +11610,8 @@
             "e72bd24e8beee673",
             "a3234b5ef94f37cc",
             "57d792e7e0d32ef0",
-            "c437521a71866a57"
+            "c437521a71866a57",
+            "8f4ebb70b246f37c"
         ],
         "x": 175,
         "y": 200,
@@ -11970,7 +11943,7 @@
         "name": "NEW",
         "info": "",
         "x": 1590,
-        "y": 360,
+        "y": 300,
         "wires": []
     },
     {
@@ -12025,7 +11998,8 @@
                 "c088aefe8e6fc1a7"
             ],
             [
-                "c088aefe8e6fc1a7"
+                "2021e6863a9553e4",
+                "854cd1387cc64c6f"
             ],
             [
                 "a09acf20b594c112"
@@ -12114,7 +12088,7 @@
             "b38fc6a51aebc0c0"
         ],
         "x": 1515,
-        "y": 360,
+        "y": 300,
         "wires": []
     },
     {
@@ -12135,7 +12109,7 @@
         "z": "f6f5d41e533a8b1a",
         "name": "PARTIALLY_FILLED",
         "info": "",
-        "x": 1750,
+        "x": 1630,
         "y": 360,
         "wires": []
     },
@@ -12145,8 +12119,8 @@
         "z": "f6f5d41e533a8b1a",
         "name": "null",
         "info": "",
-        "x": 1930,
-        "y": 360,
+        "x": 1710,
+        "y": 300,
         "wires": []
     },
     {
@@ -15109,6 +15083,210 @@
         "y": 1580,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "d7492a66d6fdb9e7",
+        "type": "function",
+        "z": "64c098ab57cae330",
+        "name": "partially filled buy order",
+        "func": "let tgmsg = \"partially filled buy order \" + msg.bot.currentfloor[8];\n\n//node.warn(msg);\nlet guid = global.get('guid');\nmsg = {};\nmsg.payload = {tgmsg, guid};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1890,
+        "y": 300,
+        "wires": [
+            [
+                "747087ec9dfc7f2c"
+            ]
+        ]
+    },
+    {
+        "id": "194bbbae22fd308a",
+        "type": "redis-out",
+        "z": "64c098ab57cae330",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "tgpost",
+        "obj": true,
+        "x": 2310,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "93eae2cd196c21ef",
+        "type": "function",
+        "z": "64c098ab57cae330",
+        "name": "change floors",
+        "func": "node.warn(\"partially filled order \" + msg.bot.currentfloor[14]);\nlet node_time = new Date().getTime();\n\nlet currentfloor = msg.bot.currentfloor;\ncurrentfloor[7] = 2;\ncurrentfloor[9] = node_time;\nmsg.bot.floors[currentfloor[0] - 1] = currentfloor;\n\nlet data = \"Ордер на покупку исполнен, ID - \" + msg.bot.currentfloor[8];\nconst tilog = global.get('tilog')(msg.bot.settings.botname, data);\ntilog;\n\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1940,
+        "y": 240,
+        "wires": [
+            [
+                "f939b4e2ea9138bb"
+            ]
+        ]
+    },
+    {
+        "id": "41a9873ca478fbd4",
+        "type": "link out",
+        "z": "64c098ab57cae330",
+        "name": "",
+        "links": [
+            "c1de80b9cafdd278"
+        ],
+        "x": 2455,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f939b4e2ea9138bb",
+        "type": "function",
+        "z": "64c098ab57cae330",
+        "name": "update bot floors, finance triger + on redis",
+        "func": "let botname = msg.botname;\nlet guid = global.get('guid');\n\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet sumsales = 0;\nsales.all.forEach(function (element) {\n    sumsales = sumsales + element[5];\n\n});\n\nlet quotanal = 0;\nlet quotainorders = 0;\nlet basenal = Number(finance.startdepo) + Number(sumsales);\nlet baseinorders = 0;\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 1) {\n        baseinorders = baseinorders + Number(item[14]) * Number(item[3]);\n        basenal = basenal - Number(item[14]) * Number(item[3]);\n\n    }\n    if (item[7] === 2) {\n        quotanal = quotanal + Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n    if (item[7] === 3) {\n        quotainorders = quotainorders + Number(item[14]);\n        //quotanal = quotanal - Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n\n\n\n});\nfinance.quotanal = (Number(quotanal)).toFixed(msg.bot.settings.digitq);\nfinance.quotainorders = (Number(quotainorders)).toFixed(msg.bot.settings.digitq);\nfinance.basenal = (Number(basenal)).toFixed(msg.bot.settings.digitprice);\nfinance.baseinorders = (Number(baseinorders)).toFixed(msg.bot.settings.digitprice);\n\nlet p = Number(msg.bot.status.currentprice);\nfinance.depo = Number((Number(finance.quotanal) * p + Number(finance.quotainorders) * p + Number(finance.basenal) + Number(finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\n\n\n\nmsg.bot.finance = finance;\nmsg.bot.floors = floors;\nmsg.bot.sales = sales;\n\n//global.set(msg.botname, msg.bot);\n\nlet volname = guid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2220,
+        "y": 240,
+        "wires": [
+            [
+                "41a9873ca478fbd4"
+            ]
+        ]
+    },
+    {
+        "id": "2021e6863a9553e4",
+        "type": "function",
+        "z": "f6f5d41e533a8b1a",
+        "name": "change floors",
+        "func": "node.warn(\"partially filled order \" + msg.bot.currentfloor[14]);\nlet node_time = new Date().getTime();\n\nlet currentfloor = msg.bot.currentfloor;\ncurrentfloor[7] = 2;\ncurrentfloor[9] = node_time;\nmsg.bot.floors[currentfloor[0] - 1] = currentfloor;\n\nlet data = \"Ордер на покупку исполнен, ID - \" + msg.bot.currentfloor[8];\nconst tilog = global.get('tilog')(msg.bot.settings.botname, data);\ntilog;\n\nnode.status({ fill: \"green\", shape: \"ring\"});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1840,
+        "y": 360,
+        "wires": [
+            [
+                "49f619df70e35b42"
+            ]
+        ]
+    },
+    {
+        "id": "8f4ebb70b246f37c",
+        "type": "link out",
+        "z": "f6f5d41e533a8b1a",
+        "name": "",
+        "links": [
+            "b38fc6a51aebc0c0"
+        ],
+        "x": 2415,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "49f619df70e35b42",
+        "type": "function",
+        "z": "f6f5d41e533a8b1a",
+        "name": "update bot floors, finance triger + on redis",
+        "func": "let botname = msg.botname;\nlet guid = global.get('guid');\n\nlet finance = msg.bot.finance;\nlet floors = msg.bot.floors;\nlet sales = msg.bot.sales;\n\nlet sumsales = 0;\nsales.all.forEach(function (element) {\n    sumsales = sumsales + element[5];\n\n});\n\nlet quotanal = 0;\nlet quotainorders = 0;\nlet basenal = Number(finance.startdepo) + Number(sumsales);\nlet baseinorders = 0;\n\n\nfloors.forEach(function (item, i, floors) {\n\n    if (item[7] === 1) {\n        baseinorders = baseinorders + Number(item[14]) * Number(item[3]);\n        basenal = basenal - Number(item[14]) * Number(item[3]);\n\n    }\n    if (item[7] === 2) {\n        quotanal = quotanal + Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n    if (item[7] === 3) {\n        quotainorders = quotainorders + Number(item[14]);\n        //quotanal = quotanal - Number(item[14]);\n        basenal = basenal - Number(item[14]) * Number(item[10]);\n    }\n\n\n\n});\nfinance.quotanal = (Number(quotanal)).toFixed(msg.bot.settings.digitq);\nfinance.quotainorders = (Number(quotainorders)).toFixed(msg.bot.settings.digitq);\nfinance.basenal = (Number(basenal)).toFixed(msg.bot.settings.digitprice);\nfinance.baseinorders = (Number(baseinorders)).toFixed(msg.bot.settings.digitprice);\n\nlet p = Number(msg.bot.status.currentprice);\nfinance.depo = Number((Number(finance.quotanal) * p + Number(finance.quotainorders) * p + Number(finance.basenal) + Number(finance.baseinorders)).toFixed(msg.bot.settings.digitprice));\n\n\n\n\nmsg.bot.finance = finance;\nmsg.bot.floors = floors;\nmsg.bot.sales = sales;\n\n//global.set(msg.botname, msg.bot);\n\nlet volname = guid + \"-bots:\" + botname + \":data\";\nlet botdata = {\n    \"finance\": JSON.stringify(finance),\n    \"floors\": JSON.stringify(floors),\n    \"sales\": JSON.stringify(sales)\n\n};\nconst upd = global.get('setbot_data')(volname, botdata);\n\nupd.then(upd => {\n\n    msg.payload = upd;\n\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2160,
+        "y": 360,
+        "wires": [
+            [
+                "8f4ebb70b246f37c"
+            ]
+        ]
+    },
+    {
+        "id": "854cd1387cc64c6f",
+        "type": "function",
+        "z": "f6f5d41e533a8b1a",
+        "name": "partially filled buy order",
+        "func": "let tgmsg = \"partially filled buy order \" + msg.bot.currentfloor[8];\nnode.warn(msg);\nlet guid = global.get('guid');\nmsg = {};\nmsg.payload = {tgmsg, guid};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2030,
+        "y": 300,
+        "wires": [
+            [
+                "35b8988efad55898"
+            ]
+        ]
+    },
+    {
+        "id": "ac32c8c3d627c357",
+        "type": "redis-out",
+        "z": "f6f5d41e533a8b1a",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "tgpost",
+        "obj": true,
+        "x": 2370,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "35b8988efad55898",
+        "type": "rbe",
+        "z": "f6f5d41e533a8b1a",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 2220,
+        "y": 300,
+        "wires": [
+            [
+                "ac32c8c3d627c357"
+            ]
+        ]
+    },
+    {
+        "id": "747087ec9dfc7f2c",
+        "type": "rbe",
+        "z": "64c098ab57cae330",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 2120,
+        "y": 300,
+        "wires": [
+            [
+                "194bbbae22fd308a"
+            ]
         ]
     }
 ]
