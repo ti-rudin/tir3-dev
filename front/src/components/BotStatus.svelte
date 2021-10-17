@@ -13,6 +13,7 @@
 
   let botsettingsjson = urlhost + "bot_settings";
   let botonoffjson = urlhost + "bot_onoff";
+  let botonoffjson_togle= urlhost + "bot_onoff_togle";
   let botfinancejson = urlhost + "api/data-finance.php";
   let botfloorsjson = urlhost + "api/data-floors.php";
   let botsalesjson = urlhost + "api/data-sales.php";
@@ -99,19 +100,30 @@
     setTimeout(goback, 1000);
   }
 
+
+
   function onofftogle() {
-    //botsettings.isrunning = !botsettings.isrunning;
-    fetch(botonoffjson, {
-      method: "post",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(botonoff),
-    });
+
+    console.log("onofftogle");
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({ botname: selectbotname });
+    var requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
+    };
+    fetch(botonoffjson_togle, requestOptions)
+      .then((response) => response.json())
+      .then((result) => {
+
+       
+      });
 
   }
-
+$:botonoff = botonoff;
   function resetsettings() {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -237,7 +249,7 @@
   //fetch1s();
   fetchfullstatus(selectbotname);
   getonoff(selectbotname);
-  const timerId = setInterval(fetchfullstatus, 1000, selectbotname);
+  const timerId = setInterval(fetchfullstatus, 5000, selectbotname);
   $stateStore.timerId = timerId;
 
   $: if (!botstatus) {
@@ -295,7 +307,7 @@
 
   $: salesall = salesallarr.length;
   $: salesallsum = sumsales(salesallarr);
-
+  
   let openfloors;
 
   function openfloorscalc(floors) {
@@ -496,7 +508,7 @@
   </div>
   <br />
   <div class="row">
-    <div class="leftitem">
+    <div class="leftitem" on:click={onofftogle}>
       <label>{botonoff ? 'Включен' : 'Выключен'}</label>
       <br />
       <Switch bind:value={botonoff} />
@@ -575,6 +587,7 @@
       />
     </div>
   </div>
+  
   <Button on:click={savesettings} href="/">Сохранить</Button>
   <br />
   <br />

@@ -192,7 +192,7 @@
         body: JSON.stringify({ 
             "botname" : botname,
             "busy": false,
-            "onoff": true,
+            "onoff": false,
             "user_id_from_google": userid,
             "settings": JSON.stringify(settings),
             "floors": JSON.stringify(floors),

@@ -75,7 +75,7 @@ function updatelist() {
         });
 
         binance.websockets.userData(execution_update);
-        binance.websockets.userData(balance_update);
+       // binance.websockets.userData(balance_update);
 
         if (((new Date) - start) < 9850) {
             let endpoints = binance.websockets.subscriptions();
