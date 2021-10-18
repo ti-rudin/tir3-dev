@@ -15,15 +15,15 @@
   let botsettingsjson = urlhost + "bot_settings";
   let botonoffjson = urlhost + "bot_onoff";
   let botonoffjson_togle = urlhost + "bot_onoff_togle";
-  let botfinancejson = urlhost + "api/data-finance.php";
-  let botfloorsjson = urlhost + "api/data-floors.php";
-  let botsalesjson = urlhost + "api/data-sales.php";
+  //let botfinancejson = urlhost + "api/data-finance.php";
+  //let botfloorsjson = urlhost + "api/data-floors.php";
+  //let botsalesjson = urlhost + "api/data-sales.php";
   let botstatusjson = urlhost + "bot_full";
   let changesettingsjson = urlhost + "api/changesettings.php";
   let resetsettingsjson = urlhost + "bot_reset";
   let deleteboturl = urlhost + "bot_delete";
-  let botfullstatusurl = urlhost + "api/data-fullstatus.php";
-  let panicsaleurl = urlhost + "api/panicsale.php";
+  //let botfullstatusurl = urlhost + "api/data-fullstatus.php";
+  let panicsaleurl = urlhost + "bot_panic";
 
   let botfullstatus = [];
   let botsettings = [];
@@ -154,33 +154,29 @@
   }
 
   function panicsale() {
-    if (panicsaleurl) {
-      fetch(panicsaleurl, {
-        method: "post",
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(selectbotname),
-      });
-      //$stateStore.rout = "botlist";
-      //window.location = "/";
-      //function goback() {
-      //    selectbotname = '';
-      //    $stateStore.rout = 'botlist';
-      //}
-      //setTimeout(goback, 1000);
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
 
-      //fetch(resetsettingsjson, {
-      //    method: 'post',
-      //    headers: {
-      //        Accept: 'application/json, text/plain, */*',
-      //        'Content-Type': 'application/json',
-      //    },
-      //    body: selectbotname,
-      //});
+    var raw = JSON.stringify({ botname: selectbotname });
+    var requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
+    };
+    fetch(panicsaleurl, requestOptions)
+      .then((response) => response.json())
+      .then((result) => {
+        console.log(result);
+      });
+
+    function goback() {
+      selectbotname = "";
+      $stateStore.rout = "botlist";
     }
+    setTimeout(goback, 1000);
   }
+
 
   function sumsales(arr) {
     let sum = 0;
@@ -243,7 +239,7 @@
   //fetch1s();
   fetchfullstatus(selectbotname);
   getonoff(selectbotname);
-  const timerId = setInterval(fetchfullstatus, 5000, selectbotname);
+  const timerId = setInterval(fetchfullstatus, 1000, selectbotname);
   $stateStore.timerId = timerId;
 
   $: if (!botstatus) {
