@@ -16520,7 +16520,7 @@
         "type": "function",
         "z": "33b4301963931e6c",
         "name": "msg.bot.ttp.final_price = msg.payload",
-        "func": "let finalprice = Number(msg.statusBody.cummulativeQuoteQty) / Number(msg.statusBody.origQty);\nif (Number(finalprice) > 0) {\n    msg.bot.ttp.sold = true;\n    msg.bot.ttp.final_price = Number(finalprice);\n\n    msg.bot.ttp.curorderid = 0;\n    msg.bot.ttp.curstop = 0;\n    msg.bot.ttp.quantity = 0;\n   \n    msg.bot.finance.basenal = msg.bot.finance.basenal + Number(msg.bot.finance.quotanal) * Number(finalprice)\n    msg.bot.finance.quotanal = 0;\n\n    node.warn(\"basenal\" + msg.bot.finance.basenal);\n    \n    global.set(msg.botname + \"-ttp\", msg.bot.ttp);\n}\n\nreturn msg;",
+        "func": "let finalprice = Number(msg.statusBody.cummulativeQuoteQty) / Number(msg.statusBody.origQty);\nif (Number(finalprice) > 0) {\n    msg.bot.ttp.sold = true;\n    msg.bot.ttp.final_price = Number(finalprice);\n\n    msg.bot.ttp.curorderid = 0;\n    msg.bot.ttp.curstop = 0;\n    msg.bot.ttp.quantity = 0;\n   \n    msg.bot.finance.basenal = Number(msg.bot.finance.basenal) + Number(msg.bot.finance.quotanal) * Number(finalprice)\n    msg.bot.finance.quotanal = 0;\n\n    node.warn(\"basenal\" + msg.bot.finance.basenal);\n    \n    global.set(msg.botname + \"-ttp\", msg.bot.ttp);\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
