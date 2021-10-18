@@ -1,11 +1,12 @@
 <script>
   import { onMount } from "svelte";
+  import Switchonoff from "./Switchonoff.svelte";
   import Switch from "smelte/src/components/Switch";
   import Button from "smelte/src/components/Button";
   import TextField from "smelte/src/components/TextField";
   import ProgressLinear from "smelte/src/components/ProgressLinear";
   import { stateStore } from "../stores/statebot.js";
-  import { authStore } from '../stores/auth';
+  import { authStore } from "../stores/auth";
 
   var selectbotname = $stateStore.selectbotname;
   let urlhost = $stateStore.urlhost;
@@ -13,7 +14,7 @@
 
   let botsettingsjson = urlhost + "bot_settings";
   let botonoffjson = urlhost + "bot_onoff";
-  let botonoffjson_togle= urlhost + "bot_onoff_togle";
+  let botonoffjson_togle = urlhost + "bot_onoff_togle";
   let botfinancejson = urlhost + "api/data-finance.php";
   let botfloorsjson = urlhost + "api/data-floors.php";
   let botsalesjson = urlhost + "api/data-sales.php";
@@ -100,30 +101,6 @@
     setTimeout(goback, 1000);
   }
 
-
-
-  function onofftogle() {
-
-    console.log("onofftogle");
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-
-    var raw = JSON.stringify({ botname: selectbotname });
-    var requestOptions = {
-      method: "POST",
-      headers: myHeaders,
-      body: raw,
-      redirect: "follow",
-    };
-    fetch(botonoffjson_togle, requestOptions)
-      .then((response) => response.json())
-      .then((result) => {
-
-       
-      });
-
-  }
-$:botonoff = botonoff;
   function resetsettings() {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -245,6 +222,23 @@ $:botonoff = botonoff;
       .catch((error) => console.log("error", error));
   }
 
+  function onofftogle() {
+
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({ botname: selectbotname });
+    var requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
+    };
+    fetch(botonoffjson_togle, requestOptions)
+      .then((response) => response.json())
+      .then((result) => {});
+  }
+
   loadsettings(selectbotname);
   //fetch1s();
   fetchfullstatus(selectbotname);
@@ -307,7 +301,7 @@ $:botonoff = botonoff;
 
   $: salesall = salesallarr.length;
   $: salesallsum = sumsales(salesallarr);
-  
+
   let openfloors;
 
   function openfloorscalc(floors) {
@@ -508,10 +502,10 @@ $:botonoff = botonoff;
   </div>
   <br />
   <div class="row">
-    <div class="leftitem" on:click={onofftogle}>
+    <div class="leftitem" >
       <label>{botonoff ? 'Включен' : 'Выключен'}</label>
       <br />
-      <Switch bind:value={botonoff} />
+      <span on:click={onofftogle}><Switchonoff  bind:value={botonoff} /></span>
     </div>
     <div class="rightitem">
       <label>Запрет на закуп</label>
@@ -587,7 +581,7 @@ $:botonoff = botonoff;
       />
     </div>
   </div>
-  
+
   <Button on:click={savesettings} href="/">Сохранить</Button>
   <br />
   <br />

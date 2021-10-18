@@ -124,7 +124,8 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
-button {
+button,
+input {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
@@ -136,7 +137,8 @@ button {
  * 1. Show the overflow in Edge.
  */
 
-button { /* 1 */
+button,
+input { /* 1 */
   overflow: visible;
 }
 
@@ -204,6 +206,11 @@ progress {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
+
+[type="checkbox"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
@@ -362,6 +369,10 @@ img {
   border-style: solid;
 }
 
+input::placeholder {
+  color: #a0aec0;
+}
+
 button {
   cursor: pointer;
 }
@@ -393,7 +404,8 @@ a {
  * normalize.css.
  */
 
-button {
+button,
+input {
   padding: 0;
   line-height: inherit;
   color: inherit;
@@ -480,6 +492,12 @@ img {
   --bg-opacity: 1;
   background-color: #e2e8f0;
   background-color: rgba(226, 232, 240, var(--bg-opacity));
+}
+
+.bg-gray-700 {
+  --bg-opacity: 1;
+  background-color: #4a5568;
+  background-color: rgba(74, 85, 104, var(--bg-opacity));
 }
 
 .bg-blue-500 {
@@ -572,6 +590,10 @@ img {
   justify-content: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -604,12 +626,24 @@ img {
   height: 0.75rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .text-sm {
@@ -675,6 +709,10 @@ img {
   margin-right: 1.5rem;
 }
 
+.overflow-visible {
+  overflow: visible;
+}
+
 .p-0 {
   padding: 0;
 }
@@ -730,6 +768,10 @@ img {
   padding-right: 0.5rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -742,8 +784,16 @@ img {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .top-0 {
   top: 0;
+}
+
+.left-0 {
+  left: 0;
 }
 
 .fill-current {
@@ -818,6 +868,10 @@ img {
   width: 0.75rem;
 }
 
+.w-5 {
+  width: 1.25rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -830,12 +884,20 @@ img {
   width: 100%;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-20 {
   z-index: 20;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
 }
 
 @media (min-width: 640px) {
