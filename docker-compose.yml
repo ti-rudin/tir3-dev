@@ -7,6 +7,8 @@ services:
       context: .
       dockerfile: ./nodered2.Dockerfile
     env_file: .env
+    #environment:
+    #  - VIRTUAL_HOST=api.ti-robots.ru
     ports:
       - "1880:1880"
     networks:
@@ -75,6 +77,15 @@ services:
       - node-red
     networks:
       - tibotnet
+
+  #nginx-proxy:
+  #  image: nginxproxy/nginx-proxy
+  #  ports:
+  #    - "80:80"
+  #  volumes:
+  #    - /var/run/docker.sock:/tmp/docker.sock:ro
+  #  networks:
+  #    - tibotnet
 
   #rabbitmq:
   #  image: rabbitmq:3.6-management-alpine
