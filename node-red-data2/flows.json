@@ -167,9 +167,7 @@
             "dd73e1c4557a5e65"
         ],
         "x": 3234,
-        "y": 1499,
-        "w": 792,
-        "h": 122
+        "y": 1499
     },
     {
         "id": "1af578fa0e07ad5a",
@@ -414,9 +412,7 @@
             "503d53910c17c784"
         ],
         "x": 3424,
-        "y": 499,
-        "w": 692,
-        "h": 142
+        "y": 499
     },
     {
         "id": "422e384634a8793d",
@@ -675,9 +671,7 @@
             "3520419ec219563a"
         ],
         "x": 1854,
-        "y": 119,
-        "w": 612,
-        "h": 162
+        "y": 119
     },
     {
         "id": "55e30606c2e4a038",
@@ -713,9 +707,7 @@
             "3aa78e92fd51af7b"
         ],
         "x": 74,
-        "y": 59,
-        "w": 1682,
-        "h": 222
+        "y": 59
     },
     {
         "id": "73c30bbe5f45e91f",
@@ -737,9 +729,7 @@
             "ca72074c8d540aae"
         ],
         "x": 714,
-        "y": 319,
-        "w": 792,
-        "h": 122
+        "y": 319
     },
     {
         "id": "4b5621a5daf6eb8e",
@@ -972,6 +962,47 @@
         "y": 579,
         "w": 1052,
         "h": 502
+    },
+    {
+        "id": "d3ea434d20ee5a80",
+        "type": "group",
+        "z": "5f98db3a.7ab21c",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "12956f0cc39cecca",
+            "11a4d1c2a44c2e16",
+            "afd3deeae4d81bc8",
+            "f1795e2079ad790a",
+            "e54f6abd7ef3a04a",
+            "a2fba486886cf22e",
+            "b8a5c62032bf8a3a",
+            "43efea3d8f426bec",
+            "2c8bdda9aab7d259",
+            "aff96d6cd010b51b",
+            "a96ba302000af312",
+            "5944b81ec7e464fc",
+            "7cb62ba82bd10479",
+            "a968529fa548aff7",
+            "f3d9f7caf8eb7213",
+            "bb31b6f014975fd6",
+            "f2d22858e4a7c429",
+            "26f6329ebf714e14",
+            "9f0a5643b5b416e8",
+            "8aa6fd668c527afd",
+            "48599bd8f32987bc"
+        ],
+        "x": 2554,
+        "y": 1599,
+        "w": 772,
+        "h": 562
     },
     {
         "id": "54197cf454887ecb",
@@ -3130,6 +3161,7 @@
         "id": "12956f0cc39cecca",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "getbot_start_set",
         "func": "\nlet botname = msg.payload.botname;\n\nconst gb = global.get('getbot_start_set')(botname);\n\ngb.then(gb => {\nnode.warn(gb);\n    msg.payload = gb;\n    node.send(msg);\n\n}).catch(error => {\n    node.error(error);\n});",
         "outputs": 1,
@@ -3149,6 +3181,7 @@
         "id": "11a4d1c2a44c2e16",
         "type": "redis-command",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "server": "f120eab2.0a60a8",
         "command": "hmset",
         "name": "",
@@ -3167,6 +3200,7 @@
         "id": "afd3deeae4d81bc8",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "prepare data for create bot",
         "func": "msg.topic = msg.payload.settings.userid+\"-bots:\"+msg.payload.settings.botname+\":data\";\n\nlet botdata = {\n    \"finance\":JSON.stringify(msg.payload.finance),\n    \"floors\":JSON.stringify(msg.payload.floors),\n    \"sales\":JSON.stringify(msg.payload.sales)\n    \n};\nmsg.payload = botdata;\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;\n\n",
         "outputs": 1,
@@ -3186,6 +3220,7 @@
         "id": "f1795e2079ad790a",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "prepare for add bot status",
         "func": "msg.topic = msg.payload.settings.userid+\"-bots:\"+msg.payload.settings.botname+\":status\";\nmsg.payload.status.updated = new Date().getTime();\nmsg.payload = JSON.stringify(msg.payload.status);\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
@@ -3204,6 +3239,7 @@
         "id": "e54f6abd7ef3a04a",
         "type": "redis-command",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "server": "f120eab2.0a60a8",
         "command": "getset",
         "name": "",
@@ -3222,6 +3258,7 @@
         "id": "a2fba486886cf22e",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "prepare for add bot settings",
         "func": "msg.topic = msg.payload.settings.userid+\"-bots:\"+msg.payload.settings.botname+\":settings\";\n\nmsg.payload = JSON.stringify(msg.payload.settings);\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
@@ -3241,6 +3278,7 @@
         "id": "b8a5c62032bf8a3a",
         "type": "redis-command",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "server": "f120eab2.0a60a8",
         "command": "getset",
         "name": "",
@@ -3259,6 +3297,7 @@
         "id": "43efea3d8f426bec",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "prepare for add bot ttp",
         "func": "msg.topic = msg.payload.settings.userid+\"-bots:\"+msg.payload.settings.botname+\":ttp\";\n\nmsg.payload = JSON.stringify(msg.payload.ttp);\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
@@ -3278,6 +3317,7 @@
         "id": "2c8bdda9aab7d259",
         "type": "redis-command",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "server": "f120eab2.0a60a8",
         "command": "getset",
         "name": "",
@@ -3296,6 +3336,7 @@
         "id": "aff96d6cd010b51b",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "prepare for add bot busy",
         "func": "msg.topic = msg.payload.settings.userid+\"-bots:\"+msg.payload.settings.botname+\":busy\";\n\nmsg.payload = \"false\";\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
@@ -3315,6 +3356,7 @@
         "id": "a96ba302000af312",
         "type": "redis-command",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "server": "f120eab2.0a60a8",
         "command": "getset",
         "name": "",
@@ -3333,6 +3375,7 @@
         "id": "5944b81ec7e464fc",
         "type": "json",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "",
         "property": "payload",
         "action": "",
@@ -3348,7 +3391,6 @@
                 "aff96d6cd010b51b",
                 "bb31b6f014975fd6",
                 "26f6329ebf714e14",
-                "673c67310929e64a",
                 "48599bd8f32987bc"
             ]
         ]
@@ -3357,6 +3399,7 @@
         "id": "7cb62ba82bd10479",
         "type": "http in",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "",
         "url": "/bot_reset",
         "method": "post",
@@ -3376,6 +3419,7 @@
         "id": "a968529fa548aff7",
         "type": "http response",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "",
         "statusCode": "200",
         "headers": {},
@@ -3387,6 +3431,7 @@
         "id": "f3d9f7caf8eb7213",
         "type": "inject",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "",
         "props": [
             {
@@ -3409,26 +3454,10 @@
         ]
     },
     {
-        "id": "673c67310929e64a",
-        "type": "debug",
-        "z": "5f98db3a.7ab21c",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3050,
-        "y": 1640,
-        "wires": []
-    },
-    {
         "id": "bb31b6f014975fd6",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "tilog",
         "func": "let botname = msg.payload.settings.botname;\nlet data = \"Сброс к стартовым настройкам\";\nconst tilog = global.get('tilog')(botname,data);\n\ntilog.then(tilog => {\n\n\n        node.status({fill:\"green\",shape:\"dot\"});\n    node.send(msg);\n     \n    \n\n}).catch(error => {\n    \n    msg.error = error;\n    node.status({fill:\"red\",shape: \"ring\"});\n    \n    node.error(error);\n});",
         "outputs": 1,
@@ -3447,6 +3476,7 @@
         "id": "f2d22858e4a7c429",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "syslog",
         "func": "let botname = \"syslog.txt\";\nlet data = \"Сброс к стартовым настройкам \"+msg.payload.settings.botname;\nconst tilog = global.get('tilog')(botname,data);\n\ntilog.then(tilog => {\n\n\n        node.status({fill:\"green\",shape:\"dot\"});\n    node.send(msg);\n     \n    \n\n}).catch(error => {\n    \n    msg.error = error;\n    node.status({fill:\"red\",shape: \"ring\"});\n    \n    node.error(error);\n});",
         "outputs": 1,
@@ -4374,6 +4404,7 @@
         "id": "26f6329ebf714e14",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "prepare for add bot busy",
         "func": "msg.topic = msg.payload.settings.userid+\"-bots:\"+msg.payload.settings.botname+\":ttpbusy\";\n\nmsg.payload = \"false\";\n\nnode.status({fill:\"green\",shape:\"dot\"});\nreturn msg;",
         "outputs": 1,
@@ -4393,6 +4424,7 @@
         "id": "9f0a5643b5b416e8",
         "type": "redis-command",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "server": "f120eab2.0a60a8",
         "command": "getset",
         "name": "",
@@ -14301,6 +14333,7 @@
         "id": "8aa6fd668c527afd",
         "type": "debug",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -15408,7 +15441,8 @@
         "wires": [
             [
                 "2242dddf10ab2255",
-                "c8dcb71979b9b610"
+                "c8dcb71979b9b610",
+                "092cd0a90bdc1419"
             ]
         ]
     },
@@ -15426,9 +15460,7 @@
         "x": 3080,
         "y": 440,
         "wires": [
-            [
-                "092cd0a90bdc1419"
-            ]
+            []
         ]
     },
     {
@@ -15438,8 +15470,8 @@
         "name": "",
         "statusCode": "200",
         "headers": {},
-        "x": 3240,
-        "y": 440,
+        "x": 2680,
+        "y": 400,
         "wires": []
     },
     {
@@ -15454,7 +15486,8 @@
         "y": 260,
         "wires": [
             [
-                "8d69bad807ed3ea7"
+                "8d69bad807ed3ea7",
+                "521a921a1d97656f"
             ]
         ]
     },
@@ -16837,6 +16870,7 @@
         "id": "48599bd8f32987bc",
         "type": "function",
         "z": "5f98db3a.7ab21c",
+        "g": "d3ea434d20ee5a80",
         "name": "global reset",
         "func": "msg.bot ={};\nmsg.bot = {...msg.payload};\nmsg.botname = msg.bot.settings.botname;\nglobal.set(msg.botname + \"-status\", msg.bot.status);\nglobal.set(msg.botname + \"-settings\", msg.bot.settings);\nglobal.set(msg.botname + \"-ttp\", msg.bot.ttp);\nglobal.set(msg.botname + \"-onoff\", false);\nlet data = {\n    \"floors\": msg.bot.floors,\n    \"finance\": msg.bot.finance,\n    \"sales\": msg.bot.sales\n}\n//msg.bot.data = data;\nglobal.set(msg.botname + \"-data\", data);\n\nnode.status({ fill: \"green\", shape: \"dot\" });\nreturn msg;",
         "outputs": 1,
@@ -16847,13 +16881,144 @@
         "x": 3230,
         "y": 1700,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6dae963bc9e9c94e",
+        "type": "http in",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "url": "/webhook-tv",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 2670,
+        "y": 2400,
+        "wires": [
             [
-                "ccd9a3b90443127d"
+                "57a288896225f3ee",
+                "4e12f04757f68819",
+                "57a9fa24e8d0ddf6"
             ]
         ]
     },
     {
-        "id": "ccd9a3b90443127d",
+        "id": "4e12f04757f68819",
+        "type": "debug",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2750,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "57a288896225f3ee",
+        "type": "http response",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 2710,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "135777e9f6136854",
+        "type": "redis-out",
+        "z": "5f98db3a.7ab21c",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "panic",
+        "obj": false,
+        "x": 3330,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "9dd80243402cc9bb",
+        "type": "function",
+        "z": "5f98db3a.7ab21c",
+        "name": "panic",
+        "func": "let botname = msg.payload.botname;\nmsg.payload = JSON.stringify(msg.payload);\nmsg.req = {};\nmsg.res = {};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3290,
+        "y": 2320,
+        "wires": [
+            [
+                "135777e9f6136854"
+            ]
+        ]
+    },
+    {
+        "id": "f27f0fb47097d3dd",
+        "type": "switch",
+        "z": "5f98db3a.7ab21c",
+        "name": "payload.command",
+        "property": "payload.command",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "PANICSALE",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "START",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 3050,
+        "y": 2400,
+        "wires": [
+            [
+                "7ee9ef4833d6922f",
+                "9dd80243402cc9bb",
+                "e69a39f0fa4fe4dc"
+            ],
+            [
+                "1af3d4d71b2f54c5",
+                "fc1a27ce4a89f680",
+                "7e5de42e8ac67351"
+            ]
+        ]
+    },
+    {
+        "id": "1af3d4d71b2f54c5",
+        "type": "function",
+        "z": "5f98db3a.7ab21c",
+        "name": "global.set(msg.payload.botname + \"-onoff\", true);",
+        "func": "\nglobal.set(msg.payload.botname + \"-onoff\", true);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3430,
+        "y": 2480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ee9ef4833d6922f",
         "type": "debug",
         "z": "5f98db3a.7ab21c",
         "name": "",
@@ -16865,8 +17030,214 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3430,
-        "y": 1700,
+        "x": 3030,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "cf712dc002fbb012",
+        "type": "redis-in",
+        "z": "5f98db3a.7ab21c",
+        "server": "f120eab2.0a60a8",
+        "command": "subscribe",
+        "name": "",
+        "topic": "panic",
+        "obj": true,
+        "timeout": 0,
+        "x": 2490,
+        "y": 480,
+        "wires": [
+            [
+                "eec86198addde19f"
+            ]
+        ]
+    },
+    {
+        "id": "521a921a1d97656f",
+        "type": "debug",
+        "z": "33b4301963931e6c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "eec86198addde19f",
+        "type": "function",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2640,
+        "y": 480,
+        "wires": [
+            [
+                "2242dddf10ab2255"
+            ]
+        ]
+    },
+    {
+        "id": "57a9fa24e8d0ddf6",
+        "type": "rbe",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.command",
+        "topi": "payload.botname",
+        "x": 2870,
+        "y": 2400,
+        "wires": [
+            [
+                "f27f0fb47097d3dd"
+            ]
+        ]
+    },
+    {
+        "id": "170e4ab8b38e5474",
+        "type": "comment",
+        "z": "5f98db3a.7ab21c",
+        "name": "panic",
+        "info": "",
+        "x": 3210,
+        "y": 2360,
+        "wires": []
+    },
+    {
+        "id": "4d8acaf459b5012d",
+        "type": "comment",
+        "z": "5f98db3a.7ab21c",
+        "name": "start",
+        "info": "",
+        "x": 3210,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "860ad8b584c5e91c",
+        "type": "function",
+        "z": "5f98db3a.7ab21c",
+        "name": "global.set(msg.payload.inversebotname + \"-onoff\", true);",
+        "func": "\nglobal.set(msg.payload.inversebotname + \"-onoff\", true);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3790,
+        "y": 2320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e69a39f0fa4fe4dc",
+        "type": "switch",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "property": "payload.inversebotname",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 3490,
+        "y": 2320,
+        "wires": [
+            [
+                "860ad8b584c5e91c"
+            ]
+        ]
+    },
+    {
+        "id": "fc1a27ce4a89f680",
+        "type": "switch",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "property": "payload.inversebotname",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 3490,
+        "y": 2440,
+        "wires": [
+            [
+                "e11551b5df281e5e"
+            ]
+        ]
+    },
+    {
+        "id": "8d16d202959bdc9d",
+        "type": "redis-out",
+        "z": "5f98db3a.7ab21c",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "panic",
+        "obj": false,
+        "x": 3690,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "e11551b5df281e5e",
+        "type": "function",
+        "z": "5f98db3a.7ab21c",
+        "name": "panic inversebot",
+        "func": "let botname = msg.payload.inversebotname;\nmsg.payload = JSON.stringify(msg.payload);\nmsg.req = {};\nmsg.res = {};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3660,
+        "y": 2440,
+        "wires": [
+            [
+                "8d16d202959bdc9d"
+            ]
+        ]
+    },
+    {
+        "id": "7e5de42e8ac67351",
+        "type": "debug",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3010,
+        "y": 2500,
         "wires": []
     }
 ]
