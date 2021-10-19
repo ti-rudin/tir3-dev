@@ -16893,8 +16893,8 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 2510,
-        "y": 2300,
+        "x": 2670,
+        "y": 2400,
         "wires": [
             [
                 "57a288896225f3ee",
@@ -16908,7 +16908,7 @@
         "type": "debug",
         "z": "5f98db3a.7ab21c",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16916,8 +16916,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2590,
-        "y": 2220,
+        "x": 2750,
+        "y": 2320,
         "wires": []
     },
     {
@@ -16927,8 +16927,8 @@
         "name": "",
         "statusCode": "200",
         "headers": {},
-        "x": 2550,
-        "y": 2340,
+        "x": 2710,
+        "y": 2440,
         "wires": []
     },
     {
@@ -16941,59 +16941,27 @@
         "topic": "panic",
         "obj": false,
         "x": 3330,
-        "y": 2260,
+        "y": 2280,
         "wires": []
     },
     {
         "id": "9dd80243402cc9bb",
         "type": "function",
         "z": "5f98db3a.7ab21c",
-        "name": "",
+        "name": "panic",
         "func": "let botname = msg.payload.botname;\nmsg.payload = JSON.stringify(msg.payload);\nmsg.req = {};\nmsg.res = {};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3130,
-        "y": 2260,
+        "x": 3290,
+        "y": 2320,
         "wires": [
             [
                 "135777e9f6136854"
             ]
         ]
-    },
-    {
-        "id": "4398cb19d0adec12",
-        "type": "function",
-        "z": "5f98db3a.7ab21c",
-        "name": "msg = {}",
-        "func": "\nmsg = {};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2460,
-        "y": 2480,
-        "wires": [
-            [
-                "f04985f0693cf842"
-            ]
-        ]
-    },
-    {
-        "id": "f04985f0693cf842",
-        "type": "redis-out",
-        "z": "5f98db3a.7ab21c",
-        "server": "f120eab2.0a60a8",
-        "command": "publish",
-        "name": "",
-        "topic": "stop",
-        "obj": true,
-        "x": 2610,
-        "y": 2480,
-        "wires": []
     },
     {
         "id": "f27f0fb47097d3dd",
@@ -17017,15 +16985,18 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2930,
-        "y": 2300,
+        "x": 3050,
+        "y": 2400,
         "wires": [
             [
                 "7ee9ef4833d6922f",
-                "9dd80243402cc9bb"
+                "9dd80243402cc9bb",
+                "e69a39f0fa4fe4dc"
             ],
             [
-                "1af3d4d71b2f54c5"
+                "1af3d4d71b2f54c5",
+                "fc1a27ce4a89f680",
+                "7e5de42e8ac67351"
             ]
         ]
     },
@@ -17040,8 +17011,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3260,
-        "y": 2320,
+        "x": 3430,
+        "y": 2480,
         "wires": [
             []
         ]
@@ -17059,8 +17030,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 3110,
-        "y": 2220,
+        "x": 3030,
+        "y": 2320,
         "wires": []
     },
     {
@@ -17129,12 +17100,144 @@
         "septopics": true,
         "property": "payload.command",
         "topi": "payload.botname",
-        "x": 2760,
-        "y": 2300,
+        "x": 2870,
+        "y": 2400,
         "wires": [
             [
                 "f27f0fb47097d3dd"
             ]
         ]
+    },
+    {
+        "id": "170e4ab8b38e5474",
+        "type": "comment",
+        "z": "5f98db3a.7ab21c",
+        "name": "panic",
+        "info": "",
+        "x": 3210,
+        "y": 2360,
+        "wires": []
+    },
+    {
+        "id": "4d8acaf459b5012d",
+        "type": "comment",
+        "z": "5f98db3a.7ab21c",
+        "name": "start",
+        "info": "",
+        "x": 3210,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "860ad8b584c5e91c",
+        "type": "function",
+        "z": "5f98db3a.7ab21c",
+        "name": "global.set(msg.payload.inversebotname + \"-onoff\", true);",
+        "func": "\nglobal.set(msg.payload.inversebotname + \"-onoff\", true);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3790,
+        "y": 2320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e69a39f0fa4fe4dc",
+        "type": "switch",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "property": "payload.inversebotname",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 3490,
+        "y": 2320,
+        "wires": [
+            [
+                "860ad8b584c5e91c"
+            ]
+        ]
+    },
+    {
+        "id": "fc1a27ce4a89f680",
+        "type": "switch",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "property": "payload.inversebotname",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 3490,
+        "y": 2440,
+        "wires": [
+            [
+                "e11551b5df281e5e"
+            ]
+        ]
+    },
+    {
+        "id": "8d16d202959bdc9d",
+        "type": "redis-out",
+        "z": "5f98db3a.7ab21c",
+        "server": "f120eab2.0a60a8",
+        "command": "publish",
+        "name": "",
+        "topic": "panic",
+        "obj": false,
+        "x": 3690,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "e11551b5df281e5e",
+        "type": "function",
+        "z": "5f98db3a.7ab21c",
+        "name": "panic inversebot",
+        "func": "let botname = msg.payload.inversebotname;\nmsg.payload = JSON.stringify(msg.payload);\nmsg.req = {};\nmsg.res = {};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3660,
+        "y": 2440,
+        "wires": [
+            [
+                "8d16d202959bdc9d"
+            ]
+        ]
+    },
+    {
+        "id": "7e5de42e8ac67351",
+        "type": "debug",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3010,
+        "y": 2500,
+        "wires": []
     }
 ]
