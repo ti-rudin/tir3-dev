@@ -3398,8 +3398,8 @@
         "topic": "",
         "payload": "LINKUPUSDT-1627480656",
         "payloadType": "str",
-        "x": 2710,
-        "y": 1660,
+        "x": 2650,
+        "y": 1640,
         "wires": [
             [
                 "12956f0cc39cecca"
@@ -6625,7 +6625,7 @@
         "type": "debug",
         "z": "2a761808.610238",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14707,7 +14707,7 @@
         "type": "debug",
         "z": "5df15275.2888ec",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
