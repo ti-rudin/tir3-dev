@@ -15877,7 +15877,7 @@
         "y": 760,
         "wires": [
             [
-                "038e67b20ae6cb88"
+                "367e7b34d7b15b6f"
             ]
         ]
     },
@@ -15992,9 +15992,7 @@
                 "41cba21f8e60eb99",
                 "4b4b2227743912b3"
             ],
-            [
-                "acad7e4b27ade450"
-            ]
+            []
         ]
     },
     {
@@ -16091,7 +16089,7 @@
         "type": "function",
         "z": "33b4301963931e6c",
         "name": "orderexec marketsell",
-        "func": "\n\nlet cmd = \"marketsell\";\nlet quantity = Number(msg.bot.finance.quotainorders) + Number(msg.bot.finance.quotanal);\n\n\nnode.warn(\"q:\" + quantity);\n\nif (quantity > 0) {\n\nlet data = {\n    \"moneta\": msg.bot.settings.moneta, \n    \"quantity\": quantity,\n    \"botname\": msg.botname,\n    \"trackname\": msg.trackname\n};\n\nconst orderexec = global.get('order_exec')(cmd, data);\n\n\norderexec.then(orderexec => {\n    msg.orderexec = orderexec;\n    if (orderexec.statusCode == \"ok\") {\n        node.status({ fill: \"green\", shape: \"dot\", text: orderexec.statusBody.orderId });\n\n        msg.bot.ttp.finalorder = orderexec.statusBody.orderId;\n\n        node.done();\n        node.send([msg, null]);\n\n    } else {\n        node.status({ fill: \"red\", shape: \"dot\" });\n\n\n        node.send(msg);\n    }\n\n\n}).catch(error => {\n\n    msg.error = error;\n    node.status({ fill: \"red\", shape: \"ring\" });\n\n    node.error(error);\n});\n\n} else {\n    return [null, msg];\n}\n\n\n",
+        "func": "\n\nlet cmd = \"marketsell\";\nlet quantity = Number(msg.bot.finance.quotanal);\n\n\nnode.warn(\"q:\" + quantity);\n\nif (quantity > 0) {\n\nlet data = {\n    \"moneta\": msg.bot.settings.moneta, \n    \"quantity\": quantity,\n    \"botname\": msg.botname,\n    \"trackname\": msg.trackname\n};\n\nconst orderexec = global.get('order_exec')(cmd, data);\n\n\norderexec.then(orderexec => {\n    msg.orderexec = orderexec;\n    if (orderexec.statusCode == \"ok\") {\n        node.status({ fill: \"green\", shape: \"dot\", text: orderexec.statusBody.orderId });\n\n        msg.bot.ttp.finalorder = orderexec.statusBody.orderId;\n\n        node.done();\n        node.send([msg, null]);\n\n    } else {\n        node.status({ fill: \"red\", shape: \"dot\" });\n\n\n        node.send(msg);\n    }\n\n\n}).catch(error => {\n\n    msg.error = error;\n    node.status({ fill: \"red\", shape: \"ring\" });\n\n    node.error(error);\n});\n\n} else {\n    return [null, msg];\n}\n\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -17432,6 +17430,39 @@
                 "b71ccac226cfd352",
                 "950fa7fabc4ef79a",
                 "e319415d743691e1"
+            ]
+        ]
+    },
+    {
+        "id": "367e7b34d7b15b6f",
+        "type": "switch",
+        "z": "33b4301963931e6c",
+        "name": "bot.ttp.curorderid > 0",
+        "property": "bot.ttp.curorderid",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1220,
+        "y": 1120,
+        "wires": [
+            [
+                "038e67b20ae6cb88"
+            ],
+            [
+                "acad7e4b27ade450"
             ]
         ]
     }
