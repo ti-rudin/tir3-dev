@@ -725,69 +725,6 @@
             }
         }
     },
-    "node-red-contrib-telegrambot-home": {
-        "name": "node-red-contrib-telegrambot-home",
-        "version": "0.6.0",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "bot": {
-                "name": "bot",
-                "types": [
-                    "telegrambot-config"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-telegrambot-home",
-                "file": "/data/node_modules/node-red-contrib-telegrambot-home/nodes/bot-config/bot-config.js"
-            },
-            "command": {
-                "name": "command",
-                "types": [
-                    "telegrambot-command"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-telegrambot-home",
-                "file": "/data/node_modules/node-red-contrib-telegrambot-home/nodes/command/command.js"
-            },
-            "switch": {
-                "name": "switch",
-                "types": [
-                    "telegrambot-switch"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-telegrambot-home",
-                "file": "/data/node_modules/node-red-contrib-telegrambot-home/nodes/switch/switch.js"
-            },
-            "notify": {
-                "name": "notify",
-                "types": [
-                    "telegrambot-notify"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-telegrambot-home",
-                "file": "/data/node_modules/node-red-contrib-telegrambot-home/nodes/notify/notify.js"
-            },
-            "payload": {
-                "name": "payload",
-                "types": [
-                    "telegrambot-payload"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-telegrambot-home",
-                "file": "/data/node_modules/node-red-contrib-telegrambot-home/nodes/payload/payload.js"
-            }
-        }
-    },
     "node-red-contrib-finite-statemachine": {
         "name": "node-red-contrib-finite-statemachine",
         "version": "2.0.0",
@@ -908,58 +845,6 @@
                 "user": false,
                 "module": "node-red-contrib-xstate-machine",
                 "file": "/data/node_modules/node-red-contrib-xstate-machine/dist/smxstate-node.js"
-            }
-        }
-    },
-    "@meowwolf/node-red-contrib-amqp": {
-        "name": "@meowwolf/node-red-contrib-amqp",
-        "version": "2.4.1",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "amqp-in": {
-                "name": "amqp-in",
-                "types": [
-                    "amqp-in"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "@meowwolf/node-red-contrib-amqp",
-                "file": "/data/node_modules/@meowwolf/node-red-contrib-amqp/build/src/nodes/amqp-in.js"
-            },
-            "amqp-out": {
-                "name": "amqp-out",
-                "types": [
-                    "amqp-out"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "@meowwolf/node-red-contrib-amqp",
-                "file": "/data/node_modules/@meowwolf/node-red-contrib-amqp/build/src/nodes/amqp-out.js"
-            },
-            "amqp-broker": {
-                "name": "amqp-broker",
-                "types": [
-                    "amqp-broker"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "@meowwolf/node-red-contrib-amqp",
-                "file": "/data/node_modules/@meowwolf/node-red-contrib-amqp/build/src/nodes/amqp-broker.js"
-            },
-            "amqp-in-manual-ack": {
-                "name": "amqp-in-manual-ack",
-                "types": [
-                    "amqp-in-manual-ack"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "@meowwolf/node-red-contrib-amqp",
-                "file": "/data/node_modules/@meowwolf/node-red-contrib-amqp/build/src/nodes/amqp-in-manual-ack.js"
             }
         }
     }

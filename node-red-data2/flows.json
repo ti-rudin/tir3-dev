@@ -409,13 +409,12 @@
         "nodes": [
             "5cb78c95e9f5e431",
             "77d59427d38fd283",
-            "88f202b910384e38",
             "d7c6eafcf8852e61",
             "503d53910c17c784"
         ],
         "x": 3424,
         "y": 499,
-        "w": 692,
+        "w": 512,
         "h": 142
     },
     {
@@ -790,8 +789,6 @@
             "c29cb281b2d54456",
             "e681279a23d56ae3",
             "7213180bb142a85e",
-            "9519af6af7411643",
-            "1beac7193ed6fee1",
             "a4938af49eb2fcc1",
             "a893c89e459b32b2",
             "9edee8174b84386e",
@@ -1126,14 +1123,6 @@
         "disp": true,
         "width": "4",
         "collapse": false
-    },
-    {
-        "id": "848f142.6165868",
-        "type": "telegrambot-config",
-        "botname": "Tibot",
-        "usernames": "",
-        "chatIds": "454883204",
-        "pollInterval": "300"
     },
     {
         "id": "f244fee6.d2627",
@@ -4013,7 +4002,7 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": true,
+        "once": false,
         "onceDelay": "3",
         "topic": "",
         "payloadType": "date",
@@ -6639,38 +6628,6 @@
         "wires": []
     },
     {
-        "id": "deda99f111556bea",
-        "type": "function",
-        "z": "2a761808.610238",
-        "name": "проскальзывание",
-        "func": "msg.payload = \"проскальзывание - \" + msg.botname;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1470,
-        "y": 1320,
-        "wires": [
-            [
-                "775e25c3c75d65f9"
-            ]
-        ]
-    },
-    {
-        "id": "775e25c3c75d65f9",
-        "type": "telegrambot-notify",
-        "z": "2a761808.610238",
-        "name": "",
-        "bot": "848f142.6165868",
-        "chatId": "454883204",
-        "message": "",
-        "parseMode": "",
-        "x": 1480,
-        "y": 1280,
-        "wires": []
-    },
-    {
         "id": "2ba6d3acf5701464",
         "type": "catch",
         "z": "2a761808.610238",
@@ -6751,23 +6708,8 @@
         "x": 3690,
         "y": 220,
         "wires": [
-            [
-                "4443d8a63e1bc49b"
-            ]
+            []
         ]
-    },
-    {
-        "id": "4443d8a63e1bc49b",
-        "type": "telegrambot-notify",
-        "z": "2a761808.610238",
-        "name": "",
-        "bot": "848f142.6165868",
-        "chatId": "454883204",
-        "message": "",
-        "parseMode": "",
-        "x": 3900,
-        "y": 220,
-        "wires": []
     },
     {
         "id": "70ab31aebf851dec",
@@ -8046,23 +7988,8 @@
         "x": 2590,
         "y": 1480,
         "wires": [
-            [
-                "c0eb15ed7651bfb3"
-            ]
+            []
         ]
-    },
-    {
-        "id": "c0eb15ed7651bfb3",
-        "type": "telegrambot-notify",
-        "z": "2a761808.610238",
-        "name": "",
-        "bot": "848f142.6165868",
-        "chatId": "454883204",
-        "message": "",
-        "parseMode": "",
-        "x": 2880,
-        "y": 1480,
-        "wires": []
     },
     {
         "id": "1804a239e6edb063",
@@ -8314,23 +8241,9 @@
         "y": 1340,
         "wires": [
             [
-                "fa1a613bacef594f",
                 "8c12181324662e5c"
             ]
         ]
-    },
-    {
-        "id": "fa1a613bacef594f",
-        "type": "telegrambot-notify",
-        "z": "2a761808.610238",
-        "name": "",
-        "bot": "848f142.6165868",
-        "chatId": "454883204",
-        "message": "",
-        "parseMode": "",
-        "x": 2940,
-        "y": 1380,
-        "wires": []
     },
     {
         "id": "8c12181324662e5c",
@@ -8421,24 +8334,8 @@
         "x": 3830,
         "y": 600,
         "wires": [
-            [
-                "88f202b910384e38"
-            ]
+            []
         ]
-    },
-    {
-        "id": "88f202b910384e38",
-        "type": "telegrambot-notify",
-        "z": "2a761808.610238",
-        "g": "17b2eb4baaa826d1",
-        "name": "",
-        "bot": "848f142.6165868",
-        "chatId": "454883204",
-        "message": "",
-        "parseMode": "",
-        "x": 4010,
-        "y": 540,
-        "wires": []
     },
     {
         "id": "d7c6eafcf8852e61",
@@ -8972,23 +8869,8 @@
         "x": 1630,
         "y": 1120,
         "wires": [
-            [
-                "ea4265d4222dc3d0"
-            ]
+            []
         ]
-    },
-    {
-        "id": "ea4265d4222dc3d0",
-        "type": "telegrambot-notify",
-        "z": "2a761808.610238",
-        "name": "",
-        "bot": "848f142.6165868",
-        "chatId": "454883204",
-        "message": "",
-        "parseMode": "",
-        "x": 1780,
-        "y": 1120,
-        "wires": []
     },
     {
         "id": "8663975ddd164e2d",
@@ -14075,7 +13957,6 @@
         "y": 1380,
         "wires": [
             [
-                "9519af6af7411643",
                 "a4938af49eb2fcc1",
                 "a893c89e459b32b2"
             ],
@@ -14084,40 +13965,6 @@
                 "4033406d5a56e5a6"
             ]
         ]
-    },
-    {
-        "id": "9519af6af7411643",
-        "type": "function",
-        "z": "5df15275.2888ec",
-        "g": "4b5621a5daf6eb8e",
-        "name": "final price = 0",
-        "func": "msg.payload = \"final price = 0\" + msg.botname;\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1300,
-        "y": 1340,
-        "wires": [
-            [
-                "1beac7193ed6fee1"
-            ]
-        ]
-    },
-    {
-        "id": "1beac7193ed6fee1",
-        "type": "telegrambot-notify",
-        "z": "5df15275.2888ec",
-        "g": "4b5621a5daf6eb8e",
-        "name": "",
-        "bot": "848f142.6165868",
-        "chatId": "454883204",
-        "message": "",
-        "parseMode": "",
-        "x": 1500,
-        "y": 1340,
-        "wires": []
     },
     {
         "id": "a4938af49eb2fcc1",
@@ -14246,38 +14093,6 @@
             [],
             []
         ]
-    },
-    {
-        "id": "27287b7d805c79d1",
-        "type": "function",
-        "z": "2a761808.610238",
-        "name": "reboot",
-        "func": "msg.payload = \"reboot - \" + msg.botname;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2810,
-        "y": 240,
-        "wires": [
-            [
-                "e4b2dc704bbc9cde"
-            ]
-        ]
-    },
-    {
-        "id": "e4b2dc704bbc9cde",
-        "type": "telegrambot-notify",
-        "z": "2a761808.610238",
-        "name": "",
-        "bot": "848f142.6165868",
-        "chatId": "454883204",
-        "message": "",
-        "parseMode": "",
-        "x": 2980,
-        "y": 240,
-        "wires": []
     },
     {
         "id": "8aa6fd668c527afd",
@@ -15974,7 +15789,7 @@
                 "38d459665db55cc4"
             ],
             [
-                "38d459665db55cc4"
+                "87c41ada5a05cf73"
             ],
             [
                 "41cba21f8e60eb99",
@@ -17465,5 +17280,22 @@
                 "acad7e4b27ade450"
             ]
         ]
+    },
+    {
+        "id": "87c41ada5a05cf73",
+        "type": "debug",
+        "z": "33b4301963931e6c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1410,
+        "y": 1300,
+        "wires": []
     }
 ]
