@@ -466,7 +466,6 @@
             "9f766ac1e94864ba",
             "7b940e6ce5fb40c7",
             "f87e06e98b0d7917",
-            "e7c80281db2cb5f7",
             "b082667c299cc83e",
             "c3754613797a5259",
             "f8cd782d3223fa1e",
@@ -480,7 +479,8 @@
             "a37ec54854f75f01",
             "b8dd96d5d9b54edd",
             "642ebd6d0bd5aa4a",
-            "aee34947d1368921"
+            "aee34947d1368921",
+            "91566e778de8f6fe"
         ],
         "x": 54,
         "y": 219,
@@ -1695,7 +1695,7 @@
         "y": 280,
         "wires": [
             [
-                "e7c80281db2cb5f7"
+                "b082667c299cc83e"
             ]
         ]
     },
@@ -1889,33 +1889,6 @@
         ]
     },
     {
-        "id": "e7c80281db2cb5f7",
-        "type": "filter",
-        "z": "5df15275.2888ec",
-        "g": "814fe3ad47c48a59",
-        "name": "filter off",
-        "property": "bot.onoff",
-        "propertyType": "msg",
-        "asArray": false,
-        "itemProperty": "",
-        "itemPropertyType": "item",
-        "rules": [
-            {
-                "t": "true",
-                "output": 1
-            }
-        ],
-        "checkall": "true",
-        "outputs": 1,
-        "x": 1800,
-        "y": 280,
-        "wires": [
-            [
-                "b082667c299cc83e"
-            ]
-        ]
-    },
-    {
         "id": "b082667c299cc83e",
         "type": "function",
         "z": "5df15275.2888ec",
@@ -1936,7 +1909,8 @@
         "y": 280,
         "wires": [
             [
-                "f8cd782d3223fa1e"
+                "f8cd782d3223fa1e",
+                "91566e778de8f6fe"
             ]
         ],
         "inputLabels": [
@@ -2574,8 +2548,8 @@
         "z": "5df15275.2888ec",
         "name": "",
         "info": "",
-        "x": 1740,
-        "y": 160,
+        "x": 1780,
+        "y": 120,
         "wires": []
     },
     {
@@ -4339,6 +4313,24 @@
                 "5f90fe219f3162fa"
             ]
         ]
+    },
+    {
+        "id": "91566e778de8f6fe",
+        "type": "debug",
+        "z": "5df15275.2888ec",
+        "g": "814fe3ad47c48a59",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2030,
+        "y": 340,
+        "wires": []
     },
     {
         "id": "b38fc6a51aebc0c0",
@@ -16450,7 +16442,8 @@
         "y": 540,
         "wires": [
             [
-                "934068b2b402b8c6"
+                "934068b2b402b8c6",
+                "6667f23085c7329b"
             ]
         ]
     },
@@ -17228,6 +17221,23 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "6667f23085c7329b",
+        "type": "debug",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3020,
+        "y": 500,
+        "wires": []
     },
     {
         "id": "c28c4941e663b8f3",
