@@ -167,9 +167,7 @@
             "dd73e1c4557a5e65"
         ],
         "x": 3234,
-        "y": 1499,
-        "w": 792,
-        "h": 122
+        "y": 1499
     },
     {
         "id": "1af578fa0e07ad5a",
@@ -413,9 +411,7 @@
             "503d53910c17c784"
         ],
         "x": 3424,
-        "y": 499,
-        "w": 512,
-        "h": 142
+        "y": 499
     },
     {
         "id": "422e384634a8793d",
@@ -626,9 +622,7 @@
             "2f83bb2fab63d1bd"
         ],
         "x": 1114,
-        "y": 1119,
-        "w": 792,
-        "h": 122
+        "y": 1119
     },
     {
         "id": "666006aaa2e325fc",
@@ -650,9 +644,7 @@
             "7fad8acded27ae4f"
         ],
         "x": 1114,
-        "y": 1179,
-        "w": 792,
-        "h": 122
+        "y": 1179
     },
     {
         "id": "2044fa36820f41ee",
@@ -676,9 +668,7 @@
             "3520419ec219563a"
         ],
         "x": 1854,
-        "y": 119,
-        "w": 612,
-        "h": 162
+        "y": 119
     },
     {
         "id": "55e30606c2e4a038",
@@ -714,9 +704,7 @@
             "3aa78e92fd51af7b"
         ],
         "x": 74,
-        "y": 59,
-        "w": 1682,
-        "h": 222
+        "y": 59
     },
     {
         "id": "73c30bbe5f45e91f",
@@ -738,9 +726,7 @@
             "ca72074c8d540aae"
         ],
         "x": 714,
-        "y": 319,
-        "w": 792,
-        "h": 122
+        "y": 319
     },
     {
         "id": "4b5621a5daf6eb8e",
@@ -5143,7 +5129,7 @@
         "z": "5df15275.2888ec",
         "g": "814fe3ad47c48a59",
         "name": "getbot_status",
-        "func": "\nconst gb = global.get('getbot_status')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.status = JSON.parse(gb);\n    \n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});\n\n",
+        "func": "\nconst gb = global.get('getbot_status')(msg.botname);\n\ngb.then(gb => {\n\n    msg.bot.status = JSON.parse(gb);\n    \n    global.set(msg.botname + \"-status\", msg.bot.status);\n    node.done();\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"dot\" });\n    node.error(error);\n});\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6118,8 +6104,8 @@
         "z": "5df15275.2888ec",
         "name": "",
         "info": "",
-        "x": 1760,
-        "y": 100,
+        "x": 1740,
+        "y": 160,
         "wires": []
     },
     {
@@ -16591,7 +16577,7 @@
         "type": "debug",
         "z": "33b4301963931e6c",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17297,5 +17283,34 @@
         "x": 1410,
         "y": 1300,
         "wires": []
+    },
+    {
+        "id": "adea58cf1d37535a",
+        "type": "inject",
+        "z": "5df15275.2888ec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 550,
+        "y": 420,
+        "wires": [
+            [
+                "5f90fe219f3162fa"
+            ]
+        ]
     }
 ]
