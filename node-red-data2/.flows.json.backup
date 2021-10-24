@@ -69,7 +69,9 @@
             "9a835f6c.6a1ab"
         ],
         "x": 2554,
-        "y": 19
+        "y": 19,
+        "w": 632,
+        "h": 162
     },
     {
         "id": "e83aa13614517c81",
@@ -141,7 +143,9 @@
             "c4cf96930d013efb"
         ],
         "x": 1574,
-        "y": 1739
+        "y": 1739,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "586e39dc007e0cae",
@@ -191,7 +195,9 @@
             "d3749cac89a0e2c9"
         ],
         "x": 2554,
-        "y": 1119
+        "y": 1119,
+        "w": 1352,
+        "h": 82
     },
     {
         "id": "7f9b2dd857a6dfb2",
@@ -214,7 +220,9 @@
             "792187aede59b6ac"
         ],
         "x": 2554,
-        "y": 1239
+        "y": 1239,
+        "w": 912,
+        "h": 82
     },
     {
         "id": "44cf135596e2716e",
@@ -278,7 +286,9 @@
             "bf190e9d.225ad"
         ],
         "x": 154,
-        "y": 1699
+        "y": 1699,
+        "w": 1232,
+        "h": 402
     },
     {
         "id": "014ce62956a26f95",
@@ -350,7 +360,9 @@
             "6250c3310b6d177b"
         ],
         "x": 34,
-        "y": 779
+        "y": 779,
+        "w": 2092,
+        "h": 822
     },
     {
         "id": "d508da9d29e25c1b",
@@ -377,7 +389,9 @@
             "04c874ce359ca023"
         ],
         "x": 34,
-        "y": 639
+        "y": 639,
+        "w": 1612,
+        "h": 102
     },
     {
         "id": "17b2eb4baaa826d1",
@@ -804,7 +818,9 @@
             "869be0a90b76a3ef"
         ],
         "x": 2554,
-        "y": 219
+        "y": 219,
+        "w": 1032,
+        "h": 142
     },
     {
         "id": "048120318edbeca7",
@@ -882,7 +898,9 @@
             "54197cf454887ecb"
         ],
         "x": 28,
-        "y": 33
+        "y": 33,
+        "w": 2078,
+        "h": 588
     },
     {
         "id": "2c85add4d80ea7f8",
@@ -907,7 +925,9 @@
             "a18bcf73d30443dd"
         ],
         "x": 2554,
-        "y": 1419
+        "y": 1419,
+        "w": 772,
+        "h": 142
     },
     {
         "id": "a515f6f54037387e",
@@ -945,7 +965,9 @@
             "e5b3f65c64087091"
         ],
         "x": 2554,
-        "y": 579
+        "y": 579,
+        "w": 1052,
+        "h": 502
     },
     {
         "id": "54197cf454887ecb",
@@ -972,7 +994,9 @@
             "96bdef7048780d35"
         ],
         "x": 54,
-        "y": 59
+        "y": 59,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "f120eab2.0a60a8",
@@ -7878,7 +7902,9 @@
         "y": 1200,
         "wires": [
             [
-                "06290d8cd99cc3ff"
+                "06290d8cd99cc3ff",
+                "dd01c18f05f9c522",
+                "c1afb6ccd11edd0a"
             ]
         ]
     },
@@ -8757,6 +8783,40 @@
         "libs": [],
         "x": 2130,
         "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd01c18f05f9c522",
+        "type": "debug",
+        "z": "33b4301963931e6c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1750,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "c1afb6ccd11edd0a",
+        "type": "function",
+        "z": "33b4301963931e6c",
+        "name": "tilog",
+        "func": "\nlet botdump = JSON.stringify(msg || \"\", null, '\\t');\n\nlet botname = msg.bot.settings.botname;\nlet data = \"panic market order: \" + botname + botdump;\n\nconst tilog = global.get('tilog')(botname, data);\n\ntilog.then(tilog => {\n\n    node.status({ fill: \"green\", shape: \"dot\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    msg.error = error;\n    node.status({ fill: \"red\", shape: \"ring\" });\n\n    node.error(error);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1610,
+        "y": 1100,
         "wires": [
             []
         ]
