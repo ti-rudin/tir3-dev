@@ -3,7 +3,7 @@ import { writable } from "svelte/store";
 export const stateStore = writable({ rout: "botlist", 
                                     showmenu: false,
                                     selectbotname: "",
-                                    urlhost: "",
+                                    urlhost: "http://dev.ti-robots.ru:1880/",
                                     darkmodestatus: true,
                                     timerId: "",
                                     timerIdlist: ""});

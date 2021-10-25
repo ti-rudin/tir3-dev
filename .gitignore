@@ -139,8 +139,6 @@ exports
 .cache
 _cacache/*
 
-build
-
 front/__sapper__/dev/
 front/__sapper__/dev/client/*
 front/__sapper__/dev/*

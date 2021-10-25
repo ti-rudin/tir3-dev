@@ -10,7 +10,7 @@
   export let comission;
   export let show;
 
-  //console.log(process.env.SAPPER_APP_HOSTIP);
+  //console.log("s_a_hip: " + process.env.SAPPER_APP_HOSTIP);
 
   import Button from "smelte/src/components/Button";
   import { authStore } from "../stores/auth";
