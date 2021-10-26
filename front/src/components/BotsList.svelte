@@ -66,7 +66,7 @@
     })
       .then((res) => res.json())
       .then((json) => {
-        bots = json;
+        bots = json.filter(ismybot);
         if (bots == null) {
           bots = [];
         }
@@ -157,7 +157,7 @@
   $: balances = balancescalc(bots).toFixed(2);
   $: sumprocvlozh = (vlozhcalc(bots) / startbalancescalc(bots)) * 100;
 
-  //$stateStore.timerIdlist = setInterval(fetch1s, 10000);
+  $stateStore.timerIdlist = setInterval(fetch1s, 2000);
 
   $: show = $stateStore.showmenu;
   $: selectbotname = $stateStore.selectbotname;
