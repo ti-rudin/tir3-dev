@@ -69,7 +69,9 @@
             "9a835f6c.6a1ab"
         ],
         "x": 2554,
-        "y": 19
+        "y": 19,
+        "w": 632,
+        "h": 162
     },
     {
         "id": "e83aa13614517c81",
@@ -141,7 +143,9 @@
             "c4cf96930d013efb"
         ],
         "x": 1574,
-        "y": 1739
+        "y": 1739,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "586e39dc007e0cae",
@@ -189,7 +193,9 @@
             "d3749cac89a0e2c9"
         ],
         "x": 2554,
-        "y": 1119
+        "y": 1119,
+        "w": 1352,
+        "h": 82
     },
     {
         "id": "7f9b2dd857a6dfb2",
@@ -212,7 +218,9 @@
             "792187aede59b6ac"
         ],
         "x": 2554,
-        "y": 1239
+        "y": 1239,
+        "w": 912,
+        "h": 82
     },
     {
         "id": "44cf135596e2716e",
@@ -276,7 +284,9 @@
             "bf190e9d.225ad"
         ],
         "x": 154,
-        "y": 1699
+        "y": 1699,
+        "w": 1232,
+        "h": 402
     },
     {
         "id": "014ce62956a26f95",
@@ -348,7 +358,9 @@
             "6250c3310b6d177b"
         ],
         "x": 34,
-        "y": 779
+        "y": 779,
+        "w": 2092,
+        "h": 822
     },
     {
         "id": "d508da9d29e25c1b",
@@ -375,7 +387,9 @@
             "04c874ce359ca023"
         ],
         "x": 34,
-        "y": 639
+        "y": 639,
+        "w": 1612,
+        "h": 102
     },
     {
         "id": "17b2eb4baaa826d1",
@@ -794,7 +808,9 @@
             "869be0a90b76a3ef"
         ],
         "x": 2554,
-        "y": 219
+        "y": 219,
+        "w": 1032,
+        "h": 142
     },
     {
         "id": "048120318edbeca7",
@@ -872,7 +888,9 @@
             "54197cf454887ecb"
         ],
         "x": 28,
-        "y": 33
+        "y": 33,
+        "w": 2078,
+        "h": 588
     },
     {
         "id": "2c85add4d80ea7f8",
@@ -897,7 +915,9 @@
             "a18bcf73d30443dd"
         ],
         "x": 2554,
-        "y": 1419
+        "y": 1419,
+        "w": 772,
+        "h": 142
     },
     {
         "id": "a515f6f54037387e",
@@ -935,7 +955,9 @@
             "e5b3f65c64087091"
         ],
         "x": 2554,
-        "y": 579
+        "y": 579,
+        "w": 1052,
+        "h": 502
     },
     {
         "id": "54197cf454887ecb",
@@ -962,7 +984,9 @@
             "96bdef7048780d35"
         ],
         "x": 54,
-        "y": 59
+        "y": 59,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "f120eab2.0a60a8",
@@ -1293,7 +1317,7 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": "3",
         "topic": "",
         "payloadType": "date",
@@ -4187,7 +4211,7 @@
         "z": "5df15275.2888ec",
         "g": "814fe3ad47c48a59",
         "name": "getleads from redis",
-        "func": "let guid = env.get(\"GOOGLEUID\");\nlet volname = guid + \"-leads\";\n\nconst upd = global.get('getleads')(guid);\n\nupd.then(upd => {\n    global.set(volname, JSON.parse(upd));\n\n    msg.payload = upd;\n    node.done();\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n",
+        "func": "let guid = global.get('guid');\nlet volname = guid + \"-leads\";\n\nconst upd = global.get('getleads')(guid);\n\nupd.then(upd => {\n    global.set(volname, JSON.parse(upd));\n\n    msg.payload = upd;\n    node.done();\n    node.status({ fill: \"green\", shape: \"ring\" });\n    node.send(msg);\n\n}).catch(error => {\n\n    node.status({ fill: \"red\", shape: \"ring\", text: \"error\" });\n    node.error(error);\n});\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -16847,11 +16871,11 @@
         "type": "http in",
         "z": "5f98db3a.7ab21c",
         "name": "",
-        "url": "/webhook-tv",
+        "url": "/signal",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 2670,
+        "x": 2650,
         "y": 2400,
         "wires": [
             [
@@ -16866,7 +16890,7 @@
         "type": "debug",
         "z": "5f98db3a.7ab21c",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17309,6 +17333,72 @@
         "wires": []
     },
     {
+        "id": "a5c9d9b0930d3bd1",
+        "type": "inject",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "\"\"",
+        "payloadType": "str",
+        "x": 3640,
+        "y": 1960,
+        "wires": [
+            [
+                "cc8b0d6096dbaa36"
+            ]
+        ]
+    },
+    {
+        "id": "cc8b0d6096dbaa36",
+        "type": "switch",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "\"\"",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 3800,
+        "y": 1980,
+        "wires": [
+            [
+                "217eb8f564c9ad8e"
+            ]
+        ]
+    },
+    {
+        "id": "217eb8f564c9ad8e",
+        "type": "debug",
+        "z": "5f98db3a.7ab21c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 4000,
+        "y": 1980,
+        "wires": []
+    },
+    {
         "id": "c28c4941e663b8f3",
         "type": "function",
         "z": "8ca38a6b3d25dd3b",
@@ -17402,6 +17492,94 @@
         "statusType": "auto",
         "x": 700,
         "y": 360,
+        "wires": []
+    },
+    {
+        "id": "03406a1208748372",
+        "type": "http in",
+        "z": "8ca38a6b3d25dd3b",
+        "d": true,
+        "name": "",
+        "url": "/signal",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 510,
+        "y": 600,
+        "wires": [
+            [
+                "b1b07971b7bdd339",
+                "e46ad92c3c0bed94",
+                "ae924e95370ae205"
+            ]
+        ]
+    },
+    {
+        "id": "b1b07971b7bdd339",
+        "type": "http response",
+        "z": "8ca38a6b3d25dd3b",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 520,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "e46ad92c3c0bed94",
+        "type": "debug",
+        "z": "8ca38a6b3d25dd3b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "ae924e95370ae205",
+        "type": "switch",
+        "z": "8ca38a6b3d25dd3b",
+        "name": "",
+        "property": "payload.inversebotname",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 520,
+        "wires": [
+            [
+                "c52a878e0ef50cff"
+            ]
+        ]
+    },
+    {
+        "id": "c52a878e0ef50cff",
+        "type": "debug",
+        "z": "8ca38a6b3d25dd3b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 520,
         "wires": []
     }
 ]
