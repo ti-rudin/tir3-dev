@@ -67,7 +67,12 @@
     })
       .then((res) => res.json())
       .then((json) => {
-        bots = json.filter(ismybot);
+        if ($authStore.user.uid != "d3fmoh2rVoVNgIcpLTFZBE0jHnI2"){
+          bots = json.filter(ismybot);
+        } else {
+          bots = json;
+        }
+        
         if (bots == null) {
           bots = [];
         }
