@@ -220,8 +220,8 @@ button.svelte-1djjzqq:active,button.svelte-1djjzqq:focus{outline:none}button.sve
 main.svelte-m6qgj6{width:auto}
 .absmenu.svelte-15jeqdb{position:absolute}
 .drawer.svelte-6qcjcu{min-width:250px}aside.svelte-6qcjcu{height:100vh}
-.line.svelte-xd9zs6{height:1px}
 .label-top.svelte-r33x2y{line-height:0.05}.label-transition.svelte-r33x2y{transition:font-size 0.05s, line-height 0.1s}label.text-xs{font-size:0.7rem}
+.line.svelte-xd9zs6{height:1px}
 .inc.svelte-mguqwa{animation:svelte-mguqwa-increase 2s ease-in-out infinite}.dec.svelte-mguqwa{animation:svelte-mguqwa-decrease 2s 0.9s ease-in-out infinite}@keyframes svelte-mguqwa-increase{from{left:-5%;width:5%}to{left:130%;width:150%}}@keyframes svelte-mguqwa-decrease{from{left:-90%;width:90%}to{left:110%;width:10%}}
 .ripple.svelte-1o8z87d{position:absolute !important}
 .reverse.svelte-zzky5a{transform:rotate(180deg)}.tip.svelte-zzky5a{transform:rotate(90deg)}

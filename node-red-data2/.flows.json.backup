@@ -49,6 +49,14 @@
         "info": ""
     },
     {
+        "id": "db488d9e553f76ea",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "79e296b2.11a2d8",
         "type": "group",
         "z": "5f98db3a.7ab21c",
@@ -167,7 +175,9 @@
             "dd73e1c4557a5e65"
         ],
         "x": 3234,
-        "y": 1499
+        "y": 1499,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "1af578fa0e07ad5a",
@@ -411,7 +421,9 @@
             "503d53910c17c784"
         ],
         "x": 3424,
-        "y": 499
+        "y": 499,
+        "w": 512,
+        "h": 142
     },
     {
         "id": "422e384634a8793d",
@@ -623,7 +635,9 @@
             "2f83bb2fab63d1bd"
         ],
         "x": 1114,
-        "y": 1119
+        "y": 1119,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "666006aaa2e325fc",
@@ -645,7 +659,9 @@
             "7fad8acded27ae4f"
         ],
         "x": 1114,
-        "y": 1179
+        "y": 1179,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "2044fa36820f41ee",
@@ -669,7 +685,9 @@
             "3520419ec219563a"
         ],
         "x": 1854,
-        "y": 119
+        "y": 119,
+        "w": 612,
+        "h": 162
     },
     {
         "id": "55e30606c2e4a038",
@@ -705,7 +723,9 @@
             "3aa78e92fd51af7b"
         ],
         "x": 74,
-        "y": 59
+        "y": 59,
+        "w": 1682,
+        "h": 222
     },
     {
         "id": "73c30bbe5f45e91f",
@@ -727,7 +747,9 @@
             "ca72074c8d540aae"
         ],
         "x": 714,
-        "y": 319
+        "y": 319,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "4b5621a5daf6eb8e",
@@ -1317,7 +1339,7 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": true,
+        "once": false,
         "onceDelay": "3",
         "topic": "",
         "payloadType": "date",
@@ -2014,8 +2036,8 @@
         "g": "47ccdad2d228ed4b",
         "name": "",
         "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "milliseconds",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
         "rateUnits": "second",
@@ -2025,7 +2047,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 290,
+        "x": 280,
         "y": 1020,
         "wires": [
             [
@@ -2551,7 +2573,7 @@
         "z": "5df15275.2888ec",
         "name": "",
         "info": "",
-        "x": 1780,
+        "x": 1720,
         "y": 120,
         "wires": []
     },
@@ -7882,14 +7904,14 @@
         "id": "38d459665db55cc4",
         "type": "function",
         "z": "33b4301963931e6c",
-        "name": "orderexec cansel, proskal = true",
+        "name": "orderexec cansel",
         "func": "let cmd = \"cansel\";\nlet orderid = msg.bot.ttp.curorderid;\n\nlet data = {\n    \"moneta\": msg.bot.settings.moneta,\n    \"orderid\": orderid,\n    \"botname\": msg.botname,\n    \"trackname\": msg.trackname\n};\nconst orderexec = global.get('order_exec')(cmd, data);\n\nlet botname = msg.bot.settings.botname;\n\n//let data2 = \"cansel order id:\" + orderid;\n//const tilog = global.get('tilog')(botname, data2);\n//tilog;\n//msg.bot.ttp.proskal = true;\n//msg.bot.ttp.ttpbusy = true;\n//global.set(msg.botname + \"-ttp\", msg.bot.ttp);\n\norderexec.then(orderexec => {\n    msg.orderexec = orderexec;\n    if (orderexec.statusCode === \"ok\") {\n        node.status({ fill: \"green\", shape: \"dot\", text: orderexec.statusBody.orderId });\n\n        msg.bot.ttp.curorderid = 0;\n\n        let tempfin = Number(Number(msg.bot.finance.baseinorders) - Number(msg.bot.ttp.quantity) * Number(msg.bot.ttp.curstop));\n        let tempfin2 = Number(Number(msg.bot.finance.basenal) + Number(msg.bot.ttp.quantity) * Number(msg.bot.ttp.curstop));\n\n        msg.bot.finance.baseinorders = tempfin.toFixed(msg.bot.settings.digitprice);\n        msg.bot.finance.basenal = tempfin2.toFixed(msg.bot.settings.digitprice);\n\n        node.status({ fill: \"green\", shape: \"dot\" });\n        node.send(msg);\n\n    } else {\n        node.status({ fill: \"red\", shape: \"dot\" });\n\n        node.send(msg);\n    }\n\n\n}).catch(error => {\n\n    msg.error = error;\n    node.status({ fill: \"red\", shape: \"ring\" });\n    node.warn(msg);\n    node.error(error);\n});\n\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1470,
+        "x": 1430,
         "y": 1200,
         "wires": [
             [
@@ -17581,5 +17603,111 @@
         "x": 890,
         "y": 520,
         "wires": []
+    },
+    {
+        "id": "296bd30fc715fdaf",
+        "type": "debug",
+        "z": "8ca38a6b3d25dd3b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "94cd08b6d8d656f7",
+        "type": "inject",
+        "z": "8ca38a6b3d25dd3b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1050,
+        "y": 260,
+        "wires": [
+            [
+                "c42febe4494113a4"
+            ]
+        ]
+    },
+    {
+        "id": "c42febe4494113a4",
+        "type": "link call",
+        "z": "8ca38a6b3d25dd3b",
+        "name": "",
+        "links": [
+            "044dc2c3674f6977"
+        ],
+        "timeout": "30",
+        "x": 1290,
+        "y": 300,
+        "wires": [
+            [
+                "296bd30fc715fdaf"
+            ]
+        ]
+    },
+    {
+        "id": "044dc2c3674f6977",
+        "type": "link in",
+        "z": "db488d9e553f76ea",
+        "name": "",
+        "links": [],
+        "x": 415,
+        "y": 240,
+        "wires": [
+            [
+                "0ff0c0ec69c47110"
+            ]
+        ]
+    },
+    {
+        "id": "a6b1f4ea9e6621cb",
+        "type": "link out",
+        "z": "db488d9e553f76ea",
+        "name": "",
+        "mode": "link",
+        "links": [],
+        "x": 825,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0ff0c0ec69c47110",
+        "type": "function",
+        "z": "db488d9e553f76ea",
+        "name": "",
+        "func": "node.warn(\"q\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "a6b1f4ea9e6621cb"
+            ]
+        ]
     }
 ]

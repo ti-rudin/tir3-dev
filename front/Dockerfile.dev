@@ -1,4 +1,5 @@
 #FROM node:14
+ARG SAPPER_APP_HOSTIP=qqqe
 FROM node:alpine
 
 
@@ -15,9 +16,15 @@ COPY . /usr/src/app/
 #COPY . .
 
 WORKDIR /usr/src/app
+RUN npm install -g dotenv-cli
+#RUN npm run build
+
 ENV HOST 0.0.0.0
 
-#CMD [ "/bin/sh"]
+
 EXPOSE 3000
-CMD ["node", "__sapper__/build"]
+
+#CMD [ "/bin/sh", "dotenv npm start"]
+CMD ["dotenv", "npm", "start"]
+#CMD ["node", "__sapper__/build"]
 

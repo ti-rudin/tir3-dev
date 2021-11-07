@@ -10,7 +10,6 @@
   export let comission;
   export let show;
 
-  //console.log("s_a_hip: " + process.env.SAPPER_APP_HOSTIP);
 
   import Button from "smelte/src/components/Button";
   import { authStore } from "../stores/auth";
@@ -19,6 +18,8 @@
   import IndLoad from "./IndLoad.svelte";
 
   let urlhost = $stateStore.urlhost;
+  let urlhostenv = $stateStore.urlhostenv;
+  console.log("urlhostenv " + urlhostenv);
 
   let bots = [];
   let urlbotslist = urlhost + "botslist";
@@ -70,8 +71,9 @@
         if (bots == null) {
           bots = [];
         }
-        console.log(json);
+        //console.log(json);
         console.log(bots);
+        //console.log("s_a_hip: " + process.env.SAPPER_APP_HOSTIP);
       });
 
     const leads = await fetch(leadsurl, {
@@ -88,12 +90,14 @@
         srleads = json.sr;
       });
   });
+  $:srleads = srleads;
+
   async function fetch1s() {
     const res = await fetch(urlbotslist);
     bots = (await res.json()).filter(ismybot);
   }
   function entryBot(botid) {
-    console.log(botid);
+    //console.log(botid);
 
     clearInterval($stateStore.timerIdlist);
     selectbot = botid;
@@ -172,7 +176,7 @@
 
   <div class="textitem px-2 py-3">
     <div class="rowbalanceitem balancehead">
-      <label>Баланс</label>
+      <label>Бbaланс</label>
 
     </div>
     <div class="rowbalanceitem">
