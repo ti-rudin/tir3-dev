@@ -10,7 +10,6 @@
   export let comission;
   export let show;
 
-  //console.log(process.env.SAPPER_APP_HOSTIP);
 
   import Button from "smelte/src/components/Button";
   import { authStore } from "../stores/auth";
@@ -19,6 +18,8 @@
   import IndLoad from "./IndLoad.svelte";
 
   let urlhost = $stateStore.urlhost;
+  let urlhostenv = $stateStore.urlhostenv;
+  console.log("urlhostenv " + urlhostenv);
 
   let bots = [];
   let urlbotslist = urlhost + "botslist";
@@ -66,12 +67,18 @@
     })
       .then((res) => res.json())
       .then((json) => {
-        bots = json;
+        if ($authStore.user.uid != "d3fmoh2rVoVNgIcpLTFZBE0jHnI2"){
+          bots = json.filter(ismybot);
+        } else {
+          bots = json;
+        }
+        
         if (bots == null) {
           bots = [];
         }
-        console.log(json);
+        //console.log(json);
         console.log(bots);
+        //console.log("s_a_hip: " + process.env.SAPPER_APP_HOSTIP);
       });
 
     const leads = await fetch(leadsurl, {
@@ -88,12 +95,14 @@
         srleads = json.sr;
       });
   });
+  $:srleads = srleads;
+
   async function fetch1s() {
     const res = await fetch(urlbotslist);
     bots = (await res.json()).filter(ismybot);
   }
   function entryBot(botid) {
-    console.log(botid);
+    //console.log(botid);
 
     clearInterval($stateStore.timerIdlist);
     selectbot = botid;
@@ -157,7 +166,7 @@
   $: balances = balancescalc(bots).toFixed(2);
   $: sumprocvlozh = (vlozhcalc(bots) / startbalancescalc(bots)) * 100;
 
-  //$stateStore.timerIdlist = setInterval(fetch1s, 10000);
+  $stateStore.timerIdlist = setInterval(fetch1s, 2000);
 
   $: show = $stateStore.showmenu;
   $: selectbotname = $stateStore.selectbotname;
@@ -172,7 +181,7 @@
 
   <div class="textitem px-2 py-3">
     <div class="rowbalanceitem balancehead">
-      <label>Баланс</label>
+      <label>Бbaланс</label>
 
     </div>
     <div class="rowbalanceitem">

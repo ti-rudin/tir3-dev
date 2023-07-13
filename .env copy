@@ -1,0 +1,13 @@
+TZ=Europe/Moscow
+NODE_OPTIONS=--max_old_space_size=4000
+
+GOOGLEUID=
+
+BINANCEKEY=
+BINANCESECRET=
+
+TELEGRAM_BOT_TOKEN=
+CHATID=
+
+
+

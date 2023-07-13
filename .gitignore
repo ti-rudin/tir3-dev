@@ -7,6 +7,7 @@
 node-red-data2/.npm/
 
 /node-red-data2/node_modules/
+/front/__sapper__/build
 
 /frontend/cypress/
 /src/node_modules/*
@@ -139,8 +140,9 @@ exports
 .cache
 _cacache/*
 
+build
+
 front/__sapper__/dev/
 front/__sapper__/dev/client/*
 front/__sapper__/dev/*
-redis-data/dump.rdb
 redis-data/dump.rdb

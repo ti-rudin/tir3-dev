@@ -27,8 +27,9 @@
         //console.log ($stateStore.show);
         return $stateStore.showmenu;
     }
-    let urlhost = 'http://152.70.160.183:1880/';
-    $stateStore.urlhost = urlhost;
+    //console.log("s_a_hip: " + process.env.SAPPER_APP_HOSTIP);
+    
+ 
     //localStorage.setItem('darkmode', 'on');
     if ($bp === 'sm') showzagl = false;
 

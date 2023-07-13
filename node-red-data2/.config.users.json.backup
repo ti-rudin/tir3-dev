@@ -24,10 +24,13 @@
             },
             "context": {
                 "flowRefresh": true
+            },
+            "tours": {
+                "welcome": "2.1.1"
             }
         },
         "menu-menu-item-palette": true,
-        "menu-menu-item-sidebar": true,
+        "menu-menu-item-sidebar": false,
         "menu-deploymenu-item-flow": false,
         "menu-deploymenu-item-full": true,
         "menu-deploymenu-item-node": false
