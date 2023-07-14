@@ -490,9 +490,9 @@
             "aee34947d1368921"
         ],
         "x": 54,
-        "y": 219,
+        "y": 199,
         "w": 3582,
-        "h": 162
+        "h": 182
     },
     {
         "id": "65ceb63d19a93d0f",
@@ -958,41 +958,13 @@
             "68f426595975577a",
             "880c05f45c81c65f",
             "f4dd7d500c4c6287",
-            "e5b3f65c64087091"
+            "e5b3f65c64087091",
+            "1b0a7ba8e33f06b7"
         ],
         "x": 2554,
         "y": 579,
         "w": 1052,
         "h": 502
-    },
-    {
-        "id": "54197cf454887ecb",
-        "type": "group",
-        "z": "5f98db3a.7ab21c",
-        "g": "048120318edbeca7",
-        "style": {
-            "stroke": "#2e333a",
-            "stroke-opacity": "1",
-            "fill": "#383c45",
-            "fill-opacity": "0.5",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "8d14f5fc3845adff",
-            "6a1466a03b9d3d55",
-            "a0695b5f57215c9a",
-            "5c90fc22745f5191",
-            "9cca35f02ce4d817",
-            "bfb1e76b54a7b1fb",
-            "ddc7f34243674b87",
-            "96bdef7048780d35"
-        ],
-        "x": 54,
-        "y": 59,
-        "w": 792,
-        "h": 122
     },
     {
         "id": "f68e039ff73498a8",
@@ -1036,6 +1008,35 @@
         "y": 1599,
         "w": 832,
         "h": 622
+    },
+    {
+        "id": "54197cf454887ecb",
+        "type": "group",
+        "z": "5f98db3a.7ab21c",
+        "g": "048120318edbeca7",
+        "style": {
+            "stroke": "#2e333a",
+            "stroke-opacity": "1",
+            "fill": "#383c45",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8d14f5fc3845adff",
+            "6a1466a03b9d3d55",
+            "a0695b5f57215c9a",
+            "5c90fc22745f5191",
+            "9cca35f02ce4d817",
+            "bfb1e76b54a7b1fb",
+            "ddc7f34243674b87",
+            "96bdef7048780d35"
+        ],
+        "x": 54,
+        "y": 59,
+        "w": 792,
+        "h": 122
     },
     {
         "id": "f120eab2.0a60a8",
@@ -1956,8 +1957,8 @@
                 "module": "node-binance-api"
             }
         ],
-        "x": 2000,
-        "y": 280,
+        "x": 1960,
+        "y": 240,
         "wires": [
             [
                 "f8cd782d3223fa1e"
@@ -2599,7 +2600,7 @@
         "name": "",
         "info": "",
         "x": 1800,
-        "y": 80,
+        "y": 120,
         "wires": []
     },
     {
@@ -14375,7 +14376,8 @@
                 "ce20d0a5a42d71b8",
                 "1e7fa667be4955e4",
                 "68f426595975577a",
-                "f4dd7d500c4c6287"
+                "f4dd7d500c4c6287",
+                "1b0a7ba8e33f06b7"
             ]
         ]
     },
@@ -15310,7 +15312,7 @@
         "type": "debug",
         "z": "5f98db3a.7ab21c",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17430,6 +17432,24 @@
         "statusType": "auto",
         "x": 4000,
         "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "1b0a7ba8e33f06b7",
+        "type": "debug",
+        "z": "5f98db3a.7ab21c",
+        "g": "a515f6f54037387e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3430,
+        "y": 620,
         "wires": []
     },
     {

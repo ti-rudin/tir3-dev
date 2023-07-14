@@ -1,5 +1,5 @@
 #FROM node:14
-ARG SAPPER_APP_HOSTIP=qqqe
+ARG SAPPER_APP_HOSTIP=dev.ti-robots.ru
 FROM node:alpine
 
 

@@ -59,24 +59,24 @@ services:
     networks:
       - tibotnet
   
-  #front:
-  #  container_name: front
-  #  build:
-  #    context: ./front
-  #    dockerfile: ./Dockerfile.dev
-  #  env_file: .env
-  #  
-  #  ports:
-  #   - "3000:3000"
-  #  volumes:
-  #    - './front/:/usr/src/app'
-  #  restart: always
-  #  depends_on:
-  #    - redis
-  #    - node-red
-  #  networks:
-  #    - tibotnet
-  #    
+  front:
+    container_name: front
+    build:
+      context: ./front
+      dockerfile: ./Dockerfile.dev
+    env_file: .env
+    
+    ports:
+     - "3000:3000"
+    volumes:
+      - './front/:/usr/src/app'
+    restart: always
+    depends_on:
+      - redis
+      - node-red
+    networks:
+      - tibotnet
+      
 volumes:
   redis-data:
   node-red-data2:
