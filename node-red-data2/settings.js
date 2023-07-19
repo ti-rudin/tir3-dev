@@ -20,6 +20,7 @@
  *
  **/
 process.env.UV_THREADPOOL_SIZE = 128;
+process.env.NODE_RED_ENABLE_SAFE_MODE = false;
 module.exports = {
 
     /*******************************************************************************
