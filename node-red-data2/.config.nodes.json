@@ -828,5 +828,47 @@
                 "file": "/data/node_modules/node-red-contrib-xstate-machine/dist/smxstate-node.js"
             }
         }
+    },
+    "node-red-contrib-memory-queue": {
+        "name": "node-red-contrib-memory-queue",
+        "version": "3.0.0",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "memoryQueue": {
+                "name": "memoryQueue",
+                "types": [
+                    "memory-queue",
+                    "memqueue in",
+                    "memqueue out",
+                    "memqueue ack",
+                    "memqueue resend"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-memory-queue",
+                "file": "/data/node_modules/node-red-contrib-memory-queue/src/memoryQueue.js"
+            }
+        }
+    },
+    "node-red-contrib-simple-message-queue": {
+        "name": "node-red-contrib-simple-message-queue",
+        "version": "0.2.8",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "simple-queue": {
+                "name": "simple-queue",
+                "types": [
+                    "simple-queue"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-simple-message-queue",
+                "file": "/data/node_modules/node-red-contrib-simple-message-queue/simple-message-queue.js"
+            }
+        }
     }
 }
