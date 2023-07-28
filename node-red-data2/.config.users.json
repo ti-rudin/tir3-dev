@@ -20,13 +20,15 @@
                 "view-node-status": true,
                 "view-node-show-label": true,
                 "view-show-tips": false,
-                "view-show-welcome-tours": true
+                "view-show-welcome-tours": true,
+                "view-store-position": false,
+                "view-store-zoom": false
             },
             "context": {
                 "flowRefresh": true
             },
             "tours": {
-                "welcome": "2.1.1"
+                "welcome": "3.0.2"
             }
         },
         "menu-menu-item-palette": true,

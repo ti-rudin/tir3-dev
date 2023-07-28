@@ -20,7 +20,9 @@
                 "view-node-status": true,
                 "view-node-show-label": true,
                 "view-show-tips": false,
-                "view-show-welcome-tours": true
+                "view-show-welcome-tours": true,
+                "view-store-position": false,
+                "view-store-zoom": false
             },
             "context": {
                 "flowRefresh": true
@@ -30,7 +32,7 @@
             }
         },
         "menu-menu-item-palette": true,
-        "menu-menu-item-sidebar": false,
+        "menu-menu-item-sidebar": true,
         "menu-deploymenu-item-flow": false,
         "menu-deploymenu-item-full": true,
         "menu-deploymenu-item-node": false
